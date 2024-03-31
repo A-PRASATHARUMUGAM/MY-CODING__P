@@ -1,0 +1,369 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../images/collectionbg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo{
+    position: fixed;
+    bottom: 86.8vh;
+    font-size: 5vh;
+
+}
+header{
+ position: fixed;
+ left: 0%;
+ right: 0%;
+ background-color: rgba(0, 0, 0);
+ font-variant: small-caps;
+
+}
+   
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+} 
+#home{
+    position: relative;
+    left: 40vh;
+}
+#collection{
+position: relative;
+left: 20vh;
+}
+#accessories{
+    position: relative;
+    right: 1vh;
+
+}
+#contact{
+    position:relative;
+    /* left: 20vh; */
+}
+nav a,header a{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    
+}   
+
+ nav a:hover {
+   background-color: white;
+   color: black;
+    transition: 0.8s;
+ }
+ 
+ #boxhead{
+    height: 10vh;
+ }
+
+ /* js************************ */
+ .box{
+
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    padding: 10px;
+    width:20vh ;
+    font-size: 5vh;
+    position: absolute;
+    right: 40px;
+    
+     
+     }
+     .cart-count{
+      position: absolute;
+      left: 100%;
+      font-size: 4vh;
+    
+    
+      
+    
+    
+     }
+     .cart-icon{
+        
+    
+     }
+     .cart{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 340px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x:hidden;
+        padding: 20px;
+        background-color: white;
+        /* color: white; */
+        box-shadow: 0 1px 4px rgb(40, 37, 37,0.1);
+    
+    
+     }
+     .cart-active{
+    right: 0;
+    transition: 0.5s;
+     }
+     .cart-tittle{
+    
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 3vh;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding-bottom: 10px;
+    
+     }
+     .cart-img{
+        margin-top: 10px;
+        width: 10em;
+        border-radius:20px;
+        margin: 2px;
+        margin-bottom: 25px;
+        box-shadow:6px  10px rgb(0, 0, 0,0.4);
+        border: 1px solid black;
+        
+     
+     }
+     .cart-box{
+        display: grid;
+        grid-template-columns: 50% 40% 18%;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2px;
+        margin-top: 10px;
+       border-bottom: 1px solid rgba(0,0,0,0.2);
+       
+    }
+    .cart-keyboard-tittle{
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .price-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cart-price{
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .cart-remove{
+        cursor: pointer;
+        color: red;
+    }
+    .cart-quantity{
+        border: 1px solid rgba(0, 0, 0.1);
+        outline: none;
+        width: 2.5rem;
+        text-align:center; 
+        padding: 2px;
+        font-size: 14px;
+    }
+    .total{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+    
+    }
+    .total-tittle{
+        font-size: 1rem;
+        font-weight: 600;
+    
+    }
+    .total-price{
+        margin-left: 0.5rem;
+    }
+    .btn-buy{
+        cursor: pointer;
+        border: none;
+      color: white;
+      background-color: black;
+      position: relative;
+      bottom: 30px;
+    
+    }
+    #cart-close{
+    cursor: pointer;
+    position: absolute;
+    font-size: 4vh;
+    top: 18px;
+    right: 10px;
+    
+    }
+    
+    
+    
+    
+      /* js************************ */
+    
+ /* section 1 ********************************************************************************************** */
+#section1{
+color: white;
+
+}
+#section1head{
+    margin-top: 40px;
+    text-align: center;
+
+}   
+
+/* section 2  ************************************************************************************************* */
+
+#section2{
+ margin-top: 10px;
+}
+
+#imgbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.keyboard-img{
+    width: 40vh;
+    height: 40vh;
+    margin-inline: 40px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-weight: 20px;
+}
+
+
+/* js******************** */
+figcaption{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+   font-weight: bold;
+   margin-bottom: 5px;
+   
+
+}
+/* js******************** */
+#key-box{
+    display: flex;
+    justify-content: center;
+}
+.img-cart{
+    margin-top: 4px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
+    
+
+}
+.keyboard-price{
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.add-cart{
+
+    cursor: pointer;
+    margin: 10px;
+    margin-left:18vh ;
+}
+/* js******************** */
+
+/* Section 3 **************************************************************************************** */
+#section3{
+    margin-top: 5em;
+    background-color: black;
+
+}
+
+#section3img{
+    width: 100%;
+
+
+}
+ /* FOOTER SECTION ************************************************************************************ */
+
+ footer{   
+    background-color: #6b0306;
+    padding:35px;
+    height: 42vh;
+    text-align: center;
+}
+#footerhead{
+    color: white;
+    padding: 10px;
+    margin-bottom:8vh ;
+    word-spacing: 4px;
+}
+#email{
+ 
+    border: none;
+     padding: 15px;
+     width: 40vh;
+     border-radius: 5px;
+     font-size: 15px;
+     margin-bottom: 60px;
+     font-variant: small-caps;
+}
+button{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-variant: small-caps;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.joinbtn{
+    font-variant: small-caps;
+       border: none;
+    background-color:black ;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.joinbtn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/* Icon **************************************************************** */
+#icon1,#icon2,#icon3,#icon4{
+    margin: 20px;   
+    position: relative;
+    width: 7vh;
+    left: 0px;
+    background-color: white;
+    padding:2px;
+    border-radius: 50%;  
+    
+}
