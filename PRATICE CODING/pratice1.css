@@ -1,30 +1,36 @@
+
+
 body{
-    margin:0%;
-}
-
-.form-container{
-border:1px solid black;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    justify-content:center ;
     align-items: center;
-    flex-wrap: wrap;
-    border:1px solid red;
-    width: 20vw;
-
-
-
+    border: 1px solid red;
+    height: 90vh;
 }
-.username,.password,button{
-    padding: 10px;
-    flex-shrink: 2;
-    width: 5vw;
-    text-wrap: wrap;
+.box1{
+    border:1px solid black;
+    max-width: 1000px;
+    min-width: 10px;
+    background-color:lightblue;
+    text-align: center;
 }
 
+
+
+
+@media (min-width:401px) {
+
+
+    .box1{
+
+        background-color: red;
+    }
+    
+
+}
+@media (max-width:400px) {
+    .box1{
+     background-color: blue;
+    }
+    
+}
