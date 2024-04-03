@@ -204,7 +204,8 @@ right: 10px;
       font-size: 1.5rem;
       text-transform: uppercase;
       text-align: center;
-      word-spacing: 4px;
+      word-spacing: 5px;
+      letter-spacing: 6px;
       padding: 18px;
       animation: animates 7s ease-in-out infinite;
       
@@ -220,21 +221,25 @@ right: 10px;
     
         
     }
-
+  
     @keyframes animate{
         0%,100%{
             background-image: url(../images/homebg1.jpg);
+            
+        
          }
          25%{
             background-image: url(../images/homebg2.jpg);
-    
+            
          }  
          60%{
             background-image: url(../images/homebg3.jpg);
+        
          }
          
      
     }
+ 
     .shop-button__box{
         width: 140px;
         position: relative;
@@ -274,8 +279,8 @@ right: 10px;
 
 /* Section 2 ************************************************************************************** */
 .main-heading2{
-
     padding: 20px;
+    
 }
 #section2{
     background-color:lightgray;
