@@ -137,3 +137,14 @@ else{
     cartCount.style.display='block';
 }
 }
+
+
+
+//  responsive menu bar
+const menu=document.querySelector('.menu')
+const menuList1=document.querySelector('showmenu')
+
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('showmenu1')
+})
+
