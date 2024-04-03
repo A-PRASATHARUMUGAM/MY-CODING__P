@@ -210,12 +210,14 @@ right: 10px;
       
     }
     #section1{   
-        height: 45em;
+        height: 90vh;
+        width: 100%;
         animation: animate 10s ease-in-out infinite;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+    
         
     }
 
@@ -309,7 +311,7 @@ right: 10px;
 .keyboard-img{
     margin-bottom: 20px;
     border-radius:10px;
-    width: 22vw;
+    width: 20vw;
     box-shadow:7.5px  13px rgb(0, 0, 0,0.4);
     border: 1px solid black;
 }
@@ -353,7 +355,7 @@ figcaption{
 
 }
 .keyboard-tittle{
-    font-size: 20px;
+    font-size:20px;
 }
 /* js******************** */
 .viewall-box{
@@ -444,5 +446,22 @@ button:hover{
     border:1px solid white;
 
 }
+@media(min-width:1500px){
 
+#section2{
+height: 650px;
 
+}
+#keyboardimgbox{
+margin-bottom: 20px;
+}
+.viewall-box{
+
+    margin-top: 50px;
+}
+.hr2{
+    margin-top:100px;
+
+}
+
+}
