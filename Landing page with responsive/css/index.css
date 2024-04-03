@@ -37,19 +37,26 @@ body{
     border-radius:2px;
 }
 
- .navbar a:hover{
+#home:hover,#collection:hover,#accessories:hover,#contact:hover{
    background-color: white;
    color: black;
     transition: 0.5s;
  }
- #logo{
+ /* #logo{
     position: fixed;
     left: 20px;
     top:22px;
     z-index: 2;
     font-size: 1.2rem;
     color: white;
+   
+ } */
+ #logo{
+    position: fixed;
+    left:10px;
+
  }
+ 
 
  #boxhead{
     height:58px;
@@ -479,8 +486,12 @@ margin-bottom: 20px;
 
 }
 @media (max-width:900px){
+.logo{
+
+}
  .navbar{
-    
+    flex-direction:column ;
+    align-items: center;
  }
 
 
