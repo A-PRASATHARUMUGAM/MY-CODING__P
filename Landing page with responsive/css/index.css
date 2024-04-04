@@ -24,7 +24,8 @@ body{
  background-color: rgba(0, 0, 0);
  display:flex;
  justify-content:center;
- padding: 5px;
+ align-items: center;
+ padding:20px ;
  font-weight: bold;
  z-index: 1;
 
@@ -56,13 +57,14 @@ body{
     left:10px;
 
  }
- 
-
+.navbar li{
+    display: inline-block;
+}
  #boxhead{
     height:58px;
-    border:2px solid yellow;
 
  }
+
  .box{
     cursor: pointer;
     color: white;
@@ -495,7 +497,7 @@ button:hover{
             }
 
 }
-@media (max-width:900px){
+ @media (max-width:900px){
 
             #logo{
             position: relative;
@@ -506,27 +508,31 @@ button:hover{
             font-weight: bold;
             font-size: 20px;
             }
+            #cart-icon{
+
+                position: absolute;
+                right:-8px;
+                top: -130px;
+            }
             .navbar{
                 flex-direction:column ;
                 align-items: center;
                 font-size: 20px;
+                padding: 0px 20px 20px 20px;
                 
 
             }
-            .showmenu{
-                display:none;
-           } 
-/* menu display no   */
-           .menu{
-            display:block;
-        }
-/* menu display no   */
+            .navbar li{
+                display: block;
+                 padding:20px;
+                 text-align: center;
+            }
+         
+           
 
-       .showmenu1{
-        display: block;
-       }
-    
-
+.menu{
+    display: block;
+}
 
 
 }
