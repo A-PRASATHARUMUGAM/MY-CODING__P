@@ -142,9 +142,8 @@ else{
 
 //  responsive menu bar
 const menu=document.querySelector('.menu')
-const menuList1=document.querySelector('showmenu')
-
+const menuList=document.querySelector('nav ul')
 menu.addEventListener('click',()=>{
-    menuList.classList.toggle('showmenu1')
+    menuList.classList.toggle('showmenu')
 })
 
