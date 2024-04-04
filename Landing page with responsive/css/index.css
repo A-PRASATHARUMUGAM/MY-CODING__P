@@ -84,8 +84,9 @@ body{
 
  }
 #cart-icon{
-    position: fixed;
+    position: relative;
     font-size: 38px;
+
 }
  .cart{
     position: fixed;
@@ -135,7 +136,7 @@ transition: 0.5s;
     gap: 10px;
     margin-bottom: 2px;
     margin-top: 10px;
-   border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
    
 }
 .cart-keyboard-tittle{
