@@ -303,6 +303,7 @@ right: 15px;
 /* Section 2 ************************************************************************************** */
 .main-heading2{
     padding: 20px;
+    font-size:2vw;
     
 }
 #section2{
@@ -424,6 +425,7 @@ footer{
     padding: 10px;
     margin-bottom:8vh ;
     word-spacing: 4px;
+    font-size:2vw;
 }
 #email{
      font-variant: small-caps;
@@ -614,6 +616,23 @@ button:hover{
     font-size: 2vw;
 
 }
+
+/* section 2 *************** media query */
+
+
+.main-heading2{
+
+    font-size:4vw;
+}
+
+ }
+
+
+
+/* navigation bar media query *********** */
+
+
+
 @media (max-width:500px){
     .cart-remove{
         margin-top:1.6vw;
@@ -634,7 +653,8 @@ button:hover{
 
     
 }
-@media (max-width:360px){
+
+    @media (max-width:360px){
     
     .cart-remove{
         margin-top:2.5vw;
@@ -666,4 +686,4 @@ button:hover{
  }
 
 }
- }
+ 
