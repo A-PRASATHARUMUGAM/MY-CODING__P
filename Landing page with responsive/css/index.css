@@ -629,6 +629,23 @@ button:hover{
 
 
 
+
+ /* section responsive      */
+
+ @media (max-width:850px) {
+    
+    #section2{
+  
+      margin-top: 30vh;
+    }
+   #section3{
+      margin-top: 30vh;
+   }
+  
+  }
+   
+
+
 /* navigation bar media query *********** */
 
 
@@ -671,19 +688,3 @@ button:hover{
                 /* navigation  responsive end  */
 
 
-
-
- /* section responsive  */
-
-@media (max-width:850px) {
-    
-  #section2{
-
-    margin-top: 30vh;
-  }
- #section3{
-    margin-top: 30vh;
- }
-
-}
- 
