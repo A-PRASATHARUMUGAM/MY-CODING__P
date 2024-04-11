@@ -6,13 +6,6 @@ function convert(){
   result.innerHTML= f ;
 }
 
-var a=Symbol();
-let b=Symbol();
-console.log(typeof (a))
-console.log(typeof (b))
-
-if(a==b)
-{
-
-  console.log(true);
-}
+let a=false;
+a=Number(a);
+console.log(a,typeof(a));
