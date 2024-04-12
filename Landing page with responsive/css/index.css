@@ -610,7 +610,7 @@ button:hover{
 }
 .cart-remove{
     margin-top:1vw;
-    font-size: 2vw;
+    font-size: 2vw; 
 }
 .total-price,.total-tittle{
     font-size: 2vw;
