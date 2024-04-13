@@ -8,4 +8,7 @@ img{
     max-width:20vw;
     min-width:200px;
     border: 1px solid black;
+    flex-flow: wrap;
+    gap:20px;
+    gap:20px;
 }
