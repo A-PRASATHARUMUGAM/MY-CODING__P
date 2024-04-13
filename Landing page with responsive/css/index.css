@@ -14,6 +14,7 @@ body{
     background-repeat:no-repeat ;
     background-position: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
 /* header ************************************************************************************************* */
 
@@ -310,9 +311,6 @@ right: 15px;
     color: black;
     margin-top: 40vh;
     text-align: center;
-    height:550px;
-
-
 }
 .hr1{
     border: none;
@@ -333,13 +331,17 @@ right: 15px;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: wrap;
-    padding: 50px;
     height:340px;
+    
+}
+.keyboard-box{
+    padding:20px;
 }
 .keyboard-img{
     margin-bottom: 20px;
-    border-radius:10px;
-    width: 20vw;
+    border-radius:5px;
+    max-width: 20vw;
+    min-width: 100px;
     box-shadow:7.5px  13px rgb(0, 0, 0,0.4);
     border: 1px solid black;
 }
@@ -383,7 +385,7 @@ figcaption{
 
 }
 .keyboard-tittle{
-    font-size:20px;
+    font-size:2vw;
 }
 /* js******************** */
 .viewall-box{
@@ -621,18 +623,22 @@ button:hover{
 
 }
 
+
+
 /* section 2 *************** media query */
 
 
 .main-heading2{
 
-    font-size:4vw;
+    font-size:3.5vw;
 }
 
- }
 
+.keyboard-tittle{
+    font-size:10px;
+}
 
-
+}
 
  /* section responsive      */
 
