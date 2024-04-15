@@ -415,21 +415,20 @@ footer{
     background-color: #6b0306;
     padding:35px;
     text-align: center;
+    font-size:10px;
 }
 #footerhead{
     color: white;
     padding: 10px;
     margin-bottom:8vh ;
     word-spacing: 4px;
-    font-size:2vw;
+    font-size:2.5em;
 }
+
 #email{
-     font-variant: small-caps;
      border: none;
      border-radius: 5px;
      padding: 15px;
-     width: 40vw;
-     font-size: 15px;
 }
 button{
     border: none;
@@ -438,7 +437,7 @@ button{
     font-size: 15px;
     padding: 15px;
     border-radius: 5px;
-  font-variant: small-caps;
+    font-variant: small-caps;
 }
 button:hover{
     background-color: black;
@@ -642,8 +641,18 @@ button:hover{
 .img-cart{
     font-size: 1.4em;
 }
+/* footer  */
+#footerhead{
+    font-size:1.8em;
 }
+
+
+
+/* End footer */
+
 /* End section 2 */
+}
+
 
 
 /* **************************** *\
@@ -656,10 +665,10 @@ button:hover{
 
     #section2{
   
-      margin-top: 30vh;
+      margin-top: 25vh;
     }
    #section3{
-      margin-top: 30vh;
+      margin-top: 25vh;
    }
    .btn-buy{
     margin-top:1vh;
@@ -695,6 +704,16 @@ button:hover{
 
   }
       /* End navigation   */
+
+
+      /* footer  */
+    #footerhead{
+        font-size:1.5em;
+    }
+
+
+
+/* End footer */
 }
 
 /* **************************** *\
