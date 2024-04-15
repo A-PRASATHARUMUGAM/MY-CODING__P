@@ -303,7 +303,7 @@ right: 15px;
 /* Section 2 ************************************************************************************** */
 .main-heading2{
     padding: 20px;
-    font-size:2vw;
+    font-size:3em;
     
 }
 #section2{
@@ -311,6 +311,8 @@ right: 15px;
     color: black;
     margin-top: 40vh;
     text-align: center;
+    font-size:10px;
+   
 }
 .hr1{
     border: none;
@@ -322,20 +324,19 @@ right: 15px;
     border: none;
     height: 2px;
     background-color:rgba(0, 0, 0, 0.5);
-    margin-top:50px;
 
 }
-
 #keyboardimgbox{
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
     flex-flow: wrap;
-    height:340px;
-    
+    border:1px solid red;
+    padding:10px;
 }
 .keyboard-box{
     padding:20px;
+
 }
 .keyboard-img{
     margin-bottom: 20px;
@@ -352,25 +353,24 @@ right: 15px;
 
 } 
 /* js******************** */
-figcaption{
-    font-size: 3vh;
-   font-weight: bold;
-   margin-bottom: 5px;
 
+.keyboard-tittle{
+    font-size:2em;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
-/* js******************** */
+.keyboard-price{
+    font-weight:600;
+    font-size:1.5em;
+    
+}
 .img-cart{
    
    position: relative;
     top: 3px;
-    font-size: 17px;
+    font-size:1.7em;
 
     
-}
-.keyboard-price{
-    font-weight: bold;
-    font-size: 15px;
-
 }
 .add-cart{
     margin-top: 10px;
@@ -384,12 +384,10 @@ figcaption{
     transition: 0.5s;
 
 }
-.keyboard-tittle{
-    font-size:2vw;
-}
 /* js******************** */
 .viewall-box{
     margin-top:26px;
+
 }
 
 #viewall{    
@@ -494,6 +492,9 @@ button:hover{
 }
 /* starting media query *********************** */
 
+/* **************************** *\
+        #MEDIA  MIN-1500 PX 
+\* **************************** */
 
 @media(min-width:1500px){
 
@@ -515,10 +516,13 @@ button:hover{
 
 }
 
+/* **************************** *\
+        #MEDIA  MAX-900PX 
+\* **************************** */
 
-                /* navigation  responsive start  */
-
- @media (max-width:900px){
+@media (max-width:900px){
+    
+    /* navigation  responsive start  */
 
             #logo{
             position: relative;
@@ -560,9 +564,7 @@ button:hover{
             display: block;
            
         }
-
-
-  /* js auto add  class */
+            /* js auto add  class */
 
   #cart-icon{
     position: fixed;
@@ -622,28 +624,39 @@ button:hover{
     margin-bottom: 10px;
 
 }
+      /*  End cart items */
+
+/* navigation  responsive end  */
 
 
-
-/* section 2 *************** media query */
-
+/* section 2 ***************  media query */
 
 .main-heading2{
-
-    font-size:3.5vw;
+    font-size:2em;
 }
 
 
 .keyboard-tittle{
-    font-size:10px;
+    font-size:1.4em;
 }
-
+.keyboard-price{
+    font-size:1.2em;
 }
+.img-cart{
+    font-size: 1.4em;
+}
+}
+/* End section 2 */
 
- /* section responsive      */
 
- @media (max-width:850px) {
+/* **************************** *\
+        #MEDIA  MAX-850PX 
+\* **************************** */
+
+@media (max-width:850px) {
     
+    /* sections responsive       */
+
     #section2{
   
       margin-top: 30vh;
@@ -655,16 +668,18 @@ button:hover{
     margin-top:1vh;
 
   }
+      /* End sections responsive       */
   
   }
    
+/* **************************** *\
+        #MEDIA  MAX-500PX 
+\* **************************** */
 
+  
+  @media (max-width:500px){
 
-/* navigation bar media query *********** */
-
-
-
-@media (max-width:500px){
+    /* navigation bar media query *********** */
     .cart-remove{
      position: relative;
       bottom:3px;
@@ -682,18 +697,18 @@ button:hover{
    
 
   }
+      /* End navigation   */
 }
 
-
+/* **************************** *\
+        #MEDIA  MAX-450PX 
+\* **************************** */
+   
 @media (max-width:450px) {
-    .cart-remove{
-      
-       
-    }
- 
+  
     
 }
-
+/* cart items  */
     @media (max-width:360px){
   
     .cart{
@@ -707,8 +722,9 @@ button:hover{
 
   }
 }
+/* end cart items  */
 
 
-                /* navigation  responsive end  */
+
 
 
