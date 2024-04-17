@@ -247,7 +247,7 @@ font-size:10px;
 
 }
 .keyboard-img_box{
-    margin:15px;
+    margin:4vw;
     text-align: center;
 
 }
@@ -580,6 +580,13 @@ button:hover{
             }
         
         /* End footer */
+        }
+
+        @media (max-width:475px){
+            .keyboard-img_box{
+                margin:6vw;
+            }
+
         }
         
         /* **************************** *\
