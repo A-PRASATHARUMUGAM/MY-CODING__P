@@ -45,15 +45,6 @@ body{
       color: black;
        transition: 0.5s;
     }
-    /* #logo{
-       position: fixed;
-       left: 20px;
-       top:22px;
-       z-index: 2;
-       font-size: 1.2rem;
-       color: white;
-      
-    } */
     #logo{
        position: fixed;
        left:10px;
@@ -107,7 +98,6 @@ body{
        overflow-x:hidden;
        padding:20px;
        background-color: white;
-       /* color: white; */
        box-shadow: 0 1px 4px rgb(40, 37, 37,0.1);
    
    
