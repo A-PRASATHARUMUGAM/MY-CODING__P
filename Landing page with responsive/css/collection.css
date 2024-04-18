@@ -10,12 +10,12 @@ a{
 }
 body{
     background-image: url(../images/collectionbg.jpg);
+    background-attachment:fixed;
     background-size:cover;
-    background-repeat:no-repeat ;
-    background-position: center;
-    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+    background-color: black;
 }
 /* header ************************************************************************************************* */
 
