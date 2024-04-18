@@ -339,6 +339,7 @@ button:hover{
     font-weight: bold;
     font-size:1.6em;
     padding:1em;
+    width:5em;
     border-radius: 5px;
 
 }
@@ -636,7 +637,10 @@ button:hover{
         
         .joinbtn{
             padding: 0.6em;
+            width:3.2em;
+    
         }
+        
         /* End footer */
         
         /* icons */
