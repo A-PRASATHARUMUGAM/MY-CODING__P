@@ -361,29 +361,34 @@ body{
     /* section 2 ********************************************************************************************** */
     .section2{
         margin-top: 10px;
+        font-size:10px;
        }
-    #imgbox{
+
+    .keyboard-img_container{
         display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        flex-flow:wrap;
     
     }
-.keyboard-img{
-        width: 40vh;
-        margin-inline: 40px;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        border-radius: 20px;
-        font-weight: bold;
+    .keyboard-img_box{
+        margin: 4vw;
+        text-align: center;
+
+    }
+ .keyboard-img{
+    max-width:15vw;
+    min-width:120px;
+    border-radius:5px;
+
+  
     }
     /* js******************** */
-figcaption{
+.keyboard-tittle{
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
     color: white;
-    text-align: center;
-    font-size: 3vh;
-   font-weight: bold;
-   margin-bottom: 5px;
+    font-size:2em;
    
 
 }
