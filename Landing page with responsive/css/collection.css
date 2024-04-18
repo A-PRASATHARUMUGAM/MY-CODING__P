@@ -237,10 +237,8 @@ font-size:10px;
     
 }
 .keyboard-img_box{
-    margin:4vw;
+    margin: 4vw;
     text-align: center;
-
-
 }
 
 .keyboard-img{
@@ -263,6 +261,7 @@ font-size:10px;
 .keyboard-price_container{
     display: flex;
     justify-content: center;
+   
 }
 .keyboard-price{
     color: white;
@@ -577,6 +576,8 @@ button:hover{
     .main-heading{
     font-size:2em;
     }
+
+    
         
         
         /* footer  */
@@ -586,12 +587,14 @@ button:hover{
         
         /* End footer */
         }
+            
+        /* **************************** *\
+                #MEDIA  MAX-475PX 
+        \* **************************** */
 
         @media (max-width:475px){
-            .keyboard-img_box{
-                margin:6vw;
-            }
-
+          
+            
         }
         
         /* **************************** *\
@@ -613,6 +616,11 @@ button:hover{
         
           }
           /* end cart items  */
+          .keyboard-img_box{
+            margin:2vw;
+        }
+
+       
         
         /* footer */
         
