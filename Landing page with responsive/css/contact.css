@@ -71,6 +71,7 @@ body{
     padding-right: 20vh;
     
 }
+
 #contactbox{
   background-color: rgba(0, 0, 0,0.9);
     text-align: center;
@@ -83,7 +84,6 @@ body{
   
 }
 
-
 #contactbox h2{
     color: white;
     font-variant:small-caps ;
@@ -93,6 +93,7 @@ body{
    
    
 }
+
 #email,#password {
     background-color: white;
     border-radius: 9px;
