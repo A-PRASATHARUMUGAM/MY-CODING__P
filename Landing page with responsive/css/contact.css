@@ -27,36 +27,41 @@ body{
     align-items: center;
     padding:20px ;
     font-weight: bold;
+    font-size:10px;
     z-index: 1;
    
    }
    .navbar a{
        color: white;
        padding: 8px;
-       margin: 10px;
+       margin:10px;
        margin-inline:30px ;
        border-radius:2px;
    }
    
+   
    #home:hover,#collection:hover,#accessories:hover,#contact:hover{
-      background-color: white;
-      color: black;
+       background-color: white;
+       color: black;
        transition: 0.5s;
     }
+   
     #logo{
        position: fixed;
        left:10px;
+       font-size:1.6em;
+
    
     }
    .navbar li{
        display: inline-block;
+       font-size:1.6em;
    }
     #boxhead{
        height:58px;
-     border:1px solid white;
-       
    
     }
+    
    
       /* js************************ */
 
@@ -197,6 +202,22 @@ ul{
                         
                           
 @media (max-width:500px){
+            /* section 1 index page */
+        /* navigation  */
+.navbar li{
+    font-size:0.7em;
+    padding: 1em;
+}        
+/* End navigation  */
+
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+
+}
+        /* End section 1 index page */
+        
 .form-title{
     font-size:2em;
 }

@@ -51,11 +51,12 @@ body{
  #logo{
     position: fixed;
     left:10px;
+    font-size:1.6em;
 
  }
 .navbar li{
     display: inline-block;
-    font-size:1em;
+    font-size:1.6em;
 }
  #boxhead{
     height:58px;
