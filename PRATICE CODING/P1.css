@@ -6,22 +6,20 @@ body{
     padding: 0%;
     width:100vw;
     height:100vh;
-    display: flex;
-    flex-flow:nowrap column;
-    gap: 20px;
+    display: block;
    
 }
 
 input{
-    min-width:40vw;
-    max-width:200px;
+    max-width:50vw;
+    min-width:200px;
     padding: 20px;
     border:1px solid;
     background-color: lightblue;
 }
 
 .input2{
-    max-width:40vw;
+    max-width:50vw;
     min-width:200px;
     padding: 10px;
     border:1px solid black;    
