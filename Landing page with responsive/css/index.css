@@ -699,6 +699,14 @@ button:hover{
 
   
   @media (max-width:500px){
+        /* section 1 index page */
+.shop-button__box{
+    position: relative;
+    top:52%;
+    left:12%;
+}
+
+        /* End section 1 index page */
 
     /* cart items */
     .cart-remove{
