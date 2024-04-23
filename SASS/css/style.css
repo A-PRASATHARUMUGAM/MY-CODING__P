@@ -1,10 +1,27 @@
-body {
-  background-color: palegreen;
-  font-size: 20px;
+.primary-button {
+  background-color: #04c0ff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
 }
 
-h1 {
-  font-size: 10em;
+.success-button {
+  background-color: palegreen;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.danger-button {
+  background-color: tomato;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+body {
+  background-color: white;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
