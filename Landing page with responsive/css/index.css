@@ -105,7 +105,7 @@ body{
     text-align: center;
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-    padding-bottom: 10px;
+    padding: 10px;
 
  }
   .cart-box{
@@ -118,10 +118,11 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.2); 
 
 }
+
  .cart-img{
     margin-top: 10px;
     max-width:160px;
-    min-width:8em;
+    min-width:9em;
     border-radius:5px;
     margin:2px;
     margin-bottom: 25px;
@@ -170,32 +171,30 @@ body{
     font-size:1.5em;
 }
 .total-tittle{
-    font-size: 1rem;
-    font-weight: 600;
+    font-size:1em;
 
 }
 .total-price{
-    margin-left: 0.5rem;
+    margin-left:1em;
 }
 .btn-buy{
  
+     position: relative;
     cursor: pointer;
     border: none;
     color: white;
     background-color: black;
-    position: relative;
     bottom: 30px;
-    right:30px;
-    width:11.5vw;
-    font-size:1vw;
+    right:30px; 
     padding:10px;
+   
 }
 
 #cart-close{
 cursor: pointer;
 position: absolute;
 font-size:3em;
-top: 14px;
+top:28px;
 right: 15px;
 
 }
@@ -581,36 +580,22 @@ button:hover{
    font-size:2em;
 }
 .cart-remove{
-    font-size:1.5em;
+    font-size:1.6em;
 }
 .cart-img{
     width:16vw;
+
 }
 .cart-keyboard-tittle{
-    font-size:2vw;
+    font-size:1.8em;
+    margin-bottom:1em;
 }
 .cart-price,.cart-amt{
-    /* font-size:2vw; */
+    font-size:1.5em;
    
 }
-.cart-amt{
-    /* margin-left:1.5vw;
-    margin-right:1.5vw; */
-}
 
-.cart-quantity{   
-    /* font-size:1vw;
-    font-weight: bold;
-    width:4vw; */
-}
-.total-price,.total-tittle{
-    /* font-size: 2vw; */
 
-}
-.detail-box{
-    margin-bottom: 10px;
-
-}
       /*  End cart items */
 
         /*End  navigation   */
@@ -668,16 +653,28 @@ button:hover{
 
     /* cart_items */
      .cart{
-     width: 45vw;
+     width:48vw;
      }
-        .btn-buy{
-            margin-top:1vh;
-            
-        }
+     .cart-img{
+        width:20vw;
+     }
+        
     /* End cart_items */
   
+  }  
+                    /* **************************** *\
+                            #MEDIA  MAX-650PX 
+                    \* **************************** */
+
+
+  @media(max-width:650px){
+    .cart{
+        width:60vw;
+    }
+
+
   }
-   
+
                     /* **************************** *\
                             #MEDIA  MAX-500PX 
                     \* **************************** */
@@ -700,30 +697,28 @@ button:hover{
         /* End section 1 index page */
 
     /* cart items */
+    .cart-box{
+        display: grid;
+        grid-template-columns:45% 40% 10%;
+        place-items: center;
+        grid-template-rows:100px;
+        gap:5px;
+
+      
+    }
 .cart{
-    width:45vw;
+    width:65vw;
+    padding:10px;
     
 }
 .cart-tittle{
-    font-size: 1.8em;
+    font-size: 1.6em;
+  
 }
 .cart-keyboard-tittle{
-    font-size: 1.2em;
+    font-size:1.6em;
 }
-.cart-remove{
-        font-size:1em;
-}
-.cart-price,.cart-amt{
-    font-size:1.2em;
-    margin:2px;
-}
- .detail-box{
-    margin-bottom:20px;
- }
- .btn-buy{
-    margin-top:1.5vh;
 
-  }
       /* End cart_items  */
 
 
@@ -735,27 +730,66 @@ button:hover{
 
 /* End footer */
 }
+                    /* **************************** *\
+                            #MEDIA  MAX-400PX 
+                    \* **************************** */
+@media(max-width:400px){
+.cart-box{
+    display: grid;
+    grid-template-columns: 50% 40% 6%;
+    grid-template-rows:85px;
+}
+.cart{
+    padding:10px
+}
 
-/* **************************** *\
-        #MEDIA  MAX-360PX 
-\* **************************** */
+.cart-keyboard-tittle{
+    font-size:1.4em;
+}
+.cart-amt,.cart-price{
+    font-size:1.2em;
+}
+.cart-remove{
+font-size:1.2em;
+}
+.total{
+    margin-top:40px;
+}
+.detail-box{
+    margin-bottom:0px;
+
+}
+.btn-buy{
+    font-size:1.2em;
+}
+.total-tittle{
+    font-size:0.8em;
+
+}
+.total-price{
+    font-size:0.8em;
+}
+
+    
+}
+                    /* **************************** *\
+                            #MEDIA  MAX-360PX 
+                    \* **************************** */
    
 
 /* cart items  */
     @media (max-width:360px){
   
     .cart{
-       width:55vw;
-       padding:10px ;
+        width:70vw;
+       padding:5px;
+    
     }
-
-  .btn-buy{
-    margin-top:2vh;
-    font-size:2vw;
-    padding:5px;
-    width:10vw;
-
-  }
+#cart-close{
+    font-size:2.5em;
+    top:12px;
+}
+  
   /* end cart items  */
 
 /* footer */
