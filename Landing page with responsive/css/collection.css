@@ -471,7 +471,6 @@ button:hover{
             
 
      .main-heading{
-
           font-size: 2.5em;
 
      }
@@ -537,10 +536,10 @@ button:hover{
 
 
   }
-           
-                            /* **************************** *\
-                                    #MEDIA  MAX-500PX 
-                            \* **************************** */
+                               
+                    /* **************************** *\
+                       #MEDIA  MAX-500PX 
+                \* **************************** */
         
           
           @media (max-width:500px){
@@ -654,13 +653,12 @@ button:hover{
                 #MEDIA  MAX-360PX 
         \* **************************** */
                      
-/* cart items  */
-@media (max-width:360px){
-  
+        @media (max-width:360px){
+            /* cart items  */
+            
     .cart{
         width:70vw;
        padding:5px;
-    
     }
 #cart-close{
     font-size:2.5em;
