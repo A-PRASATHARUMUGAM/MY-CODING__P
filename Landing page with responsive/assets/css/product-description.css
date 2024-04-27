@@ -220,43 +220,39 @@ right: 15px;
 
 
  section{
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:90vh;
     font-size:10px;
+    height:90vh;
 }
 .keyboard-box{
-    border: 1px solid yellow;
-    width:90%;
+    margin-top:70px;
     display: flex;
     flex-flow:column;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    padding:40px;
+    position: relative;
 }
 
 .keyboard-img{
-    border-radius: 10px;
-    max-width:35vw;
+    border-radius:10px;
+    max-width:25vw;
     min-width:100px;
     margin-right:30px;
   
 }
-.keyboard-detail__box{
-    padding: 10px;
-    
-}
 .keyboard-tittle{
-    padding:0px 0px 10px 10px;
+    padding:10px;
     font-size:2.5em;
     font-weight: bold;
     
 }
 
-
-.keyboard-description  {
-    font-size:1.8em;
+p{
+    font-size:1.5em;
     line-height:3;
 }
 
@@ -272,11 +268,13 @@ right: 15px;
     padding:15px;
     border-radius:2px;
     width:150px;
-    
 }
 .product-qunty{
+    position: absolute;
     width:40px;
-    height:42px;    
+    height:42px;  
+    bottom:42px;  
+    left:12em;
 } 
 
 
@@ -389,16 +387,13 @@ right: 15px;
                 
                      
                      .keyboard-tittle{
-                        font-size:1.4em;
+                        font-size:2em;
                 
                      }
                      .keyboard-price{
-                        font-size:1.2em;
+                        font-size:1.5em;
                      }
-                     .img-cart{
-                        font-size:1.4em;
-                     }
-                            
+                    
                               
                                        
                         }
