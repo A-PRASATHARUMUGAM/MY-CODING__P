@@ -2,13 +2,10 @@
 
 
 
-
-
-
-
-let item=5;
-let  rupes= Number("$95");
-console.log(`Your have ${item} items in your cart.`)
-console.log(`Your bill amount is ${rupes}`)
-
-
+function convert(){
+        let text=document.getElementById("input1").value;
+        let len=text.length;
+        let  result=document.getElementById("result");
+        result.innerHTML=len+" words";
+    
+}
