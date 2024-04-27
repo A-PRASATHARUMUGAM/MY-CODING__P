@@ -8,12 +8,13 @@ a{
     text-decoration: none;
 }
 body{
-   background-color:white;
+   background-image:url(../images/);
     background-attachment: fixed;
     background-size:cover;
-    background-repeat:no-repeat ;
+    background-repeat:no-repeat;
     background-position: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
 
   
 }
@@ -226,55 +227,73 @@ right: 15px;
     font-size:10px;
     height:90vh;
 }
+
+
 .keyboard-box{
-    margin-top:70px;
+    margin-top:10px;
     display: flex;
     flex-flow:column;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    padding:40px;
-    position: relative;
+    border-radius:8px;
+    background:linear-gradient( to right, );
+    padding:25px;
 }
 
 .keyboard-img{
-    border-radius:10px;
-    max-width:25vw;
-    min-width:100px;
-    margin-right:30px;
-  
+    border-radius:4px;
+    max-width:28vw;
+    min-width:250px;
+    padding:10px;
 }
 .keyboard-tittle{
-    padding:10px;
     font-size:2.5em;
     font-weight: bold;
-    
+    color:white;
 }
 
-p{
-    font-size:1.5em;
-    line-height:3;
+
+p{ 
+    padding-inline:20px;
+    text-align: justify;
+    font-size:1.8em;
+    line-height:2.2;
+    color:white;
 }
+
 
 .keyboard-price{
     font-size:1.8em;
-    font-weight: bold;
+    font-weight:bold;
+    color:white;
+
 }
 .img-cart{
-    font-size:1.5em;
+    font-size:1.8em;
+    color:white;
+    margin-top: 10px;
+    
 }
 .add-cart{
     border:none;
-    padding:15px;
     border-radius:2px;
     width:150px;
+    padding:10px;
+    font-weight:bold;
+    font-size:1.6em;
+
+    
 }
 .product-qunty{
-    position: absolute;
-    width:40px;
-    height:42px;  
-    bottom:42px;  
-    left:12em;
+    margin: 10px;
+    border: none;
+    width:11em;
+    height:40px;
+    padding:15px;  
+    border-radius:4px;
+
+
 } 
 
 
@@ -534,9 +553,8 @@ p{
                             
                                 
                             }
-                
-                
-                       
+                               
+   
                         
                         /* **************************** *\
                                 #MEDIA  MAX-360PX 
