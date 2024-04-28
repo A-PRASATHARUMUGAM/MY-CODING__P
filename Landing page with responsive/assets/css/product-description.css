@@ -1,14 +1,14 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-variant:small-caps;
     box-sizing: border-box ;
+    font-variant:small-caps;
 }
 a{
     text-decoration: none;
 }
 body{
-   background-image:url(../images/);
+   background-image:url(../images/d3.jpg);
     background-attachment: fixed;
     background-size:cover;
     background-repeat:no-repeat;
@@ -235,14 +235,17 @@ right: 15px;
     flex-flow:column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius:8px;
-    background:linear-gradient( to right, );
-    padding:25px;
+    border-radius:4px;
+    background:linear-gradient(rgba(255, 255, 255, 0.938),rgba(0, 0, 0, 0.849));
+    padding:20px;
+}
+.keyboard-box:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
 }
 
 .keyboard-img{
-    border-radius:4px;
+    border-radius:14px;
     max-width:28vw;
     min-width:250px;
     padding:10px;
@@ -262,13 +265,14 @@ p{
     color:white;
 }
 
-
 .keyboard-price{
     font-size:1.8em;
     font-weight:bold;
     color:white;
 
 }
+
+
 .img-cart{
     font-size:1.8em;
     color:white;
@@ -282,16 +286,26 @@ p{
     padding:10px;
     font-weight:bold;
     font-size:1.6em;
+    background-color: white;
+    color: black;
 
     
+}
+.add-cart:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+
 }
 .product-qunty{
     margin: 10px;
     border: none;
-    width:11em;
+    width:5em;
     height:40px;
-    padding:15px;  
     border-radius:4px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1.5em;
 
 
 } 
