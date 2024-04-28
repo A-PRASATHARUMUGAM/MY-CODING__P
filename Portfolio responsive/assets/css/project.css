@@ -29,8 +29,7 @@ html{
     left: 0%;
     right: 0%;
     padding:16px;
-    background:linear-gradient(to right,rgb(0, 172, 240),rgba(0, 172, 240, 0.25)) ;
-    
+    background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.90));     
     }
   
   .navbar a{
@@ -56,6 +55,78 @@ html{
         color:white;
      }
   .box-head{
-    height:6.3em;
+    height:7.2em;
+
   }
+
+
   /* section 1********************************************* */
+
+  .main-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom:10em;
+  }
+  .project-heading{
+    margin-top:10px;
+    color: white;
+    text-align:center;
+    font-size:3em;
+    text-decoration:underline;
+    text-decoration-color: #00abf0;
+  }
+
+  .project-container{
+    margin-top:2em;
+    font-size:2em;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    background:linear-gradient(to top,rgb(0, 172, 240,0.30),rgba(0, 0, 0, 0.90)) ;
+    color: white;
+    border-radius:8px;
+
+
+
+  }
+.project-img{
+ width:400px;
+ border-radius:10px;
+}
+.project-title{
+  color: #00abf0;
+}
+.project-details{
+  margin:0px 0px 0px 10px;
+  padding:0px 0px 0px 10px;
+}
+/* button ***************************** */
+.button-primary{
+  border: none;
+  width:8em;
+  padding:8px;
+  font-size:1em;
+  font-weight:bold;
+  background:linear-gradient(to right,rgb(0, 172, 240),rgba(0, 172, 240, 0.25));
+  border:2px solid white;
+  border-radius:4px;
+  color: white;
+
+}
+.button-primary:hover{
+  background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.600)) ;
+  border:2px solid white;
+  transition:0.5s;
+}
+#btn1{
+  margin-top:2em;
+}
+#btn2{
+  margin-top:1em;
+}
+#btn3{
+  margin-top:1em;
+}
