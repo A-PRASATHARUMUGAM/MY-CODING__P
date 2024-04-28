@@ -29,7 +29,7 @@ html{
     left: 0%;
     right: 0%;
     padding:16px;
-    background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.90));     
+    background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));     
     }
   
   .navbar a{
@@ -84,7 +84,7 @@ html{
     width: 90vw;
     display: flex;
     justify-content: center;
-    padding:20px;
+    padding:25px;
     background:linear-gradient(to top,rgb(0, 172, 240,0.30),rgba(0, 0, 0, 0.90)) ;
     color: white;
     border-radius:8px;
@@ -125,7 +125,7 @@ html{
   margin-top:2em;
 }
 #btn2{
-  margin-top:1em;
+  margin-top:0.4em;
 }
 #btn3{
   margin-top:1em;

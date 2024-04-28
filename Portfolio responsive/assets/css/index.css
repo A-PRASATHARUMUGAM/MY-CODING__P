@@ -29,7 +29,8 @@ line-height: 1.6;
   left: 0%;
   right: 0%;
   padding:16px;
-  background:linear-gradient(to right,rgb(0, 172, 240),rgba(0, 172, 240, 0.25)) ;
+  background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));         
+  
   
   }
 
@@ -57,7 +58,6 @@ line-height: 1.6;
    }
 .box-head{
   height:7.2em;
-  background-color: red;
 }
 /* section  1********************************************* */
 .main-container{
