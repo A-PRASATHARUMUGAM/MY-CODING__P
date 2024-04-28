@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0%;
+
+}
+body{
+background-image: url(../image/homebg.jpg);
+background-repeat: no-repeat;
+background-size:cover ;
+background-position: center;
+background-attachment: fixed;
+    
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  padding: 25px;
+  
+  }
+
+.navbar a{
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color:#ededed;
+  margin-left:20px ;
+  border-radius: 10px;
+  padding: 10px;
+}
+  .navbar a:hover{
+    background-color: #00abf0;
+    color: #ededed;
+    transition: 0.5s; 
+    }
+    .logo{  
+      margin-top:0px ;
+      margin-inline: 50px;
+      margin-bottom:0px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 25px;
+      color:#ededed;
+   }
+
+
+section{
+    color: #ededed;
+    font-size: 50px;
+    height: 100vh;
+   display: flex;
+   align-items: center; 
+   width: 123vh;
+   margin-left:50px;
+   margin-right: 0px;
+   text-align:left;
+ padding-inline:6%;
+}
+h4{
+    color: #00abf0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 30px;
+    font-size: 7vh;
+    margin-bottom: 30px;
+
+
+}
+
+#btn{
+     font-family:monospace;
+    border-radius: 16px;
+    padding: 10px;   
+    width: 20vh;
+     font-size: 25px;
+     text-align: center;
+     border: 2px solid #00abf0;
+      
+}
+#hireme{
+  text-decoration: none;
+   color: white;
+    font-weight:bold;
+
+}
+#btn:hover{ 
+    background-color:#00abf0;
+    transition: 0.5s;
+}
+p{
+    margin-bottom: 50px;
+ 
+}
+
+#icon1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+   width: 40px;
+     }
+  
+  
+     #icon2{
+      position: absolute;
+  bottom: 10px;
+  left: 17vh;
+   width: 40px;
+     }
+     #icon3{
+      position: absolute;
+      bottom: 10px;
+      left: 27vh;
+       width: 40px;
+     }
+     body{
+      background-color: black;
+     }
+  

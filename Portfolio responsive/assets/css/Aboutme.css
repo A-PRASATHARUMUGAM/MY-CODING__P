@@ -1,0 +1,110 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+ background-image: url(../image/Aboutmebg.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+.header{
+display: flex;
+justify-content: space-between;
+position: fixed;
+left: 0%;
+right: 0%;
+padding: 25px;
+
+}
+
+.navbar a{
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color:#ededed;
+  margin-left:20px ;
+  border-radius: 10px;
+  padding: 10px;
+}
+  .navbar a:hover{
+    background-color: #00abf0;
+    color: #ededed;
+    transition: 0.5s; 
+    }
+    .logo{  
+      margin-top:0px ;
+      margin-inline: 50px;
+      margin-bottom:0px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 25px;
+      color:#ededed;
+   }
+
+
+   #section{
+      padding: 200px;
+      padding-left: 40vh;
+      box-sizing: border-box;
+      color: #ededed;
+      width: 170vh; 
+      height: 100vh;
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+
+    
+   }
+   #abouthead{
+    color: #00abf0;
+    font-size: 45px;
+     margin-bottom: 12px;
+   }  
+   hr{
+
+    width: 109vh;
+  
+   }
+   p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 450;
+   }
+  
+   #name h6{
+    font-size: 22px;  
+     line-height: 33px;
+     color:#00abf0; 
+     word-spacing:3px;
+    line-height: 7vh;
+   }
+
+strong{
+ color: white;
+  margin-left: 10px;
+}
+
+
+#icon1 {
+  position: fixed;
+  bottom: 10px;
+  left: 50px;
+   width: 40px;
+     }
+  
+  
+     #icon2{
+      position: fixed;
+  bottom: 10px;
+  left: 17vh;
+   width: 40px;
+     }
+     #icon3{
+      position: fixed;
+      bottom: 10px;
+      left: 27vh;
+       width: 40px;
+     }
+   
