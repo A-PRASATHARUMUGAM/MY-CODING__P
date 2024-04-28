@@ -56,14 +56,15 @@ line-height: 1.6;
       color:white;
    }
 .box-head{
-  height:6.3em;
+  height:7.2em;
+  background-color: red;
 }
 /* section  1********************************************* */
 .main-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:90vh;
+  height:89vh;
   
 }
 .name{
@@ -74,25 +75,25 @@ line-height: 1.6;
 }
 .name-description{
   text-align: justify;
-  font-size:4em;
+  font-size:4.2em;
   width:80vw;
   color: white;
 
 }
 .button-container{
-  margin-top:4em;
-  margin-bottom:4em;
+  margin-top:5em;
+  margin-bottom:5em;
 }
 
 
 .button-primary,.button-secondary{
   padding:14px;
-  width:10em;
+  width:8em;
   border: none;
   font-size:1.8em;
   font-weight: bold;
-  background-color: transparent;
-  border: 2px solid #00abf0;
+  background:linear-gradient(to right,rgb(3, 184, 255),rgba(0, 172, 240, 0.05));
+  border:2px solid white;
   color: white;
   border-radius:4px;
   
@@ -102,7 +103,7 @@ line-height: 1.6;
   margin-left:3em;
 }
 .button-primary:hover,.button-secondary:hover{
-    background-color: #00abf0;
+  background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.600)) ;  
     border:2px solid white;
     transition: 0.5s;
 
@@ -110,12 +111,20 @@ line-height: 1.6;
 
 .icon-link__container{
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   position: fixed;
+  left:1px;
   bottom:1px;
-  width:300px;
-
+  width:130px;
+  border-radius: 50%;
+ 
 }
 img{
-  width:50px;
+  width:30px;
 }
+#icon3{
+  background-color: white;
+  border-radius:60%;
+  border:1px solid white;
+}
+
