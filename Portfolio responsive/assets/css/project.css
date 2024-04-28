@@ -1,0 +1,61 @@
+html{
+    font-size: 100%;
+  }
+  *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+      font-variant: small-caps;
+      text-decoration: none;
+  }
+  body{
+  background-image: url(../image/servicebg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  font-size: 10px;
+  line-height: 1.6;
+  
+      
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    padding:16px;
+    background:linear-gradient(to right,rgb(0, 172, 240),rgba(0, 172, 240, 0.25)) ;
+    
+    }
+  
+  .navbar a{
+    font-size:2em;
+    color:#ededed;
+    margin-left:2em;
+    border-radius:2px;
+    padding:8px;
+    font-weight: bold;
+  }
+    .navbar a:hover{
+      background-color: #00abf0;
+      color:white; 
+      transition: 0.5s; 
+      }
+      .logo{  
+        margin-top:0px ;
+        margin-inline: 50px;
+        margin-bottom:0px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 25px;
+        color:white;
+     }
+  .box-head{
+    height:6.3em;
+  }
+  /* section 1********************************************* */
