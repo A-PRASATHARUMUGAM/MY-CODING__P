@@ -74,13 +74,14 @@ line-height: 1.6;
 }
 .name-description{
   text-align: justify;
-  font-size:4.5em;
+  font-size:4em;
   width:80vw;
   color: white;
 
 }
 .button-container{
   margin-top:4em;
+  margin-bottom:4em;
 }
 
 
@@ -118,24 +119,3 @@ line-height: 1.6;
 img{
   width:50px;
 }
-/* #icon1 {
-  position: absolute;
-  bottom: 10px;
-  left: 50px;
-   
-}
-  
-  
-#icon2{
-  position: absolute;
-  bottom: 10px;
-  left: 17vh;
-  width: 40px;
-}
-#icon3{
- position: absolute;
- bottom: 10px;
- left: 27vh;
-  width: 40px;
-} */
-    
