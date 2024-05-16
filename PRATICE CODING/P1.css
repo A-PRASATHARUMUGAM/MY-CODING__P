@@ -1,8 +1,3 @@
-img{
-    width:140px;
-}
-#result{
-    border:1px solid black;
-    width: 500px;
-    height:300px;
+body{
+    background-color:lightgreen;
 }
