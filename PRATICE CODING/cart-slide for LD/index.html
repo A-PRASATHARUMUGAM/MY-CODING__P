@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <!-- js*************************** -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <!-- js*************************** -->
-    <title>Home</title>
-  
-</head>
-<body>
-    <header>
-      
-      <nav class="navbar"> 
-        <a href="index.html" id="logo" >Landing Page</a>
-        <ul>           
-          <li><a href="index.html" id="home" >Home</a> </li>
-          <li><a href="collection.html" id="collection" >Collections</a></li>
-          <li><a href="accessories.html" id="accessories" >Accessories</a></li>
-          <li><a href="contact.html" id="contact" >Contact</a></li>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- js*************************** -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- js*************************** -->
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" id="logo">Landing Page</a>
+      <ul>
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="collection.html" id="collection">Collections</a></li>
+        <li><a href="accessories.html" id="accessories">Accessories</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
       </ul>
 
-      
-          
-         <div class="menu">
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
       </div>
-               <!-- js*************************** -->
-         <div class="box">
+      <!-- js*************************** -->
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+      </div>
+      <div class="cart">
+        <div class="cart-tittle">Cart Items</div>
+        <div class="cart-content">
+          <!-- cart box start -->
 
-          <div class="cart-count">0</div>
-          <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
-    
-         </div>
-         <div class="cart ">
-          <div class="cart-tittle"> Cart Items</div>
-          <div class="cart-content">
-            <!-- cart box start -->
-
-            <!-- <div class="cart-box">
+          <!-- <div class="cart-box">
 
 
               <img src="./images/STAR61.jpg" alt="" class="cart-img">
@@ -69,139 +64,114 @@
               <ion-icon name="trash" class="cart-remove"></ion-icon>
             </div>
            -->
-              <!-- cart box end -->
-  
-          </div>    
-          <div class="total">
-            <div class="total-tittle">Total</div>
-            <div class="total-price">Rs.0</div>
-          </div>
-         <a href="contact.html"> <button class="btn-buy" >Place Order</button></a>
-          <ion-icon name="close-outline" id="cart-close"></ion-icon>
-         </div>
-               <!-- js*************************** -->
-       
-        </nav>  
-    </header>
-    <div id="boxhead"> 
+          <!-- cart box end -->
+        </div>
+        <div class="total">
+          <div class="total-tittle">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+        <a href="contact.html">
+          <button class="btn-buy">Place Order</button></a>
+        <ion-icon name="close-outline" id="cart-close"></ion-icon>
+      </div>
+      <!-- js*************************** -->
+    </nav>
+  </header>
+  <div id="boxhead"></div>
 
-     </div>  
+  <!-- section 1 shop ************************************************************************* -->
 
-<!-- section 1 shop ************************************************************************* -->
+  <div class="main-heading__box">
+    <h1 class="main-heading">mechanical gaming keyboard</h1>
+  </div>
 
-       <div class="main-heading__box">
-        <h1 class="main-heading">mechanical gaming keyboard</h1> 
-       </div>
+  <section id="section1">
+    <div class="shop-button__box">
+      <a href="contact.html" class="shop-button__primary">Shop Now</a>
+    </div>
+  </section>
 
-      <section id="section1">
-       
+  <!-- section 2 shopkeyboard ************************************************************** -->
 
-       <div class="shop-button__box" >  
-            
-        <a href="contact.html" class="shop-button__primary" >Shop Now</a>
+  <div id="section2">
+    <h1 class="main-heading2">Shop Keyboard STAR61</h1>
+    <hr class="hr1" />
+    <div id="keyboardimgbox">
+      <!-- js****************** -->
 
-       </div>
+      <figure class="keyboard-box">
+        <img class="keyboard-img" src="images/STAR61.jpg" alt="keyboardstar61" />
+        <figcaption class="keyboard-tittle" name="keyname">STAR61</figcaption>
+        <!--  -->
 
-      </section>
-     
-     
-      <!-- section 2 shopkeyboard ************************************************************** -->
-
-        <div id="section2">
-          <h1 class="main-heading2">Shop Keyboard STAR61</h1>
-          <hr class="hr1">
-          <div  id="keyboardimgbox">
-                   <!-- js****************** -->
-                  
-          <figure class="keyboard-box">
-            <img class="keyboard-img" src="images/STAR61.jpg" alt="keyboardstar61"  >
-            <figcaption class="keyboard-tittle" name="keyname"  >STAR61</figcaption>
-     <!--  -->
-      
-            <div>
-              <span class="keyboard-price" name="keyprice" >Rs.400</span>
-              <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
-             </div>
-             <button class="add-cart" >Add Cart</button>
-              
+        <div>
+          <span class="keyboard-price" name="keyprice">Rs.400</span>
+          <ion-icon name="cart-outline" class="img-cart"></ion-icon>
+        </div>
+        <button class="add-cart">Add Cart</button>
       </figure>
       <!-- js****************** -->
       <!-- js****************** -->
-<figure>
-  <img class="keyboard-img" src="images/STAR87.jpg" alt="keyboardstar87">
-  <figcaption class="keyboard-tittle" >STAR87</figcaption>
-         
-         <div>
-         <span class=" keyboard-price"  >Rs.500</span>
-         <ion-icon name="cart-outline" class="img-cart"></ion-icon>
+      <figure>
+        <img class="keyboard-img" src="images/STAR87.jpg" alt="keyboardstar87" />
+        <figcaption class="keyboard-tittle">STAR87</figcaption>
+
+        <div>
+          <span class="keyboard-price">Rs.500</span>
+          <ion-icon name="cart-outline" class="img-cart"></ion-icon>
         </div>
         <button class="add-cart">Add Cart</button>
-  
-  
-</figure>
+      </figure>
 
-           <!-- js****************** -->
-            <!-- js****************** -->
-<figure>
-  <img class="keyboard-img" src="images/MK-BOX.jpg" alt="leyboardmk">
-  <figcaption class="keyboard-tittle"  >Mk-BOX</figcaption>
-        
-         <div>
-           <span class=" keyboard-price">Rs.600</span>
-           <ion-icon name="cart-outline"  class="img-cart"></ion-icon>
-         </div>
-         <button class="add-cart">Add Cart</button>
-        
-           <!-- js****************** -->
-           
-          </figure>
-</div>
-<hr class="hr2">
-<div class="viewall-box">
+      <!-- js****************** -->
+      <!-- js****************** -->
+      <figure>
+        <img class="keyboard-img" src="images/MK-BOX.jpg" alt="leyboardmk" />
+        <figcaption class="keyboard-tittle">Mk-BOX</figcaption>
 
-  <a href="collection.html" id="viewall">VIEW ALL</a>
-
-</div>
+        <div>
+          <span class="keyboard-price">Rs.600</span>
+          <ion-icon name="cart-outline" class="img-cart"></ion-icon>
         </div>
+        <button class="add-cart">Add Cart</button>
 
-<!-- section 3 what in box ********************************************************************* -->
-        <div id="section3">
-          <figure>
-            <img id="section3img" src="images/what in the box.png" alt="what in the box keyboard">
-          </figure>
-        </div>
+        <!-- js****************** -->
+      </figure>
+    </div>
+    <hr class="hr2" />
+    <div class="viewall-box">
+      <a href="collection.html" id="viewall">VIEW ALL</a>
+    </div>
+  </div>
 
-        <!-- Footer *************************************************************************** -->
- <footer>
-  <div class="footer-box">
+  <!-- section 3 what in box ********************************************************************* -->
+  <div id="section3">
+    <figure>
+      <img id="section3img" src="images/what in the box.png" alt="what in the box keyboard" />
+    </figure>
+  </div>
 
+  <!-- Footer *************************************************************************** -->
+  <footer>
+    <div class="footer-box">
+      <h2 id="footerhead">First join member to 20% offers</h2>
+      <div>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" />
+        <button type="button" class="joinbtn">Join</button>
+      </div>
 
-     <h2 id="footerhead">First join member to 20% offers</h2>
-     <div>
+      <!-- ICON  ******************************************************* -->
 
-       <label for="email"></label>
-       <input type="email" name="email" id="email" placeholder="Enter your email">
-       <button type="button"  class="joinbtn" >Join</button>
-     </div>
-  
-       <!-- ICON  ******************************************************* -->
-   
-
-
-
-     <a href=""><img src="icons/facebookblack.png" alt="icon" id="icon1" ></a> 
-     <a href=""><img src="icons/github-logoblack.png" alt="icon" id="icon2"></a> 
-   <a href=""><img src="icons/linkedinblack.png" alt="icon" id="icon3"></a>     
-   <a href=""><img src="icons/instagramblack.png" alt="icon" id="icon4"></a>   
-   </div>
-
-
-
- </footer>
-       <!-- js*************************** -->
- <script src="script.js">
-
- </script>
-       <!-- js*************************** -->
+      <a href=""><img src="icons/facebookblack.png" alt="icon" id="icon1" /></a>
+      <a href=""><img src="icons/github-logoblack.png" alt="icon" id="icon2" /></a>
+      <a href=""><img src="icons/linkedinblack.png" alt="icon" id="icon3" /></a>
+      <a href=""><img src="icons/instagramblack.png" alt="icon" id="icon4" /></a>
+    </div>
+  </footer>
+  <!-- js*************************** -->
+  <script src="script.js"></script>
+  <!-- js*************************** -->
 </body>
+
 </html>
