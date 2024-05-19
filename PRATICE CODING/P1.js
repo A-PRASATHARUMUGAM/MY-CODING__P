@@ -29,4 +29,18 @@ console.table(student);
 
 
 var a=Symbol();
-console.log(typeof(a));
+var b=Symbol();
+console.log(a==b);
+
+var fname="sabari";
+console.log("Your name is : "+ fname);
+// 
+
+// let   c=[1,2,3,4,5];
+//       f=String(c); 
+//     console.log(f);
+
+
+ a=10;
+ a=a+10;
+ console.log(a);

@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poppins&display=swap');
+
+
+
 body{
     background-color:lightskyblue;
+    font-family: "Poppins", sans-serif;
 }
