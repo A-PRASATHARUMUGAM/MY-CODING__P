@@ -1,12 +1,13 @@
 
-let a=Number(prompt("Enter your mark"));
-if(a==2 || a==5){
-   console.log("Pass");
 
-} 
-else{
-  console.log("Fail")
+//  >=90 grade A
+// >=80 grade B
+//  grade C
+
+    let a=prompt("Enter the mark :");
+    
+      c=(a>=90?"A":a>=80?"B":"C");
+      console.log(c); 
 
   
-} 
-//  
+
