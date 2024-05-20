@@ -1,22 +1,37 @@
 bodY {
   background-color: lightblue;
   font-size:16px;
+  text-transform:capitalize;
 }
 
 /* ex1             celsius to fahrenheit converter project-1 */
 .ex1 {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   background-color: lightcoral;
-  height: 200px;
+  padding:40px;
+  text-align: center;
+ 
 }
 #fahresult{
     margin-top:10px;
     padding:2px;
     background-color: lightblue;
-    width:200px;
     height:30px;
     text-align: center;
     font-size:1.5rem;
+}
+/* ex2             Mulitipe condition and condition chains project-2 */
+
+.ex2{
+  text-align: center;
+  padding:40px;
+  background-color: lightcyan;
+}
+#mark-result{
+  margin-top:10px;
+  padding:2px;
+  font-size:1.5rem;
+  height:30px;
 }
