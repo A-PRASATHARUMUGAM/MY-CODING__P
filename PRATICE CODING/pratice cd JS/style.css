@@ -1,4 +1,4 @@
-bodY {
+body{
   background-color: lightblue;
   font-size:16px;
   text-transform:capitalize;
@@ -34,4 +34,18 @@ bodY {
   padding:2px;
   font-size:1.5rem;
   height:30px;
+}
+
+/* ex2             Bitwise Operatiors calculation  project-3 */
+.ex3{
+  text-align: center;
+  padding:40px;
+  background-color: lightgray;
+}
+#bitresult{
+  margin-top:10px;
+  padding:2px;
+  font-size:1.5rem;
+  height:30px;
+  background-color: lightseagreen;
 }
