@@ -1,13 +1,6 @@
-
-
-//  >=90 grade A
-// >=80 grade B
-//  grade C
-
-    let a=prompt("Enter the mark :");
-    
-      c=(a>=90?"A":a>=80?"B":"C");
-      console.log(c); 
-
-  
-
+function myfunction(fname){
+  user=fname?"hello "+fname:"no name";
+  console.log(user);
+}
+let fname=prompt("Enter your name ? ")
+myfunction(fname)   
