@@ -1,6 +1,3 @@
-function myfunction(fname){
-  user=fname?"hello "+fname:"no name";
-  console.log(user);
+function myfunction(){
+    console.log("I am come back in javascript")
 }
-let fname=prompt("Enter your name ? ")
-myfunction(fname)   
