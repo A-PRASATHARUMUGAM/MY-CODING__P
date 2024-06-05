@@ -1,4 +1,6 @@
-function status(){
+button =document.querySelector("#ex8-button");
+button.addEventListener('click',citystatus);
+function citystatus(){
     let citys=document.getElementById("ex8-select").value;
     let result=document.getElementById("result");
   
@@ -6,8 +8,8 @@ function status(){
     {
         case "Villupuram":
             result.innerHTML = "Good villupuram";
-            break;`
-        case "Chennai":`
+            break;
+        case "Chennai":
             result.innerHTML = "Good Chennai";
             break;
         case "Madhuri":
@@ -19,4 +21,4 @@ function status(){
     }
 }
  
-
+ 
