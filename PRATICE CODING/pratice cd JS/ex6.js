@@ -145,7 +145,8 @@ else {
         
 
  
-
+*/
+/*
 let tamil=Number(prompt("Enter your  tamil mark"));
 let english=Number(prompt("Enter your  english mark"));
 let math=Number(prompt("Enter your  maths mark"));
@@ -156,7 +157,7 @@ let avg=total/3;
 console.log("Total : "+total);
 console.log("Average: "+avg.toFixed(2));
 
-if(tamil>=35 && english>=35 && math>=35){ 
+if(tamil>=35 && english>=35 &&  math>=35){ 
 
     console.log("Result : Pass")
 
@@ -185,6 +186,7 @@ else {
 }
 
  */
+/*
 
 let alpha=prompt("Enter your alphabetical ");
 switch(alpha){
@@ -215,6 +217,6 @@ switch(alpha){
     
 }
 
-
+*/
 
   

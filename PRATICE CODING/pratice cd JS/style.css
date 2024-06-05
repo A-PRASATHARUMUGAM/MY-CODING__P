@@ -51,8 +51,31 @@ body{
   height:30px;
   background-color: lightseagreen;
 }
+/* ex4       Handling null using to function   */
+
 .ex4{
   text-align: center;
   padding:40px;
   background-color: lightgreen;
+}
+
+/* ex8     Check the city status PROJECT   */
+
+.ex8{
+    margin: 50px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   text-align: center;
+}
+.ex8-box--container{
+  border:1px solid black;
+  padding:30px;
+}
+.ex8-box--container button{
+  padding:6px;
+}
+.ex8-box--container select{
+  padding:6px;
+  margin: 10px;
 }
