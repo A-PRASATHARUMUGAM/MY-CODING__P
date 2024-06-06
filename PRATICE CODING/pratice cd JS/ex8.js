@@ -3,9 +3,8 @@ button.addEventListener('click',citystatus);
 function citystatus(){
     let citys=document.getElementById("ex8-select").value;
     let result=document.getElementById("result");
-  
-    switch(citys)
-    {
+    switch(citys) 
+    { 
         case "Villupuram":
             result.innerHTML = "Good villupuram";
             break;
@@ -20,5 +19,6 @@ function citystatus(){
             break;
     }
 }
+
  
  
