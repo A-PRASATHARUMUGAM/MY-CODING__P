@@ -29,9 +29,8 @@ line-height: 1.6;
   left: 0%;
   right: 0%;
   padding:16px;
-  background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));         
-  
-  
+  background:linear-gradient(to right,rgba(0, 172, 240, 0.60),rgba(255, 0, 0, 0.60));         
+
   }
 
 .navbar a{
@@ -128,3 +127,20 @@ img{
   border:1px solid white;
 }
 
+    /* ***************** *\
+        #MEDIA QUERY 
+    \* ***************** */
+    
+    @media (max-width:768px){
+
+.header{
+  flex-direction:column;
+  justify-content: center;
+}
+.navbar a{
+  display:block;
+  margin:0px;
+  text-align: center;
+}
+    }
+ 
