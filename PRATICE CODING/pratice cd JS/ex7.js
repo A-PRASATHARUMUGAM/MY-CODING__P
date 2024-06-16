@@ -97,7 +97,7 @@ for(initialize value;condition - 2; statement - 2){
 
 }
 EXAMPLE-- 
-*/ 
+
 let  nums=[];
 for(let i=0;i<3;i++){
         nums.push([]);
@@ -107,4 +107,59 @@ for(let i=0;i<3;i++){
 
 } 
 console.table(nums)
- 
+
+ */ 
+/*
+5. for of loop in js 
+
+        EXAMPLE--
+let names=["prasath","sabari","arun","logic first"]
+for(i=0;i<names.length;i++){
+    console.log(names[i]);
+} 
+
+console.log("for of loop :::")
+
+for(name of names){
+    console.log(name); 
+}
+
+
+6. for of loop in js 
+
+    EXAMPLE--
+let user={
+    fname:"Prasath",
+    age:20,
+    gender:"Male"
+};
+
+for (let data in user ){
+    console.log(data,user[data]); 
+     
+}
+
+*/
+
+/*
+
+//  Object to converting array using  for loop
+
+let user={
+    fname:"Prasath",
+    age:20,
+    gender:"Male"
+};
+// Using in-built function  
+
+    // Object.keys
+let arr_key=Object.keys(user)
+console.table(arr_key); 
+    // Object.values
+let arr_values=Object.values(user)
+console.table(arr_values); 
+
+for(i=0;i<arr_key.length;i++){
+    console.log(arr_key[i]+":"+arr_values[i]);
+}
+    */
