@@ -4,6 +4,9 @@
 2. do while
 3. for loop
 4. Nested  for loop
+5. for of -- it is using to get the values from Array
+6. for in -- it is using to get the values from  Object  
+
 */
 
 /* 
@@ -110,24 +113,29 @@ console.table(nums)
 
  */ 
 /*
+
 5. for of loop in js 
 
         EXAMPLE--
+     
 let names=["prasath","sabari","arun","logic first"]
 for(i=0;i<names.length;i++){
     console.log(names[i]);
 } 
 
-console.log("for of loop :::")
+console.log("-------------------------for of loop :::")
 
-for(name of names){
-    console.log(name); 
-}
+for(fname of names){
+    console.log(fname);  
+}   
+    */
 
+/*
 
-6. for of loop in js 
+6. for in loop in js 
 
     EXAMPLE--
+   
 let user={
     fname:"Prasath",
     age:20,
@@ -138,10 +146,13 @@ for (let data in user ){
     console.log(data,user[data]); 
      
 }
+   
+  */
 
-*/
 
-/*
+/*   
+
+
 
 //  Object to converting array using  for loop
 
@@ -162,4 +173,25 @@ console.table(arr_values);
 for(i=0;i<arr_key.length;i++){
     console.log(arr_key[i]+":"+arr_values[i]);
 }
-    */
+
+
+ */
+/*
+//  Break Statement 
+
+for(i=1;i<=10;i++){
+   console.log(i)
+   if(i==4){
+    break;
+   }
+}
+// Continue Statement
+ console.log("----------------------------")
+for(i=1;i<=10;i++){
+    if(i==4){
+    continue;
+    } 
+    console.log(i) 
+}
+
+*/
