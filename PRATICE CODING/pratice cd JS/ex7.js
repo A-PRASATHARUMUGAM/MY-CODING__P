@@ -96,14 +96,15 @@ for(initialize value;condition - 2; statement - 2){
         for(initialize value ; condition - 2 ;statement - 2 )
 
 }
-
-        EXAMPLE-- 
+EXAMPLE-- 
+*/ 
 let  nums=[];
-for(let i=0;i<=3;i++){
+for(let i=0;i<3;i++){
         nums.push([]);
-    for(let j=0;i<=3;j++){
+    for(let j=0;j<3;j++){
          nums[i].push(j);
     } 
 
 } 
-  */
+console.table(nums)
+ 
