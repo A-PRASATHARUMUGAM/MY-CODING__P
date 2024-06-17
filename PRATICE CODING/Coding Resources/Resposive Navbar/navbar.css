@@ -1,0 +1,106 @@
+html {
+    font-size:100%;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-variant: small-caps;
+    text-decoration: none;
+  }
+  body {
+    background-image: url(../image/homebg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: black;
+    font-size:10px;
+    line-height: 1.6;
+  }
+  
+  .header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    padding:10px;
+    background: linear-gradient(
+      to right,
+      rgba(0, 172, 240, 0.6),
+      rgba(255, 0, 0, 0.6)
+    );
+    background-color: white;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  
+  .navbar a {
+    font-size:2em;
+    color: #ededed;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: bold;
+  }
+  ul a:hover {
+    background-color: #00abf0;
+    color: white;
+    transition: 0.5s;
+  }
+  .logo {
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    font-size:0.8rem;
+  }
+  
+  .hmenu-line{
+      color:black;
+      background-color:black;
+      width:26px;
+      height:4px;
+      margin-bottom:4px;
+      border-radius:10px;
+      
+  }
+  .hmenu{
+      cursor: pointer;
+      display:none ;
+  }
+  .box-head {
+    height: 7.2em;
+  }
+  @media all and (max-width:650px){
+      .navbar{
+           flex-direction: column;
+           text-align: center;
+        
+      }
+      .navbar li{
+          display: block;
+          padding:6px;
+  
+      }
+      .hmenu{
+          display: block;
+          position:absolute;
+          top:20px;
+          left:20px;
+          
+      }
+      ul{
+          display: block;
+      }
+      .showmenu{
+       display: none;
+      }
+  }
