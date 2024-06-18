@@ -21,43 +21,62 @@ line-height: 1.6;
 
     
 }
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
   position: fixed;
   left: 0%;
   right: 0%;
-  padding:16px;
-  background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));         
-  
-  }
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 172, 240, 0.6),
+    rgba(255, 0, 0, 0.6)
+  );
+  transition: all 0.3s ease 0s;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 10px;
+}
 
-.navbar a{
-  font-size:2em;
-  color:#ededed;
-  margin-left:2em;
-  border-radius:2px;
-  padding:8px;
+.navbar a {
+  font-size: 2em;
+  color: #ededed;
+  border-radius: 2px;
+  padding: 8px;
   font-weight: bold;
 }
-  .navbar a:hover{
-    background-color: #00abf0;
-    color:white; 
-    transition: 0.5s; 
-    }
-    .logo{  
-      margin-top:0px ;
-      margin-inline: 50px;
-      margin-bottom:0px;
-      font-family: monospace;
-      font-weight: bold;
-      font-size: 25px;
-      color:white;
-   }
-.box-head{
-  height:7.2em;
+ul a:hover {
+  background-color: #00abf0;
+  color: white;
+  transition: 0.5s;
 }
+.logo {
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.hmenu-line {
+  background-color:#ededed ;
+  width: 15px;
+  height:15px;
+  border-radius:50%;
+}
+.hmenu {
+  cursor: pointer;
+  display: none;
+}
+.box-head {
+  height: 7.2em;
+}
+
 /* section 1********************************************* */
 
 
@@ -145,4 +164,26 @@ img{
   border:1px solid white;
 }
 
+/* ***************** *\
+        #MEDIA QUERY 
+\* ***************** */
 
+@media all and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar li {
+    display: block;
+    padding: 6px;
+  }
+  .hmenu {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left:20px;
+  }
+  .showmenu {
+    display: none;
+  }
+}

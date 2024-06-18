@@ -10,14 +10,24 @@
 <body>
     
     <header class="header">
-        <p class="logo">Portfolio</p>
-        <nav class="navbar">   
-         <a href="index.html">Home</a>
-         <a href="About.html">About me</a>
-         <a href="service.html">Service</a>
-         <a href="contact.html">Contact Me</a>
+      
+        <nav class="navbar">  
+          <div class="logo">
+            <a href="index.html">Portfolio</a>
+          </div> 
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="About.html">About Me</a></li>
+          </ul> 
+          <div class="hmenu" onclick="myfunction()">
+            <div class="hmenu-line"></div>
+          </div>
         </nav>
-      </header> 
+      </header>
+      <div class="box-head">
+    
+      </div>
       <a href="" >
         <img  id="icon1"src="assets/icons/facebookicon1.png" alt="facebookicon1">
    </a>
@@ -52,9 +62,8 @@
             <button type="submit" id="btn">SUBMIT</button>
         </div>
         </form>
-
-
-
       </section>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

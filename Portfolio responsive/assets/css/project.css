@@ -1,132 +1,176 @@
-html{
-    font-size: 100%;
-  }
-  *{
-      margin: 0%;
-      padding: 0%;
-      box-sizing: border-box;
-      font-variant: small-caps;
-      text-decoration: none;
-  }
-  body{
+html {
+  font-size: 100%;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+body {
   background-image: url(../image/servicebg.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size:cover ;
+  background-size: cover;
   background-position: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: black;
   font-size: 10px;
   line-height: 1.6;
-  
-      
-  }
-  .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    left: 0%;
-    right: 0%;
-    padding:16px;
-    background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));     
-    }
-  
-  .navbar a{
-    font-size:2em;
-    color:#ededed;
-    margin-left:2em;
-    border-radius:2px;
-    padding:8px;
-    font-weight: bold;
-  }
-    .navbar a:hover{
-      background-color: #00abf0;
-      color:white; 
-      transition: 0.5s; 
-      }
-      .logo{  
-        margin-top:0px ;
-        margin-inline: 50px;
-        margin-bottom:0px;
-        font-family: monospace;
-        font-weight: bold;
-        font-size: 25px;
-        color:white;
-     }
-  .box-head{
-    height:7.2em;
-
-  }
-
-
-  /* section 1********************************************* */
-
-  .main-container{
-    display: flex;
-    flex-flow: column;
-    justify-content: start;
-    align-items: center;
-    margin-bottom:10em;
-  }
-  .project-heading{
-    margin-top:10px;
-    color: white;
-    text-align:center;
-    font-size:3em;
-    text-decoration:underline;
-    text-decoration-color: #00abf0;
-  }
-
-  .project-container{
-    margin-top:2em;
-    font-size:2em;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    padding:25px;
-    background:linear-gradient(to top,rgb(0, 172, 240,0.30),rgba(0, 0, 0, 0.90)) ;
-    color: white;
-    border-radius:8px;
-
-
-
-  }
-.project-img{
- width:400px;
- border-radius:10px;
 }
-.project-title{
+
+.header {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 172, 240, 0.6),
+    rgba(255, 0, 0, 0.6)
+  );
+  transition: all 0.3s ease 0s;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.navbar a {
+  font-size: 2em;
+  color: #ededed;
+  border-radius: 2px;
+  padding: 8px;
+  font-weight: bold;
+}
+ul a:hover {
+  background-color: #00abf0;
+  color: white;
+  transition: 0.5s;
+}
+.logo {
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.hmenu-line {
+  background-color: #ededed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.hmenu {
+  cursor: pointer;
+  display: none;
+}
+.box-head {
+  height: 7.2em;
+}
+
+/* section 1********************************************* */
+
+.main-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10em;
+}
+.project-heading {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color: #00abf0;
+}
+
+.project-container {
+  margin-top: 2em;
+  font-size: 2em;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background: linear-gradient(
+    to top,
+    rgb(0, 172, 240, 0.3),
+    rgba(0, 0, 0, 0.9)
+  );
+  color: white;
+  border-radius: 8px;
+}
+.project-img {
+  width: 400px;
+  border-radius: 10px;
+}
+.project-title {
   color: #00abf0;
 }
-.project-details{
-  margin:0px 0px 0px 10px;
-  padding:0px 0px 0px 10px;
+.project-details {
+  margin: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 10px;
 }
 /* button ***************************** */
-.button-primary{
+.button-primary {
   border: none;
-  width:8em;
-  padding:8px;
-  font-size:1em;
-  font-weight:bold;
-  background:linear-gradient(to right,rgb(0, 172, 240),rgba(0, 172, 240, 0.25));
-  border:2px solid white;
-  border-radius:4px;
+  width: 8em;
+  padding: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    rgb(0, 172, 240),
+    rgba(0, 172, 240, 0.25)
+  );
+  border: 2px solid white;
+  border-radius: 4px;
   color: white;
+}
+.button-primary:hover {
+  background: linear-gradient(to right, rgb(0, 172, 240), rgba(255, 0, 0, 0.6));
+  border: 2px solid white;
+  transition: 0.5s;
+}
+#btn1 {
+  margin-top: 2em;
+}
+#btn2 {
+  margin-top: 0.4em;
+}
+#btn3 {
+  margin-top: 1em;
+}
+/* ***************** *\
+        #MEDIA QUERY 
+\* ***************** */
 
-}
-.button-primary:hover{
-  background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.600)) ;
-  border:2px solid white;
-  transition:0.5s;
-}
-#btn1{
-  margin-top:2em;
-}
-#btn2{
-  margin-top:0.4em;
-}
-#btn3{
-  margin-top:1em;
+@media all and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar li {
+    display: block;
+    padding: 6px;
+  }
+  .hmenu {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+  }
+  .showmenu {
+    display: none;
+  }
 }
