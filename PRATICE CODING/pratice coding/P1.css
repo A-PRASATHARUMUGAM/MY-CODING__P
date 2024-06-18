@@ -1,37 +1,25 @@
-html {
-  font-size:100%;
-}
 * {
-  margin: 0%;
-  padding: 0%;
+  margin:0;
+  padding:0;
+  color: #edf0f1;
   box-sizing: border-box;
   font-variant: small-caps;
+
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:#24252a;
+
+}
+a {
   text-decoration: none;
 }
-body {
-  background-image: url(../image/homebg.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: black;
-  font-size:10px;
-  line-height: 1.6;
-}
-
-.header {
-  position: fixed;
-  left: 0%;
-  right: 0%;
+header {
   padding:10px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 172, 240, 0.6),
-    rgba(255, 0, 0, 0.6)
-  );
-  background-color: white;
+  background-color: rgba(211, 211, 211,0.25);
+  font-weight:600;
+  transition: all 0.3s ease 0s;
+
 }
 .navbar {
   display: flex;
@@ -39,68 +27,56 @@ body {
   justify-content: space-between;
 }
 .navbar li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0px 10px;
+  display:inline-block;
+  margin:5px;
+  padding:5px;
 }
-
-.navbar a {
-  font-size:2em;
-  color: #ededed;
-  border-radius: 2px;
-  padding: 8px;
-  font-weight: bold;
+.menu{
+  display: none;
 }
-ul a:hover {
-  background-color: #00abf0;
-  color: white;
-  transition: 0.5s;
+.menulist{
+  width: 20px;
+  height:2px;
+  background-color: black;
+  margin-bottom:4px; 
 }
-.logo {
-  font-family: monospace;
-  font-weight: bold;
-  color: white;
-  font-size:0.8rem;
+.log{
+  margin: 10px;
 }
-
-.hmenu-line{
+.navbar li a{
+  transition: all 0.3s ease 0s;
+}
+@media all and (max-width: 768px) {
+  .navbar li a{
     color:black;
-    background-color:black;
-    width:26px;
-    height:4px;
-    margin-bottom:4px;
+  }
+  .navbar{
+        flex-direction:column;
+        text-align: center;
+       
+  }
+  .showmenu1{
+    background-color: white;
+    width:auto;
+    padding:8px;
     border-radius:10px;
+  } 
+  .navbar li{
+    display:block;
     
-}
-.hmenu{
-    cursor: pointer;
-    display:none ;
-}
-.box-head {
-  height: 7.2em;
-}
-@media all and (max-width:650px){
-    .navbar{
-         flex-direction: column;
-         text-align: center;
-      
-    }
-    .navbar li{
-        display: block;
-        padding:6px;
+  }
+  
 
-    }
-    .hmenu{
-        display: block;
-        position:absolute;
-        top:20px;
-        left:20px;
-        
-    }
-    ul{
-        display: block;
-    }
-    .showmenu{
-     display: none;
-    }
+  .menu {
+    display:block;
+    position: absolute;
+    top:22px;
+    left:20px; 
+    cursor:pointer;
+    
+  }
+  .showmenu{
+    display:none;
+  }
+
 }
