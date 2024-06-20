@@ -150,14 +150,16 @@ else {
 let tamil=Number(prompt("Enter your  tamil mark"));
 let english=Number(prompt("Enter your  english mark"));
 let math=Number(prompt("Enter your  maths mark"));
+let science=Number(prompt("Enter your  science mark"));
+let social=Number(prompt("Enter your  social mark"));
 
-let total =tamil+english+math;
+let total =tamil+english+math+science+social;
 
-let avg=total/3;
+let avg=total/5;
 console.log("Total : "+total);
 console.log("Average: "+avg.toFixed(2));
 
-if(tamil>=35 && english>=35 &&  math>=35){ 
+if(tamil>=35 && english>=35 &&  math>=35 && science>=35 && social>=social){ 
 
     console.log("Result : Pass")
 
@@ -184,8 +186,8 @@ else {
    console.log("Result : Fail")
    console.log("Grade : No Grade ");
 }
+ 
 
- */
 /*
 
 let alpha=prompt("Enter your alphabetical ");

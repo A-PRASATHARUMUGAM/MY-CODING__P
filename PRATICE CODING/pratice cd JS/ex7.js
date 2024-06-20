@@ -22,7 +22,8 @@
 
         EXAMPLE----
 
-    
+    /* 
+
 
     let i=0;
 
@@ -32,7 +33,6 @@
         i++;
 
         }
- 
     */
    
 /*
@@ -78,6 +78,8 @@ for(let i=1;i<=5;i++){
     console.log(i)
 
 }
+  
+/* 
 // for loop to store the value in array 
 
 let arr=[];
