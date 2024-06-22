@@ -1,6 +1,45 @@
+// partical and Import
+@import "variable"; 
+@import "button";
+// variables
+$bgcolor:yellow;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: small-caps;
+    color:#edf1f2;
+}
+a{
+    text-decoration: none;
+}
 body{
-    background-color:yellow;
-    color:black;
-    font-size: large;
-    
+    background-color:#24252a;
+    font-size: 16x;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
+// Nested Rules
+nav{
+    background-color: gray;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        font-size:1.1rem;
+        font-weight: 600;
+    }
+    li{
+        display:inline-block;
+        margin-left: 20px;
+        font-size:1.2rem;
+        font-weight: 600;
+      
+      
+    }
+
 }

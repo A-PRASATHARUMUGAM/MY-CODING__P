@@ -1,0 +1,28 @@
+@import "variable";
+.btn-primary{
+border: none; 
+padding: 8px 20px;
+background-color:$primary-button;
+font-size: $font-size;
+color:white;
+font-weight: bold;
+border-radius: 4px;
+}
+.btn-success{
+border: none;
+padding: 8px 20px;
+background-color:$secondary-button;
+font-size: $font-size;
+color:white;
+font-weight: bold;
+border-radius: 4px;
+}
+.btn-danger{
+border: none;
+padding: 8px 20px;
+background-color:$danger-button;
+font-size: $font-size;
+color:white;
+font-weight: bold;
+border-radius: 4px;
+}

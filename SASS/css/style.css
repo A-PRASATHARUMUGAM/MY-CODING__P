@@ -1,7 +1,67 @@
+.btn-primary {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgb(54, 205, 255);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-success {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgb(48, 255, 48);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-danger {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgba(255, 0, 0, 0.754);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+  color: #edf1f2;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  background-color: yellow;
-  color: black;
-  font-size: large;
+  background-color: #24252a;
+  font-size: 16x;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+nav {
+  background-color: gray;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
