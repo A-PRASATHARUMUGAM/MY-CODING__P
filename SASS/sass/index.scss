@@ -1,6 +1,7 @@
 // partical and Import
 @import "variable"; 
 @import "button";
+@import "math";
 // variables
 $bgcolor:yellow;
 
@@ -16,9 +17,8 @@ a{
 }
 body{
     background-color:#24252a;
-    font-size: 16x;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-size: 16px;
 }
 
 
@@ -30,16 +30,27 @@ nav{
     align-items: center;
     justify-content: space-between;
     .logo{
-        font-size:1.1rem;
-        font-weight: 600;
+        font-size:1rem;
     }
     li{
         display:inline-block;
         margin-left: 20px;
-        font-size:1.2rem;
-        font-weight: 600;
-      
       
     }
 
+}
+h1{
+    font-size:$font-size-sm;
+}
+h2{
+   font-size: $font-size-md;
+}
+h3{
+    font-size: $font-size-lg;
+}
+h4{
+    font-size: $font-size-xl;
+}
+h5{
+    font-size: $font-size-xxl;
 }
