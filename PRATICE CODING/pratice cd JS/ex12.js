@@ -1,47 +1,26 @@
-
-
-// if(true){
-//     const x=9;
-//     console.log(x);
-// } 
-// // console.log(x);     
-
-
-// function alpha(){
-//     var z=9;
-//     console.log(z);
-// } 
-// alpha() 
-// console.log(z);   
+                        // Arbitrary Function in JavaScript  
 
 //  function sum(a,b){
     
 //     let total=0;
-//     // for(i=0;i<arguments.length;i++)
-//     //     {
-//     //         total+=arguments[i];
-//     //     }
-//    arguments.length;
-//    console.log(arguments)
+//     for(i=0;i<arguments.length;i++)
+//         {
+//             total+=arguments[i];
+//         }
+// return total
 //  }  
-// console.log(sum());
+// console.log(sum(11,2,21,1,1 ));
 
-function palindrom(string){
-    reverseString=string.split("").reverse().join('');
-    if(reverseString==string){
-        console.log("It is palindrom :"+string);
-    }
-    else{
 
-        console.log("It is not palindrom :"+string);
-    }
+                        // Function as Expression in JavaScript 
+
+// const add=function(a,b){
+//     console.log(a+b)
+//     return a+b;
+// }
+
+// add();
+// add(12,15);
+// console.log(add(12,15))
  
-}
-palindrom("madam")
-
-let first_name="prasath"
-c=[...first_name].reverse().join('');
-console.log(c)
-c=first_name.split('');
-console.log(c)
 
