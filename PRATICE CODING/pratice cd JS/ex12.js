@@ -22,5 +22,14 @@
 // add();
 // add(12,15);
 // console.log(add(12,15))
- 
 
+// Arrow function
+
+const add=()=>{
+
+    console.log("hello world")
+}
+
+ 
+ 
+add();
