@@ -1,8 +1,9 @@
-// partical and Import
+//2. partical and Import
 @import "variable"; 
 @import "button";
 @import "math";
-// variables
+
+//1. variables
 $bgcolor:yellow;
 
 *{
@@ -22,7 +23,7 @@ body{
 }
 
 
-// Nested Rules
+//3. Nested Rules
 nav{
     background-color: gray;
     padding:15px;
@@ -54,3 +55,6 @@ h4{
 h5{
     font-size: $font-size-xxl;
 }
+
+// 4. Go to math function in SASS
+
