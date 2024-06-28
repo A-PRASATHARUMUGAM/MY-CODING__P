@@ -1,0 +1,36 @@
+// Maps
+
+$colors:(
+"primary":blue,
+"success":green,
+"danger":red,
+);
+
+// map get      --It is use to call the map variable
+@debug map-get($colors ,"primary");
+@debug map-get($colors ,"success");
+@debug map-get($colors ,"danger");
+
+// map has key  --It is use to check the key in the map 
+@debug map-has-key($colors , "primary" );
+@debug map-has-key($colors , "secondary" );
+
+
+// map-remove   --It is use to remove the values
+@debug map-remove($colors,danger);
+
+// map-merge    --It is use to add the values
+@debug map-merge(
+    $colors , 
+    (
+        "secondary":lightblue,
+    )
+    );
+
+
+
+
+
+
+
+

@@ -83,14 +83,17 @@ h2 {
 
 h3 {
   font-size: 24px;
+  color: blue;
 }
 
 h4 {
   font-size: 32px;
+  color: green;
 }
 
 h5 {
   font-size: 48px;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

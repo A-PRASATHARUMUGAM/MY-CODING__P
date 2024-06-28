@@ -3,7 +3,7 @@
 @import "variable"; // 1. variable below
 @import "button"; //2. partical and Import
 @import "math"; // 4. Go to math function in SASS
-
+@import "map";  // 6. map it is best using orgainizing the properties
 //1. variables
 
 *{
@@ -42,16 +42,23 @@ nav{
 }
 h1{
     font-size:$font-size-sm;
+    
 }
 h2{
    font-size: $font-size-md;
 }
 h3{
     font-size: $font-size-lg;
+    color:map-get($colors ,"primary" );
 }
 h4{
     font-size: $font-size-xl;
+    color:map-get($colors ,"success" );
+
 }
 h5{
     font-size: $font-size-xxl;
+    color:map-get($colors ,"danger" );
+
+   
 }
