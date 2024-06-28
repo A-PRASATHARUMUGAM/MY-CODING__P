@@ -93,6 +93,38 @@ isPositive(1);
 isPositive(-4);
 
 
+// Question : get the values in array to sum the values using arrow function 
+let arr=[1,2,3,4,5];
+let sum=0;
+const sumofarry=(arr)=>{
+  for(let val of arr){
+    console.log(val);
+  }
+
+}
+sumofarry(arr);
+
+
+
+// Question 2 : find the area of the circle;
+
+const area=r=> Math.PI*r*r
+console.log(area(1)); 
+
+// Question 3 : Adding the Multiple numbers using arrow function
+
+let multsum=function(){
+let total=0;
+    for(i=0;i<arguments.length;i++){
+        total+=arguments[i];
+    }
+    return total;
+
+}
+console.log(multsum(12,12));
+
+
+
 
 
 
