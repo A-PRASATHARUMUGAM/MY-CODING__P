@@ -124,6 +124,12 @@ let total=0;
 console.log(multsum(12,12));
 
 
+//callback function
+const part1=(val)=>{
+    console.log(val);
+}
+const arr2=['prasath','sabari','priya'];
+  result=arr2.forEach(part1);
 
 
 
