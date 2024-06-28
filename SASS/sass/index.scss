@@ -1,10 +1,10 @@
-//2. partical and Import
-@import "variable"; 
-@import "button";
-@import "math";
+
+@use "sass:math"; // <---- 5. If you want to use the MATH function in scass you put in the root stylesheet
+@import "variable"; // 1. variable below
+@import "button"; //2. partical and Import
+@import "math"; // 4. Go to math function in SASS
 
 //1. variables
-$bgcolor:yellow;
 
 *{
     box-sizing: border-box;
@@ -55,6 +55,3 @@ h4{
 h5{
     font-size: $font-size-xxl;
 }
-
-// 4. Go to math function in SASS
-

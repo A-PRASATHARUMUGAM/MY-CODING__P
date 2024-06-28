@@ -36,6 +36,10 @@
            3rem = 48px                 3 * 16 = 48px        48px / 16 = 3 
 
         */
+/** Math Functions
+ --> if you want to use the math function put in root --> @use "sass:math" 
+**/
+/** more math command include the sass check to sass official page **/
 * {
   box-sizing: border-box;
   margin: 0;

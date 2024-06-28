@@ -16,5 +16,56 @@ $font-size-xl:2*16px;       //  32px    mobile responsive //768px
 $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
 
 
+//Calculating the pexcels 
+
+// @debug "It is print the terminal";
+// @debug 10px+2;
+// @debug 10px-2;
+// @debug 10px*2;
+// @debug math.div(10,2);          //divide only use to math function    
+
+
+/** Math Functions
+ --> if you want to use the math function put in root --> @use "sass:math" 
+**/
+
+
+// @debug math.max(10px,20px);
+// @debug math.min(10px,20px);
+// @debug math.ceil(4.5);
+// @debug math.floor(4.5);
+// @debug math.round(4.1);  
+// @debug math.round(4.5);
+// @debug math.abs(4px);
+// @debug math.abs(-4px);
+// @debug math.sqrt(100);
+// @debug math.pow(2,2);
+// @debug math.random();
+// @debug math.random(10);
+// @debug math.percentage(0.9);
+// @debug math.is-unitless(100);
+// @debug math.is-unitless(100px);
+// @debug math.unit(100);
+// @debug math.unit(100px);
+// @debug math.unit(10px * 10px);  
+// @debug math.compatible(10px , 10px);  
+// @debug math.compatible(10px , 1rem);  
+// @debug math.compatible(10px , 1em);   
+// @debug math.compatible(10cm , 3mm);  
+// @debug math.div(10,2);          //divide only use to math function    
+
+
+    /** more math command include the sass check to sass official page **/
+
+ 
+
+
+ 
+
+
+
+
+
+
 
 
