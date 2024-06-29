@@ -5,3 +5,4 @@ const menuList=document.querySelector(".navbar ul")
 menu2.addEventListener('click',()=>{
    menuList.classList.toggle("showmenu");
 });
+
