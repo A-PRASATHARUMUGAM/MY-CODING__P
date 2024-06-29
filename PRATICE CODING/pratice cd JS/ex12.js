@@ -1,45 +1,46 @@
-// //                         // Arbitrary Function in JavaScript  
+//                       // Arbitrary Function in JavaScript  
 
-// // //  function sum(a,b){
+//  function sum(){
     
-// // //     let total=0;
-// // //     for(i=0;i<arguments.length;i++)
-// // //         {
-// // //             total+=arguments[i];
-// // //         }
-// // // return total
-// // //  }  
-// // // console.log(sum(11,2,21,1,1 ));
+//     let total=0;
+//     for(i=0;i<arguments.length;i++)
+//         {
+//             total+=arguments[i];
+//         }                        
+//         console.log(arguments);              // arguments is not working in arrow function 
+
+// return total 
+//  }  
+// console.log(sum(11,2,21,1,1 ));
+
+//                          //  Function as Expression in JavaScript 
+
+// const add=function(a,b){
+//     console.log(a+b)
+//     return a+b;
+// }
+
+// add();
+// add(12,15);
+// console.log(add(12,15))
 
 
-// //                         // Function as Expression in JavaScript 
+//                                     // Arrow function
+// const add=()=>{
 
-// // // const add=function(a,b){
-// // //     console.log(a+b)
-// // //     return a+b;
-// // // }
+//     console.log("hello world")
+// }
 
-// // // add();
-// // // add(12,15);
-// // // console.log(add(12,15))
+// add();    
 
 
-// //                                     // Arrow function
-// // const add=()=>{
+//                                     // Default Parameter
 
-// //     console.log("hello world")
-// // }
-
-// // add();    
-
-
-// //                                     // Default Parameter
-
-// // function  my2funciton(name="sabari"){
-// //     console.log("hi",name);
-// //   }
-// //   my2funciton("prasath");
-// //   my2funciton();
+// function  my2funciton(name="sabari"){
+//     console.log("hi",name);
+//   }
+//   my2funciton("prasath");
+//   my2funciton();
 
 //                                     // Recursion - function calling itself 
 // function factorial(n){
@@ -77,6 +78,29 @@
 // }
 
 // arrowFunction();
+
+
+//                                 // Function before calling and after calling 
+
+// hell();        
+// function hell(){           //call  before and after
+//    console.log("normal function ")
+// }
+
+
+// hell2();           
+// const hell2=function(){   //call  after only 
+//     console.log("function expression ")
+//    }
+
+
+   
+// hell3();
+// const hell3=()=>{      //call and after only
+//     console.log("arrow function ")
+// }
+
+
 
 
 //                                  //   Pratice functions
@@ -123,17 +147,46 @@
 // }
 // console.log(multsum(12,12));
 
-
-// //callback function
-// const part1=(val)=>{
-//     console.log(val);
-// }
-// const arr2=['prasath','sabari','Abi'];
-//   result=arr2.forEach(part1);
+//                                               // callback function 
 
 
+// callback function    EXAMPLE--1
+const greetconsole=(name)=>{     //funciton create 1
+    console.log("hello ",name);
+}
 
 
+const greet=(callback)=>{       // callbacking the function 2
+    callback("prasath")
+}
+
+greet(greetconsole);          // the fucntion passed as arguments 3
+  
+
+
+//callback function     EXAMPLE--2
+greet(name=>{                 //passed the function definition 
+    console.log("hello2",name);
+}          
+);
+
+                                                        //forEach --method
+
+//forEach   -it is method
+console.log("**********using forEach***********")
+
+const arr2=['prasath','sabari','Abi'];
+ 
+ const prat=(val)=>{
+    console.log(val);
+ }
+ arr2.forEach(prat);   //the prat is callback
+
+ //for of   -it is looping
+ console.log("**********using for of ***********")
+ for(val2 of arr2){
+    console.log(val2);
+ }
 
 
   
