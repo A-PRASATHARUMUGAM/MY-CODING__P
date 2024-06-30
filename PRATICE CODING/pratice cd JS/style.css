@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  font-variant: small-caps;
+}
 body{
   background-color: lightblue;
   font-size:16px;
@@ -9,6 +13,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-bottom: 50vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* ex1             celsius to fahrenheit converter project-1 */
@@ -84,4 +89,29 @@ body{
 .ex8-box--container select{
   padding:6px;
   margin: 10px;
+}
+/* count the words project 15 */
+.contwordsbox{
+
+  border:1px solid black;
+  padding: 10px;
+  text-align: center;  
+}
+
+
+/* calculator   project 16  */
+
+
+.calbox{
+  border:1px solid black;
+  padding: 10px;
+  text-align: center;  
+  background-color:#25242a;
+  color:gainsboro;
+
+}
+.calbox ,input ,button{ 
+  padding: 10px;
+  margin:20px 10px;
+  font-weight: bold;
 }
