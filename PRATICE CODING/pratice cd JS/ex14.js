@@ -85,16 +85,7 @@
 // console.log(f)   
 
 
- 
 
-let lentext=document.querySelector('#lenbox').value; 
-let buttonlen=document.querySelector('#btnlen');
-
-buttonlen.addEventListener('click',()=>{
-     let words=lentext.length;
-     console.log(words)
-   let totallen=document.querySelector('#totalwords').innerHTML=words;
-});
 
 
      
