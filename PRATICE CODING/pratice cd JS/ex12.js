@@ -7,7 +7,7 @@
 //         {
 //             total+=arguments[i];
 //         }                        
-//         console.log(arguments);              // arguments is not working in arrow function 
+//         console.log(arguments);              // arguments keyword is not working in arrow function 
 
 // return total 
 //  }  
