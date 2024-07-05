@@ -18,7 +18,7 @@ body {
   background-position: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
   background-color: black;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -26,7 +26,7 @@ body {
   position: fixed;
   left:0;
   right:0;
-  padding: 10px;
+  padding:10px;
   background: linear-gradient(to right, rgba(0, 172, 240, 0.6), rgba(255, 0, 0, 0.6));
   transition: all 0.3s ease 0s;
 }
@@ -44,7 +44,6 @@ body {
 }
 
 .navbar a {
-  font-size: 2em;
   color: #ededed;
   border-radius: 2px;
   padding: 8px;
@@ -61,7 +60,7 @@ ul a:hover {
   font-family: monospace;
   font-weight: bold;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
 }
 
 .hmenu-line {
@@ -77,33 +76,36 @@ ul a:hover {
 }
 
 .box-head {
-  height:7.2em;
+  height:3.2rem;
 }
 
 /*Main Container */
 .main-container {
   display:flex;
-  justify-content:center;
-  align-items:center;
-  height: 89vh;
+  flex-direction: column;
 }
 
 .name {
   color:#00abf0;
   font-weight:bold;
-  font-size: 7em;
+  font-size:4.5rem;
 }
 
 .name-description {
   text-align:justify;
-  font-size: 4.2em;
-  width: 80vw;
+  font-size:3rem;
   color: white;
 }
 
 .button-container {
-  margin-top:5em;
-  margin-bottom:5em;
+  /* margin-top:5em;
+  margin-bottom:5em; */
+  margin:0 50px;
+
+
+}
+.name-container{  
+margin:120px 50px 10px;
 }
 
 .button-primary,
@@ -111,7 +113,7 @@ ul a:hover {
   padding: 14px;
   width: 8em;
   border: none;
-  font-size: 1.8em;
+  font-size:1.5rem;
   font-weight: bold;
   background:linear-gradient(to right, rgb(3, 184, 255), rgba(0, 172, 240, 0.05));
   border: 2px solid white;
@@ -151,6 +153,27 @@ img {
 }
 
 /* Media Querise */
+
+@media all and (max-width: 1024px){
+.name{
+font-size: 3rem;  
+}
+.name-description{
+font-size: 3rem;  
+}
+
+}
+
+@media all and (max-width: 768px){
+
+.name{
+font-size: 2rem;
+}
+.name-description{
+  font-size: 2rem;  
+  }
+}
+
 @media all and (max-width: 650px) {
   .navbar {
     flex-direction: column;
@@ -170,3 +193,44 @@ img {
     display: none;
   }
 }
+
+
+@media all and (max-width: 425px){
+  .name{
+  font-size: 1.5rem;
+  }
+  .name-description{
+    font-size: 1.5rem;  
+    }
+  
+  }
+
+  @media all and (max-width: 375px){
+ 
+    .name{
+    font-size: 1rem;
+    color: black;
+    } 
+    .name-description{
+      font-size: 1rem;  
+      }
+    
+    }
+    
+@media all and (max-width: 320px){
+ 
+.name{
+font-size: 0.75rem;
+color: black;
+} 
+
+.name-description{
+  font-size: 0.75rem;  
+  }
+
+}
+
+
+
+
+
