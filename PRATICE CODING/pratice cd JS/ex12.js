@@ -1,4 +1,34 @@
-//                       // Arbitrary Function in JavaScript  
+
+
+//             // ---- Types of Functions in JavaScirpt
+
+// Function Declaration
+function normalFunction(){
+    console.log("1. Function Declaration")
+}
+normalFunction();
+
+//Function as Expression (or) Variable Function
+const functionExpression=function(){
+    console.log("2. Function as Expression")
+}
+functionExpression();
+
+// Arrow Function
+const arrowFunction=()=>{
+    console.log("3. Arrow Function")
+}
+
+arrowFunction();
+
+// Function with return
+function functionWithReturn(){
+
+    return console.log("4. Function with return "); 
+}
+functionWithReturn(); 
+
+// Arbitrary Function   
 
 //  function sum(){
     
@@ -7,83 +37,18 @@
 //         {
 //             total+=arguments[i];
 //         }                        
-//         console.log(arguments);              // arguments keyword is not working in arrow function 
+//         console.log(arguments);   // arguments keyword is not working in arrow function 
 
-// return total 
+//         return total 
 //  }  
-// console.log(sum(11,2,21,1,1 ));
+// console.log(sum(10,10,10 ));
 
-//                          //  Function as Expression in JavaScript 
-
-// const add=function(a,b){
-//     console.log(a+b)
-//     return a+b;
-// }
-
-// add();
-// add(12,15);
-// console.log(add(12,15))
-
-
-//                                     // Arrow function
-// const add=()=>{
-
-//     console.log("hello world")
-// }
-
-// add();    
-
-
-//                                     // Default Parameter
-
-// function  my2funciton(name="sabari"){
-//     console.log("hi",name);
-//   }
-//   my2funciton("prasath");
-//   my2funciton();
-
-//                                     // Recursion - function calling itself 
-// function factorial(n){
-     
-//   if(n==1)
-//   return n*factorial(n-1);
-// }
-// factorial();
-
-//             // --------------------------- Types of Functions in JavaScirpt
-
-
-// // Function Declaration
-// function normalFunction(){
-//     console.log("1. Function Declaration")
-// }
-// normalFunction();
-
-// // Function with return
-// function functionWithReturn(){
-
-//     return console.log("2. Function with return "); 
-// }
-// functionWithReturn();   
-
-// //Function as Expression (or) Variable Function
-// const functionExpression=function(){
-//     console.log("3. Function as Expression")
-// }
-// functionExpression();
-
-// // Arrow Function
-// const arrowFunction=()=>{
-//     console.log("4. Arrow Function")
-// }
-
-// arrowFunction();
 
 
 //                                 // Function before calling and after calling 
-
-// hell();        
-// function hell(){           //call  before and after
+                                    //hoistion 
+// hell1();        
+// function hell1(){           //call  before and after
 //    console.log("normal function ")
 // }
 
@@ -100,54 +65,24 @@
 //     console.log("arrow function ")
 // }
 
+//                                     // Default Parameter
 
-
-
-//                                  //   Pratice functions
-
-// function isPositive(num){
-//     if(num>0){
-//         console.log("isPositive");
-//     }
-//     else{
-//         console.log("isNegative");
-//     }
-// }
-// isPositive(1);
-// isPositive(-4);
-
-
-// // Question : get the values in array to sum the values using arrow function 
-// let arr=[1,2,3,4,5];
-// let sum=0;
-// const sumofarry=(arr)=>{
-//   for(let val of arr){
-//     console.log(val);
+// function  my2funciton(name="sabari"){
+//     console.log("hi",name);
 //   }
+//   my2funciton("prasath");
+//   my2funciton();
 
+//                                     // Recursion --function calling itself 
+// function factorial(n){
+     
+//   if(n==1)
+//   return n*factorial(n-1);
 // }
-// sumofarry(arr);
+// factorial();
 
 
-
-// // Question 2 : find the area of the circle;
-
-// const area=r=> Math.PI*r*r
-// console.log(area(1)); 
-
-// // Question 3 : Adding the Multiple numbers using arrow function
-
-// let multsum=function(){
-// let total=0;
-//     for(i=0;i<arguments.length;i++){
-//         total+=arguments[i];
-//     }
-//     return total;
-
-// }
-// console.log(multsum(12,12));
-
-//                                               // callback function 
+//                              // callback function 
 
 
 // // callback function    EXAMPLE--1
@@ -170,7 +105,8 @@
 // }          
 // );
 
-//                                                         //forEach --method
+
+//                             //forEach --method
 
 // //forEach   -it is method
 // console.log("**********using forEach***********")
@@ -189,4 +125,59 @@
 //  }
 
 
-  
+
+//                                  //   Pratice functions
+
+// function isPositive(num){
+//     if(num>0){
+//         console.log("isPositive");
+//     }
+//     else{
+//         console.log("isNegative");
+//     }
+// }
+// isPositive(1);
+// isPositive(-4);
+
+
+// // Question : get the values in array to sum the values using arrow function 
+// let arr=[1,2,3,4,5];
+// let sum1=0;
+// const sumofarry=(arr)=>{
+//   for(let val of arr){
+//      sum1+=val;
+//   }
+// return sum1 
+// }
+// console.log(sumofarry(arr));
+   
+
+
+// // Question 2 : find the area of the circle;
+
+// const area=r=> Math.PI*r*r
+// console.log(area(1)); 
+
+// // Question 3 : Adding the Multiple numbers using arrow function
+
+// let multsum=function(){
+// let total=0;
+//     for(i=0;i<arguments.length;i++){
+//         total+=arguments[i];
+//     }
+//     return total;
+
+// }
+// console.log(multsum(12,12));
+
+function arg(){
+        let sum4=0;
+        for(i=0;1<arguments.length;i++){
+            sum4+=arguments[i];
+        }
+        return sum4
+}
+
+console.log(arg(1,2,3));    
+
+ 
