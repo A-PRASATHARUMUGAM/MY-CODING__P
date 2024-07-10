@@ -1,34 +1,33 @@
 
+//            // ---- Types of Functions in JavaScirpt
 
-//             // ---- Types of Functions in JavaScirpt
+// // Function Declaration
+// function normalFunction(){
+//     console.log("1. Function Declaration")
+// }
+// normalFunction();
 
-// Function Declaration
-function normalFunction(){
-    console.log("1. Function Declaration")
-}
-normalFunction();
+// //Function as Expression (or) Variable Function
+// const functionExpression=function(){
+//     console.log("2. Function as Expression")
+// }
+// functionExpression();
 
-//Function as Expression (or) Variable Function
-const functionExpression=function(){
-    console.log("2. Function as Expression")
-}
-functionExpression();
+// // Arrow Function
+// const arrowFunction=()=>{
+//     console.log("3. Arrow Function")
+// }
 
-// Arrow Function
-const arrowFunction=()=>{
-    console.log("3. Arrow Function")
-}
+// arrowFunction();
 
-arrowFunction();
+// // Function with return
+// function functionWithReturn(){
 
-// Function with return
-function functionWithReturn(){
+//     return console.log("4. Function with return "); 
+// }
+// functionWithReturn(); 
 
-    return console.log("4. Function with return "); 
-}
-functionWithReturn(); 
-
-// Arbitrary Function   
+// // Arbitrary Function   
 
 //  function sum(){
     
@@ -37,7 +36,7 @@ functionWithReturn();
 //         {
 //             total+=arguments[i];
 //         }                        
-//         console.log(arguments);   // arguments keyword is not working in arrow function 
+//         // console.log(arguments);   // arguments keyword is not working in arrow function 
 
 //         return total 
 //  }  
@@ -61,7 +60,7 @@ functionWithReturn();
 
    
 // hell3();
-// const hell3=()=>{      //call and after only
+// const hell3=()=>{      //call  after only
 //     console.log("arrow function ")
 // }
 
@@ -76,53 +75,55 @@ functionWithReturn();
 //                                     // Recursion --function calling itself 
 // function factorial(n){
      
-//   if(n==1)
+//   if(n==1){
+
+//       return 1
+//   }
 //   return n*factorial(n-1);
 // }
-// factorial();
-
+// console.log(factorial(5)); 
 
 //                              // callback function 
 
 
-// // callback function    EXAMPLE--1
-// const greetconsole=(name)=>{     //funciton create 1
-//     console.log("hello ",name);
-// }
+// callback function    EXAMPLE--1
+const greetconsole=(name)=>{     //funciton create 1
+    console.log("hello ",name);
+}
 
 
-// const greet=(callback)=>{       // callbacking the function 2
-//     callback("prasath")
-// }
+const greet=(callback)=>{       // callbacking the function 2
+    callback("prasath")
+}
 
-// greet(greetconsole);          // the fucntion passed as arguments 3
+greet(greetconsole);          // the fucntion passed as arguments 3
   
 
 
-// //callback function     EXAMPLE--2
-// greet(name=>{                 //passed the function definition 
-//     console.log("hello2",name);
-// }          
-// );
+//callback function     EXAMPLE--2
+greet(name=>{                 //passed the function definition 
+    console.log("hello2",name);
+}          
+);
 
 
 //                             //forEach --method
 
-// //forEach   -it is method
-// console.log("**********using forEach***********")
+//forEach   -it is method
+console.log("**********using forEach***********")
 
-// const arr2=['prasath','sabari','Abi'];
+const arr2=['prasath','sabari','Abi'];
  
-//  const prat=(val)=>{
-//     console.log(val);
-//  }
-//  arr2.forEach(prat);   //the prat is callback
+ const prat=(val)=>{
+    console.log(val);
+ }
+ arr2.forEach(prat);   //the prat is callback
 
-//  //for of   -it is looping
-//  console.log("**********using for of ***********")
-//  for(val2 of arr2){
-//     console.log(val2);
-//  }
+ //for of   -it is looping
+ console.log("**********using for of ***********")
+ for(val2 of arr2){
+    console.log(val2);
+ }
 
 
 
@@ -170,14 +171,15 @@ functionWithReturn();
 // }
 // console.log(multsum(12,12));
 
-function arg(){
-        let sum4=0;
-        for(i=0;1<arguments.length;i++){
-            sum4+=arguments[i];
-        }
-        return sum4
-}
+// function arg(){
+//         let sum4=0;
+//         for(i=0;1<arguments.length;i++){
+//             sum4+=arguments[i];
+//         }
+//         return sum4
+// }
 
-console.log(arg(1,2,3));    
+// console.log(arg(1,2,3));    
 
- 
+  
+
