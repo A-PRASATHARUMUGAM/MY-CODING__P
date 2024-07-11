@@ -86,6 +86,65 @@
 
 
 
+                                // Main Array Methods
+/*
+1.map
+2.filter
+3.reduce
+*/
+
+// 1.map    --> it is return value in array format
+
+let priceUSD=[20,12,18]
+
+let priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
+console.log(priceINR);        
+
+// Arrow Double line
+priceINR=priceUSD.map((x)=>{
+         return x*8 ;
+});  
+console.log(priceINR)
+
+// Using forEach one line     --> foreach is return undefined
+
+priceINR=priceUSD.forEach(val=>val * 8);   //--Arrow function is automatically return the values using one line
+console.log(priceINR);
+
+// Using forEach Double line
+priceINR=priceUSD.forEach((val)=>{
+         return val*8 ;                 
+});  
+console.log(priceINR);
+
+ 
+
+  
+ 
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
      
