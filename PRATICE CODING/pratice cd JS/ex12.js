@@ -117,21 +117,17 @@
 //     console.log("values :",values);
 //     console.log("index :",index);
 //     console.log("Array ",array)
-// }) 
+// }) ;
 
 // array.forEach((values,index,array)=>{
 //     array[index]=values.toUpperCase();
 // });
-// console.log(array)    
+// console.log(array);
+   
 
-//  //for of   -it is looping
-//  console.log("**********using for of ***********")
-//  for(val2 of array){
-//     console.log(val2);
-//  }
-
-
-
+ 
+  
+  
 //                                  //   Pratice functions
 
 // function isPositive(num){
@@ -188,17 +184,17 @@
 
 // // Question 4 : Find the Positive no and Negative no 
 
-  let  input=[1,2,3,4,-5,3,2,-2,-6]
- input.forEach((val,index,arr)=>{
-     if(0<val){
+//   let  input=[1,2,3,4,-5,3,2,-2,-6]
+//  input.forEach((val,index,arr)=>{
+//      if(0<val){
        
-          console.log(val) 
-     } 
-    else{
-        console.log(val)
+//           console.log(val) 
+//      } 
+//     else{
+//         console.log(val)
         
-    }
+//     }
 
- }); 
+//  }); 
 
 
