@@ -106,30 +106,29 @@
 // }          
 // );
 
+                           //forEach --method
 
-// //                             //forEach --method
+// //forEach   -it is method
+// console.log("**********using forEach***********")
 
-//forEach   -it is method
-console.log("**********using forEach***********")
+// let array=['prasath','sabari','laptop']
 
-let array=['prasath','sabari','laptop']
+// array.forEach((values,index,array)=>{
+//     console.log("values :",values);
+//     console.log("index :",index);
+//     console.log("Array ",array)
+// }) 
 
-array.forEach((values,index,array)=>{
-    console.log("values :",values);
-    console.log("index :",index);
-    console.log("Array ",array)
-}) 
+// array.forEach((values,index,array)=>{
+//     array[index]=values.toUpperCase();
+// });
+// console.log(array)    
 
-array.forEach((values,index,array)=>{
-    array[index]=values.toUpperCase();
-});
-console.log(array)    
-
- //for of   -it is looping
- console.log("**********using for of ***********")
- for(val2 of array){
-    console.log(val2);
- }
+//  //for of   -it is looping
+//  console.log("**********using for of ***********")
+//  for(val2 of array){
+//     console.log(val2);
+//  }
 
 
 
@@ -187,5 +186,19 @@ console.log(array)
 
 // console.log(arg(1,2,3));     
 
+// // Question 4 : Find the Positive no and Negative no 
 
-  
+  let  input=[1,2,3,4,-5,3,2,-2,-6]
+ input.forEach((val,index,arr)=>{
+     if(0<val){
+       
+          console.log(val) 
+     } 
+    else{
+        console.log(val)
+        
+    }
+
+ }); 
+
+
