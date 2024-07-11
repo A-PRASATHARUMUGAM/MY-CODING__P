@@ -86,42 +86,48 @@
 //                              // callback function 
 
 
-// callback function    EXAMPLE--1
-const greetconsole=(name)=>{     //funciton create 1
-    console.log("hello ",name);
-}
+// // callback function    EXAMPLE--1
+// const greetconsole=(name)=>{     //funciton create 1
+//     console.log("hello ",name);
+// }
 
 
-const greet=(callback)=>{       // callbacking the function 2
-    callback("prasath")
-}
+// const greet=(callback)=>{       // callbacking the function 2
+//     callback("prasath")
+// }
 
-greet(greetconsole);          // the fucntion passed as arguments 3
+// greet(greetconsole);          // the fucntion passed as arguments 3
   
 
 
-//callback function     EXAMPLE--2
-greet(name=>{                 //passed the function definition 
-    console.log("hello2",name);
-}          
-);
+// //callback function     EXAMPLE--2
+// greet(name=>{                 //passed the function definition 
+//     console.log("hello2",name);
+// }          
+// );
 
 
-//                             //forEach --method
+// //                             //forEach --method
 
 //forEach   -it is method
 console.log("**********using forEach***********")
 
-const arr2=['prasath','sabari','Abi'];
- 
- const prat=(val)=>{
-    console.log(val);
- }
- arr2.forEach(prat);   //the prat is callback
+let array=['prasath','sabari','laptop']
+
+array.forEach((values,index,array)=>{
+    console.log("values :",values);
+    console.log("index :",index);
+    console.log("Array ",array)
+}) 
+
+array.forEach((values,index,array)=>{
+    array[index]=values.toUpperCase();
+});
+console.log(array)    
 
  //for of   -it is looping
  console.log("**********using for of ***********")
- for(val2 of arr2){
+ for(val2 of array){
     console.log(val2);
  }
 
@@ -179,7 +185,7 @@ const arr2=['prasath','sabari','Abi'];
 //         return sum4
 // }
 
-// console.log(arg(1,2,3));    
+// console.log(arg(1,2,3));     
+
 
   
-
