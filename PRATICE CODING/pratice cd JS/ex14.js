@@ -93,41 +93,41 @@
 3.reduce
 */
 
-// 1.map    --> it is return value in array format
-
+// 1.map(Current_value,index,orginal_array)   --> it is return value in new array format
+//    1.simple transformation
 let priceUSD=[20,12,18]
 
 let priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
 console.log(priceINR);        
 
-// Arrow Double line
-priceINR=priceUSD.map((x)=>{
-         return x*8 ;
-});  
-console.log(priceINR)
+                    // Arrow Double line
+                    priceINR=priceUSD.map((x)=>{
+                             return x*8 ;
+                    });  
+                    console.log(priceINR)
 
 // Using forEach one line     --> foreach is return undefined
 
 priceINR=priceUSD.forEach(val=>val * 8);   //--Arrow function is automatically return the values using one line
 console.log(priceINR);
 
-// Using forEach Double line
-priceINR=priceUSD.forEach((val)=>{
-         return val*8 ;                 
-});  
-console.log(priceINR);
+                    // Using forEach Double line
+                    priceINR=priceUSD.forEach((val)=>{
+                             return val*8 ;                 
+                    });  
+                    console.log(priceINR);
 
  
-// 2. filter --it checking condition true then store value. it return in array format
+// 2. filter(Current_value,index,Original_array ) --it checking condition true then store value. it return in array format
 
 priceUSD=[20,12,18]
-priceINR=priceUSD.filter((val,el)=>{
+priceINR=priceUSD.filter((val)=>{
     return  val;
      
     });    
 console.log(priceINR);
 
-// 3. reduce 
+// 3. reduce (accumlater,element)
 priceUSD=[20,12,18]
 priceINR=priceUSD.reduce((val,el)=>{
         return val+el
@@ -136,25 +136,9 @@ console.log(priceINR);
 
 
 
- const sumarry=[20,18];
- total=0;
- sumarry.forEach(sumval=> 
-        {
-             total+=sumval
-        });
 
- console.log(total)
-
-
-
-
-
-
-
+  
  
-
-
-
 
 
 
