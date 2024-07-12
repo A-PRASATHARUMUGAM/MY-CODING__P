@@ -118,20 +118,40 @@ priceINR=priceUSD.forEach((val)=>{
 console.log(priceINR);
 
  
+// 2. filter --it checking condition true then store value. it return in array format
 
-  
+priceUSD=[20,12,18]
+priceINR=priceUSD.filter((val,el)=>{
+    return  val;
+     
+    });    
+console.log(priceINR);
+
+// 3. reduce 
+priceUSD=[20,12,18]
+priceINR=priceUSD.reduce((val,el)=>{
+        return val+el
+       });    
+console.log(priceINR); 
+
+
+
+ const sumarry=[20,18];
+ total=0;
+ sumarry.forEach(sumval=> 
+        {
+             total+=sumval
+        });
+
+ console.log(total)
+
+
+
+
+
+
+
  
-    
-
- 
-
-
-
-
-
-
-
-
 
 
 
