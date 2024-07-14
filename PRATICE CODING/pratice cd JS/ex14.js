@@ -23,67 +23,67 @@
 
 
 
-//                                 // Array Methods
+                                // Array Methods
 
-// arr=['p','r','a','s','a','t','h'];
+arr=['p','r','a','s','a','t','h'];
 
-// // push --> It add the element form Array End
-// arr.push('f');      //It is return new lenght
-// console.log("push :",arr);   
-
-
-
-// // pop --> It remove the element form Array End
-// arr.pop();       //It is return removed element
-// console.log("pop :",arr);
+// push --> It add the element form Array End
+arr.push('f');      //It is return new lenght
+console.log("push :",arr);    
 
 
-// //shift --> It is remove element from array start
-// arr.shift();        //It is return removed element  
-// console.log("shift :",arr);  
 
-// //unshift--> It is add the element form Array Start
-// arr.unshift("p")    //It is return new lenght
-// console.log("unshift :",arr);  
+// pop --> It remove the element form Array End
+arr.pop();       //It is return removed element
+console.log("pop :",arr);
+
+
+//shift --> It is remove element from array start
+arr.shift();        //It is return removed element  
+console.log("shift :",arr);  
+
+//unshift--> It is add the element form Array Start
+arr.unshift("p")    //It is return new lenght
+console.log("unshift :",arr);  
  
 
-// //delete  --> It is not using mostly because it is delete the element empty/undefined
-//  delete arr["2"];
-// console.log("delete :",arr);  
-//                                 //This Method to Insert, Delete, Replace
-//                                 //splice(from start index, delected count ,n no replace )
+//delete  --> It is not using mostly because it is delete the element empty/undefined
+ delete arr["2"];
+console.log("delete :",arr);  
+                                //This Method to Insert, Delete, Replace
+                                //splice(from start index, delected count ,n no replace )
 
-// //splice(from start index, deleted count) --> starting the element index to from number of count delete
-// arr.splice(1,2)
-// console.log("splice remove:",arr); 
+//splice(from start index, deleted count) --> starting the element index to from number of count delete
+arr.splice(1,2)
+console.log("splice remove:",arr); 
 
-// //splice(from start index, deleted count ,replace element "n")
-// arr.splice(0,2,'z','z');
-// console.log("splice replace :",arr); 
+//splice(from start index, deleted count ,replace element "n")
+arr.splice(0,2,'z','z');
+console.log("splice replace :",arr); 
 
-// //splice(from start index, deleted count ,n no replace element)
-// arr.splice(0,2,'p','r','a','s'); //It is return  remove value arry format
-// console.log("splice add:",arr); 
+//splice(from start index, deleted count ,n no replace element)
+arr.splice(0,2,'p','r','a','s'); //It is return  remove value arry format
+console.log("splice add:",arr); 
 
-
-
-// //slice (start,end)
-// arr.slice(1,2)
-// console.log("slice :",arr);  //ending index not included
-
-// //reverse --> It is reverse the Array
-// arr.reverse();
-// console.log("reverse :",arr);
-
-// //join --> It is join the string format in array 
-// let str=arr.join('');
-// console.log("join :",str);
  
 
-// //split     string  to array 
-// let fname="prasath";
-// f=fname.split(' ').reverse().join();
-// console.log(f)   
+//slice (start,end)
+arr.slice(1,2)
+console.log("slice :",arr);  //ending index not included
+
+//reverse --> It is reverse the Array
+arr.reverse();
+console.log("reverse :",arr);
+
+//join --> It is join the string format in array 
+let str=arr.join('');
+console.log("join :",str);
+ 
+
+//split     string  to array 
+let fname="prasath";
+f=fname.split(' ').reverse().join();
+console.log(f)   
 
 
 
@@ -91,7 +91,7 @@
 // /*
 // 1.map
 // 2.filter
-// 3.reduce
+// 3.reduce  
 // */
 
 // // 1.map(Current_value,index,orginal_array)   --> it is return value in new array format

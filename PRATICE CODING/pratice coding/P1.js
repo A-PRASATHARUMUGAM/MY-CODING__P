@@ -10,9 +10,10 @@
 
 //                               //  pratice Array Methods
 
-// //1. map(current-value,index,orgn-array)   --> it is return value in new array format
+//1. map(current-value,index,orgn-array)   --> it is return value in new array format
+
 // array=['mouse','keyboard','monitor']
-// let map =array.map((arrval,arrindex,orgarr)=>{
+// let map=array.map((arrval,arrindex,orgarr)=>{
 //   return orgarr[arrindex]=arrval.toUpperCase();      //return stored (new array format)
 // });
 // console.log("orginal array",array);
@@ -20,14 +21,14 @@
 
 //       //foreach(current-value,index,orgn-array)
 // array=['mouse','keyboard','monitor']
-// let foreach=array.forEach((arrval,arrindex,orgarr)=>{    
+// let foreach=array.forEach((arrval)=>{    
    
 //    return arrval.toUpperCase();                        //return not store (undefined)
 // }); 
 // console.log("forEach",foreach); 
 
 
-// //2. Practice Combining Array --> map
+//2. Practice Combining Array --> map
 // let fruits=['apple','lemon']
 // let color=['red','yellow']
  
@@ -61,15 +62,25 @@
  
 
 
-// //2.filter(current-value,index,orgn-array) 
-// //    P1
+//2.filter(current-value,index,orgn-array) 
+//P1
+
+
+
+
+
+
+
+
+
+// //    P2
 // totalusers=users.filter((usrvalu)=>{ 
 //          return usrvalu.age>20
   
 //       });
 // console.log(totalusers)
 
-// // P2
+// // P3
 // array=['cat','dog','elephant','fish','lion'];
 
 // animals=array.filter((anvalue,anindex,anarray)=>{
@@ -79,7 +90,7 @@
 // console.log(animals)   
 
 
-// //P3  filter the fruits
+// //P4  filter the fruits
 // array=[
 //    {fname:'apple',category:'fruits'},
 //    {fname:'carret',category:'vegitable'}
@@ -91,7 +102,7 @@
 // console.log(fruitsandveg); 
 
 
-// //P4  pick the start letter "e"
+// //P5  pick the start letter "e"
 // array=['cat','dog','elephant','fish','lion','Eagle'];
 
 // let startletter=array.filter(stvalue=>{
@@ -101,7 +112,7 @@
  
 // console.log(startletter)
 
-//  //P5 checking the product
+//  //P6 checking the product
 //  fruitsandveg=[
 //    {fname:'apple',category:'fruits',price:100},
 //    {fname:'carret',category:'vegitable',price:20},
@@ -114,12 +125,12 @@
 //       return fvalue.category==='fruits' && fvalue.price<100;
  
 //       })  
- 
+  
 // console.log(foodcart);      
 
 
 
-// P6 checking the books
+// P7 checking the books
 
 
 //3. reduce(function(accumulator,currentvalue,array){},initialize value);
@@ -133,3 +144,21 @@
 //   console.log(el);
 
 // })
+
+
+newarray=[1,2,3,4,5];
+arr=['p','r','a','s','a','t','h'];
+let arraydata=arr.map((currentvalue,index,array)=>{
+    return currentvalue;
+});
+console.log("o",arraydata);
+
+
+ arr.push('f')  // add back
+console.log(arr) 
+ arr.pop()      // rmv back
+console.log(arr) 
+ arr.shift()    // rmv start
+console.log(arr) 
+ arr.unshift('p') //add start
+console.log(arr)  
