@@ -125,11 +125,11 @@
 //3. reduce(function(accumulator,currentvalue,array){},initialize value);
 
 
-array=[1,2,3,4,5]
+// array=[1,2,3,4,5]
 
-reduce=array.reduce((accumulator,el)=>{
+// reduce=array.reduce((accumulator,el)=>{
   
-  // console.log(accumulator); 
-  console.log(el);
+//   // console.log(accumulator); 
+//   console.log(el);
 
-})
+// })

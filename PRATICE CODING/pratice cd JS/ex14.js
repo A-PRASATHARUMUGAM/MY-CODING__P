@@ -1,24 +1,24 @@
-//                             // Array In JavaScirpt
+                            // Array In JavaScirpt
 
-// // find the index in Array
-// let arr=['a','b','c','d'];
+// find the index in Array
+let arr=['a','b','c','d'];
 
-// console.log("indexvalue 1:",arr[1]);
+console.log("indexvalue 1:",arr[1]);
 
-// console.log("indexOf b :",arr.indexOf("b"));
+console.log("indexOf b :",arr.indexOf("b"));
 
-// // lastElement in Array
-// console.log("lastIndexOf d:",arr.lastIndexOf("d"));
+// lastElement in Array
+console.log("lastIndexOf d:",arr.lastIndexOf("d"));
+// other way 
+console.log("length -1 :",arr.length-1);
 
-// console.log("length -1 :",arr.length-1);
+//2d array
+let  arr2=['a','b','c','d',[3,4,5]];
+console.log("2d array",arr2[4][1])   //--> arr2[indexvalue][indexvalue 2nd array]
 
-// //2d array
-// let  arr2=['a','b','c','d',[3,4,5]];
-// console.log("2d array",arr2[4][1])   //--> arr2[indexvalue][indexvalue 2nd array]
-
-// //matrix form  array
-// let matrix=[[1, 2, 3],[4, 5, 6],[7, 8, 9]]
-// console.log("Matrxi form array",matrix[1][1]);
+//matrix form  array
+let matrix=[[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+console.log("Matrxi form array",matrix[1][1]);
 
 
 
@@ -87,52 +87,52 @@
 
 
                                 // Main Array Methods
-/*
-1.map
-2.filter
-3.reduce
-*/
+// /*
+// 1.map
+// 2.filter
+// 3.reduce
+// */
 
-// 1.map(Current_value,index,orginal_array)   --> it is return value in new array format
-//    1.simple transformation
-let priceUSD=[20,12,18]
+// // 1.map(Current_value,index,orginal_array)   --> it is return value in new array format
+// //    1.simple transformation
+// let priceUSD=[20,12,18]
 
-let priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
-console.log(priceINR);        
+// let priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
+// console.log(priceINR);        
 
-                    // Arrow Double line
-                    priceINR=priceUSD.map((x)=>{
-                             return x*8 ;
-                    });  
-                    console.log(priceINR)
+//                     // Arrow Double line
+//                     priceINR=priceUSD.map((x)=>{
+//                              return x*8 ;
+//                     });  
+//                     console.log(priceINR)
 
-// Using forEach one line     --> foreach is return undefined
+// // Using forEach one line     --> foreach is return undefined
 
-priceINR=priceUSD.forEach(val=>val * 8);   //--Arrow function is automatically return the values using one line
-console.log(priceINR);
+// priceINR=priceUSD.forEach(val=>val * 8);   //--Arrow function is automatically return the values using one line
+// console.log(priceINR);
 
-                    // Using forEach Double line
-                    priceINR=priceUSD.forEach((val)=>{
-                             return val*8 ;                 
-                    });  
-                    console.log(priceINR);
+//                     // Using forEach Double line
+//                     priceINR=priceUSD.forEach((val)=>{
+//                              return val*8 ;                 
+//                     });  
+//                     console.log(priceINR);
 
  
-// 2. filter(Current_value,index,Original_array ) --it checking condition true then store value. it return in array format
+// // 2. filter(Current_value,index,Original_array ) --it checking condition true then store value. it return in array format
 
-priceUSD=[20,12,18]
-priceINR=priceUSD.filter((val)=>{
-    return  val;
+// priceUSD=[20,12,18]
+// priceINR=priceUSD.filter((val)=>{
+//     return  val;
      
-    });    
-console.log(priceINR);
+//     });    
+// console.log(priceINR);
 
-// 3. reduce (accumlater,element)
-priceUSD=[20,12,18]
-priceINR=priceUSD.reduce((val,el)=>{
-        return val+el
-       });    
-console.log(priceINR); 
+// // 3. reduce (accumlater,element)
+// priceUSD=[20,12,18]
+// priceINR=priceUSD.reduce((val,el)=>{
+//         return val+el
+//        });    
+// console.log(priceINR); 
 
 
 
