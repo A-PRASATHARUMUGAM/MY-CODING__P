@@ -146,19 +146,12 @@
 // })
 
 
-newarray=[1,2,3,4,5];
-arr=['p','r','a','s','a','t','h'];
-let arraydata=arr.map((currentvalue,index,array)=>{
-    return currentvalue;
-});
-console.log("o",arraydata);
-
-
- arr.push('f')  // add back
-console.log(arr) 
- arr.pop()      // rmv back
-console.log(arr) 
- arr.shift()    // rmv start
-console.log(arr) 
- arr.unshift('p') //add start
-console.log(arr)  
+ 
+//  arr.push('f')  // add back
+// console.log(arr) 
+//  arr.pop()      // rmv back
+// console.log(arr) 
+//  arr.shift()    // rmv start
+// console.log(arr) 
+//  arr.unshift('p') //add start
+// console.log(arr)  
