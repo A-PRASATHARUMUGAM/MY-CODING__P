@@ -184,7 +184,7 @@
 // console.log("filter calculation",result); 
 
 
-// //3. reduce(function(accumulator,currentvalue,array){},initialize value);
+// //3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
 // console.log("                   reduce                                            calculation ")
 
 
@@ -408,7 +408,7 @@
 
 //                                                          //Example reduce
 
-// //3. reduce(function(accumulator,currentvalue,array){},initialize value);
+// //3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
 
 // // R-P1
 // priceUSD=[20,12,18]
@@ -417,14 +417,19 @@
 //        });    
 // console.log(priceINR); 
 
+//  R-P2 Flattening Array
+let nestedarray=[[1,2,3],[4,5,6],[7,8,9]];
+priceUSD=[20,12,18]
+flattedvalue=nestedarray.reduce(flattedfun)
 
+function flattedfun(acc,currvalue){
+     return acc.concat(currvalue);
+}
+console.log(flattedvalue); 
+  
+                                  
 
-
-                                
-
-
-
-
+ 
   
  
 
