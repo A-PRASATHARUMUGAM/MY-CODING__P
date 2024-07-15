@@ -1,4 +1,5 @@
-                            // Array In JavaScirpt
+                             //Array In JavaScirpt
+
 
 // // find the index in Array
 // let arr=['a','b','c','d'];
@@ -25,102 +26,316 @@
 
                                 // Array Methods
 
-arr=['p','r','a','s','a','t','h'];
 
-// push --> It add the element form Array End
-arr.push('f');      //It is return new lenght
-console.log("push :",arr);    
-
-
-
-// pop --> It remove the element form Array End
-arr.pop();       //It is return removed element
-console.log("pop :",arr);
+//  arr.push('f')  // add back
+// console.log(arr) 
+//  arr.pop()      // rmv back
+// console.log(arr) 
+//  arr.shift()    // rmv start
+// console.log(arr) 
+//  arr.unshift('p') //add start 
+// console.log(arr)  
 
 
-//shift --> It is remove element from array start
-arr.shift();        //It is return removed element  
-console.log("shift :",arr);  
+// arr=['p','r','a','s','a','t','h'];
 
-//unshift--> It is add the element form Array Start
-arr.unshift("p")    //It is return new lenght
-console.log("unshift :",arr);  
+// // push --> It add the element form Array End
+// arr.push('f');      //It is return new lenght
+// console.log("push :",arr);    
+
+
+
+// // pop --> It remove the element form Array End
+// arr.pop();       //It is return removed element
+// console.log("pop :",arr);
+
+
+// //shift --> It is remove element from array start
+// arr.shift();        //It is return removed element  
+// console.log("shift :",arr);  
+
+// //unshift--> It is add the element form Array Start
+// arr.unshift("p")    //It is return new lenght
+// console.log("unshift :",arr);  
  
 
-//delete  --> It is not using mostly because it is delete the element empty/undefined
- delete arr["2"];
-console.log("delete :",arr);  
-                                //This Method to Insert, Delete, Replace
-                                //splice(from start index, delected count ,n no replace )
+// //delete  --> It is not using mostly because it is delete the element empty/undefined
+//  delete arr["2"];
+// console.log("delete :",arr);  
+//                                 //This Method to Insert, Delete, Replace
+//                                 //splice(from start index, delected count ,n no replace )
 
-//splice(from start index, deleted count) --> starting the element index to from number of count delete
-arr.splice(1,2)
-console.log("splice remove:",arr); 
+// //splice(from start index, deleted count) --> starting the element index to from number of count delete
+// arr.splice(1,2)
+// console.log("splice remove:",arr); 
 
-//splice(from start index, deleted count ,replace element "n")
-arr.splice(0,2,'z','z');
-console.log("splice replace :",arr); 
+// //splice(from start index, deleted count ,replace element "n")
+// arr.splice(0,2,'z','z');
+// console.log("splice replace :",arr); 
 
-//splice(from start index, deleted count ,n no replace element)
-arr.splice(0,2,'p','r','a','s'); //It is return  remove value arry format
-console.log("splice add:",arr); 
+// //splice(from start index, deleted count ,n no replace element)
+// arr.splice(0,2,'p','r','a','s'); //It is return  remove value arry format
+// console.log("splice add:",arr); 
 
  
 
-//slice (start,end)
-arr.slice(1,2)
-console.log("slice :",arr);  //ending index not included
+// //slice (start,end)
+// arr.slice(1,2)
+// console.log("slice :",arr);  //ending index not included
 
-//reverse --> It is reverse the Array
-arr.reverse();
-console.log("reverse :",arr);
+// //reverse --> It is reverse the Array
+// arr.reverse();
+// console.log("reverse :",arr);
 
-//join --> It is join the string format in array 
-let str=arr.join('');
-console.log("join :",str);
+// //join --> It is join the string format in array 
+// let str=arr.join('');
+// console.log("join :",str);
  
 
-//split     string  to array 
-let fname="prasath";
-f=fname.split(' ').reverse().join();
-console.log(f)   
+// //split     string  to array 
+// let fname="prasath";
+// f=fname.split(' ').reverse().join();
+// console.log(f)   
 
 
 
-                                // Main Array Methods
-// /*
-// 1.map
-// 2.filter
-// 3.reduce  
-// */
+
+
+                        
+                                      // Finally Array Method 
+/*
+1.forEach()
+1.map()
+2.filter()
+3.reduce()
+4.find()
+5.sort()
+6.fill()
+ */
+
+
+// //1.forEach()                                   
+// console.log("                   foreach                     get value one bye and console.log");
+  
+//  array=[1,2,3,4,5,'string '] 
+//                 //Value retrun 
+//  result= array.forEach((arrayvalue)=>{
+//             return arrayvalue
+// }); 
+// console.log(result)
+ 
+
+//                 //Condition
+// array.forEach((arrayvalue)=>{
+//     console.log("Auto return",arrayvalue>3);
+// });  
+
+
+//                 //Calculation      
+// result=array.forEach((arrayvalue)=>{
+//     console.log("Auto return",arrayvalue+1);
+// });
+
+
+
+// // 1.map(current value,index,original array)
+// console.log("                   map                                 return value array format")
+
+//                 //Value retrun 
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue;
+// });
+// console.log("map return ",result);
+
+//                 //Condition
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue>3;
+// });
+// console.log("map condition",result); 
+
+//                 //Calculation      
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue+1;
+// });
+// console.log("map calculation",result); 
+
+
+// //2.filter(current value,index,original array)
+// console.log("                   filter                                    condition to filter")
+
+
+//                 //Value retrun 
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue;
+// });
+// console.log("filter return ",result);
+
+
+//                 //condition
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue>3;
+// });
+// console.log("filter condition",result);
+
+//                 //Calculation
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue+1 ;
+// });
+// console.log("filter calculation",result); 
+
+
+// //3. reduce(function(accumulator,currentvalue,array){},initialize value);
+// console.log("                   reduce                                            calculation ")
+
+
+//                 //Value retrun 
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue;
+// });
+// console.log("reduce return ",result);
+
+
+//                 //condition
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue >3;
+// });
+// console.log("reduce condition",result);
+ 
+//                 //Calculation
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue+1;
+// });
+// console.log("reduce calculation",result); 
+
+
+// //4. find()
+// console.log("                           find                   similar to filter but return one result");
+
+//                 //value return 
+// result=array.find((arrayvalue)=>{
+//     return arrayvalue;
+// });
+// console.log("find return ",result);
+
+
+//                 //condition
+// result=array.find((arrayvalue)=>{
+//     return arrayvalue>3;
+// });
+// console.log("find condition",result);
+
+//                 //Calculation
+// result=array.find((arrayvalue)=>{
+//     return arrayvalue+1; 
+// });
+// console.log("find calculation",result); 
+
+
+// //5. sort()
+// console.log("                            sort                                  ASCII  Value to sorting");
+
+
+//                 //first array sort 
+// array=[1,5,4,3,2,'a']
+// console.log("orginal array ",array)
+// result=array.sort()
+// console.log("sort first array ",result);
+
+// console.log("                       ")
+
+//                  //second array sort 
+// array=[65,78,12,34,4]
+// console.log("orginal array ",array)
+// result=array.sort()
+// console.log("sort second array",result);
+
+
+
+
+
+
+                                // EXAMPLE for Array main method
+
+// console.log("                                       ")
+// console.log("                                           EXAMPLE FOR ARRAY MAIN METHODS")
+
+
+// // 1.forEach one line     --> foreach is return undefined
+
+
+// //  FE-P1
+// let priceUSD=[20,12,18]
+// let priceINR=priceUSD.forEach(val=>val * 8);   
+// console.log(priceINR);
+
+//                     // Using forEach Double line
+//                     priceINR=priceUSD.forEach((val)=>{   // --> foreach is return undefined
+//                              return val*8 ;                 
+//                     });  
+//                     console.log(priceINR); 
+
+//                                                 //Example map
 
 // // 1.map(Current_value,index,orginal_array)   --> it is return value in new array format
-// //    1.simple transformation
-// let priceUSD=[20,12,18]
 
-// let priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
+
+// //  M-P1 Simple transformation
+// priceINR=priceUSD.map(x=>x * 8);   //--Arrow function is automatically return the values using one line
 // console.log(priceINR);        
 
 //                     // Arrow Double line
 //                     priceINR=priceUSD.map((x)=>{
 //                              return x*8 ;
 //                     });  
-//                     console.log(priceINR)
-
-// // Using forEach one line     --> foreach is return undefined
-
-// priceINR=priceUSD.forEach(val=>val * 8);   //--Arrow function is automatically return the values using one line
-// console.log(priceINR);
-
-//                     // Using forEach Double line
-//                     priceINR=priceUSD.forEach((val)=>{
-//                              return val*8 ;                 
-//                     });  
 //                     console.log(priceINR);
 
+// //  M-P2 Change toUpperCase to orginal array
+// array=['mouse','keyboard','monitor']
+// let map=array.map((arrval,arrindex,orgarr)=>{
+//   return orgarr[arrindex]=arrval.toUpperCase();      //return stored (new array format)
+// });
+// console.log("orginal array",array); 
+// console.log("map",map);
+
+
+// //  M-P3 Combining Array 
+// let fruits=['apple','lemon']
+// let color=['red','yellow']
  
+// fruitscolors=fruits.map((fvalue,findex)=>{
+//       return fvalue+"-"+color[findex];
+// }); 
+// console.log(fruitscolors) 
+
+
+// //  M-P4 Print Even Number
+// array=[1,2,3,4,5]
+
+// let evennum=array.map(eveval=>{
+//    return eveval%2==0;
+// });
+
+// console.log(evennum);
+
+
+// //  M-P5 Extracting  Array of Object
+// let users=[{fname:'prasath',age:20},{fname:'karthi',age:23}];
+
+// let totalusers=users.map((usrvalu)=>{
+     
+//        return { 
+//          fname:usrvalu.fname,
+//          age:usrvalu.age+1,
+//        };
+         
+//       });
+// console.log(totalusers)
+   
+//                                                 //Example filter
+
 // // 2. filter(Current_value,index,Original_array ) --it checking condition true then store value. it return in array format
 
+// //  F-P1
 // priceUSD=[20,12,18]
 // priceINR=priceUSD.filter((val)=>{
 //     return  val;
@@ -128,12 +343,84 @@ console.log(f)
 //     });    
 // console.log(priceINR);
 
-// // 3. reduce (accumlater,element)
+
+// //  F-P2 Greater than value
+// totalusers=users.filter((usrvalu)=>{ 
+//          return usrvalu.age>20
+  
+//       });
+// console.log(totalusers)
+
+
+// //  F-P3 Find the four letter word
+// array=['cat','dog','elephant','fish','lion'];
+
+// animals=array.filter((anvalue,anindex,anarray)=>{
+ 
+//    return  anvalue.length==4;  
+// })   
+// console.log(animals);  
+
+
+// //  F-P4  filter the fruits
+// array=[
+//    {fname:'apple',category:'fruits'},
+//    {fname:'carret',category:'vegitable'}
+// ]
+
+// let fruitsandveg=array.filter(fvalue=>{
+//          return fvalue.category==='vegitable';
+// })  
+// console.log(fruitsandveg); 
+
+
+// //  F-P5  pick the start letter "e"
+// array=['cat','dog','elephant','fish','lion','Eagle'];
+
+// let startletter=array.filter(stvalue=>{
+//     return stvalue.startsWith('e'); 
+ 
+// }) 
+ 
+// console.log(startletter);
+
+
+// //  F-P6 checking the product
+//  fruitsandveg=[
+//    {fname:'apple',category:'fruits',price:100},
+//    {fname:'carret',category:'vegitable',price:20},
+//    {fname:'staberry',category:'fruits',price:130},
+//    {fname:'lemon',category:'vegitable',price:10},
+//    {fname:'orange',category:'fruits',price:80},
+// ]
+
+// let foodcart=fruitsandveg.filter(fvalue=>{
+//       return fvalue.category==='fruits' && fvalue.price<100;
+ 
+//       })  
+  
+// console.log(foodcart);      
+
+// //  F-P7 checking the books
+
+// // bending
+
+
+//                                                          //Example reduce
+
+// //3. reduce(function(accumulator,currentvalue,array){},initialize value);
+
+// // R-P1
 // priceUSD=[20,12,18]
 // priceINR=priceUSD.reduce((val,el)=>{
 //         return val+el
 //        });    
 // console.log(priceINR); 
+
+
+
+
+                                
 
 
 
