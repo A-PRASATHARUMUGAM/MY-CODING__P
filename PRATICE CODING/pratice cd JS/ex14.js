@@ -506,60 +506,85 @@
 
 
  
-// Multiple ways to clone an array in JavaScript
+// // Multiple ways to clone an array in JavaScript
 
-// way-1
-console.log("       using ...spread operator to clone")
-orgarray=[1,2,3,4,5];
-// clonearray=orgarray;
-clonearray=[...orgarray];
-clonearray.push(4);
+// // way-1
+// console.log("       using ...spread operator to clone")
+// orgarray=[1,2,3,4,5];
+// // clonearray=orgarray;
+// clonearray=[...orgarray];
+// clonearray.push(4);
 
-console.log("org array",orgarray); 
-console.log("clone array",clonearray);
-
-
-// way-2
-console.log("                   using slice() to clone")
-
-clonearray=orgarray.slice();
-clonearray.push(4); 
-
-console.log("org array",orgarray); 
-console.log("clone array",clonearray);
-
-// way-3
-console.log("                   using concat() to clone")
-
-clonearray=[].concat(orgarray);
-clonearray.push(4);  
-
-console.log("org array",orgarray); 
-console.log("clone array",clonearray);
+// console.log("org array",orgarray); 
+// console.log("clone array",clonearray);
 
 
+// // way-2
+// console.log("                   using slice() to clone")
 
-// way-4
-console.log("       using Arrayfrom() method to clone")
+// clonearray=orgarray.slice();
+// clonearray.push(4); 
 
-clonearray=Array.from(orgarray);
-clonearray.push(4);  
+// console.log("org array",orgarray); 
+// console.log("clone array",clonearray);
 
-console.log("org array",orgarray); 
-console.log("clone array",clonearray);
+// // way-3
+// console.log("                   using concat() to clone")
+
+// clonearray=[].concat(orgarray);
+// clonearray.push(4);  
+
+// console.log("org array",orgarray); 
+// console.log("clone array",clonearray);
 
 
-// way-5
-console.log(" using JSON.prase() and JSON.stringify  method to clone")
 
-clonearray=JSON.parse(JSON.stringify(orgarray));
-clonearray.push(4);  
+// // way-4
+// console.log("       using Arrayfrom() method to clone")
+
+// clonearray=Array.from(orgarray);
+// clonearray.push(4);  
+
+// console.log("org array",orgarray); 
+// console.log("clone array",clonearray);
+
+
+// // way-5
+// console.log(" using JSON.prase() and JSON.stringify  method to clone")
+
+// clonearray=JSON.parse(JSON.stringify(orgarray));
+// clonearray.push(4);  
  
-console.log("org array",orgarray); 
-console.log("clone array",clonearray);
+// console.log("org array",orgarray); 
+// console.log("clone array",clonearray);
 
 
-// Use of const for Creating Arrays in JavaScript
+
+
+
+// // Use of const for Creating Arrays in JavaScript
+// console.log(" using const to modifing array not reassign")
+
+// const newarray=[1,2,3,4,5];
+// // newarray=[1] --->it is error because reassign
+// console.log("orgarray",newarray);
+// newarray.push(6);
+// console.log("Modified array",newarray);
+
+
+
+// // Use of const for Creating Object in JavaScript
+// console.log(" using const to modifing object not reassign")
+
+// const newuser={name:"prasath",age:20};
+// //  newuser={name:"sabari"}; --> it is error
+
+// console.log("org object",newuser)
+
+// newuser.name="sabari"; 
+// console.log("Modified object",newuser)
+
+ 
 
  
 
