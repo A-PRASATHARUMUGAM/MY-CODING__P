@@ -66,6 +66,16 @@
 // users.phno=9894629002;      //add new value
 // console.table(users)
 
+
+// //clone the object 
+// const obj1={a:1,b:2}
+// const obj2={c:3,d:4}
+// obj3=Object.assign({},obj1,obj2);  
+// obj3.b=7; 
+// console.log(obj3) 
+// console.log(obj1)
+// console.log(obj2)
+
   
 
 
