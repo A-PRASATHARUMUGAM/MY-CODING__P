@@ -417,28 +417,98 @@
 //        });    
 // console.log(priceINR); 
 
-//  R-P2 Flattening Array
-let nestedarray=[[1,2,3],[4,5,6],[7,8,9]];
-priceUSD=[20,12,18]
-flattedvalue=nestedarray.reduce(flattedfun)
+// //  R-P2 Flattening Array
+// let nestedarray=[[1,2,3],[4,5,6],[7,8,9]];
+// priceUSD=[20,12,18]
+// flattedvalue=nestedarray.reduce(flattedfun)
 
-function flattedfun(acc,currvalue){
-     return acc.concat(currvalue);
-}
-console.log(flattedvalue); 
-  
+// function flattedfun(acc,currvalue){
+//      return acc.concat(currvalue);
+// }
+// console.log(flattedvalue); 
+
+
+
+// //   R-P3 Find the color project 
+// let colors=['red','blue','green','orange','blue','red'];
+
+// totalcolors=colors.reduce((acc,currvalue)=>{
+//             if(currvalue in acc){
+//                acc[currvalue]++;
+//             }else{
+//                acc[currvalue]=1;
+//             }
+//             return acc 
+// },{});   
+
+// console.log(totalcolors)
+
                                   
+// //R-P4  Find the largest no 
+// array=[1,3,4,5,5,10];
 
+// largestvalue=array.reduce(largestno);
+// function largestno(acc,crrvalue){
+//      return Math.max(acc,crrvalue);
+// }
+// console.log(largestvalue); 
  
+
+
+
+//6. fill(value,start,end)
+
+// // FI-P1
+// array=[1,2,3,4,5,6];
+// arra.fill(20)
+// console.log(array);
+// //way 2 
+// array.fill(20,3,4); 
+// console.log(array); 
+
+
+// //7.every()  it is find the all element are true the condition is true like(AND)
+// array=[2,2,2,2,2,2]
+// result=array.every((value)=>{
+//      return value>1;
+
+// })
+// console.log("every :",result);
+
+
+// //every-P1
+// users=[
+//      {fname:"prasath",age:20},
+//      {fname:"sabari",age:35},
+//      {fname:"karthi",age:22},
+//      {fname:"subash",age:18},];
+
+// totaluser=users.every((userval)=>{
+//          return  userval.age>=18;
+    
+// });
+// console.log(totaluser);  
+
+
+
+
+
+
+// // 8.some() it is find the either one element is true the condition is true link(OR)
+
+// array=[1,1,1,2,1,1,1]
+// result=array.some((value)=>{
+//      return value>1;
   
+// })
+// console.log("some :",result);
+
+
+
  
 
 
-
-
-
-
-
+ 
 
 
 
