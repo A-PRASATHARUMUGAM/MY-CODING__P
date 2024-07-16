@@ -506,7 +506,60 @@
 
 
  
+// Multiple ways to clone an array in JavaScript
 
+// way-1
+console.log("       using ...spread operator to clone")
+orgarray=[1,2,3,4,5];
+// clonearray=orgarray;
+clonearray=[...orgarray];
+clonearray.push(4);
+
+console.log("org array",orgarray); 
+console.log("clone array",clonearray);
+
+
+// way-2
+console.log("                   using slice() to clone")
+
+clonearray=orgarray.slice();
+clonearray.push(4); 
+
+console.log("org array",orgarray); 
+console.log("clone array",clonearray);
+
+// way-3
+console.log("                   using concat() to clone")
+
+clonearray=[].concat(orgarray);
+clonearray.push(4);  
+
+console.log("org array",orgarray); 
+console.log("clone array",clonearray);
+
+
+
+// way-4
+console.log("       using Arrayfrom() method to clone")
+
+clonearray=Array.from(orgarray);
+clonearray.push(4);  
+
+console.log("org array",orgarray); 
+console.log("clone array",clonearray);
+
+
+// way-5
+console.log(" using JSON.prase() and JSON.stringify  method to clone")
+
+clonearray=JSON.parse(JSON.stringify(orgarray));
+clonearray.push(4);  
+ 
+console.log("org array",orgarray); 
+console.log("clone array",clonearray);
+
+
+// Use of const for Creating Arrays in JavaScript
 
  
 
