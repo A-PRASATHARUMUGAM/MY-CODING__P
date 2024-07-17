@@ -540,7 +540,7 @@
 
 
 // // way-4
-// console.log("       using Arrayfrom() method to clone")
+// console.log("       using Array.from() method to clone")
 
 // clonearray=Array.from(orgarray);
 // clonearray.push(4);  
@@ -568,7 +568,7 @@
 // const newarray=[1,2,3,4,5];
 // // newarray=[1] --->it is error because reassign
 // console.log("orgarray",newarray);
-// newarray.push(6);
+// newarray.push(6);  --> it is modified 
 // console.log("Modified array",newarray);
 
 

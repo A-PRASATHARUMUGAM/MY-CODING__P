@@ -1,6 +1,6 @@
 //                         // Object in JavaScript 
 
-// //Creating object 
+                            // //Creating object 
 // //  Type 1   --it is prefered 
 // let items={
 //    name:'phone',
@@ -20,7 +20,7 @@
 //  console.log(items2);
 //  console.table(items2);
 
-//  //Accessing Object
+                                        //  //Accessing Object
 
 // //1. dot notation  ---it is prefered
 // //accessing 
@@ -28,9 +28,11 @@
 // //change the value 
 // items.price=4500; 
 // console.log(items.price); 
+
 // //add the properties in object  way 1
 // items.model="z1"; 
 // console.log(items);
+
 
 // //2. square bracket notation 
 // // accessing 
@@ -38,15 +40,18 @@
 // //change the value 
 // items['price']=200; 
 // console.log(items['price']);
+
 // //add the properties in object way 2
 // items['weight']='2kg';
 // console.table(items); 
+
 
 // //3. variable to change the propertie value
 // let price="price"
 // items[price]=45;
 // console.log(items.price);
 // console.table(items);
+
 // // variable to add new the properties
 // let key="key"
 // items[key]=45;
@@ -54,8 +59,34 @@
 // console.table(items);
 
 
+
+                    //   function create inside the object
+
+newuser={
+    name:"prasath",
+    age:20, 
+    add: function(a,b){           //--> way 1 
+        console.log("add")
+      
+    },
+    sub(){
+        console.log("sub")       // way 2
+    }
+};
+
+newuser.add();
+newuser.sub(); 
+
+
+
+
+
+
+
+
+                    
 // // Example creating users object to accessing, modifing, add new value.
-// let users={
+// users={
 //     username:"prasath",
 //     id:1122,
 //     email:"prasatharumugam011@gmail.com"
