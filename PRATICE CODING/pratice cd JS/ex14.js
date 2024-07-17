@@ -114,7 +114,7 @@
  */
 
 
-// //1.forEach()                                   
+ // //1.forEach()                                   
 // console.log("                   foreach                     get value one bye and console.log");
   
 //  array=[1,2,3,4,5,'string '] 
@@ -467,7 +467,20 @@
 // console.log(array); 
 
 
-// //7.every()  it is find the all element are true the condition is true like(AND)
+
+//7.flat()  it is using to combain the 2d,3d imensional array
+
+// let array=[
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+// ]
+// result =array.flat()
+// console.log(result);
+
+
+
+// //8.every()  it is find the all element are true the condition is true like(AND)
 // array=[2,2,2,2,2,2]
 // result=array.every((value)=>{
 //      return value>1;
@@ -494,7 +507,7 @@
 
 
 
-// // 8.some() it is find the either one element is true the condition is true link(OR)
+// // 9.some() it is find the either one element is true the condition is true link(OR)
 
 // array=[1,1,1,2,1,1,1]
 // result=array.some((value)=>{
