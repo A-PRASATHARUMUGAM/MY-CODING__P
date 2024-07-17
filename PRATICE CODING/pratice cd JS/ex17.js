@@ -60,22 +60,22 @@
 
 
 
-                    //   function create inside the object
+//                     //   function create inside the object
 
-newuser={
-    name:"prasath",
-    age:20, 
-    add: function(a,b){           //--> way 1 
-        console.log("add")
+// newuser={
+//     name:"prasath",
+//     age:20, 
+//     add: function(a,b){           //--> way 1 
+//         console.log("add")
       
-    },
-    sub(){
-        console.log("sub")       // way 2
-    }
-};
+//     },
+//     sub(){
+//         console.log("sub")       // way 2
+//     }
+// };
 
-newuser.add();
-newuser.sub(); 
+// newuser.add();
+// newuser.sub(); 
 
 
 
