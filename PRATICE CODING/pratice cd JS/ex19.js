@@ -110,3 +110,108 @@ map2=new Map(arr2d);
 console.log(map2);
 console.log(...map2); //--> spread operation to convert Array
 
+
+
+
+                             // create object and classes
+
+let user={
+     name:'prasath',
+     age:20,
+     login(){
+        console.log("login",this.name)
+         
+     },
+     logOut(){
+        console.log("logout",this.name)
+     }
+}
+ 
+user.login()
+
+let user2={
+     name:'karthi',
+     age:35,
+     login(){
+        console.log("login",this.name)
+         
+     },
+     logOut(){
+        console.log("logout",this.name)
+     }
+}
+user2.login()
+
+//class : it is template of properties and methos 
+//        - Base class ,Parent class, super class
+console.log("                 class                  ")
+
+class User{   
+     static numberOfUsers=0;   //-->static variable
+    //instance variable
+    constructor(name,age){
+        this.name=name;
+        this.age=age;    
+        User.numberOfUsers++;
+    }
+    login(){
+        console.log("login",this.name)
+         
+     }
+     logOut(){
+        console.log("logout",this.name)
+     }
+     static staticMethod(){    //---> static Method
+    console.log("Total users ",User.numberOfUsers); 
+  }
+}
+
+let user1=new User('prasath',20);
+let user3=new User('karthi',30);
+let user4=new User('sabari',35);
+
+user1.login();  // not static method invoking to  object name - 1
+user3.logOut();
+
+// Static variable 
+console.log("Number of objects",User.numberOfUsers); 
+
+// Static Method
+User.staticMethod();  // static method invoking to class name - 2
+
+
+
+                                //inheritance : acquiring properties to base class
+                                //              - it is dervied class, child class, sub class 
+
+class paiduser extends User{  
+    constructor(name,age){
+        super(name,age);
+        this.storage='100gb';
+    }
+     message(){
+        console.log("you get 100gb memory")
+     }
+     
+     //overriding
+     login(){ 
+        console.log("login 2");
+        return this 
+     }
+} 
+
+let paidusers=new paiduser("sandy",21); 
+ 
+paidusers.login();  //--> base class method to access the derived class because using (inheritance)
+
+
+//method chaining 
+paidusers.login().message(); 
+
+
+
+// // wrapped class to store the premitive data types
+// let user5=new String("rray")
+// console.log(user5);
+// console.log(user5.length);
+
