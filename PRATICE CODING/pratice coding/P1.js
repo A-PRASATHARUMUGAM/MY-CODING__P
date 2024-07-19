@@ -27,5 +27,3 @@
 // myset.add(newvariable);
 // console.log(myset) 
 
-
-// Old type to create the class
