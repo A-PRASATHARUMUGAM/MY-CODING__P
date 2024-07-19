@@ -196,7 +196,7 @@ class paiduser extends User{
      //overriding
      login(){ 
         console.log("login 2");
-        return this 
+        return this //-- method chaining to use " return this 
      }
 } 
 

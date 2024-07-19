@@ -21,8 +21,11 @@
 // }
 //   console.log(map1) 
 
-let variable="1111"
- myset=new Set()
-let newvariable=Array.from(variable)
-myset.add(newvariable);
-console.log(myset) 
+// let variable="1111"
+//  myset=new Set()
+// let newvariable=Array.from(variable)
+// myset.add(newvariable);
+// console.log(myset) 
+
+
+// Old type to create the class
