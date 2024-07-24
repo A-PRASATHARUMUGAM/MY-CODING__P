@@ -35,11 +35,111 @@
            2rem = 32px                 2 * 16 = 32px        32px / 16 = 2 
            3rem = 48px                 3 * 16 = 48px        48px / 16 = 3 
 
-        */
+      */
 /** Math Functions
- --> if you want to use the math function put in root --> @use "sass:math" 
+              --> if you want to use the math function put in root --> @use "sass:math" 
 **/
 /** more math command include the sass check to sass official page **/
+.text-primary {
+  color: blue;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.text-secondary {
+  color: green;
+}
+
+.bg-secondary {
+  background-color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary-light1 {
+  color: #3333ff;
+}
+
+.bg-primary-dark1 {
+  background-color: #0000e0;
+}
+
+.text-primary-light2 {
+  color: #6666ff;
+}
+
+.bg-primary-dark2 {
+  background-color: #0000c2;
+}
+
+.text-primary-light3 {
+  color: #9999ff;
+}
+
+.bg-primary-dark3 {
+  background-color: #0000a3;
+}
+
+.text-secondary-light1 {
+  color: #00b300;
+}
+
+.bg-secondary-dark1 {
+  background-color: #006100;
+}
+
+.text-secondary-light2 {
+  color: #00e600;
+}
+
+.bg-secondary-dark2 {
+  background-color: #004300;
+}
+
+.text-secondary-light3 {
+  color: #1aff1a;
+}
+
+.bg-secondary-dark3 {
+  background-color: #002400;
+}
+
+.text-danger-light1 {
+  color: #ff3333;
+}
+
+.bg-danger-dark1 {
+  background-color: #e00000;
+}
+
+.text-danger-light2 {
+  color: #ff6666;
+}
+
+.bg-danger-dark2 {
+  background-color: #c20000;
+}
+
+.text-danger-light3 {
+  color: #ff9999;
+}
+
+.bg-danger-dark3 {
+  background-color: #a30000;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -94,6 +194,10 @@ h4 {
 h5 {
   font-size: 48px;
   color: red;
+}
+
+p {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

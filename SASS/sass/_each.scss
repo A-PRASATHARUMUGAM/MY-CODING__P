@@ -1,0 +1,44 @@
+$colors1:(
+    "primary":blue,
+    "secondary":green,
+    "danger":red,
+);  
+                                    // using @each 
+@each $key,$val in $colors1{
+
+@debug $key; 
+@debug $val; 
+@debug $colors1; 
+
+.text-#{$key}{
+ color:$val;
+}
+.bg-#{$key}{
+ background-color:$val;
+}
+} 
+
+.text-white{
+    color:white;
+}
+
+
+                                    // using @for loop 
+// color light and dark 
+@each $key,$val in $colors1{
+
+  @for $i from 1 through 3{
+    // Light
+     .text-#{$key}-light#{$i}{
+        color:lighten($val, $i*10);
+     }
+
+    //Dark 
+     .bg-#{$key}-dark#{$i}{
+        background-color:darken($val, $i*6);
+     }
+ 
+    }
+
+}
+    

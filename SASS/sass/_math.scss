@@ -1,3 +1,11 @@
+                           // Include Mobile Responsive 
+$base-value:16px; 
+$font-size-sm:0.75*16px;    //  12px    mobile responsive //320px
+$font-size-md:16px;         //  16px    mobile responsive //375px
+$font-size-lg:1.5*16px;     //  24px    mobile responsive //425px
+$font-size-xl:2*16px;       //  32px    mobile responsive //768px
+$font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
+
 
     /*        rem into px                   rem to px              px to rem 
             0.75rem = 12px              0.75 * 16 = 12px        12px / 16 = 0.75
@@ -6,27 +14,23 @@
                2rem = 32px                 2 * 16 = 32px        32px / 16 = 2 
                3rem = 48px                 3 * 16 = 48px        48px / 16 = 3 
 
-            */
-            
-$base-value:16px;
-$font-size-sm:0.75*16px;    //  12px    mobile responsive //320px
-$font-size-md:16px;         //  16px    mobile responsive //375px
-$font-size-lg:1.5*16px;     //  24px    mobile responsive //425px
-$font-size-xl:2*16px;       //  32px    mobile responsive //768px
-$font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
+          */
 
 
-//Calculating the pexcels 
+
+
+//Calculating the pexcels  
 
 // @debug "It is print the terminal";
 // @debug 10px+2;
 // @debug 10px-2;
 // @debug 10px*2;
+// // @debug 10px - 1rem; //not calculate the different units compare only revelent units
 // @debug math.div(10,2);          //divide only use to math function    
 
 
 /** Math Functions
- --> if you want to use the math function put in root --> @use "sass:math" 
+              --> if you want to use the math function put in root --> @use "sass:math" 
 **/
 
 
@@ -48,11 +52,12 @@ $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
 // @debug math.unit(100);
 // @debug math.unit(100px);
 // @debug math.unit(10px * 10px);  
-// @debug math.compatible(10px , 10px);  
+// @debug math.compatible(10px , 10px); //it compare to true or false
 // @debug math.compatible(10px , 1rem);  
 // @debug math.compatible(10px , 1em);   
-// @debug math.compatible(10cm , 3mm);  
-// @debug math.div(10,2);          //divide only use to math function    
+// @debug math.compatible(10cm , 3mm);   
+// @debug math.div(10,2);          //divide only use to math function
+// @debug 24/12;  //--> it is error
 
 
     /** more math command include the sass check to sass official page **/

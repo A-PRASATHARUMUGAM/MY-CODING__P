@@ -4,13 +4,14 @@
 @import "button"; //2. partical and Import
 @import "math"; // 4. Go to math function in SASS
 @import "map";  // 6. map it is best using orgainizing the properties
+@import "each";
 //1. variables
-
+ 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
-    font-variant: small-caps;
+    font-variant: small-caps;   
     color:#edf1f2;
 }
 a{
@@ -41,7 +42,7 @@ nav{
 
 }
 h1{
-    font-size:$font-size-sm;
+    font-size:$font-size-sm; 
     
 }
 h2{
@@ -61,4 +62,7 @@ h5{
     color:map-get($colors ,"danger" );
 
    
+}
+p{
+    padding:10px
 }
