@@ -6,9 +6,9 @@ $colors1:(
                                     // using @each 
 @each $key,$val in $colors1{
 
-@debug $key; 
-@debug $val; 
-@debug $colors1; 
+// @debug $key; 
+// @debug $val; 
+// @debug $colors1; 
 
 .text-#{$key}{
  color:$val;

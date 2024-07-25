@@ -17,6 +17,10 @@ $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
           */
 
 
+/**                                 Math Functions
+--> if you want to use the math function put in root --> @use "sass:math" 
+**/
+
 
 
 //Calculating the pexels  
@@ -28,10 +32,6 @@ $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
 // // @debug 10px - 1rem; //not calculate the different units compare only revelent units
 // @debug math.div(10,2);          //divide only use to math function    
 
-
-/** Math Functions
-              --> if you want to use the math function put in root --> @use "sass:math" 
-**/
 
 
 // @debug math.max(10px,20px);
@@ -47,15 +47,15 @@ $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
 // @debug math.random();
 // @debug math.random(10);
 // @debug math.percentage(0.9);
-// @debug math.is-unitless(100);
+// @debug math.is-unitless(100); 
 // @debug math.is-unitless(100px);
 // @debug math.unit(100);
 // @debug math.unit(100px);
 // @debug math.unit(10px * 10px);  
-// @debug math.compatible(10px , 10px); //it compare to true or false
-// @debug math.compatible(10px , 1rem);  
-// @debug math.compatible(10px , 1em);   
-// @debug math.compatible(10cm , 3mm);   
+@debug math.compatible(10px , 10px); //it compare to true or false
+@debug math.compatible(10px , 1rem);  
+@debug math.compatible(10px , 1em);   
+@debug math.compatible(10cm , 3mm);   
 // @debug math.div(10,2);          //divide only use to math function
 // @debug 24/12;  //--> it is error
 
