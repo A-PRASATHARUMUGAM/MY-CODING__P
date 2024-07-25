@@ -209,7 +209,7 @@
 // paidusers.login().message(); 
 
 
-// //4. Old type to create the class
+                                        // //4. Old type to create the class
 // function User2(name,age){
 //     this.name;
 //     this.age;
