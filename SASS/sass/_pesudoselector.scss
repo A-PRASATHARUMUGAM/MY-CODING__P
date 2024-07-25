@@ -1,0 +1,14 @@
+.para{
+    &:hover{
+        border: 1px solid yellow;
+    }
+p{
+
+    &:nth-child(2){
+        color: red;
+    }
+
+
+}  
+ 
+} 
