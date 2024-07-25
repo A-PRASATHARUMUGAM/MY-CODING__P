@@ -41,4 +41,75 @@ $colors1:(
     }
 
 }
-    
+
+                                //using if else
+/*
+                Comparison operator 
+Equal to ==
+not Equal to !=
+Greater than  >
+Lesser than  <
+Greater than equal >=
+Lesser than equal  <=
+
+                Logical operator
+and  
+or 
+not   
+
+*/ 
+
+
+$bgcolor:black;
+$text-color:yellowgreen;
+$width:200px;
+$true:true;
+$false:false;
+.box-if{            // include the class to create condition statement 
+background-color:$bgcolor;
+color:$text-color; 
+width:$width;
+
+ //using comparison operator
+@if($bgcolor==$text-color){ 
+    color:white;
+}@else{
+    color:yellow;
+} 
+
+
+@if($width<200px){
+    color:white;
+}@else{
+    color:red;
+
+}
+                    // using Logical operator
+
+                    // AND
+@if($width>=200px and $width>=200px){
+    color:orange;
+}@else{
+    color:aqua;
+}   
+                    // OR
+@if($width>=200px or $width>200px){
+    color:orange;
+}@else{
+    color:aqua;
+}   
+
+                    //NOT
+@if not $true{
+    //true
+     width: 300px;
+     background-color: white;
+     color:black;
+}@else{
+    //false
+        width: 200px;
+     background-color: black;
+     color:white;
+}   
+
+}

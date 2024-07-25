@@ -140,6 +140,34 @@
   background-color: #a30000;
 }
 
+/*
+                Comparison operator 
+Equal to ==
+not Equal to !=
+Greater than  >
+Lesser than  <
+Greater than equal >=
+Lesser than equal  <=
+
+                Logical operator
+and  
+or 
+not   
+
+*/
+.box-if {
+  background-color: black;
+  color: yellowgreen;
+  width: 200px;
+  color: yellow;
+  color: red;
+  color: orange;
+  color: orange;
+  width: 200px;
+  background-color: black;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -198,6 +226,12 @@ h5 {
 
 p {
   padding: 10px;
+}
+
+hr {
+  height: 10px;
+  background: linear-gradient(to right, white, #24252a);
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
