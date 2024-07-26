@@ -221,9 +221,11 @@
 // users.login(); 
  
 
-
-
 // // wrapped class to store the premitive data types
 // let user5=new String("rray")
 // console.log(user5);
 // console.log(user5.length);
+
+
+//5. Bending set and get 
+//6. import and export  
