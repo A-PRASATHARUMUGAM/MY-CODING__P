@@ -1,3 +1,4 @@
+                            //converting rem to pixels
 @function rem-to-px($rem){
     @return ($rem*16)+px;
 }
@@ -7,3 +8,13 @@
   font-size:rem-to-px(2);  
 }  
 
+
+                             //converting pixels to rem
+
+@function px-to-rem($rem){
+    @return calc($rem/16)+px;   //--> Using calc function inline 
+}
+
+.function-p2{
+  font-size:px-to-rem(2);  
+}  
