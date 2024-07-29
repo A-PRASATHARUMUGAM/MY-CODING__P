@@ -1,0 +1,9 @@
+@function rem-to-px($rem){
+    @return ($rem*16)+px;
+}
+
+
+.function-p{
+  font-size:rem-to-px(2);  
+}  
+

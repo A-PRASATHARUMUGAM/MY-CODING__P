@@ -212,6 +212,10 @@ not
   background: radial-gradient(yellow, blue);
 }
 
+.function-p {
+  font-size: 32px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
