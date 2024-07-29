@@ -175,11 +175,47 @@ not
   color: red;
 }
 
+.box1 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.box2 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background: radial-gradient(rgb(2, 2, 176) 10px, white 20px);
+  position: relative;
+}
+
+.box3 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background-color: green;
+}
+
+.box4 {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(yellow, blue);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-variant: small-caps;
   color: #edf1f2;
 }
 
@@ -240,6 +276,10 @@ hr {
   height: 10px;
   background: linear-gradient(to right, white, #24252a);
   border: none;
+}
+
+.headings {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

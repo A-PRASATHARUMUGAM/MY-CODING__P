@@ -52,14 +52,14 @@ $font-size-xxl:3*16px;      //  48px    mobile responsive //1024px
 // @debug math.unit(100);
 // @debug math.unit(100px);
 // @debug math.unit(10px * 10px);  
-@debug math.compatible(10px , 10px); //it compare to true or false
-@debug math.compatible(10px , 1rem);  
-@debug math.compatible(10px , 1em);   
-@debug math.compatible(10cm , 3mm);   
+// @debug math.compatible(10px , 10px); //it compare to true or false
+// @debug math.compatible(10px , 1rem);  
+// @debug math.compatible(10px , 1em);   
+// @debug math.compatible(10cm , 3mm);   
 // @debug math.div(10,2);          //divide only use to math function
 // @debug 24/12;  //--> it is error
 
-
+ 
     /** more math command include the sass check to sass official page **/
 
  

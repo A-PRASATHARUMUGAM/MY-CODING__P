@@ -1,0 +1,38 @@
+                                    //Type-- 1
+
+@mixin borders{
+    display:inline-block;
+    border:1px solid white;
+    background-color: orangered;
+    width: 50px; 
+    height: 50px;
+    margin: 0; 
+}
+
+.box1{
+@include borders();
+}
+.box2{
+    @include borders();
+    background:radial-gradient(rgb(2, 2, 176) 10px ,white 20px); 
+    position:relative;
+} 
+
+.box3{ 
+    @include borders();
+    background-color: green;
+
+}
+
+                                    //Type -- 2
+
+@mixin gradientColor($gcolor1,$gcolor2){
+    background:radial-gradient($gcolor1,$gcolor2);
+}
+.box4{
+    display: block; 
+    width:50px;
+    height:50px;   
+    @include gradientColor(yellow ,blue ) ;
+} 
+ 

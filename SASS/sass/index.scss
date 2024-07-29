@@ -6,14 +6,14 @@
 @import "map";  // 6. map it is best using orgainizing the properties
 @import "each"; // 7. @each , @for ,@if @else include the file
 @import "pesudoselector"; //8. using selector in SASS
-@import "mixin"
+@import "mixin"; //9.@mixin and @include it like function 
+                    //10.User Define function Bending
 //1. variables
  
-*{
+*{ 
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
-    font-variant: small-caps;   
     color:#edf1f2;
 }
 a{
@@ -77,5 +77,6 @@ hr{
 }
 
 
- 
-   
+.headings{
+    text-align: center;
+} 
