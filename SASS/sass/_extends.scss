@@ -1,0 +1,12 @@
+%padding{
+    padding:10px;
+    border:1px solid white;
+    font-size:16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align:center;
+}
+
+.extends-para{
+    @extend %padding; 
+} 
