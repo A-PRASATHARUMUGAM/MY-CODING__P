@@ -11,10 +11,11 @@
 
                              //converting pixels to rem
 
-@function px-to-rem($rem){
-    @return calc($rem/16)+px;   //--> Using calc function inline 
+@function px-to-rem($px){
+    @return calc($px/16)+rem;   //--> Using calc function inline 
 }
 
 .function-p2{
-  font-size:px-to-rem(2);  
-}  
+  font-size:px-to-rem(32);  
+}   
+ 

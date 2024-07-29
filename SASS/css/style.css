@@ -216,6 +216,10 @@ not
   font-size: 32px;
 }
 
+.function-p2 {
+  font-size: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
