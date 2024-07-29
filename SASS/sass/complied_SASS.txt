@@ -1,0 +1,5 @@
+
+1. "start": "sass ./sass/index.scss ./css/style.css --watch"
+
+2. "start": "sass ./sass/index.scss ./css/style.css && sass ./sass/index.scss ./css/style.min.css --style=compressed --no-source-map --watch"
+
