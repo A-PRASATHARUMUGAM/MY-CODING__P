@@ -1,47 +1,59 @@
                             //Document Object Model (DOM)
 
-                            //1. Document Properties
-//getElementById();
-let element1=document.getElementById("para-id");
-console.log(element1);  
+//                             //1. Document Properties  (Getting Element)
+// //getElementById();
+// let element1=document.getElementById("para-id");
+// console.log(element1);  
 
-//getElementByClassName(); 
-element1=document.getElementsByClassName("para-class");
-console.log(element1);
+// //getElementsByClassName(); 
+// element1=document.getElementsByClassName("para-class");
+// console.log(element1);
 
-//getElementByName();
-element1=document.getElementsByName("para-name");
-console.log(element1);
+// //getElementByName();
+// element1=document.getElementsByName("para-name");
+// console.log(element1);
 
-//getElementByTagName();
-element1=document.getElementsByTagName("p");
-console.log(element1);
+// //getElementByTagName();
+// element1=document.getElementsByTagName("p");
+// console.log(element1);
 
-//querySelector();
-//tagname to select
-element1=document.querySelector("p");  
-console.log(element1);
-//id to select
-element1=document.querySelector("#para-id"); 
-console.log(element1); 
-//class to select
-element1=document.querySelector(".para-class"); 
-console.log(element1);
-
-
-//querySelectorAll();
-//tagname to select
-element1=document.querySelectorAll("p");  
-console.log(element1);
-//id to select
-element1=document.querySelectorAll("#para-id"); 
-console.log(element1); 
-//class to select
-element1=document.querySelectorAll(".para-class"); 
-console.log(element1);
+// //querySelector();
+// //tagname to select
+// element1=document.querySelector("p");  
+// console.log(element1);
+// //id to select
+// element1=document.querySelector("#para-id"); 
+// console.log(element1); 
+// //class to select
+// element1=document.querySelector(".para-class"); 
+// console.log(element1);
 
 
-                        //2. Element Properties
+// //querySelectorAll();
+// //tagname to select
+// element1=document.querySelectorAll("p");  
+// console.log(element1);
+// //id to select
+// element1=document.querySelectorAll("#para-id"); 
+// console.log(element1); 
+// //class to select
+// element1=document.querySelectorAll(".para-class"); 
+// console.log(element1);
+
+
+//                                         // Getting Child Element  
+
+// parentElement=document.getElementById("parentElement");
+// childElement=parentElement.children;
+// for(i=0;i<childElement.length;i++){
+//     element=childElement[i];
+//     console.log(element);
+
+// } 
+
+
+
+                                //2. Element Properties
 
 // const element=document.getElementById("dom-message");
 // console.log(element.innerText); 
@@ -58,7 +70,7 @@ console.log(element1);
 // element.innerText =".innertext";   
 // console.log(element.innerText);
 
-// //textContent -4   it is similar to innerHTML
+// //textContent -4   it is similar to innerText
 //  element.textContent=".textcontent";
 // console.log(element.textContent);
 
