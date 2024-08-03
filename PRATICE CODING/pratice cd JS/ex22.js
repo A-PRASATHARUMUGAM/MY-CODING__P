@@ -41,24 +41,51 @@
 // console.log(element1);
 
 
-                                        // 2.Getting Child Element  
+//                                         // 2.Getting Child Element  
 
-parentElement=document.getElementById("parentElement");
-childElement=parentElement.children;
-for(i=0;i<childElement.length;i++){
-    element=childElement[i];
-    console.log(element);
+// parentElement=document.getElementById("parentElement");
+// childElement=parentElement.children;
+// for(i=0;i<childElement.length;i++){
+//     element=childElement[i];
+//     console.log(element);
 
-} 
-                                        //3. Getting Parent element
-childElement=document.querySelector("#parentElement > p")
-parentElement=childElement.parentElement;
-console.log(parentElement);
-                                        //4.Create the Element
-let para=document.createElement("p")
-para.textContent="create Element to js"
-document.getElementById("parentElement").appendChild(para);
+// } 
+//                                         //3. Getting Parent element
+// childElement=document.querySelector("#parentElement > p")
+// parentElement=childElement.parentElement;
+// console.log(parentElement);
+//                                         //4.Create the Element
+// let para=document.createElement("p") //create the element 
+// para.textContent="create Element to js"
+// document.getElementById("parentElement").appendChild(para); //add the Element 
 
+//                                         //5. Remove the Element 
+// let RemoveElement=document.getElementById("RemoveElement");
+// RemoveElement.addEventListener('click',(event)=>{
+//     parentElement.remove();
+//     console.log("removed Parent Element");
+   
+// });
+
+//                                     //6. Get Attribute of Element
+// parentElement=document.getElementById("parentElement");
+// Attribute=parentElement.getAttribute("data-info")
+// console.log(Attribute); 
+
+//                                     //7.Create or Update Attribute
+// //Create
+// parentElement=document.getElementById("parentElement");
+// setAttribute=parentElement.setAttribute('name','add new attribute');
+// //Modify
+// parentElement=document.querySelector(".parentElement");
+// setAttribute=parentElement.setAttribute('class','modify attribute');
+
+
+
+
+
+
+ 
 
 
 
@@ -80,8 +107,8 @@ document.getElementById("parentElement").appendChild(para);
 // element.innerText =".innertext";   
 // console.log(element.innerText);
 
-// //textContent -4   it is similar to innerText
-//  element.textContent=".textcontent";
+// //textContent -4   it is use to create new Element at a time to use this textContent
+//  element.textContent=".textContent";
 // console.log(element.textContent);
 
 // //className -5  it is used to add the new class in to the element and print the class
