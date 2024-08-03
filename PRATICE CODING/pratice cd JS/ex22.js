@@ -41,15 +41,25 @@
 // console.log(element1);
 
 
-//                                         // Getting Child Element  
+                                        // 2.Getting Child Element  
 
-// parentElement=document.getElementById("parentElement");
-// childElement=parentElement.children;
-// for(i=0;i<childElement.length;i++){
-//     element=childElement[i];
-//     console.log(element);
+parentElement=document.getElementById("parentElement");
+childElement=parentElement.children;
+for(i=0;i<childElement.length;i++){
+    element=childElement[i];
+    console.log(element);
 
-// } 
+} 
+                                        //3. Getting Parent element
+childElement=document.querySelector("#parentElement > p")
+parentElement=childElement.parentElement;
+console.log(parentElement);
+                                        //4.Create the Element
+let para=document.createElement("p")
+para.textContent="create Element to js"
+document.getElementById("parentElement").appendChild(para);
+
+
 
 
 
