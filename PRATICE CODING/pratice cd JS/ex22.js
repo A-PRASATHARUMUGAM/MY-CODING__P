@@ -80,41 +80,31 @@
 // parentElement=document.querySelector(".parentElement");
 // setAttribute=parentElement.setAttribute('class','modify attribute');
 
-                                    //8. EventHandling and Mouse Events
-//using  'click' event             
-const clickmebutton=document.querySelector("#clickmebutton")
-const changetext=document.querySelector("#changetext")
-clickmebutton.addEventListener('click',()=>{
-          changetext.textContent="Text is changed"
-})
-// using 'mouseover' event
-changetext.addEventListener('mouseover',()=>{
-          changetext.textContent="Text is changed to mouseover"
-})
-// using 'mouseout' event
-changetext.addEventListener('mouseout',()=>{
-          changetext.textContent="Text is changed mouseout"
-})
-//using 'keydown' event  -->key press
-let inputfield=document.querySelector("#textinput");
- inputfield.addEventListener('keydown',(event)=>{
-     console.log("keydown happend",event.key);
- })
-//using 'keydown' event  -->key release
-inputfield=document.querySelector("#textinput");
- inputfield.addEventListener('keyup',(event)=>{
-     console.log("keyup happend",event.key);
- })
-
-
-
-
-
-
-
- 
-
-
+//                                     //8. EventHandling and Mouse Events
+// //using  'click' event             
+// const clickmebutton=document.querySelector("#clickmebutton")
+// const changetext=document.querySelector("#changetext")
+// clickmebutton.addEventListener('click',()=>{
+//           changetext.textContent="Text is changed"
+// })
+// // using 'mouseover' event
+// changetext.addEventListener('mouseover',()=>{
+//           changetext.textContent="Text is changed to mouseover"
+// })
+// // using 'mouseout' event
+// changetext.addEventListener('mouseout',()=>{
+//           changetext.textContent="Text is changed mouseout"
+// })
+// //using 'keydown' event  -->key press
+// let inputfield=document.querySelector("#textinput");
+//  inputfield.addEventListener('keydown',(event)=>{
+//      console.log("keydown happend",event.key);
+//  })
+// //using 'keydown' event  -->key release
+// inputfield=document.querySelector("#textinput");
+//  inputfield.addEventListener('keyup',(event)=>{
+//      console.log("keyup happend",event.key);
+//  })
 
 
                                 //2. Element Properties
