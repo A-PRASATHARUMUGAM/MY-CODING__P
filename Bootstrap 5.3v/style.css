@@ -24,6 +24,8 @@ Extra extra large	    xxl	    ≥1400px
 .container-fluid	100%	  100%	   100%	    100%	100%	 100%
 
 */
+
+/* Using custom CSS  */
 .my-custom-class{
     border:1px solid black;
     background:lavender;
@@ -31,8 +33,51 @@ Extra extra large	    xxl	    ≥1400px
 }
 
 .btn-primary{ 
-    background: #25242a;
-     color:white !important;
+     background: #25242a;
+     color:white !important; /* Override the Bootstrap primary color*/
      border: none;
-     text-align: center;
+     text-align:center; 
+     padding:10px;
+     border-radius:6px;
+     font:small-caps bold 16px /1.3 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+} 
+
+.btn-primary:hover{
+    background:red; 
+}
+
+/* 3. Grid System */
+[class^=row]{
+    border: 1px solid black;
+    background-color: lightcoral;
+    padding:10px;
+
+
+}
+[class^=col]{
+    border: 1px solid black;
+    background-color: lightblue;
+    text-align:center;
+    padding: 10px;
+}
+
+
+
+@media all and (max-width:768px){
+  
+   .col-md-6{
+      background:yellow;
+   }
+    
+}
+
+@media all and (min-width:768px){
+
+    
+        .col-md-6{
+            background:violet;
+         }
+          
+    
 } 
