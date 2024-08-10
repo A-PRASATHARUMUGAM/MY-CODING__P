@@ -29,11 +29,10 @@ Extra extra large	    xxl	    ≥1400px
 .my-custom-class{
     border:1px solid black;
     background:lavender !important;
-
-
 }
 .my-custom-class p{
     color:black;
+
 
 }
 
