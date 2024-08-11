@@ -67,6 +67,10 @@ li{
 .logo{
   position: absolute;
   left:15px;
+  font-size:18px;
+  font-weight: bold;
+  color: #203760;
+
 }
 .menu{
   display: none;
@@ -78,24 +82,7 @@ li{
   background-color:#000000;
 }
 
-/* 
-.navbar a {
-  margin: 0px 30px;
-  padding: 10px;
-  border-radius: 3px;
 
- 
-} */
-/* 
-*/
-/* 
-.logo {
-  position: absolute;
-  left: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #203760;
-} */
 
 #boxhead {
   height: 48px;
@@ -178,26 +165,48 @@ section {
   .header{
     width:50vw;
     height:100vh;
-
-
+    transition:0.52s;
+    position: absolute;
+    left:-400px;
+  }
+  .showmenu{
+    left:0;
+    transition: 0.5s;
   }
   .navbar{
     display:block;
+
   }
   .nav-container{
     display:block;
     text-align: center; 
   }
   .logo{
-    position: relative;
-    left: 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:15px;
+    padding:10px;
+    position: static;
+
   }
   
    .menu{
-    display: block;
-     position: absolute;
      cursor:pointer;
+     display: block;
+     position: absolute;
+     top:10px;
+     left:10px;
    } 
+
+
+   .close-btn{
+    width:15px;
+    height:15px;
+    background-color: black;
+    border-radius:50%;
+    cursor: pointer;
+   
+   }
 
 }
