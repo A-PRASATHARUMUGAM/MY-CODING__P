@@ -34,10 +34,10 @@ body {
 }
 /* Navigation Bar */
 .header{
-  border:1px solid black;
   position: fixed;
   left:0;
   right:0;
+  background-color: rgba(255, 255, 255, 0.793);
 }
 li{
   list-style: none;
@@ -53,7 +53,17 @@ li{
 }
 .nav-container li{
   margin:10px 15px ;
+ 
 }
+.nav-container a{
+  font-weight: bold;
+  color: #203760;
+}
+.nav-container a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  transition: 0.5s;
+} 
 .logo{
   position: absolute;
   left:15px;
@@ -69,30 +79,15 @@ li{
 }
 
 /* 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0%;
-  right: 0%;
-  padding: 15px;
-  background-color: rgba(1, 1, 1, 0.1);
-} */
-/* 
 .navbar a {
   margin: 0px 30px;
   padding: 10px;
   border-radius: 3px;
-  font-weight: bold;
-  color: #203760;
+
+ 
 } */
 /* 
-.navbar a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  transition: 0.5s;
-} */
+*/
 /* 
 .logo {
   position: absolute;
