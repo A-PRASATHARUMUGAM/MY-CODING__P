@@ -1,4 +1,4 @@
-                            //Document Object Model (DOM)
+                            // Document Object Model (DOM)
 
 //                             //1. Document Properties  (Getting Element)
 // //getElementById();
@@ -48,9 +48,9 @@
 // for(i=0;i<childElement.length;i++){
 //     element=childElement[i];
 //     console.log(element);
-
 // } 
-//                                         //3. Getting Parent element
+
+//                                         // 3. Getting Parent element
 // childElement=document.querySelector("#parentElement > p")
 // parentElement=childElement.parentElement;
 // console.log(parentElement);
@@ -100,11 +100,26 @@
 //  inputfield.addEventListener('keydown',(event)=>{
 //      console.log("keydown happend",event.key);
 //  })
-// //using 'keydown' event  -->key release
+// //using 'keyup' event  -->key release
 // inputfield=document.querySelector("#textinput");
 //  inputfield.addEventListener('keyup',(event)=>{
 //      console.log("keyup happend",event.key);
 //  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                                 //2. Element Properties
