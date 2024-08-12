@@ -8,11 +8,31 @@
 6. Digital Clock                    06:29:26 
 7. Currency Converter               07:36:47 
 8. Todo List                        07:59:03  
-9. Solving Leetcode Questions       04:24:17                
+9. Solving Leetcode Questions       04:24:17    
+10.Try Array, Binary, String in LeetsCode            
 
+
+            JavaScript ES6+ Features in DOM
+-----------------------------------------------
+1. let, const:          Block-scoped variable declarations.
+2. Arrow Functions:     Shorter syntax for functions, useful in event handlers.
+3. Template Literals:   Allows embedding expressions within string literals.
+5. Promises:            Manages asynchronous operations, often used with fetch for AJAX.
+6. Fetch API:           A modern replacement for XMLHttpRequest, used for making network requests.
+7. Async/Await:         Simplifies working with promises, allowing for more readable asynchronous code.
+8. Class:               Provides a simpler and clearer syntax for creating objects and managing inheritance.
+9. Spread Operator:     Expands an array or object into individual elements, useful in DOM manipulations.
+10. Rest Parameters:    Allows a function to accept an indefinite number of arguments as an array
 
 
             Program-Question-Logic
---------------------------------------------
-1. Try Array, Binary, String in LeetsCode
+----------------------------------------------
+1.  Array =[5,8,10,7,9,11]
+    --Repalce 7,9,11 with 17,19,111
+    --Insert 100 in the beginning
+    --Insert 200 in last but one position
+    --Add 1000 at the end
+    --Inset 0 in the middle. Use arr.length to find middle position
 2. 
+
+
