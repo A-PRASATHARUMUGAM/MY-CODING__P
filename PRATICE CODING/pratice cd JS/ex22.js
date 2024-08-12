@@ -106,7 +106,16 @@
 //      console.log("keyup happend",event.key);
 //  })
 
+                                    // 9. window properties
 
+/* 
+1.window.title
+2.window.find()
+
+
+
+
+*/
 
 
 
