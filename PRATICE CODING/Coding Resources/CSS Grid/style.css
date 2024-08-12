@@ -1,0 +1,230 @@
+body {
+    background: #24252a;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size:3rem;
+    color:red;
+    text-align: center;
+}
+
+.box-container {
+    border: 2px solid white;
+    color: black;
+    font-weight: bold;
+    display: grid;
+
+
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+}
+
+.box-1 {
+    background: lightblue;
+}
+
+.box-2 {
+    background: lightcoral;
+}
+
+.box-3 {
+    background: lightcyan;
+}
+
+.box-4 {
+    background: lightslategray;
+}
+
+.box-5 {
+    background: lightgray;
+}
+
+.box-6 {
+    background: lightgreen;
+}
+
+.box-7 {
+    background: lightsalmon;
+}
+
+.box-8 {
+    background: lightseagreen;
+}
+
+.box-9 {
+    background: lightgoldenrodyellow;
+}
+
+.box-10 {
+    background: lightskyblue;
+}
+                                        /* Starting  Grid  */
+
+/* CSS Grid 
+
+                       --- Container Properties ---
+
+    1.display
+
+    2.grid-template-columns
+    3.grid-template-rows
+    4.grid-template     <-- grid-template-rows / grid-template-colums
+
+    5.column-gap
+    6.row-gap
+    7.gap               <-- row-gap + column-gap
+
+    8.justify-items     <-- align items Horizontal line
+    9.align-items       <-- align items Vertical  line
+    10.place-items      <-- ( align-items + justify-items )
+
+  
+    11.justify-content  <-- align content Horizontal line
+    12.align-content    <-- align content Vertical line
+    13.place-content    <-- ( aling-content + justify-content )
+
+    14.grid-auto-columns
+    15.grid-auto-rows
+    16.grid-auto-flow
+    
+                        --- Item Properties ---
+                        
+    17.grid-column-start
+    18.grid-column-end
+    19.grid-column
+    20.grid-row-start
+    21.grid-row-end
+    22.grid-row
+    23.justify-self
+    24.align-slef
+    25.place-self
+    26.grid-template-areas
+    27.grid-area
+
+
+
+ */
+.container {
+    display: grid;
+}
+
+.container2 {
+    display: inline-grid;
+}
+
+.container3 {
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+
+    /* repeat(times to repeat, value size)  */
+    grid-template-columns: repeat(5, 200px);   
+    grid-template-columns: repeat(5, 200px) 400px;
+
+     /* Using Fraction Unit */
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-columns: repeat(3,1fr); 
+
+    /* minmax(minium, maximum) */
+    grid-template-columns: repeat(3,minmax(100px,1fr)); 
+}
+
+.container4{
+    height: 600px;
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px 100px 100px ;
+    grid-template-rows: repeat(5,100px);
+    grid-template-rows: repeat(4,100px) 300px;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(5,1fr); 
+    grid-template-rows: repeat(5,minmax(50px,1fr)); 
+}
+.container5{
+    /* gird-template-rows / grid-template-columns = grid-template */
+    grid-template: repeat(5,1fr)/repeat(2,1fr);
+}
+
+.container6{
+    grid-template: 1fr 1fr/1fr 1fr ;
+    column-gap:10px;
+    row-gap: 10px;
+    /* row-gap + column-gap = gap */
+    gap:10px 10px;
+    gap:20px;
+
+}
+
+.container7{
+   grid-template:repeat(2,1fr)/repeat(2,1fr);
+   /* align items horizontal line */
+   justify-items: stretch;
+   justify-items: start;
+   justify-items: center;
+   justify-items: end;
+   /* Go to Developer tools Layout click the grid overlays */
+}
+
+.container8{
+    height:500px;
+    grid-template:repeat(3,1fr)/repeat(2,1fr);
+
+    /* align items vertical line */
+    align-items:stretch;
+    align-items:start;
+    align-items: center;
+    align-items: end;
+   /* Go to Developer tools Layout click the grid overlays */
+}
+
+.container9{
+    height:500px;
+    grid-template:repeat(3,1fr)/repeat(2,1fr); 
+
+    /* align-items + justify-items = place-items*/
+    place-items:center end ;
+    place-items:center  ;
+
+}
+
+.container10{
+    height:500px;
+    grid-template:repeat(2,100px)/repeat(3,100px); 
+    /* align content horizontal line */
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
+
+}
+
+.container11{
+    height:500px;
+    grid-template:repeat(2,100px)/repeat(3,100px);
+    /* align content vertical line */
+    align-content:start;
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: space-between;
+
+}
+
+.container12{
+    height:600px;
+    grid-template:repeat(2,100px)/repeat(3,100px);
+    /* aling-content + justify-content = place-content*/
+    place-content:center end ;
+    place-content:center;
+
+}
