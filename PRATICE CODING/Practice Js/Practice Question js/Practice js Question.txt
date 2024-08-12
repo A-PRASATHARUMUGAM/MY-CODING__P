@@ -1,0 +1,18 @@
+    Project-Logic                Video Time
+-------------------------------------------
+1. Length Converter                 50
+2. FD intrest Calculator            1:49:42
+3. Citystatus Tool                  2:01:21
+4. Color Flippers  	                02:51:05
+5. Calculator without button        own
+6. Digital Clock                    06:29:26 
+7. Currency Converter               07:36:47 
+8. Todo List                        07:59:03  
+9. Solving Leetcode Questions       04:24:17                
+
+
+
+            Program-Question-Logic
+--------------------------------------------
+1. Try Array, Binary, String in LeetsCode
+2. 
