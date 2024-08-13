@@ -100,20 +100,21 @@ h2{
                              --- Item Properties ---
     
     
-    17.grid-column-start
-    18.grid-column-end
-    19.grid-column
+    17.grid-column-start   <-- start value to span column
+    18.grid-column-end     <-- end value to stop span 
+    19.grid-column         <-- ( grid-column-start + grid-column-end )
 
-    20.grid-row-start
-    21.grid-row-end
-    22.grid-row
+    20.grid-row-start       <-- start value to span row
+    21.grid-row-end         <-- end value to stop span 
+    22.grid-row             <-- ( grid-row-start + grid-row-end )
 
-    23.justify-self
-    24.align-self
-    25.place-self
+    23.justify-self  <-- it working to inside align-items 
+    24.align-self  
+    25.place-self   <-- ( align-self + justify-self )
 
     26.grid-template-areas
     27.grid-area
+
 
 
 
@@ -220,7 +221,9 @@ h2{
     justify-content: space-evenly;
     justify-content: space-between;
 
+   
 }
+
 
 .container12{
     height:500px;
@@ -264,42 +267,99 @@ h2{
 
 /***************** Item Properties ******************/
 
-
+                    /* grid-column-start */
 .container17{
-    
+    grid-template:repeat(3,200px)/repeat(3,200px);
+ 
+} 
+.container17 .box-1{
+    grid-column-start:1;   
+    grid-column-end:3;   
 }
 
+                    /* grid-column-end */
 .container18{
-
+    grid-template:repeat(3,200px)/repeat(3,200px);
+}
+.container18 .box-1{
+    grid-column-start:2;   
+    grid-column-end:4;  
 }
 
+                    /* grid-column*/
 .container19{
-
+    grid-template:repeat(3,200px)/repeat(3,200px);
+}
+.container19 .box-1{
+        /* grid-row-start + grid-row-end = grid-row */
+    grid-column:1/span 3;
 }
 
+
+                    /* grid-row-start */
 .container20{
-
+    grid-template:repeat(3,200px)/repeat(3,200px);
+ 
+} 
+.container20 .box-1{
+    grid-row-start:1;   
+    grid-row-end:3;   
 }
 
+                    /* grid-row-end */
 .container21{
-
+    grid-template:repeat(3,200px)/repeat(3,200px);
+}
+.container21 .box-1{
+    grid-row-start:2;   
+    grid-row-end:4;  
 }
 
+                    /* grid-row */
 .container22{
-
+    grid-template:repeat(3,200px)/repeat(3,200px);
+}
+.container22 .box-1{
+    /* grid-row-start + grid-row-end = grid-row */
+    grid-row:1 / span 2;
+    grid-row:span 2;
 }
 
+
+
+                /* justify-self */
 .container23{
+    grid-template:repeat(2,100px)/repeat(2,1fr);
+}
+.container23 .box-1{
+    justify-self: stretch;
+    justify-self: end;
+    justify-self: center;
+    justify-self:start;
     
 }
-
+                /* align-self */
 .container24{
+    grid-template:repeat(2,100px)/repeat(2,1fr);
+
+}
+.container24 .box-1{
+    align-self: stretch;
+    align-self: end;
+    align-self: center;
+    align-self: start;;
     
+}
+                /* place-self */
+.container25{
+    grid-template:repeat(2,100px)/repeat(2,1fr);
+
+}
+.container25 .box-1{
+ /* align-self + justify-self */
+    place-self:center center;
 }
 
-.container25{
-    
-}
 .container26{
 
 }
