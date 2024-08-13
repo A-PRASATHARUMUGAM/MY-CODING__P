@@ -77,51 +77,54 @@ h2{
 
     2.grid-template-columns
     3.grid-template-rows
-    4.grid-template     <-- grid-template-rows / grid-template-colums
+    4.grid-template       <-- grid-template-rows / grid-template-colums
 
     5.column-gap
     6.row-gap
-    7.gap               <-- row-gap + column-gap
+    7.gap                 <-- row-gap + column-gap
 
-    8.justify-items     <-- align items Horizontal line
-    9.align-items       <-- align items Vertical  line
-    10.place-items      <-- ( align-items + justify-items )
+    8.justify-items       <-- align items Horizontal line
+    9.align-items         <-- align items Vertical  line
+    10.place-items        <-- ( align-items + justify-items )
 
   
-    11.justify-content  <-- align content Horizontal line
-    12.align-content    <-- align content Vertical line
-    13.place-content    <-- ( aling-content + justify-content )
+    11.justify-content    <-- align content Horizontal line
+    12.align-content      <-- align content Vertical line
+    13.place-content      <-- ( aling-content + justify-content )
 
-    14.grid-auto-columns
-    15.grid-auto-rows
-    16.grid-auto-flow
+    14.grid-auto-flow     <-- it change the direction row  or column
+
+    15.grid-auto-columns  <-- incress the column size
+    16.grid-auto-rows     <-- incress the row size
+
+                             --- Item Properties ---
     
-                        --- Item Properties ---
-                        
+    
     17.grid-column-start
     18.grid-column-end
     19.grid-column
+
     20.grid-row-start
     21.grid-row-end
     22.grid-row
+
     23.justify-self
-    24.align-slef
+    24.align-self
     25.place-self
+
     26.grid-template-areas
     27.grid-area
 
 
 
  */
-.container {
+.container1 {
     display: grid;
-}
-
-.container2 {
     display: inline-grid;
 }
 
-.container3 {
+
+.container2 {
     grid-template-columns: 200px 200px 200px;
     grid-template-columns: 200px 200px 200px 200px 200px;
 
@@ -137,7 +140,7 @@ h2{
     grid-template-columns: repeat(3,minmax(100px,1fr)); 
 }
 
-.container4{
+.container3{
     height: 600px;
     grid-template-rows: 100px 100px 100px ;
     grid-template-rows: 100px 100px 100px 100px 100px ;
@@ -147,23 +150,34 @@ h2{
     grid-template-rows: repeat(5,1fr); 
     grid-template-rows: repeat(5,minmax(50px,1fr)); 
 }
-.container5{
+.container4{
     /* gird-template-rows / grid-template-columns = grid-template */
     grid-template: repeat(5,1fr)/repeat(2,1fr);
 }
 
-.container6{
-    grid-template: 1fr 1fr/1fr 1fr ;
+.container5{
+    grid-template: 1fr 1fr/1fr 1fr;
+
     column-gap:10px;
+
+}
+.container6{
+    grid-template: 1fr 1fr/1fr 1fr;
+
     row-gap: 10px;
+    
+}
+.container7{
+    grid-template: 1fr 1fr/1fr 1fr;
+
     /* row-gap + column-gap = gap */
     gap:10px 10px;
     gap:20px;
-
 }
 
-.container7{
+.container8{
    grid-template:repeat(2,1fr)/repeat(2,1fr);
+
    /* align items horizontal line */
    justify-items: stretch;
    justify-items: start;
@@ -172,7 +186,7 @@ h2{
    /* Go to Developer tools Layout click the grid overlays */
 }
 
-.container8{
+.container9{
     height:500px;
     grid-template:repeat(3,1fr)/repeat(2,1fr);
 
@@ -184,7 +198,7 @@ h2{
    /* Go to Developer tools Layout click the grid overlays */
 }
 
-.container9{
+.container10{
     height:500px;
     grid-template:repeat(3,1fr)/repeat(2,1fr); 
 
@@ -194,9 +208,10 @@ h2{
 
 }
 
-.container10{
+.container11{
     height:500px;
-    grid-template:repeat(2,100px)/repeat(3,100px); 
+    grid-template:repeat(2,100px)/repeat(3,100px);
+
     /* align content horizontal line */
     justify-content: start;
     justify-content: end;
@@ -207,9 +222,10 @@ h2{
 
 }
 
-.container11{
+.container12{
     height:500px;
     grid-template:repeat(2,100px)/repeat(3,100px);
+
     /* align content vertical line */
     align-content:start;
     align-content: end;
@@ -220,11 +236,74 @@ h2{
 
 }
 
-.container12{
+.container13{
     height:600px;
     grid-template:repeat(2,100px)/repeat(3,100px);
+
     /* aling-content + justify-content = place-content*/
     place-content:center end ;
     place-content:center;
+
+}
+
+.container14{
+    grid-auto-flow: row;
+    grid-auto-flow:column;
+}
+
+.container15{
+    grid-auto-columns:710px;
+    
+}
+
+.container16{
+    grid-auto-rows:150px;
+    
+}
+
+
+/***************** Item Properties ******************/
+
+
+.container17{
+    
+}
+
+.container18{
+
+}
+
+.container19{
+
+}
+
+.container20{
+
+}
+
+.container21{
+
+}
+
+.container22{
+
+}
+
+.container23{
+    
+}
+
+.container24{
+    
+}
+
+.container25{
+    
+}
+.container26{
+
+}
+
+.container27{
 
 }
