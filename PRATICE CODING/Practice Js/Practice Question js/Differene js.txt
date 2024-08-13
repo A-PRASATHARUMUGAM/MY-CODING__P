@@ -1,0 +1,4 @@
+1.Arrow Function: Does not have access to the arguments object. 
+    --You would need to use rest parameters (...args) to achieve similar functionality.
+2.Arrow Function: this is lexically bound, meaning it uses this from the surrounding code context (where the function was defined) and cannot be changed.
+

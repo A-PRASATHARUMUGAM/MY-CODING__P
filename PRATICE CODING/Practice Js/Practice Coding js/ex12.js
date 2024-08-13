@@ -83,7 +83,7 @@
 // }
 // console.log(factorial(5)); 
 
-//                              // callback function 
+//                              // callback function --> function passed as arguments 
 
 
 // // callback function    EXAMPLE--1

@@ -109,32 +109,32 @@
 2.filter()
 3.reduce()
 4.find()
-5.sort()
+5.sort() 
 6.fill()
  */
 
 
- // //1.forEach()                                   
-// console.log("                   foreach                     get value one bye and console.log");
+ //1.forEach()                                   
+console.log("                   foreach                     get value one bye and console.log");
   
-//  array=[1,2,3,4,5,'string '] 
-//                 //Value retrun 
-//  result= array.forEach((arrayvalue)=>{
-//             return arrayvalue
-// }); 
-// console.log(result)
+ array=[1,2,3,4,5,'string '] 
+                //Value retrun 
+ result= array.forEach((arrayvalue)=>{
+            return arrayvalue
+});  
+console.log(result) 
  
 
-//                 //Condition
-// array.forEach((arrayvalue)=>{
-//     console.log("Auto return",arrayvalue>3);
-// });  
+                //Condition  
+array.forEach((arrayvalue)=>{
+    console.log("Auto return",arrayvalue>3);
+});  
 
 
-//                 //Calculation      
-// result=array.forEach((arrayvalue)=>{
-//     console.log("Auto return",arrayvalue+1);
-// });
+                //Calculation      
+result=array.forEach((arrayvalue)=>{
+    console.log("Auto return",arrayvalue+1);
+});
 
 
 
