@@ -105,38 +105,43 @@
                                       // Finally Array Method 
 /*
 1.forEach()
-1.map()
-2.filter()
-3.reduce()
-4.find()
+2.map()
+3.filter()
+4.reduce()
 5.sort() 
-6.fill()
+6.find()
+7.fill()
+8.flat()
+9.every()
+10.some()
  */
 
 
- //1.forEach()                                   
-console.log("                   foreach                     get value one bye and console.log");
+//  //1.forEach()                                   
+// console.log("                   foreach                     get value one bye and console.log");
   
- array=[1,2,3,4,5,'string '] 
-                //Value retrun 
- result=array.forEach((arrayvalue)=>{
-            return arrayvalue
-});  
-console.log(result) 
+//  array=[1,2,3,4,5,'string '] 
+//                 //Value retrun 
+//  result=array.forEach(callfunction);    //Callback function 
+
+//  function callfunction(arrayvalue){
+//         return arrayvalue
+// };  
+// console.log("Return :",result) 
  
 
-                //Condition  
-array.forEach((arrayvalue)=>{
-    console.log("condition",arrayvalue>1);
+//                 //Condition  
+// array.forEach((arrayvalue)=>{
+//     console.log("condition",arrayvalue>1);
 
-});  
+// });  
 
 
 
-                //Calculation      
-result=array.forEach((arrayvalue)=>{
-    console.log("calculation ",arrayvalue+1);
-});
+//                 //Calculation      
+// array.forEach((arrayvalue)=>{
+//     console.log("calculation ",arrayvalue+1);
+// });
 
 
 
@@ -181,7 +186,7 @@ result=array.forEach((arrayvalue)=>{
 
 //                 //Calculation
 // result=array.filter((arrayvalue)=>{
-//     return arrayvalue+1 ;
+//     return arrayvalue+1; 
 // });
 // console.log("filter calculation",result); 
 
@@ -199,7 +204,7 @@ result=array.forEach((arrayvalue)=>{
 
 //                 //condition
 // result=array.reduce((accumulator,currentvalue)=>{
-//     return accumulator+currentvalue >3;
+//     return accumulator+currentvalue>3;
 // });
 // console.log("reduce condition",result);
  
@@ -210,7 +215,27 @@ result=array.forEach((arrayvalue)=>{
 // console.log("reduce calculation",result); 
 
 
-// //4. find()
+// //5. sort()
+// console.log("                            sort                                  ASCII  Value to sorting");
+
+
+//                 //first array sort 
+// array=[1,5,4,3,2,'a']
+// console.log("orginal array ",array)
+// result=array.sort()
+// console.log("sort first array ",result);
+
+// console.log("                       ")
+
+//                  //second array sort 
+// array=[65,78,12,34,4]
+// console.log("orginal array ",array)
+// result=array.sort()
+// console.log("sort second array",result);
+
+
+
+// //6. find()
 // console.log("                           find                   similar to filter but return one result");
 
 //                 //value return 
@@ -232,24 +257,6 @@ result=array.forEach((arrayvalue)=>{
 // });
 // console.log("find calculation",result); 
 
-
-// //5. sort()
-// console.log("                            sort                                  ASCII  Value to sorting");
-
-
-//                 //first array sort 
-// array=[1,5,4,3,2,'a']
-// console.log("orginal array ",array)
-// result=array.sort()
-// console.log("sort first array ",result);
-
-// console.log("                       ")
-
-//                  //second array sort 
-// array=[65,78,12,34,4]
-// console.log("orginal array ",array)
-// result=array.sort()
-// console.log("sort second array",result);
 
 
 
@@ -458,7 +465,7 @@ result=array.forEach((arrayvalue)=>{
 
 
 
-//6. fill(value,start,end)
+//7. fill(value,start,end)
 
 // // FI-P1
 // array=[1,2,3,4,5,6];
@@ -470,7 +477,7 @@ result=array.forEach((arrayvalue)=>{
 
 
 
-//7.flat()  it is using to combain the 2d,3d imensional array
+//8.flat()  it is using to combain the 2d,3d imensional array
 
 // let array=[
 //     [1,2,3],
@@ -482,7 +489,7 @@ result=array.forEach((arrayvalue)=>{
 
 
 
-// //8.every()  it is find the all element are true the condition is true like(AND)
+// //9.every()  it is find the all element are true the condition is true like(AND)
 // array=[2,2,2,2,2,2]
 // result=array.every((value)=>{
 //      return value>1;
@@ -509,7 +516,7 @@ result=array.forEach((arrayvalue)=>{
 
 
 
-// // 9.some() it is find the either one element is true the condition is true link(OR)
+// // 10.some() it is find the either one element is true the condition is true link(OR)
 
 // array=[1,1,1,2,1,1,1]
 // result=array.some((value)=>{
