@@ -119,7 +119,7 @@ console.log("                   foreach                     get value one bye an
   
  array=[1,2,3,4,5,'string '] 
                 //Value retrun 
- result= array.forEach((arrayvalue)=>{
+ result=array.forEach((arrayvalue)=>{
             return arrayvalue
 });  
 console.log(result) 
@@ -127,13 +127,15 @@ console.log(result)
 
                 //Condition  
 array.forEach((arrayvalue)=>{
-    console.log("Auto return",arrayvalue>3);
+    console.log("condition",arrayvalue>1);
+
 });  
+
 
 
                 //Calculation      
 result=array.forEach((arrayvalue)=>{
-    console.log("Auto return",arrayvalue+1);
+    console.log("calculation ",arrayvalue+1);
 });
 
 
@@ -598,11 +600,20 @@ result=array.forEach((arrayvalue)=>{
 // console.log("Modified object",newuser)
 
  
-
+console.log("----------------------")
  
 
+arr=['prasath','sabari','kandhan']
+
+result=arr.forEach((value,index,array)=>{ 
+         
 
 
+     console.log(array[index]=value.toUpperCase()) 
+    } )
 
-
+    console.log(arr)
+ 
+ 
+ 
      
