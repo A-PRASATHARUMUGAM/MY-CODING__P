@@ -600,20 +600,6 @@ result=array.forEach((arrayvalue)=>{
 // console.log("Modified object",newuser)
 
  
-console.log("----------------------")
- 
 
-arr=['prasath','sabari','kandhan']
-
-result=arr.forEach((value,index,array)=>{ 
-         
-
-
-     console.log(array[index]=value.toUpperCase()) 
-    } )
-
-    console.log(arr)
- 
- 
  
      

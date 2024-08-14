@@ -1,0 +1,10 @@
+body{
+    background:linear-gradient( 60deg,lightgreen,lightyellow);
+    text-align:center;
+} 
+
+.dropdown-box{
+    width: 200px;
+    height: 30px;
+}
+
