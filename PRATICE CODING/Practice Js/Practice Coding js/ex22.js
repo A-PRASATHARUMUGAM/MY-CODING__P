@@ -60,12 +60,15 @@
 // document.getElementById("parentElement").appendChild(para); //add the Element 
 
 //                                         //5. Remove the Element 
+
+// 1.remove();
 // let RemoveElement=document.getElementById("RemoveElement");
 // RemoveElement.addEventListener('click',(event)=>{
 //     parentElement.remove();
 //     console.log("removed Parent Element");
    
 // });
+// 2.removeChild();
 
 //                                     //6. Get Attribute of Element
 // parentElement=document.getElementById("parentElement");
