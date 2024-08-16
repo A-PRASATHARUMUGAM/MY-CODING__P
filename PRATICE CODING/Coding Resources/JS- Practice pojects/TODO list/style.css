@@ -1,0 +1,29 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+.todo-container{
+    border:1px solid black;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    padding:15px; 
+}
+.todoAddData{
+     margin-right: 150px;
+     padding: 10px;
+     font-variant: small-caps;
+     font-weight: bold;
+     height: 50px;
+     text-align: center;
+   
+}
+
+.textremove{
+    text-decoration:line-through;
+}
