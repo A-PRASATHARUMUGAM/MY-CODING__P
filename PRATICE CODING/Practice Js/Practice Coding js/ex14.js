@@ -117,102 +117,102 @@
  */
 
 
-//  //1.forEach()                                   
-// console.log("                   foreach                     get value one bye and console.log");
+ //1.forEach()                                   
+console.log("                   foreach                     get value one bye and console.log");
   
-//  array=[1,2,3,4,5,'string '] 
-//                 //Value retrun 
-//  result=array.forEach(callfunction);    //Callback function 
+ array=[1,2,3,4,5,'string '] 
+                //Value retrun 
+ result=array.forEach(callfunction);    //Callback function 
 
-//  function callfunction(arrayvalue){
-//         return arrayvalue
-// };  
-// console.log("Return :",result) 
+ function callfunction(arrayvalue){
+        return arrayvalue
+};  
+console.log("Return :",result) 
  
 
-//                 //Condition  
-// array.forEach((arrayvalue)=>{
-//     console.log("condition",arrayvalue>1);
+                //Condition  
+array.forEach((arrayvalue)=>{
+    console.log("condition",arrayvalue>1);
 
-// });  
-
-
-
-//                 //Calculation      
-// array.forEach((arrayvalue)=>{
-//     console.log("calculation ",arrayvalue+1);
-// });
+});  
 
 
 
-// // 1.map(current value,index,original array)
-// console.log("                   map                                 return value array format")
-
-//                 //Value retrun 
-// result=array.map((arrayvalue)=>{
-//     return arrayvalue;
-// });
-// console.log("map return ",result);
-
-//                 //Condition
-// result=array.map((arrayvalue)=>{
-//     return arrayvalue>3;
-// });
-// console.log("map condition",result); 
-
-//                 //Calculation      
-// result=array.map((arrayvalue)=>{
-//     return arrayvalue+1;
-// });
-// console.log("map calculation",result); 
+                //Calculation      
+array.forEach((arrayvalue)=>{
+    console.log("calculation ",arrayvalue+1);
+});
 
 
-// //2.filter(current value,index,original array)
-// console.log("                   filter                                    condition to filter")
+
+// 1.map(current value,index,original array)
+console.log("                   map                                 return value array format")
+
+                //Value retrun 
+result=array.map((arrayvalue)=>{
+    return arrayvalue;
+});
+console.log("map return ",result);
+
+                //Condition
+result=array.map((arrayvalue)=>{
+    return arrayvalue>3;
+});
+console.log("map condition",result); 
+
+                //Calculation      
+result=array.map((arrayvalue)=>{
+    return arrayvalue+1;
+});
+console.log("map calculation",result); 
 
 
-//                 //Value retrun 
-// result=array.filter((arrayvalue)=>{
-//     return arrayvalue;
-// });
-// console.log("filter return ",result);
+//2.filter(current value,index,original array)
+console.log("                   filter                                    condition to filter")
 
 
-//                 //condition
-// result=array.filter((arrayvalue)=>{
-//     return arrayvalue>3;
-// });
-// console.log("filter condition",result);
-
-//                 //Calculation
-// result=array.filter((arrayvalue)=>{
-//     return arrayvalue+1; 
-// });
-// console.log("filter calculation",result); 
+                //Value retrun 
+result=array.filter((arrayvalue)=>{
+    return arrayvalue;
+});
+console.log("filter return ",result);
 
 
-// //3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
-// console.log("                   reduce                                            calculation ")
+                //condition
+result=array.filter((arrayvalue)=>{
+    return arrayvalue>3;
+});
+console.log("filter condition",result);
+
+                //Calculation
+result=array.filter((arrayvalue)=>{
+    return arrayvalue+1; 
+});
+console.log("filter calculation",result); 
 
 
-//                 //Value retrun 
-// result=array.reduce((accumulator,currentvalue)=>{
-//     return accumulator+currentvalue;
-// });
-// console.log("reduce return ",result);
+//3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
+console.log("                   reduce                                            calculation ")
 
 
-//                 //condition
-// result=array.reduce((accumulator,currentvalue)=>{
-//     return accumulator+currentvalue>3;
-// });
-// console.log("reduce condition",result);
+                //Value retrun 
+result=array.reduce((accumulator,currentvalue)=>{
+    return accumulator+currentvalue;
+});
+console.log("reduce return ",result);
+
+
+                //condition
+result=array.reduce((accumulator,currentvalue)=>{
+    return accumulator+currentvalue>3;
+});
+console.log("reduce condition",result);
  
-//                 //Calculation
-// result=array.reduce((accumulator,currentvalue)=>{
-//     return accumulator+currentvalue+1;
-// });
-// console.log("reduce calculation",result); 
+                //Calculation
+result=array.reduce((accumulator,currentvalue)=>{
+    return accumulator+currentvalue+1;
+});
+console.log("reduce calculation",result); 
 
 
 // //5. sort()
