@@ -46,7 +46,7 @@
     -- Result: RAG
     --Abbreviate by gathering first letter of each word
 
-5.Input=[6,-5,7,-2,4,6,-1]
+5g.Input=[6,-5,7,-2,4,6,-1]
     --Find the sum of positive number only
 
 
