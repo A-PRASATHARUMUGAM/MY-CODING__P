@@ -10,9 +10,9 @@ const todlist = button.addEventListener('click', () => {
     Removelist.addEventListener("click", () => {
         Removelist.classList.toggle("textremove");
         Removelist.addEventListener("dblclick", () => {
-            ;
+            
             Removelist.remove();
-        })
+        });
 
     });
 
