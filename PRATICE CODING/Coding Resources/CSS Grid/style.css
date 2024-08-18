@@ -2,6 +2,7 @@ body {
     background: #24252a;
     box-sizing: border-box;
     font-family: 'Trebuchet MS';
+    margin-bottom: 50vh;
 }
 
 h1 {
@@ -112,8 +113,12 @@ h2{
     24.align-self  
     25.place-self   <-- ( align-self + justify-self )
 
-    26.grid-template-areas
-    27.grid-area
+    26.grid-template-areas  <-- using container propertie - 1 
+    27.grid-area   <-- using Item propetie  - 2
+         (or)
+    27.grid-area  <--(row-start/column-start/row-end/column-end)
+
+    28.order
 
 
 
@@ -360,10 +365,43 @@ h2{
     place-self:center center;
 }
 
+
+                                /* grid-template-areas + grid-area */
 .container26{
+    display: grid;
+    width: 95vw;
+    height:100vh;
+     text-align: center;
+    grid-template-areas: 
+    'head  head  head'    
+    'nav  main  sidebar'
+    'footer footer footer' 
+    ;
+grid-template-columns: 1fr 4fr 1fr ;
 
 }
 
-.container27{
+.header,.nav,.main,.aside,.footer{
+    background-color:yellow;
+    border:2px solid white;
+}
+
+.header{
+    grid-area:head;
 
 }
+.nav{
+    grid-area:nav;
+   
+}
+.main{
+    grid-area:main;
+
+}
+.aside{
+    grid-area:sidebar;
+}
+.footer{ 
+    grid-area:footer;
+}
+
