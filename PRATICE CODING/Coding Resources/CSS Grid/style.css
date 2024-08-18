@@ -405,3 +405,17 @@ grid-template-columns: 1fr 4fr 1fr ;
     grid-area:footer;
 }
 
+
+
+/* gird-area */
+
+
+.container27{
+ display: grid;
+ grid-template:repeat(3,100px)/repeat(3,100px);
+
+}
+.container27 .box-1{ 
+    grid-area:2/2/3/3; 
+}
+
