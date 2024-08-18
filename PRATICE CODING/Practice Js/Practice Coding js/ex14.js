@@ -117,102 +117,102 @@
  */
 
 
- //1.forEach()                                   
-console.log("                   foreach                     get value one bye and console.log");
+//  //1.forEach()                                   
+// console.log("                   foreach       get the element one by one but return undefine ");
   
- array=[1,2,3,4,5,'string '] 
-                //Value retrun 
- result=array.forEach(callfunction);    //Callback function 
+//  array=[1,2,3,4,5,'string '] 
+//                 //Value retrun 
+//  result=array.forEach(callfunction);    //Callback function 
 
- function callfunction(arrayvalue){
-        return arrayvalue
-};  
-console.log("Return :",result) 
+//  function callfunction(arrayvalue){
+//         return arrayvalue
+// };  
+// console.log("Return :",result) 
  
 
-                //Condition  
-array.forEach((arrayvalue)=>{
-    console.log("condition",arrayvalue>1);
+//                 //Condition  
+// array.forEach((arrayvalue)=>{
+//     console.log("condition",arrayvalue>1);
 
-});  
-
-
-
-                //Calculation      
-array.forEach((arrayvalue)=>{
-    console.log("calculation ",arrayvalue+1);
-});
+// });  
 
 
 
-// 1.map(current value,index,original array)
-console.log("                   map                                 return value array format")
-
-                //Value retrun 
-result=array.map((arrayvalue)=>{
-    return arrayvalue;
-});
-console.log("map return ",result);
-
-                //Condition
-result=array.map((arrayvalue)=>{
-    return arrayvalue>3;
-});
-console.log("map condition",result); 
-
-                //Calculation      
-result=array.map((arrayvalue)=>{
-    return arrayvalue+1;
-});
-console.log("map calculation",result); 
+//                 //Calculation      
+// array.forEach((arrayvalue)=>{
+//     console.log("calculation ",arrayvalue+1);
+// });
 
 
-//2.filter(current value,index,original array)
-console.log("                   filter                                    condition to filter")
+
+// // 1.map(current value,index,original array)
+// console.log("                   map              get the element one bye one return the value to array format")
+
+//                 //Value retrun 
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue;
+// });
+// console.log("map return ",result);
+
+//                 //Condition
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue>3;
+// });
+// console.log("map condition",result); 
+
+//                 //Calculation      
+// result=array.map((arrayvalue)=>{
+//     return arrayvalue+1;
+// });
+// console.log("map calculation",result); 
 
 
-                //Value retrun 
-result=array.filter((arrayvalue)=>{
-    return arrayvalue;
-});
-console.log("filter return ",result);
+// //2.filter(current value,index,original array)
+// console.log("                   filter                                    condition to filter the value")
 
 
-                //condition
-result=array.filter((arrayvalue)=>{
-    return arrayvalue>3;
-});
-console.log("filter condition",result);
-
-                //Calculation
-result=array.filter((arrayvalue)=>{
-    return arrayvalue+1; 
-});
-console.log("filter calculation",result); 
+//                 //Value retrun 
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue;
+// });
+// console.log("filter return ",result);
 
 
-//3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
-console.log("                   reduce                                            calculation ")
+//                 //condition
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue>3;
+// });
+// console.log("filter condition",result);
+
+//                 //Calculation
+// result=array.filter((arrayvalue)=>{
+//     return arrayvalue+1; 
+// });
+// console.log("filter calculation",result); 
 
 
-                //Value retrun 
-result=array.reduce((accumulator,currentvalue)=>{
-    return accumulator+currentvalue;
-});
-console.log("reduce return ",result);
+// //3. reduce(function(accumulator,currentvalue,currentindex,array){},initialize value);
+// console.log("                   reduce   calculation ---> add the element in single value  ")
 
 
-                //condition
-result=array.reduce((accumulator,currentvalue)=>{
-    return accumulator+currentvalue>3;
-});
-console.log("reduce condition",result);
+//                 //Value retrun 
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue;
+// });
+// console.log("reduce return ",result);
+
+
+//                 //condition
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue>3;
+// });
+// console.log("reduce condition",result);
  
-                //Calculation
-result=array.reduce((accumulator,currentvalue)=>{
-    return accumulator+currentvalue+1;
-});
-console.log("reduce calculation",result); 
+//                 //Calculation
+// result=array.reduce((accumulator,currentvalue)=>{
+//     return accumulator+currentvalue+1;
+// });
+// console.log("reduce calculation",result); 
 
 
 // //5. sort()
@@ -236,7 +236,8 @@ console.log("reduce calculation",result);
 
 
 // //6. find()
-// console.log("                           find                   similar to filter but return one result");
+// console.log("                           find                   it is return the first element ");
+// array=[1,2,3,4,5,6,7];
 
 //                 //value return 
 // result=array.find((arrayvalue)=>{
@@ -247,7 +248,7 @@ console.log("reduce calculation",result);
 
 //                 //condition
 // result=array.find((arrayvalue)=>{
-//     return arrayvalue>3;
+//     return arrayvalue>2;
 // });
 // console.log("find condition",result);
 
@@ -258,6 +259,56 @@ console.log("reduce calculation",result);
 // console.log("find calculation",result); 
 
 
+
+// //7. fill(value,start,end)
+// console.log("                           fill                   fill the values");
+
+// // FI-P1
+// array=[1,2,3,4,5,6];
+// array.fill(20)
+// console.log(array);
+
+// //way 2 
+// array=[1,2,3,4,5,6];
+// array.fill(20,2,4); 
+// console.log(array);  
+
+
+
+// // 8.flat()  it is using to combain the 2d,3d imensional array
+// console.log("                           flat       it is using to combain the 2d,3d array");
+
+//  array=[
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+// ]
+// result =array.flat()
+// console.log(result);
+
+
+
+// //9.every()  it is find the all element are true the condition is true like(AND)
+// console.log("                  every      it is find the all element are true the condition is true like(AND)");
+
+// array=[2,2,2,2,2,2]
+// result=array.every((value)=>{
+//      return value>1;
+
+// })
+// console.log("every :",result);
+
+
+
+// // 10.some() it is find the either one element is true the condition is true link(OR)
+// console.log("           some   it is find the either one element is true the condition is true link(OR)");
+
+// array=[1,1,1,2,1,1,1]
+// result=array.some((value)=>{
+//      return value>1;
+  
+// })
+// console.log("some :",result);
 
 
 
@@ -465,39 +516,6 @@ console.log("reduce calculation",result);
 
 
 
-//7. fill(value,start,end)
-
-// // FI-P1
-// array=[1,2,3,4,5,6];
-// arra.fill(20)
-// console.log(array);
-// //way 2 
-// array.fill(20,3,4); 
-// console.log(array); 
-
-
-
-//8.flat()  it is using to combain the 2d,3d imensional array
-
-// let array=[
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9],
-// ]
-// result =array.flat()
-// console.log(result);
-
-
-
-// //9.every()  it is find the all element are true the condition is true like(AND)
-// array=[2,2,2,2,2,2]
-// result=array.every((value)=>{
-//      return value>1;
-
-// })
-// console.log("every :",result);
-
-
 // //every-P1
 // users=[
 //      {fname:"prasath",age:20},
@@ -515,15 +533,6 @@ console.log("reduce calculation",result);
 
 
 
-
-// // 10.some() it is find the either one element is true the condition is true link(OR)
-
-// array=[1,1,1,2,1,1,1]
-// result=array.some((value)=>{
-//      return value>1;
-  
-// })
-// console.log("some :",result);
 
 
 
@@ -581,7 +590,7 @@ console.log("reduce calculation",result);
 // console.log("clone array",clonearray);
 
 
-
+// -----------------------------------------------others---------------
 
 
 // // Use of const for Creating Arrays in JavaScript
