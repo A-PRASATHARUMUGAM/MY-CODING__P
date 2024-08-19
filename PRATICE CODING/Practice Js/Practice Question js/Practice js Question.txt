@@ -7,12 +7,12 @@
 5. Calculator without button        own
 6. Job Eligible Checker             02:20:55
 7. Create Object A,M,ADnew,method   02:32:00
-7. Digital Clock                    06:29:26 
-8. Currency Converter               07:36:47 
-9. Todo List                        07:59:03 
-10.Practice JS ES6+ Features        own 
-11. Solving Leetcode Questions      04:24:17    
-12.Try Array, Binary, String in LeetsCode            
+8. Digital Clock                    06:29:26 
+9. Currency Converter               07:36:47 
+10. Todo List                        07:59:03 
+11.Practice JS ES6+ Features        own 
+12. Solving Leetcode Questions      04:24:17    
+13.Try Array, Binary, String in LeetsCode            
 
 
 
