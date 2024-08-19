@@ -1,30 +1,58 @@
 //                         // Object in JavaScript 
 
-                            // //Creating object 
+//                                  //Creating object 
+console.log("                         Creating Object")
+
+
 //  Type 1   --it is prefered 
 let items={
    name:'phone',
    price:25000,
-   quantity:1
+   quantity:1,
 
+   Array:[1,2,3,4],  // add array in the object 
+
+    //function create inside the object it means method
+
+    login: function(a,b){           //--> way 1 
+        console.log("your are login ")
+      
+    },
+    logout(){
+        console.log("your are logout") //--> way 2
+    }
 }
 console.log(items);
-console.table(items);
+items.logout()  //object to invokeing function 
+
 
 // Type 2
  let items2= new Object();
  items2.name='charger';
  items2.price=800;
  items2.quantity=1;
- 
- console.log(items2);
- console.table(items2);
 
-                                        //  //Accessing Object
+
+//  function create inside the object it means method
+
+ items2.login=function(){
+    console.log("your are login")
+}
+console.log(items2);
+
+items2.login()  //object to invokeing function 
+
+
+
+                                     //Accessing Object
+console.log("                          Accessing Object")
+
 
 // 1. dot notation  ---it is prefered
+
 //accessing 
  console.log(items.price);
+
 //change the value 
 items.price=4500; 
 console.log(items.price); 
@@ -44,45 +72,14 @@ console.log(items['price']);
 
 //add the properties in object way 2
 items['weight']='2kg';
-console.table(items); 
+console.log(items); 
 
 
-//3. variable to change the propertie value
-let price="price"
-items[price]=45;
-console.log(items.price);
-console.table(items);
-
-// variable to add new the properties
-let key="key"
+//3. variable to add new the properties using bracket notation
+let key="price"
 items[key]=45;
 console.log(items.price);
-console.table(items);
-
-
-
-//                     //   function create inside the object
-
-newuser={
-    name:"prasath",
-    age:20, 
-    add: function(a,b){           //--> way 1 
-        console.log("add")
-      
-    },
-    sub(){
-        console.log("sub")       // way 2
-    }
-};
-
-newuser.add();
-newuser.sub(); 
-
-
-
-
-
-
+console.log(items);
 
 
                     
