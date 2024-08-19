@@ -1,85 +1,86 @@
 //                         // Object in JavaScript 
 
-//                                  //Creating object 
-console.log("                         Creating Object")
+// //                                  //Creating object 
+// console.log("                         Creating Object")
 
 
-//  Type 1   --it is prefered 
-let items={
-   name:'phone',
-   price:25000,
-   quantity:1,
+// //  Type 1   --it is prefered 
+// let items={
+//    name:'phone',
+//    price:25000,
+//    quantity:1,
 
-   Array:[1,2,3,4],  // add array in the object 
+//    Array:[1,2,3,4],  // add array in the object 
 
-    //function create inside the object it means method
+//     //function create inside the object it means method
 
-    login: function(a,b){           //--> way 1 
-        console.log("your are login ")
+//     login: function(a,b){           //--> way 1 
+//         console.log("your are login ")
       
-    },
-    logout(){
-        console.log("your are logout") //--> way 2
-    }
-}
-console.log(items);
-items.logout()  //object to invokeing function 
+//     },
+//     logout(){
+//         console.log("your are logout") //--> way 2
+//     }
+// }
+// console.log(items);
+// items.logout()  //object to invoking function 
 
 
-// Type 2
- let items2= new Object();
- items2.name='charger';
- items2.price=800;
- items2.quantity=1;
+// // Type 2
+//  let items2= new Object();
+//  items2.name='charger';
+//  items2.price=800;
+//  items2.quantity=1;
 
 
-//  function create inside the object it means method
+// //  function create inside the object it means method
 
- items2.login=function(){
-    console.log("your are login")
-}
-console.log(items2);
+//  items2.login=function(){
+//     console.log("your are login")
+// }
+// console.log(items2);
 
-items2.login()  //object to invokeing function 
-
-
-
-                                     //Accessing Object
-console.log("                          Accessing Object")
+// items2.login()  //object to invoking function 
 
 
-// 1. dot notation  ---it is prefered
 
-//accessing 
- console.log(items.price);
-
-//change the value 
-items.price=4500; 
-console.log(items.price); 
-
-//add the properties in object  way 1
-items.model="z1"; 
-console.log(items);
+//                                      //Accessing Object
+// console.log("                          Accessing Object")
 
 
-//2. square bracket notation 
-// accessing 
-console.log(items['price']);
+// // 1. dot notation  ---it is prefered
 
-//change the value 
-items['price']=200; 
-console.log(items['price']);
+// //accessing 
+//  console.log(items.price);
 
-//add the properties in object way 2
-items['weight']='2kg';
-console.log(items); 
+// //change the value 
+// items.price=4500; 
+// console.log(items.price); 
+
+// //add the properties in object  way 1
+// items.model="z1"; 
+// console.log(items);
 
 
-//3. variable to add new the properties using bracket notation
-let key="price"
-items[key]=45;
-console.log(items.price);
-console.log(items);
+// //2. square bracket notation 
+
+// // accessing 
+// console.log(items['price']);
+
+// //change the value 
+// items['price']=200; 
+// console.log(items['price']);
+
+// //add the properties in object way 2
+// items['weight']='2kg';
+// console.log(items); 
+
+
+// //3. variable to add new properties using bracket notation
+// let key="price"
+// items[key]=45;
+// console.log(items.price);
+// console.log(items);
 
 
                     
