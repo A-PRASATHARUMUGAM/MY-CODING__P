@@ -5,14 +5,15 @@
 3. Citystatus Tool                  2:01:21
 4. Color Flippers  	                02:51:05
 5. Calculator without button        own
-6. Digital Clock                    06:29:26 
-7. Currency Converter               07:36:47 
-8. Todo List                        07:59:03  
-9. Solving Leetcode Questions       04:24:17    
-10.Try Array, Binary, String in LeetsCode            
+6. Job Eligible Checker             02:20:55
+7. Digital Clock                    06:29:26 
+8. Currency Converter               07:36:47 
+9. Todo List                        07:59:03  
+10. Solving Leetcode Questions       04:24:17    
+11.Try Array, Binary, String in LeetsCode            
 
 
-            JavaScript ES6+ Features in DOM
+        JavaScript ES6+ Features in DOM
 -----------------------------------------------
 1. let, const:          Block-scoped variable declarations.
 2. Arrow Functions:     Shorter syntax for functions, useful in event handlers.
