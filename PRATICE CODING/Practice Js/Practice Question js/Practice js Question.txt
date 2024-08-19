@@ -9,9 +9,10 @@
 7. Create Object A,M,ADnew,method   02:32:00
 7. Digital Clock                    06:29:26 
 8. Currency Converter               07:36:47 
-9. Todo List                        07:59:03  
-10. Solving Leetcode Questions       04:24:17    
-11.Try Array, Binary, String in LeetsCode            
+9. Todo List                        07:59:03 
+10.Practice JS ES6+ Features        own 
+11. Solving Leetcode Questions      04:24:17    
+12.Try Array, Binary, String in LeetsCode            
 
 
 
