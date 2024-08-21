@@ -19,7 +19,7 @@ h2{
     border: 2px solid white;
     color: black;
     font-weight: bold;
-   display: flex;
+    display: flex;
 
 
 }
@@ -96,3 +96,8 @@ h2{
 
 
 */
+
+.container1{
+    display:inline-flex;
+}
+
