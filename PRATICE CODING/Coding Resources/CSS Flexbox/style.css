@@ -1,8 +1,78 @@
-                    
+body {
+    background: #24252a;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    margin-bottom: 50vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size:3rem;
+    color:red;
+    text-align: center;
+}
+
+.box-container {
+    border: 2px solid white;
+    color: black;
+    font-weight: bold;
+   display: flex;
+
+
+}
+
+.flex-item {
+    padding: 10px;
+    text-align: center;
+}
+
+.box-1 {
+    background: lightblue;
+}
+
+.box-2 {
+    background: lightcoral;
+}
+
+.box-3 {
+    background: lightcyan;
+}
+
+.box-4 {
+    background: lightslategray;
+}
+
+.box-5 {
+    background: lightgray;
+}
+
+.box-6 {
+    background: lightgreen;
+}
+
+.box-7 {
+    background: lightsalmon;
+}
+
+.box-8 {
+    background: lightseagreen;
+}
+
+.box-9 {
+    background: lightgoldenrodyellow;
+}
+
+.box-10 {
+    background: lightskyblue;
+}               
+                                    /* Flex box start */
 
 /*CSS Flex box
 
-                    --- Container Properties ---
+                            --- Container Properties ---
 
   1.display
   2.flex-direction 
@@ -15,7 +85,7 @@
   9.align-itmes 
   10.align-content
 
-                        --- Item Properties ---
+                                 --- Item Properties ---
 11.order
 12.flex-grow
 13.flex-shrink
@@ -23,8 +93,6 @@
 15.flex
 16.align-self
 
-
-  
 
 
 */
