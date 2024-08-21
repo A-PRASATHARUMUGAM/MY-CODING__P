@@ -75,12 +75,12 @@ h2{
                             --- Container Properties ---
 
   1.display
-  2.flex-direction 
+  2.flex-direction          <-- ( row direction or column direction ) 
   3.flex-wrap
-  4.flex-flow            <-- ( flex-direction + flex-wrap )
+  4.flex-flow               <-- ( flex-direction + flex-wrap )
   5.column-gap
   6.row-gap
-  7.gap                   <-- ( column-gap + row-gap )
+  7.gap                     <-- ( column-gap + row-gap )
   8.justify-content
   9.align-itmes 
   10.align-content
@@ -127,3 +127,19 @@ h2{
     flex-wrap: wrap-reverse;
 }
 
+.container4{
+                /* flex-direction + flex wrap = flex-flow */
+
+    /* row direction */
+    width: 500px;
+    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
+
+     /* column direction */
+    width: auto;
+    height: 200px;
+    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    flex-flow: column wrap-reverse;
+}
