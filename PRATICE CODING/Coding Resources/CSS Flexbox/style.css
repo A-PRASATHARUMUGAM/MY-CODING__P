@@ -108,3 +108,22 @@ h2{
     flex-direction: column-reverse;
 }
 
+.container3{
+    width:510px;
+    flex-direction: row;        
+    /* row direction */
+
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    flex-direction: column;   
+    /* column direction */
+
+    width:auto;
+    height: 200px;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+
