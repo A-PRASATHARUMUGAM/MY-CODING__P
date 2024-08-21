@@ -143,3 +143,23 @@ h2{
     flex-flow: column wrap;
     flex-flow: column wrap-reverse;
 }
+
+.container5{
+    flex-wrap:wrap ;
+    width: 500px;  
+
+    row-gap:50px;
+}
+.container6{
+   
+    column-gap:50px;
+}
+
+.container7{
+     /* row-gap + column-gap = gap */
+     flex-wrap:wrap ;
+     width: 500px;
+     
+     gap:10px 20px;
+     gap: 20px;
+}
