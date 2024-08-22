@@ -86,8 +86,8 @@ h2{
   10.align-content
 
                                  --- Item Properties ---
-11.order
-12.flex-grow
+11.order               <-- It is using to order the element 
+12.flex-grow           <-- It is using to grow the item
 13.flex-shrink
 14.flex-basis
 15.flex
@@ -236,11 +236,10 @@ h2{
         /* or */
     align-content: center;
 }
-
-                                   /* order  */
+                                /* --- Item Properties --- */
+/* order  */
 .container11{
     display: flex;
-    margin: 10px;
 }
 .container11 .box-1{
   order: 4;
@@ -257,3 +256,17 @@ h2{
 .container11 .box-5{
     order: 5;
 }
+
+/* flex-grow */
+.container12{
+display: flex;
+}
+.container12 .box-3{
+    flex-grow: 0;
+    flex-grow: 1;
+}
+.container12 .box-4{
+    flex-grow: 4;
+}
+
+
