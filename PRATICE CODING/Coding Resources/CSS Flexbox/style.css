@@ -89,7 +89,7 @@ h2{
 11.order               <-- It is using to order the element 
 12.flex-grow           <-- It is using to grow the item
 13.flex-shrink         <-- It is shrink the box 
-14.flex-basis
+14.flex-basis          <-- Initialize set the item size 
 15.flex                <-- (flex-grow + flex-shrink + flex-basis)
 16.align-self
 
@@ -237,7 +237,7 @@ h2{
     align-content: center;
 }
                                 /* --- Item Properties --- */
-/* order  */
+                    /* order  */
 .container11{
     display: flex;
 }
@@ -257,7 +257,7 @@ h2{
     order: 5;
 }
 
-/* flex-grow */
+                    /* flex-grow */
 .container12{
 display: flex;
 }
@@ -270,7 +270,7 @@ display: flex;
 }
 
 
-/* flex-shrink */
+                    /* flex-shrink */
 .container13{
     display: flex;
 }
@@ -279,6 +279,14 @@ display: flex;
 .container13 .box-5{
     flex-shrink:1; /*default*/
     flex-shrink: 0;  
-
 }
+
+.container14{
+    display: flex;
+}
+.container14 .box-1{
+    flex-basis: auto; /*default*/
+    flex-basis: 100px;
+}
+
 
