@@ -261,11 +261,11 @@ h2{
 .container12{
 display: flex;
 }
-.container12 .box-3{
+.container12 .box-1{
     flex-grow: 0; /*default*/
     flex-grow: 1;
 }
-.container12 .box-4{
+.container12 .box-2{
     flex-grow: 4;
 }
 
@@ -276,17 +276,35 @@ display: flex;
 }
 
 /*box-5 only*/
-.container13 .box-5{
+.container13 .box-1{
     flex-shrink:1; /*default*/
     flex-shrink: 0;  
 }
 
+
+                    /* flex-basis */
 .container14{
     display: flex;
 }
 .container14 .box-1{
     flex-basis: auto; /*default*/
-    flex-basis: 100px;
+    flex-basis: 200px;
 }
 
+                                    /* flex */
+.container15 .box-1{
 
+    /* flex-grow + flex-shrink + flex-basis = flex */
+
+    flex:0 1 auto;  /*default*/
+    
+    flex:0;         /*flex-grow only */
+
+    flex:0 200px;   /*flex-grow + flex-basis*/
+
+                            /*or */
+
+    flex:0 1;      /*flex-grow + flex-shrik*/
+ 
+    flex: 0 0 100px;     /* flex-grow + flex-shrink + flex-basis */
+}
