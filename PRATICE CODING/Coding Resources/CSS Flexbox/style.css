@@ -78,20 +78,27 @@ h2{
   2.flex-direction          <-- ( row direction or column direction ) 
   3.flex-wrap
   4.flex-flow               <-- ( flex-direction + flex-wrap )
+
   5.column-gap
   6.row-gap
   7.gap                     <-- ( column-gap + row-gap )
-  8.justify-content
-  9.align-itmes 
-  10.align-content
+
+  8.justify-content         <-- align content horizontal line
+  9.align-itmes             <-- align items vertical line
+
+  10.align-content          <-- aling overall content using wrap
 
                                  --- Item Properties ---
+
 11.order               <-- It is using to order the element 
+
 12.flex-grow           <-- It is using to grow the item
 13.flex-shrink         <-- It is shrink the box 
 14.flex-basis          <-- Initialize set the item size 
 15.flex                <-- (flex-grow + flex-shrink + flex-basis)
-16.align-self
+
+16.align-self          <-- it move one item only vertiacl in row direction 
+                            -- horizontal in column direction 
 
 
 
@@ -307,4 +314,28 @@ display: flex;
     flex:0 1;      /*flex-grow + flex-shrik*/
  
     flex: 0 0 100px;     /* flex-grow + flex-shrink + flex-basis */
+}
+
+
+                                /* align-self */
+
+
+  /* row direction */
+.container16{
+height: 500px;
+}
+
+.container16 .box-10{
+  
+    align-self:end;
+}
+
+  /* column direction */
+.container16{
+    flex-direction: column;
+}
+
+.container16 .box-10{
+  
+    align-self:end;
 }
