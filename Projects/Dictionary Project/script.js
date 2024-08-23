@@ -1,9 +1,22 @@
 const searchInput=document.querySelector(".searchInput");
 const searchButton=document.querySelector(".searchButton");
 
-searchButton.addEventListener('click',()=>{
-   const words=searchInput.value;
-   window.find(words)
+
+searchInput.addEventListener("keypress",(event)=>{
+    if (event.key === "Enter") {
+
+        const words=searchInput.value;
+         window.find(words)
+    
+      }
+     
 })
+
+searchButton.addEventListener("click",()=>{
+    const words=searchInput.value;
+    window.find(words)
+    
+ });
+
 
 

@@ -18,20 +18,41 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .searchInput {
     padding:10px;
-    color: black; 
+    padding-left:20px ;
+    color: black;
     font-size: 16px;
-    width: 50vw;
+    width:60vw;
+    border-radius:50px;
+    border: none;
 } 
-.searchButton{
-    padding: 10px;
-    font-size: 16px;
-   font-weight:bold ;
-   margin-left:6px;
+
+.searchInput:focus{
+   outline:2px solid cornflowerblue;
 }
 
+
+.searchButton{
+    margin-left:6px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius:50px;
+    border: none;
+}
+
+.searchButton:hover{
+ outline:2px solid cornflowerblue; 
+}
+
+.searchButton:active {
+    background-color:lightgreen;
+    color: white;
+    outline:2px solid white;
+     
+}
 hr{
     margin-top: 50px;
 }
