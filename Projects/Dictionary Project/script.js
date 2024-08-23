@@ -27,7 +27,12 @@ const wordsContainer=document.querySelector(".words-container");
 addButton.addEventListener("click",()=>{
     Ewords=englishWords.value;
     Twords=tamilWords.value;
-    wordsContainer.appendChild `<p class="words-english">${Ewords}: <span class="words-tamil">${Twords}</span></p>`;
+    let para=document.createElement("p") //create the element 
+    para.textContent="create Element to js"
+    para.className="words-english"
+    wordsContainer.appendChild(para); //add the Element 
+    // .appendChild `<p class="words-english">${Ewords}: <span class="words-tamil">${Twords}</span></p>`;
     
 })
+
 
