@@ -1,0 +1,48 @@
+body{
+    background-color: #25242a;
+    
+}
+.heading1{
+    text-align: center;
+    color: whitesmoke;
+    font:small-caps bold 60px 'Terbuchet MS';
+}
+
+.heading2{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.search-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchInput {
+    padding:10px;
+    color: black; 
+    font-size: 16px;
+    width: 50vw;
+} 
+.searchButton{
+    padding: 10px;
+    font-size: 16px;
+   font-weight:bold ;
+   margin-left:6px;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+p{
+    text-transform:capitalize;
+    font-size:35px;
+    color: honeydew;
+}
+
+.words-container{
+    border: 1px solid white;
+    padding: 15px;
+}
