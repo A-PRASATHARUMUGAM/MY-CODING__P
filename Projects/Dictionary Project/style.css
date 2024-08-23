@@ -36,10 +36,14 @@ hr{
     margin-top: 50px;
 }
 
-p{
+.words-english{
     text-transform:capitalize;
     font-size:35px;
     color: honeydew;
+}
+.words-tamil{
+    color: red;
+    font-size:30px;
 }
 
 .words-container{
