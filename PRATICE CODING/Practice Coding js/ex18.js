@@ -2,28 +2,31 @@
 
 //Returning function: function return the function it means higer order function 
 
-//lexical scoping : inner function can access outer variable 
+//lexical scoping : inner-function can access outer-variable 
 
-//Closure ://--->  Outer-function is already runout but inner-function is binding outervariable to return 
+//Closure : Outer-function is already runout but inner-function is binding outervariable to return 
 
-                                    //Returning function:
-// function outer(){
-//     let outervariable="outer scope"
 
-//     function inner(){
-//         let innervariable="inner scope"
-//         console.log(outervariable)      
-//         console.log(innervariable)
-//     }
-//    return  inner
-// }
-// let inner=outer(); 
-// inner() 
+
+                                    // Returning function
+console.log("    --- Returning function      ---      ")
+function  outer(){
+    let outervariable="outer scope"
+
+    function inner(){
+        let innervariable="inner scope"
+        console.log(outervariable)      
+        console.log(innervariable)
+    }
+   return  inner
+}
+let inner=outer(); 
+inner() 
 
 
                                       // lexical scoping
 
-console.log("    lexical scoping           ")
+console.log("    --- lexical scoping      ---      ")
 
 function outer2(name){
     let outervariable="outerscope"
@@ -41,33 +44,33 @@ inner2()
 let inner3=outer2("sabari")
 inner3()
 
-console.log("      closure         ")
+console.log("     ---  closure    ---      ")
 
 inner2()  //---> Outer-function is already runout but inner-function is binding outervariable to return 
 
 
 
 
-//                                              // Best Example for closure 
+                                             // Best Example for closure 
 
-// console.log("      Best Example for closure ");
+console.log("     ---  Best Example for closure  --- ");
 
-// function mixadd(x){
+function mixadd(x){
 
-//     return function(y){
-//         return x+y;
-//     }
-// }
+    return function(y){
+        return x+y;
+    }
+}
 
-// let add5=mixadd(5)
+let add5=mixadd(5)
 
-// console.log(add5(10));
+console.log(add5(10));
 
-// let add100=mixadd(5)
-// console.log(add100(100));
+let add100=mixadd(5)
+console.log(add100(100));
 
 
-// console.log(add5(10)); //---> Outer-function is already runout but inner-function is binding outervariable to return 
+console.log(add5(10)); //---> Outer-function is already runout but inner-function is binding outervariable to return 
 
 
 
