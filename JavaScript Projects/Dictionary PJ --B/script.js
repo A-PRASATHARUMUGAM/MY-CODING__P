@@ -23,16 +23,24 @@ const englishWords=document.querySelector(".english-input");
 const tamilWords=document.querySelector(".tamil-input");
 const addButton=document.querySelector(".add-button");
 const wordsContainer=document.querySelector(".words-container");
-const totalwords=englishWords+tamilWords;
-
+const errorvalue=document.querySelector(".error");
 
 addButton.addEventListener("click",()=>{
     const Ewords=englishWords.value;
     const Twords=tamilWords.value;
-    const words=document.createElement('p');
-    words.className="words-english";
-    words.innerHTML=`${Ewords} : <span class="words-tamil">${Twords}</span>`;    
-    wordsContainer.appendChild(words); 
+        // condition to enter the value 
+    if( Ewords=='' || Twords ==''){ 
+        // error 
+        errorvalue.textContent="Enter another value";
+        errorvalue.classList("error")
+    }else{
+      
+        const words=document.createElement('p');
+        words.className="words-english";
+        words.innerHTML=`${Ewords} : <span class="words-tamil">${Twords}</span>`;    
+        wordsContainer.appendChild(words); 
+    }
+ 
     
 })
 
