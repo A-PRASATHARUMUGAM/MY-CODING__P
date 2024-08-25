@@ -1,14 +1,15 @@
 
-array=[
-    ['a','b','c'],
-    ['a','b','c'],
-    ['a','b','c'],
-]
-reducedata=array.reduce((accumulator,currentvalue)=>{
+// array=[
+//     ['a','b','c'],
+//     ['a','b','c'],
+//     ['a','b','c'],
+// ]
+// reducedata=array.reduce((accumulator,currentvalue)=>{
 
-    result=accumulator+currentvalue;
+//     result=accumulator+currentvalue;
    
-     return result;     
-},{});
+//      return result;     
+// },{});
 
-// result : a:1 b:2 c:3 
+// // result : a:1 b:2 c:3 
+
