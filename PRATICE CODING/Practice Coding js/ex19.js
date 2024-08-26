@@ -1,71 +1,70 @@
 
 // 1. Set object : -it collection of the value 
-//                   -Values are unique it means --> Avoid the repeating value
+//                   -Values are unique it means --> remove the repeating value
 
 // 2. Map object : -it collection of the key-value pairs to store 
-//                  -Values are unique it means --> Avoid the repeating value
+//                  -Values are unique it means --> remove the repeating value
 
 
 
-array=[1,2,3,4,4,5,5];
+// // Normal object 
+// array=[1,2,3,4,4,5,5];
+// let obj=new Object(array)
 
-// Normal object 
-let obj=new Object(array)
-
-console.log("Object :",obj);
-console.table(obj);
+// console.log("Object :",obj);
+// console.table(obj);
 
 
-// 1.Set object   --> Avoid the repeating value
-                            console.log("                       -- new Set --")
+// // 1.Set object   --> remove the repeating value
+//                             console.log("                       -- new Set --")
                             
-let createSet=new Set(array)
-console.log("Set Object:",createSet);
-console.table(createSet);
+// let createSet=new Set(array)
+// console.log("Set Object:",createSet);
+// console.table(createSet);
 
-                // Set methods
+//                 // Set methods
 
-/*  1.add()     -- it is add value to set
-    2.delete()  -- delete the value to set
-    3.has()     -- check the value to set 
-    4.size()    -- check the size to set 
-    5.clear()   -- not sure 
-    6.entries() -- not sure
-    7.forEach() -- get one by one value element,index,array
-    8.keys()    -- it using to get keys     
-    9.values()  -- it using to get value 
-*/ 
+// /*  1.add()     -- it is add value to set
+//     2.delete()  -- delete the value to set
+//     3.has()     -- check the value to set 
+//     4.size()    -- check the size to set 
+//     5.clear()   -- not sure 
+//     6.entries() -- not sure
+//     7.forEach() -- get one by one value element,index,array
+//     8.keys()    -- it using to get keys     
+//     9.values()  -- it using to get value 
+// */ 
 
-                                console.log("                   -- add value --")
-let myset=new Set();
-myset.add(2)
-myset.add(2)
-myset.add(2)
-myset.add("prasath")
-myset.add(4)
-console.log(myset);
+//                                 console.log("                   -- add value --")
+// let myset=new Set();
+// myset.add(2)
+// myset.add(2)
+// myset.add(2)
+// myset.add("prasath")
+// myset.add(4)
+// console.log(myset);
 
-                                console.log("                   -- add object --")
+//                                 console.log("                   -- add object --")
 
-myset.add({a:1,b:2});  //--> object repeating because
-myset.add({a:1,b:3}); //    -it is " Reference Type "
-console.log(myset);
+// myset.add({a:1,b:2});  //--> object repeating because
+// myset.add({a:1,b:3}); //    -it is " Reference Type "
+// console.log(myset);
 
-                                console.log("                   -- delete 4 --");
-console.log(myset.delete(4));  //--> delete 4
-console.log(myset);
+//                                 console.log("                   -- delete 4 --");
+// console.log(myset.delete(4));  //--> delete 4
+// console.log(myset);
 
-                                console.log("                   -- checking value in the set has(2) --");
-console.log(myset.has(2));  //checking 2 in the set object  it true 
+//                                 console.log("                   -- checking value in the set has(2) --");
+// console.log(myset.has(2));  //checking 2 in the set object  it true 
 
                               
-                                console.log("                   -- checking size  --");
-console.log(myset.size); // checking total size of set object
+//                                 console.log("                   -- checking size  --");
+// console.log(myset.size); // checking total size of set object
 
                                
-                                console.log("                   -- convert to array --");
-arr2=Array.from(myset)  //-->it convert to array
-console.log("changed array",arr2);
+//                                 console.log("                   -- convert to array --");
+// arr2=Array.from(myset)  //-->it convert to array
+// console.log("changed array",arr2);
 
 
 
