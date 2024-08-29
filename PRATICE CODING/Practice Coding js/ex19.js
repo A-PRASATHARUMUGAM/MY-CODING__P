@@ -55,7 +55,7 @@
 // console.log(myset);
                                         
 //                                 console.log("                   -- entries  --");
-// let entries = myset.entries() //Return Iterator [key,value] to the set 
+// let entries = myset.entries() //Return Iterator [value,value] to the set 
 // console.log("entries:",entries)
 
                             
@@ -97,46 +97,69 @@
 
 
 // //2. Map Object --> collection of key-value pairs
-// console.log("                   Map"); 
+//                                         console.log("                  new Map"); 
 
 
-// let map1=new Map();
-// map1.set('a',1);  //--> syntax: ('key any', value any)
-// map1.set('b',2);  
-// map1.set('c',3);  
-// map1.set('d',4);  
+// /*  1.set()     -- it is add value key,value pair
+//     2.get()     -- you put key and it return value 
+//     3.clear()   -- remove all element from set
+//     4.delete()  -- delete the value to set
+//     5.entries() -- Return an Iterator with the [value,value] pair from a set
+//     6.forEach() -- get one by one value element,index,array
+//     7.has()     -- check the value to set 
+//     8.keys()    -- it using to get keys     
+//     9.values()  -- it using to get value 
+//     10.size()    -- check the size to set 
+// */ 
+//                                     console.log("                   -- set  --");
+// let mymap=new Map();
+// mymap.set('a',1);   //--> syntax: ('key any', value any)
+// mymap.set('b',2);  
+// mymap.set('c',3);  
+// mymap.set('d',4);  
 
-// console.table(map1); 
-// console.log(map1); 
+// console.table(mymap); 
+// console.log(mymap); 
+   
+//                                    console.log("                   -- get  --");
+// console.log(mymap.get('a'));
 
-// console.log(map1.size);
-// console.log(map1.has('a',1));   
 
-// map1.delete('d')
-// console.log("delete d ",map1) 
- 
+//                                 console.log("                   -- delete  --");
+// mymap.delete('d')
+// console.log("delete d ",mymap) 
 
-// // Example
-// console.log("       for");
+
+//                                 console.log("                       -- has --")
+// console.log(mymap.has('d'));   
+
+//                                   console.log("                   -- size  --");                 
+// console.log(mymap.size);
+
+
+
+
+//                 // Get the keys and values using ( for of ) 
+//                                 console.log("                        -- for  --");
 
 // //for
-// for(let i of map1){
+// for(let i of mymap){
 //     console.log(i)
 // }
 
 
 // // way 2
-// for(let [k,v] of map1){
+// for(let [k,v] of mymap){
 //     console.log("key",k,"value",v);
 // }
 
 // // way 3
-// for(let k of map1.keys()){
+// for(let k of mymap.keys()){
 //     console.log("key",k);
 // }
 
-// for(let k of map1.values()){
-//     console.log("value",k); 
+// for(let v of mymap.values()){
+//     console.log("value",v); 
 // }
 
 
@@ -144,14 +167,14 @@
 // //forEach
 // console.log("       forEach");
 
-// map1.forEach((v,k)=>{
+// mymap.forEach((v,k)=>{
 //     console.log("key",k,"value",v);
 // })
 
 
 
-// //2d array to map
-// console.log("       2d Array");
+//             //2d array to map and spread operator to covert array 
+// console.log("       2d Array");  //array to object 
 
 // arr2d=[['a',1],['b','2']];
 
@@ -278,5 +301,6 @@
 
 // //5. Bending set and get 
 // //6. import and export  
+
 
 

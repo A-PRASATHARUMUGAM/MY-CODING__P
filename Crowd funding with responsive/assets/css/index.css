@@ -31,13 +31,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
+  font-size: 16px;
 }
 /* Navigation Bar */
 .header{
   position: fixed;
   left:0;
   right:0;
-  background-color: rgba(255, 255, 255, 0.793);
+  background-color: black;
 }
 li{
   list-style: none;
@@ -87,7 +88,7 @@ li{
 #boxhead {
   height: 48px;
 }
-
+  
 /* ------------- section 1 ---------------------- */
 section {
   margin-top: 40px;
@@ -98,7 +99,7 @@ section {
 }
 
 .container-box {
-  width: 70vw;
+  width:80vw;
 }
 
 .container-title {
@@ -168,6 +169,7 @@ section {
     transition:0.52s;
     position: absolute;
     left:-400px;
+    background:whitesmoke;
   }
   .showmenu{
     left:0;
