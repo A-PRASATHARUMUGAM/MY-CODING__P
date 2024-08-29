@@ -1,0 +1,24 @@
+body{
+    width: 100wv;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#25242a;
+}
+
+.fd-container{
+    border:1px solid black;
+    text-align: center;
+    padding: 50px;
+    background-color: lightgray;
+    height:250px;
+
+}
+.fd-input{
+    padding:8px;
+}
+.fd-button{
+    margin-top:10px;
+    padding:8px;
+}
