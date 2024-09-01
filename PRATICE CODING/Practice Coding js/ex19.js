@@ -313,7 +313,9 @@
 // console.log(user5);
 // console.log(user5.length);
 
-// //5. Bending set and get 
+//                                                      //5. Bending set and get 
 
 
 
+import books from './ex20.js';
+import {data } from './ex20.js';
