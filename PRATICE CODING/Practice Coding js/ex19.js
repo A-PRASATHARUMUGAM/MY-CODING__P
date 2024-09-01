@@ -187,6 +187,11 @@
 
 //                              // 3 .create object and classes
 
+// 1.classes -- It is a template of properties and methods 
+//           -- Provides a simpler and clearer syntax for creating objects and managing inheritance.
+
+// 2.
+
 // let user={
 //      name:'prasath',
 //      age:20,
@@ -216,15 +221,17 @@
 
 // //class : it is template of properties and methos 
 // //        - Base class ,Parent class, super class
+// not use ( = )to create class / not using inside (,) / static variable access to className.methodname
+
 // console.log("                 class                  ")
 
 // class User{   
 //      static numberOfUsers=0;   //-->static variable
-//     //instance variable
 //     constructor(name,age){
+//     //instance variable
 //         this.name=name;
 //         this.age=age;    
-//         User.numberOfUsers++;
+//         User.numberOfUsers++;   //--> static variable access to classname.static-varibale
 //     }
 //     login(){
 //         console.log("login",this.name)
@@ -233,7 +240,7 @@
 //      logOut(){
 //         console.log("logout",this.name)
 //      }
-//      static staticMethod(){    //---> static Method
+//      static staticMethod(){    //---> static Method it invoking to classname.methodname
 //     console.log("Total users ",User.numberOfUsers); 
 //   }
 // }
@@ -242,23 +249,23 @@
 // let user3=new User('karthi',30);
 // let user4=new User('sabari',35);
 
-// user1.login();  // not static method invoking to  object name - 1
+// user1.login();  // non static method invoking to  object name - 1
 // user3.logOut();
 
-// // Static variable 
+// //  Static variable access to classname.static-varibale
 // console.log("Number of objects",User.numberOfUsers); 
 
-// // Static Method
+// // Static Method  it invoking to classname.methodname
 // User.staticMethod();  // static method invoking to class name - 2
 
 
 
-//                                 //inheritance : acquiring properties to base class
-//                                 //              - it is dervied class, child class, sub class 
+//                      //inheritance : acquiring properties to base class
+//                      //              - it is dervied class, child class, sub class 
 
 // class paiduser extends User{  
 //     constructor(name,age){
-//         super(name,age);
+//         super(name,age);  // Call the parent class constructor
 //         this.storage='100gb';
 //     }
 //      message(){
@@ -283,24 +290,30 @@
 
 //                                         //4. Old type to create the class
 // function User2(name,age){
-//     this.name;
-//     this.age;
+//     this.name=name;
+//     this.age=age;
 //     this.login=function(){
-//         console.log("loging")
+//         console.log("your login 1")
 //     }
 // }
-// let users=new User2('prasath',20);
-// users.login(); 
+// let userone=new User2('prasath',20);
+// userone.login(); 
  
+
+// User2.prototype.login=function(){
+//     console.log("your are login inside prototype",this.name );
+// }
+// console.log(userone)
+
+
+
 
 // // wrapped class to store the premitive data types
 // let user5=new String("rray")
 // console.log(user5);
 // console.log(user5.length);
 
-
 // //5. Bending set and get 
-// //6. import and export  
 
 
 
