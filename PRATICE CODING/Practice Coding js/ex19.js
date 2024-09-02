@@ -315,7 +315,4 @@
 
 //                                                      //5. Bending set and get 
 
-
-
-import books from './ex20.js';
-import {data } from './ex20.js';
+    
