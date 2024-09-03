@@ -3,17 +3,17 @@
   font-variant: small-caps;
 }
 body{
-  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50vh;
   font-size:16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-transform:capitalize;
-  margin: 0%;
-  padding: 0%;
+  background:linear-gradient(20deg ,black ,lightblue);
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50vh;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* ex1             celsius to fahrenheit converter project-1 */
@@ -132,9 +132,9 @@ hr{
   display: grid;
   place-items: center;
   border:1px solid black;
-  width: 100vw;
+  width:100vw;
   height:80vh;
-  background: linear-gradient(to right, black 10%, aqua );
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.875) 10%, rgba(0, 255, 255, 0.858) );
 
 
 }
@@ -146,10 +146,11 @@ hr{
 
 }
 .clock-container p{
+   margin:30px;
    color: white;
    font-size:60px;
    font-weight: bold;
 }
-.noon{
+.ampm{
   font-size:40px;
 }
