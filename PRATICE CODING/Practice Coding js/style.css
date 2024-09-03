@@ -122,3 +122,34 @@ hr{
   border:none;
 
 }
+
+
+
+          /* ---  PROJECT 24 Digital clock ---  */
+
+
+.main-clock-container{
+  display: grid;
+  place-items: center;
+  border:1px solid black;
+  width: 100vw;
+  height:80vh;
+  background: linear-gradient(to right, black 10%, aqua );
+
+
+}
+.clock-container{
+  display:grid;
+  place-items: center;
+  border:2px solid white;
+  width:40%;
+
+}
+.clock-container p{
+   color: white;
+   font-size:60px;
+   font-weight: bold;
+}
+.noon{
+  font-size:40px;
+}
