@@ -28,12 +28,13 @@
 
 body {
   background-image: url(../image/bgimage/c1.jpg);
-  background-repeat:repeat;
-  background-attachment: scroll;
-  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:center; 
+  background-size: cover;
   height: 100vh;
   width: 100vw;
-  font-size: 16px;
+  font-size:16px;
 }
                                       /****************************\
                                             # Navigation Bar
@@ -91,13 +92,13 @@ li{
 
 
 #boxhead {
-  background-color: black;
   width: 100vw;
   height: 50px;
-  position: absolute;
+  /* background-color: black; */
+  /* position: absolute;
   display:grid;
   place-items: center;
-  background-color:rgba(255, 255, 255, 0.993);
+  background-color:rgba(255, 255, 255, 0.993); */
 
 }
   
@@ -109,9 +110,9 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  border:1px solid black;
   width: 100vw;
-  height:100vh;
+  height:90vh;
+
 }
 .container-box{
   padding:3vw;
@@ -193,7 +194,7 @@ li{
  @media all and (max-width:1440px){
 
   .container-title{
-    font-size:3.5rem;
+    font-size:3.5rem; 
   
   }
    }
@@ -277,27 +278,25 @@ li{
   /* Section - 1  */
 
   body{
-    background-image: url(../image/bgimage/c1-copy\ .jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:-100px;
+    background-position-x:-125px;
   }
   .main-container{
     justify-content: center;
     align-items: center;
    
   }
-  .container-box{
-
-    padding:5px;
-  }
 .container-title{
   font-size:1.4rem;
   
 }
+.container-box{
+  padding:10px;
+}
 .container-para{
   font-size:0.75rem;
   padding:16px;
+}
+#boxhead{
+  background-color: black;
 }
 }
