@@ -2,7 +2,7 @@
  
 /*
 1.get --> it is use to get the private varibale to access other name  
-2.set --> it is use to set the value to private varibale  
+2.set --> it is use to set the value or condition to store data into private varibale  
 */
 
 
@@ -11,6 +11,7 @@ class Temperature{
         constructor(temp2){
           this._temp=temp2; // private variable declare to (  _variableName )
         }
+        
         // get and set as same name beacuse get value and set value 
         get temp3(){  
             return this._temp;
