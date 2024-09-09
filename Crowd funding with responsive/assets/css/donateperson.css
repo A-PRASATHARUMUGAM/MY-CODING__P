@@ -91,9 +91,8 @@ body {
   margin:50px 0px;
   text-align: center;
   font-size: 35px;
-  background:linear-gradient(20deg,#4064a1 50%,white );
+  background:linear-gradient(20deg,#4064a1 50%,white);
   background-clip:text;
-  background-image:transparent;
   color: transparent;
 } 
 
@@ -148,7 +147,7 @@ body {
   border-radius:8px;
 
 }
-/* 
+
 @keyframes animate {
 
   0%,
@@ -168,7 +167,7 @@ body {
 
   60% {}
   
-} */
+}
 
 .profile-card__button--container{
   text-align: center;
