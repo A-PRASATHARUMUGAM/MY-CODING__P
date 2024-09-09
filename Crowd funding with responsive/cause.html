@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/cause.css" type="text/css">
-    <title>Cause</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/cause.css" type="text/css">
+  <title>Cause</title>
 </head>
+
 <body>
 
-    <header class="header">
-        <p class="logo" >Crowd Funding</p>
-        <nav class="navbar">   
-         <a href="index.html">Home</a>
-         <a href="donate.html">Donate</a>
-         <a href="cause.html">Cause</a>
-         <a href="aboutus.html">About Us</a>
-        </nav>
-      </header>
-      <div id="boxhead"> 
+  <header class="header">
+    <p class="logo">Crowd Funding</p>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate</a>
+      <a href="cause.html">Cause</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+  </header>
+
+
+  <!-- section1 **************************************************************** -->
+  <section class="main-container">
+  
+    <!-- bg image -->
+    <div class="bg-image-box">
+
+      <img src="assets/image/bgimage/8605351.jpg" class="bgimage" alt="background image">
+
+    </div>
+
+<!-- form  -->
+    <form action="#" title="contact" method="get" class="form-container">
+
+      <h2 class="form-title">Contact Us </h2>
+<!-- name -->
+      <div>
+        <label for="firstname"></label>
+        <input type="text" name="firstname" class="Firstname" placeholder="First name" required>
+<!-- email -->
+        <label for="email"></label>
+        <input type="email" name="email" class="Email" placeholder="Enter your email" required>
+      </div>
+
+<!-- mobile no -->
+      <div>
+        <label for="mobileno"></label>
+        <input type="tel" name="mobileno" class="Mobileno" placeholder="Enter moblie number" required>
+<!-- address -->
+        <label for="address"></label>
+        <input type="text" name="address" class="Address" placeholder="Enter address" required>
+      </div>
+
+
+<!-- city  -->
+      <div id="state-city-box">
+<div>
+
+  <select name="state" class="State" required>
+
+    <option value="StateNothing">State</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Kerala ">Kerala</option>
+    <option value="Puducherry">Puducherry</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Karnataka">Karnataka</option>
+
+  </select>
+<!-- state  -->
+  
+  <select name="city" class="City" required>
+
+          <option value="CityNothing">City</option>
+          <option value="Villupuram">Villupuram</option>
+          <option value="Villupuram">Chennai</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Tiruchirappalli">Tiruchirappalli</option>
+          <option value="Kanniyakumari ">Kanniyakumari </option>
+          
+        </select>
         
       </div>
-      
+ <!-- cause -->
+      <div>
 
-          <!-- section1 **************************************************************** -->
-<section class="main-container"> 
-<div class="bg-image-box">
+        <select name="cause" class="Cause" required>
 
-  <img src="assets/image/bgimage/8605351.jpg" class="bgimage" alt="background image">
-
-
-</div>
-
-   
-  <form action="#" title="contact" method="get" class="form-container">
-
-    <h2 class="form-title" >Contact Us  </h2>
-
-
-      <label for="firstname"></label>
-      <input type="text" name="firstname" class="Firstname" placeholder="First name" required>
-
-
-
-      <label for="email"></label>
-      <input type="email" name="email" class="Email" placeholder="Enter your email" required>
-
-
-
-      <label for="mobileno"></label>
-      <input type="tel" name="mobileno" class="Mobileno" placeholder="Enter moblie number" required>
-
-      <label for="address"></label>
-      <input type="text" name="address" class="Address" placeholder="Enter address" required>
-
-
-
-<div id="state-city-box">
-
-
-
-
-        <select name="state" class="State" required >
-
-                <option value="StateNothing">State</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Kerala ">Kerala</option>
-                <option value="Puducherry">Puducherry</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Karnataka">Karnataka</option>
-
-                
-    
-         </select>
-
-        <select name="city" class="City"  required>
-    
-                <option value="CityNothing">City</option>
-                <option value="Villupuram">Villupuram</option>
-                <option value="Villupuram">Chennai</option>
-                <option value="Madurai">Madurai</option>
-                <option value="Coimbatore">Coimbatore</option>
-                <option value="Tiruchirappalli">Tiruchirappalli</option>
-                <option value="Kanniyakumari ">Kanniyakumari </option>
-
-    
-        </select>
-        <select name="cause" class="Cause"  required >
-    
           <option value="Nothing">Cause</option>
           <option value="Cancer">Cancer</option>
           <option value="Transplant">Transplant</option>
@@ -97,39 +98,35 @@
           <option value="Mental Disorders">Mental Disorders</option>
           <option value="Alzheimer's disease">Alzheimer's disease</option>
           <option value="Others">Others</option>
-        
-  </select>
+
+        </select>
+      </div>
+
+<!-- About  -->
+        <div>
+          <textarea name="aboutwhatpbm" class="aboutwhatpbm" cols="40" rows="5"
+            required>About for the problem</textarea>
+        </div>
+<!-- image upload -->
+        <div>
+          <input type="file" name="uploadimage" id="uploadimg" required>
+          <label for="uploadimg" class="uploadimg">Upload your image </label>
+        </div>
+
+<!-- submit button -->
+        <div class="form-btn">
+
+          <button class="btn" type="submit">Submit</button>
+
+        </div>
+
+      </div>
 
 
+    </form>
 
 
+  </section>
+</body>
 
-
-
-    <div>
-        <textarea name="aboutwhatpbm" class="aboutwhatpbm" cols="40" rows="5" required>About for the problem</textarea>
-
-
-    </div>
-
-      <input type="file" name="uploadimage" id="uploadimg"  required >
-      <label for="uploadimg" class="uploadimg">Upload your image </label>
-    
-    
-    
-
-
-    <div class="form-btn" >
-            
-        <button class="btn" type="submit" >Submit</button>
-
-
-    </div>
-
-</div>
-  </form>
-
-
-</section>
-    </body>
-    </html>
+</html>
