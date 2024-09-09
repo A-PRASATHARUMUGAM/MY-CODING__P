@@ -6,6 +6,10 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
 :root {
   /* background color  */
   --bg-color-w: #ffffff;
@@ -83,11 +87,15 @@ body {
                                     /*******************\
                                           #section - 1
                                     \*******************/
-.Donate-title{
-  margin:30px;
+.main-title{
+  margin:50px 0px;
   text-align: center;
-  color: black;
-}
+  font-size: 35px;
+  background:linear-gradient(20deg,#4064a1 50%,white );
+  background-clip:text;
+  background-image:transparent;
+  color: transparent;
+} 
 
 .main-container{
   display:flex;
@@ -140,7 +148,7 @@ body {
   border-radius:8px;
 
 }
-
+/* 
 @keyframes animate {
 
   0%,
@@ -160,7 +168,7 @@ body {
 
   60% {}
   
-}
+} */
 
 .profile-card__button--container{
   text-align: center;
