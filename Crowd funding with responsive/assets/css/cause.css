@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: cursive;
 }
+
 a {
   text-decoration: none;
 }
+
 :root {
   /* background color  */
   --bg-color-w: #ffffff;
@@ -27,15 +29,14 @@ a {
 }
 
 body {
-   /* background-image:url(../image/bgimage/8605351.jpg);
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position:center;
-   background-color: white; */
-   font-size: 16px;
-} 
-    
+  background-image: url(../image/bgimage/c4.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -45,8 +46,9 @@ body {
   right: 0%;
   padding: 15px;
   background-color: rgba(1, 1, 1, 0.1);
-  z-index:1;
+  z-index: 1;
 }
+
 .navbar a {
   margin: 0px 30px;
   padding: 10px;
@@ -54,6 +56,7 @@ body {
   font-weight: bold;
   color: #203760;
 }
+
 .navbar a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -75,37 +78,40 @@ body {
 /*background image */
 
 .bg-image-box {
-   border: 1px solid yellow;
-   display: none;
-} 
-.bgimage {
-   display: none;
- 
+  border: 1px solid yellow;
+  display: none;
 }
 
-                                    /*******************\
+.bgimage {
+  display: none;
+
+}
+
+/*******************\
                                           #section - 1
                                     \*******************/
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:10px ;
-}
-.form-title {
-  color: black;
-  text-align: center;
-  padding: 10px;
- 
-}
-.form-container {
-  text-align: center;
-  padding:15px;
-  border: 1px solid red;
-  border-radius:20px;
-  margin:30px;
+  margin-top: 50px;
 }
 
+.form-title {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.form-container {
+  text-align: center;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  margin: 30px;
+
+}
 
 .Email,
 .Firstname,
@@ -114,37 +120,70 @@ body {
 .State,
 .City,
 .Cause,
-.aboutwhatpbm{
-  margin:10px 0px;
+.aboutwhatpbm {
+  margin: 10px 0px;
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.05);
   border: none;
-  max-width:300px;
-  min-width:200px;
   resize: none;
+  width: 250px;
+  color: white;
+
+
 }
- 
+
+input::placeholder {
+  color: black;
+  font-weight: 400;
+}
+
+input:focus {
+  outline: 1px solid white;
+
+}
+
+.aboutwhatpbm:focus {
+  outline: 1px solid white;
+}
+
 .Cause,
-.aboutwhatpbm 
-{
- 
+.aboutwhatpbm {
+  width: 100%;
+
 }
-.aboutwhatpbm{
-  margin-bottom:20px;
+
+.aboutwhatpbm {
+  margin-bottom: 20px;
 }
+
+.State,
+.City,
+.Cause {
+  color: black;
+}
+
 
 input[type="file"] {
   display: none;
+
 }
+
 .uploadimg {
+  background-color: rgba(0, 0, 0, 0.05);
   border: none;
   border-radius: 5px;
   font-size: medium;
-  padding:10px;
-  background-color: rgba(0, 0, 0, 0.05);
-} 
-  
+  padding: 10px;
+
+}
+
+.uploadimg:hover {
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
 
 .btn {
   margin-top: 20px;
@@ -154,9 +193,33 @@ input[type="file"] {
   background-color: #017aee;
   color: white;
   font-weight: bold;
-}
-.btn:hover {
-  background-color: #75e6a3;
   transition: 0.5s;
-  color: black;
-}  
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #c71d28;
+  transition: 0.5s;
+  color: white;
+}
+
+@media all and (max-width:613px) {
+
+  body {
+    background-position-x: -100px;
+  }
+
+  .Cause,
+  .aboutwhatpbm {
+    width: 250px;
+  }
+
+}
+
+@media all and (max-width:320px) {
+  .form-container {
+    margin-top: 20px;
+  }
+
+
+}
