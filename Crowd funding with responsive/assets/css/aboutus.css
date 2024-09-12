@@ -31,13 +31,12 @@
 
 
 body {
-  background-image: url(../image/bgimage/c4.jpg);
+  background-image: url(../image/bgimage/c2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
-
-
+  line-height:3;
+  font-size:16px;
 }
 
 .header {
@@ -86,57 +85,54 @@ body {
   height: 48px;
 }
 
-
-/*background image */
-
-.bg-image-box {
-  border: 1px solid yellow;
-  display: none;
-}
-
-.bgimage {
-  display: none;
-
-}
-
                           /*******************\
                                 #section 1
                           \*******************/
 
-section {
+.main-container {
   margin-top: 20px;
   display: flex;
-  flex-flow: wrap;
-  gap: 50px;
   justify-content: center;
   align-items: start;
+  flex-flow: wrap;
+  gap:30px;
 }
 
-
-/* section 1*********************************************** */
-
-
-
-.section-title {
+.main-title{
   margin-top: 50px;
   text-align: center;
   font-weight: bold;
   color: #fff200;
   text-transform: uppercase;
 
-
 }
 
 /* remedies paragraph ******************************************** */
 
 .transplant-container1 {
-  margin: 0 20px 20px;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: justify;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
+  margin:20px;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255,0.800);
   color: black;
-  font-weight: 500;
+  text-align:justify;
+  font-size:1.2rem; 
+  padding:20px;
+  font-weight:400;
+}
+
+
+@media all and (max-width:613px) {
+
+  body {
+    background-position-x: -200px;
+    background-position-y: -10px;
+  }
+
+  
+}
+
+@media all and (max-width:320px){
+  .transplant-container1{
+    font-size: 0.8rem;
+  }
 }
