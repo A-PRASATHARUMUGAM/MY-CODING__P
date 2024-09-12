@@ -75,17 +75,7 @@ body {
   height: 48px;
 }
 
-/*background image */
 
-.bg-image-box {
-  border: 1px solid yellow;
-  display: none;
-}
-
-.bgimage {
-  display: none;
-
-}
 
 /*******************\
                                           #section - 1
@@ -100,7 +90,7 @@ body {
 .form-title {
   text-align: center;
   padding: 10px;
-  color: white;
+  color:#ff3442;
 }
 
 .form-container {
