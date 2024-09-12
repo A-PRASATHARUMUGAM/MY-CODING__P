@@ -1,86 +1,79 @@
-* {
-  margin:0;
-  padding:0;
-  color: #edf0f1;
-  box-sizing: border-box;
-  font-variant: small-caps;
-
+*{
+  margin: 0;
+  padding: 0;
 }
+/* links */
+
+a,a:visited,a:hover{
+  text-decoration:none;
+}
+/* Navigation Bar */
+.navbar-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border:1px solid black;
+    padding:15px;
+    font-weight: bold;
+    background-color: black;
+  }
+/* Naigation menu */
+  li{
+    list-style-type: none;
+  }
+  .header-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+  }
+
+.header-links a{
+  color: white;
+}
+
+/* Hamburger Menu */
+.hmenu{
+ display:block;
+ width:20px;
+ height:3px;
+ background-color:white;
+ border-radius:10px;
+ margin-bottom:3px;
+}
+
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color:#24252a;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-variant: small-caps;
+}
 
-}
-a {
-  text-decoration: none;
-}
-header {
-  padding:10px;
-  background-color: rgba(211, 211, 211,0.25);
-  font-weight:600;
-  transition: all 0.3s ease 0s;
+@media all and (max-width:650px){
 
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar li {
-  display:inline-block;
-  margin:5px;
-  padding:5px;
-}
-.menu{
-  display: none;
-}
-.menulist{
-  width: 20px;
-  height:2px;
-  background-color: black;
-  margin-bottom:4px; 
-}
-.log{
-  margin: 10px;
-}
-.navbar li a{
-  transition: all 0.3s ease 0s;
-}
-@media all and (max-width: 768px) {
-  .navbar li a{
+  .navbar-container{
+    justify-content: space-between;
+    height: 20px;
+  }
+  .header-logo{
+    color:white;
+  }
+  .header-links{
+    position: relative;   
+    top:120px;
+    right:30px;
+    border: 1px solid black;
+    background-color: gray;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+    width:50%;
+    transition:0.5s;
+  }
+  .header-links a{
     color:black;
   }
-  .navbar{
-        flex-direction:column;
-        text-align: center;
-       
-  }
-  .showmenu1{
-    background-color: white;
-    width:auto;
-    padding:8px;
-    border-radius:10px;
-  } 
-  .navbar li{
-    display:block;
-    
-  }
-  
-
-  .menu {
-    display:block;
-    position: absolute;
-    top:22px;
-    left:20px; 
-    cursor:pointer;
-    
-  }
-  .showmenu{
-    display:none;
+  .header-links a:hover{
+    transition: color 200ms ease-in-out;
+    color:yellow;
   }
 
-}
-.searchinputbox{
-  color:black;
-  padding:5px;
 }
