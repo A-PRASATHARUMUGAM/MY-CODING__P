@@ -31,21 +31,12 @@ a,a:visited,a:hover{
 .header-links a{
   color: white;
 }
-
-/* Hamburger Menu */
-.hmenu{
- display:block;
- width:20px;
- height:3px;
- background-color:white;
- border-radius:10px;
- margin-bottom:3px;
-}
-
 body{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-variant: small-caps;
 }
+
+
 
 @media all and (max-width:650px){
 
@@ -57,6 +48,7 @@ body{
     color:white;
   }
   .header-links{
+    display: none;
     position: relative;   
     top:120px;
     right:30px;
@@ -66,8 +58,10 @@ body{
     gap:10px;
     padding: 20px;
     width:50%;
-    transition:0.5s;
   }
+  .header-showmenu{
+    display:flex;
+   }
   .header-links a{
     color:black;
   }
@@ -75,5 +69,40 @@ body{
     transition: color 200ms ease-in-out;
     color:yellow;
   }
+
+
+  
+/* Hamburger Menu */
+.hmenu{
+  display:block;
+  width:20  px;
+  height:3px;
+  background-color:white;
+  border-radius:10px;
+  margin-bottom:3px;
+  transition: all 300ms ease-in-out;
+  transform-origin: 1px 2px; 
+  cursor: pointer;
+ }
+ 
+
+ 
+ /* Animation in Hamburger menu */
+ 
+ .Ahmenu :nth-child(1){
+   background-color: white;
+  transform: rotate(40deg);
+ 
+ }
+ 
+ .Ahmenu :nth-child(2){
+   opacity:0;
+ }
+ 
+ .Ahmenu :nth-child(3){
+   background-color: white;
+   transform: rotate(-40deg);
+ 
+ }
 
 }

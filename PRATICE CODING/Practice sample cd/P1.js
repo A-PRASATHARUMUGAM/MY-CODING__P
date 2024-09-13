@@ -1,15 +1,12 @@
+const AnimationNav=document.querySelector(".hamburger-menu");
+const HeaderNav=document.querySelector(".header-links");
 
-// array=[
-//     ['a','b','c'],
-//     ['a','b','c'],
-//     ['a','b','c'],
-// ]
-// reducedata=array.reduce((accumulator,currentvalue)=>{
-
-//     result=accumulator+currentvalue;
-   
-//      return result;     
-// },{});
-
-// // result : a:1 b:2 c:3 
-
+    
+AnimationNav.addEventListener("click",()=>{
+    if(AnimationNav.classList.contains("Ahmenu")){
+        AnimationNav.classList.remove("Ahmenu");
+    }else{
+        AnimationNav.classList.add("Ahmenu");
+    }
+ HeaderNav.classList.toggle("header-showmenu");
+});     
