@@ -1,13 +1,11 @@
-const showmenu=document.querySelector(".header");
-const menu=document.querySelector(".menu");
-const closebutton=document.querySelector(".close-btn");
+const AnimationNav=document.querySelector(".hamburger-menu");
+const HeaderNav=document.querySelector(".header-links");
 
- 
-const hamburgermenu=menu.addEventListener('click',()=>{
-   showmenu.classList.toggle("showmenu");
-   
-})  
-
-closebutton.addEventListener('click',()=>{
-   showmenu.classList.toggle("showmenu");
-})   
+AnimationNav.addEventListener("click",()=>{
+   if(AnimationNav.classList.contains("Ahmenu")){
+       AnimationNav.classList.remove("Ahmenu");
+   }else{
+       AnimationNav.classList.add("Ahmenu");
+   }
+HeaderNav.classList.toggle("header-showmenu");
+});     

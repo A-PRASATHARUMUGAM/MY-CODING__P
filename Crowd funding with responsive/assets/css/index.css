@@ -1,10 +1,10 @@
-* {
-  margin: 0%;
-  padding: 0%;
+*{
+  margin:0;
+  padding:0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-variant: small-caps;
 }
 
 :root {
@@ -39,68 +39,47 @@ body {
                                       /****************************\
                                             # Navigation Bar
                                       \****************************/
-.header{
-  position: fixed;
-  left:0;
-  right:0;
-  background-color: black;
-}
-li{
-  list-style: none;
-}
-.navbar{
-  display:flex;
-  justify-content:center;
-  align-items: center;
-  padding: 10px;
-}
-.nav-container{
-  display:inline-flex;
-
-}
-.nav-container li{
-  margin:10px 15px ;
- 
-}
-.nav-container a{
-  font-weight: bold;
-  color: #203760;
-}
-.nav-container a:hover{
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  transition: 0.5s;
-} 
-.logo{
-  position: absolute;
-  left:15px;
+/* Header Logo */
+.header-logo{
   font-size:18px;
   font-weight: bold;
   color: #203760;
+}
 
+  /* Navigation Bar */
+  .navbar-container{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      padding:15px;
+      font-weight: bold;
+      background-color: rgba(1, 1, 1, 0.1);
+    }
+  /* Naigation menu */
+    li{
+      list-style-type: none;
+    }
+    .header-links{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 50vw;
+      margin-right:100px;
+    }
   
-}
-.menu{
-  display: none;
-}
-.menu-line{
-  margin:2px;
-  width:20px;
-  height:3px;
-  background-color:#000000;
-}
+  .header-links a{
+    color:#4064a1 ;
+  }
+
+ 
+.header-links a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  transition: all 300ms ease-in-out;
+} 
 
 
-#boxhead {
-  width: 100vw;
-  height: 50px;
-  /* background-color: black; */
-  /* position: absolute;
-  display:grid;
-  place-items: center;
-  background-color:rgba(255, 255, 255, 0.993); */
 
-}
   
                                       /****************************\
                                               # Section - 1
@@ -116,6 +95,7 @@ li{
 }
 .container-box{
   padding:3vw;
+  margin-bottom:30px;
 }
 
 .container-title {
@@ -123,9 +103,9 @@ li{
   color: #4064a1;
 
 }
-
+ 
 .container-para {
-  margin-top: 15px;
+  margin-top:20px;
   line-height: 1.5em;
   font-size:2vw;
   font-weight: lighter;
@@ -164,27 +144,21 @@ li{
 .container-button__secondary:hover {
   border: 2px solid lightblue;
   background-color: white;
-  color: lightblue;
+  color: rgb(41, 202, 255);
   box-shadow: 8px 8px 5px lightblue;
-  transition: 0.5s;
+  transition: all 300ms ease-in-out;
 }
 
 .container-button__secondary:hover {
   border: 2px solid rgb(255, 159, 173);
   background-color: white;
-  color: rgb(255, 159, 173);
+  color: rgb(253, 135, 153);
   box-shadow: 8px 8px 5px lightpink;
-  transition: 0.5s;
+  transition: all 300ms ease-in-out;
 }
                                       /****************************\
                                               # Media Query 
                                       \****************************/
-
-/* 
- font-size:16px -> mobile responsive 375px
- font-size:24px -> mobile responsive 425px
- font-size:32px -> mobile responsive 768px
- font-size:48px -> mobile responsive 1024px */
 
 
                                       /****************************\
@@ -207,61 +181,82 @@ li{
   font-size:2.8rem;
 }
  }
+   
+                                      /****************************\
+                                              @media 650px
+                                      \****************************/
+ @media all and (max-width:650px){
+  
+  .navbar-container{
+    justify-content: space-between;
+  }
+  .header-links{
+    display: none;
+    position: absolute;   
+    flex-direction: column;
+    top:80px;
+    width:calc(100%) ;
+    left:50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    gap:10px;
+    width:80%;
+    transition: all 300ms ease-in-out;
+    border-radius:10px;
+    background-color:whitesmoke;
+  }
+  .header-showmenu{
+    display:flex;
+    transition: 0.5s; 
+   }  
+ 
+  .header-links a:hover{
+    transition: color 200ms ease-in-out;
+    color:rgb(25, 198, 255);
+  }
+
+
+  
+/* Hamburger Menu */
+.hmenu{
+  display:block;
+  width:20px;
+  height:3px;
+  background-color:white;
+  border-radius:10px;
+  margin-bottom:3px;
+  transition: all 300ms ease-in-out;
+  transform-origin: 2px 2px; 
+  cursor: pointer;
+ }
+ 
+
+ /* Animation in Hamburger menu */
+ 
+ .Ahmenu :nth-child(1){
+   background-color: white;
+  transform: rotate(45deg);
+ 
+ }
+ 
+ .Ahmenu :nth-child(2){
+   opacity:0;
+ }
+ 
+ .Ahmenu :nth-child(3){
+   background-color: white;
+   transform: rotate(-45deg);
+ 
+ }
+
+}
 
                                       /****************************\
                                               @media 768px
                                       \****************************/
 @media all and (max-width:768px){
 
-              /* Navigation Bar */
-  .header{
-    width:50vw;
-    height:100vh;
-    transition:0.52s;
-    position: absolute;
-    left:-400px;
-    background:whitesmoke;
-  }
-  .showmenu{
-    left:0;
-    transition: 0.5s;
-  }
-  .navbar{
-    display:block;
-
-  }
-  .nav-container{
-    display:block;
-    text-align: center; 
-  }
-  .logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size:15px;
-    padding:10px;
-    position: static;
-
-  }
-  
-   .menu{
-     cursor:pointer;
-     display: block;
-     position: absolute;
-     top:10px;
-     left:10px;
-   } 
-
-
-   .close-btn{
-    width:15px;
-    height:15px;
-    background-color: black;
-    border-radius:50%;
-    cursor: pointer;
-   
-   }
-                /* Section - 1*/
+   /* Section - 1*/
 .container-title{
   font-size:2.5rem;
 
@@ -296,7 +291,7 @@ li{
   font-size:0.75rem;
   padding:16px;
 }
-#boxhead{
+/* #boxhead{
   background-color: black;
-}
+} */
 }
