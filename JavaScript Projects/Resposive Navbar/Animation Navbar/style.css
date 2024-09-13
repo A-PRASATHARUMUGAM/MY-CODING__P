@@ -10,7 +10,7 @@
   /* Navigation Bar */
   .navbar-container{
       display: flex;
-      justify-content:space-around;
+      justify-content:space-between;
       align-items: center;
       border:1px solid black;
       padding:15px;
