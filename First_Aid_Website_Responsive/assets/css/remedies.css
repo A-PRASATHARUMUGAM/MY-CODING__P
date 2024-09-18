@@ -1,0 +1,203 @@
+*{
+  margin: 0px;
+  padding: 0%;
+  text-decoration: none;
+  font-family: cursive;
+  
+}
+:root{
+
+  /* background color */
+    --bg-color-w:#ffffff;
+    --bg-color-b:#000000;
+  
+  /* Navigation color  */
+    --nav-btn:white;
+    --nav-bg:rgba(0, 0, 0,0.5);
+    --nav-log:#daf0ff;
+    --nav-btnHovcolor:white;
+    --nav-btnHovbg:rgba(221, 222, 220,0.5);
+
+  /* text color  */
+    --text-color-w:#ffffff;
+    --text-color-b:#000000;
+    --text-color1:#ededed;
+    --text-color2:#f75551;
+    --text-color3:#24c8ff;
+  
+   
+  /* button color  */
+   --btn-color1:#00abf0;
+   --btn-color2:#f75551;
+  
+  }
+  body{
+  background-image: url(../images/remediesbg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;  
+  background-position: center;
+  background-attachment: fixed;
+      
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color:var(--nav-bg);
+    padding: 10px;
+    }
+    .navbar a{ 
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 15px;
+      font-family:cursive;
+      color:var(--nav-btn);
+      margin-left:10px;
+      margin-right: 35px;
+    }
+    .navbar a:hover{
+      border: 1px solid white;
+      padding: 10px;
+      color: var(--nav-btnHovcolor);
+      background-color: var(--nav-btnHovbg);
+      transition: 0.5s; 
+  
+      }
+  
+     .logo{  
+      font-family: cursive;
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color:var(--nav-log);
+   }
+  
+  
+     #boxhead{
+      height: 48px;
+   }
+
+ /* section 1*********************************************** */
+
+
+
+.section-title{
+  margin-top:50px;
+  text-align: center;
+  font-weight: bold;
+  color:#F7F172;
+  text-transform: uppercase;
+
+  
+ }
+   /* remedies paragraph ******************************************** */
+
+   .remedies-container1{
+     margin-top:35px;
+     margin-left: 150px;
+     width: 80vw;
+     color: white;
+     line-height: 40px;
+     text-align: justify;
+   }
+.remedies-img{
+  margin-top: 30px;
+  margin-left: 80px;
+  border-radius: 15px;
+  width: 800px;
+}
+
+
+.remedies-container2{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.remedies-title{
+  color: var(--text-color3);
+  text-decoration:underline;
+  line-height: 80px;
+  
+}
+h3{
+   color:rgb(255, 255, 0);
+}
+ul{
+  line-height: 40px;
+  margin-left: 50px;
+}
+
+
+  /* FOOTER SECTION ************************************************************************************ */
+
+  footer{   
+    background-color:black;
+    padding:10px; 
+    text-align: center;
+  
+
+  }
+  #footerhead{
+    color:  rgb(116, 202, 231);
+    word-spacing: 4px;
+    text-align: start;  
+    font-size: 4vh;
+    font-variant: small-caps;
+  }
+  #footerlink h3{
+    color: white;
+    margin: 16px;
+    font-family: cursive;
+    color: #ededed;
+    font-size: 20px;
+    font-weight: bolder;
+    }
+  
+  #email{
+    border: none;
+     padding: 10px;
+     width: 40vh;
+     font-size: 15px;
+     font-variant: small-caps;
+     margin-bottom: 20px;
+  }
+  button{
+    border: none;
+    font-variant: small-caps;  
+    background-color: #f8302c;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  button:hover{
+    background-color: rgb(45, 178, 223);
+    color: black;
+    transition: 0.5s;
+  }
+  /* Icon **************************************************************** */
+  
+  
+  #icon1{ 
+      position: relative;
+      width: 6vh; 
+      padding-inline:10px ;
+  }
+  #icon2{
+  
+    position: relative;
+    width:6vh;  
+    padding-inline:10px ; 
+    
+  }
+  

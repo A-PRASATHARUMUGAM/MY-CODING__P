@@ -1,0 +1,189 @@
+
+*{
+  margin: 0px;
+  padding: 0%;
+  text-decoration: none;
+  font-family: cursive;
+
+}
+body{
+background-image: url(../images/contact--bg.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+
+  
+}
+:root{
+
+  /* background color */
+    --bg-color-w:#ffffff;
+    --bg-color-b:#000000;
+  
+  /* Navigation color  */
+    --nav-btn:white;
+    --nav-bg:rgba(0, 0, 0,0.5);
+    --nav-log:#daf0ff;
+    --nav-btnHovcolor:white;
+    --nav-btnHovbg: rgba(138, 195, 234,0.5);
+ 
+
+  /* text color  */
+    --text-color-w:#ffffff;
+    --text-color-b:#000000;
+    --text-color1:#ededed;
+    --text-color2:#f75551;
+  
+   
+  /* button color  */
+   --btn-color1:#00abf0;
+   --btn-color2:#f75551;
+  
+  }
+  body{
+  background-image: url(../images/contactbg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;  
+  background-position: center;
+  background-attachment:fixed;
+      
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color:var(--nav-bg);
+    padding: 10px;
+    }
+    .navbar a{ 
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 15px;
+      font-family:cursive;
+      color:var(--nav-btn);
+      margin-left:10px;
+      margin-right: 35px;
+    }
+    .navbar a:hover{
+      border: 1px solid white;
+      padding: 10px;
+      color: var(--nav-btnHovcolor);
+      background-color: var(--nav-btnHovbg);
+      transition: 0.5s; 
+  
+      }
+  
+     .logo{  
+      font-family: cursive;
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color:var(--nav-log);
+   }
+  
+  
+     #boxhead{
+      height: 48px;
+   }
+  
+
+/* section 1  contact form ************************************************************************************** */
+
+
+section{
+   display: flex;
+   justify-content:start;
+   align-items: center;
+   padding-left: 30px;
+
+}
+.form-box{
+   display: grid;
+    width: 40vw;
+    height:500px;
+    padding: 20px;
+    border-radius: 20px;
+   
+    
+    /* box-shadow: 17px 25px 10px  rgba(0, 0, 0,0.6); */
+  
+}
+
+.form-title{
+    font-family: cursive;
+    color: black;
+    text-align: center;
+   
+}
+.Email,.Firstname,.Mobileno,.Address{
+    margin: 15px;
+    background-color: white;
+    border: none;
+    padding: 20px;
+    height: 1px;
+    font-size: medium;
+    border-radius: 5px;
+}
+.State,.City{
+  margin: 15px;
+  border: none;
+  padding: 12px;
+  width: 222px;
+  font-size: medium;
+  border-radius: 5px;
+
+}
+.City{
+
+margin-left: 53px;
+}
+.Whatpbm{
+  margin: 15px;
+  border: none;
+  padding: 12px;
+  width: 519px;
+  font-size: medium;
+  border-radius: 5px;
+
+
+}
+
+.aboutwhatpbm{
+  margin: 15px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  font-size: 15px;
+  background-color: white;
+  padding: 20px;
+  width: 35vw;
+
+
+}
+
+
+
+
+.btn{
+    font-family: cursive;
+    padding: 10px;
+    border: none;
+    width: 519px;
+    margin-left: 15px;
+    background-color:#017aee;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 50px;
+
+  
+}
+.btn:hover{
+     background-color:black ;
+     transition: 0.5s;
+     color: white;
+}

@@ -1,0 +1,292 @@
+
+*{
+    margin: 0px;
+    padding: 0%;
+    text-decoration: none;
+}
+:root{
+
+  /* background color */
+    --bg-color-w:#ffffff;
+    --bg-color-b:#000000;
+  
+  /* Navigation color  */
+    --nav-btn:white;
+    --nav-bg:rgba(0, 0, 0,0.5);
+    --nav-log:#daf0ff;
+    --nav-btnHovcolor:white;
+    --nav-btnHovbg:rgba(255, 15, 15, 0.5);
+
+   
+  /* text color  */
+    --text-color-w:#ffffff;
+    --text-color-b:#000000;
+    --text-color1:#ededed;
+    --text-color2:#f8302c;
+    --text-color3:#163970;
+    --text-color4:rgb(0,0,0,0.5);
+  
+   
+  /* button color  */
+   --btn-color1:#00abf0;
+   --btn-color2:#f75551;
+  
+  }
+  body{
+  background-image: url(../images/firstaidbasics-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;  
+  background-position: center;
+  background-attachment: fixed;
+      
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color:var(--nav-bg);
+    padding: 10px;
+    z-index: 1;
+    }
+    .navbar a{ 
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 15px;
+      font-family:cursive;
+      color:var(--nav-btn);
+      margin-left:10px;
+      margin-right: 35px;
+    }
+    .navbar a:hover{
+      border: 1px solid white;
+      padding: 10px;
+      color: var(--nav-btnHovcolor);
+      background-color: var(--nav-btnHovbg);
+      transition: 0.5s; 
+  
+      }
+  
+     .logo{  
+      font-family: cursive;
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color:var(--nav-log);
+   }
+  
+  
+     #boxhead{
+      height: 48px;
+   }
+
+/* section 1 ****************************************************************************************************/
+.parafirst{
+display: flex;
+flex-flow: wrap column;
+text-align: start;
+margin-left: 210px;
+width: 70vw;
+line-height: 40px;
+font-family: cursive;
+text-align:justify;
+
+
+
+} 
+.parafirst>p{
+ margin-top: 15px;
+font-weight: 500;
+
+}
+.parafirst>h2{
+ margin-top: 50px;
+font-size: 1.5rem;
+text-decoration: underline;
+color:var(--text-color4);
+
+}
+.parafirst>h4{
+ margin-top: 40px;
+ color: var(--text-color3);
+}
+
+#section1{  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: var(--text-color-b);
+ 
+}
+#section1head{
+  font-family: cursive;
+  font-weight: bold;
+  color:var(--text-color2);
+  margin-top: 50px;
+  text-transform: uppercase;
+
+
+}
+#section1para{
+  margin-top: 70px;
+  text-align: justify;
+margin-left: 210px;
+width: 70vw;
+line-height: 40px;
+text-align: justify;
+font-family: cursive;
+
+
+}
+#section1para h2{
+  margin-bottom: 20px;
+  text-decoration:underline;
+  color: var(--text-color4);
+}
+
+
+/* Table ************************************************************************ */
+
+#boxtable{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+
+}
+table{
+  width: 75vw;
+}
+#tablehead,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 25px;
+}
+td:nth-child(3){
+ text-align: justify;
+
+}
+td:nth-child(2){
+ font-weight: 520;
+
+}
+
+th{
+  background-color: var(--bg-color-b);
+   color: white;
+   text-transform: uppercase;
+}
+tr:nth-child(even) {
+ background-color: var(--bg-color-w);
+}
+tr:nth-child(odd) {
+  background-color: #ccc;
+}  
+.lettertd{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: xx-large ;
+}
+/* setup image */
+
+ #stepbox{
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+
+#stepimage{
+  width: 60vw;
+  border-radius: 20px;
+} 
+
+/* video ***************************************************** */
+.video-title{
+  font-family: cursive;
+  font-weight: bold;
+  color:var(--text-color2);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+}
+.video-box{ 
+  margin-top: 60px;
+  display: grid;
+  grid-template: repeat(2,1fr)/repeat(2,1fr); 
+  place-items:center;
+  gap:100px 0px ;
+  padding-inline: 60px;
+}
+video{
+  width: 25vw;
+  border-radius: 10px;
+  box-shadow: 10px 20px 9px rgb(0, 0, 0,0.6);
+  z-index: 0;
+}
+ /* FOOTER SECTION ************************************************************************************ */
+
+ footer{   
+  margin-top: 200px;
+  background-color:black;
+  padding:10px; 
+ text-align: center;
+}
+#footerhead{
+  color:  rgb(116, 202, 231);
+  word-spacing: 4px;
+  text-align: start;  
+  font-size: 4vh;
+  font-variant: small-caps;
+}
+#footerlink h3{
+  color: white;
+  margin: 16px;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bolder;
+  }
+
+#email{
+  border: none;
+   padding: 10px;
+   width: 40vh;
+   font-size: 15px;
+   font-variant: small-caps;
+   margin-bottom: 20px;
+}
+button{
+  border: none;
+  font-variant: small-caps;  
+  background-color: #f8302c;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+button:hover{
+  background-color: rgb(45, 178, 223);
+  color: black;
+  transition: 0.5s;
+}
+/* Icon **************************************************************** */
+
+
+#icon1{ 
+    position: relative;
+    width: 6vh; 
+    padding-inline:10px ;
+}
+#icon2{
+
+  position: relative;
+  width:6vh;  
+  padding-inline:10px ; 
+  
+}
