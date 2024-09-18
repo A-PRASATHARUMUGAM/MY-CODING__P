@@ -144,10 +144,53 @@
 
 */
 
+                                /* 1. Selectors  */
+
+/* 1. Unviersal Or  Wildcard Selector ( * )     */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* 2. Element Selector */
 body{
     background-color:#25242a;
     color: white;
+    line-height:3;
+    font-size: 16px;
+}
+p{
+    font-size:2rem;
 }
 h1{
     text-align: center;
+    color: red;
+}
+
+
+/* 3. Class Selectors  ( . ) */
+.para-one{
+    color: lightblue;
+}
+
+/* 4. Id Selector     ( # ) */
+#para-two{
+    color: lightcoral;
+}
+
+/* 5. Specific Class Selector */
+
+.para-three{
+    color:orange;
+}
+/* specific class */
+h2.para-three{
+      color: lawngreen;
+}
+
+/*6. Grouping Selector*/
+
+/* similar to --> element,id */
+.group-para1,.group-para2,.group-para3{
+    color:lightcyan;
 }
