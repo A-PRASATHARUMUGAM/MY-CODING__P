@@ -10,11 +10,11 @@ background-color: #96dfd4;
 font-size: 16px;
 }
 .main-container{
-  width: auto;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:55px;
 }
 
 .main-title{
@@ -47,6 +47,7 @@ button{
     font-weight: bold;
 
 }
+
 button:hover{
     color: white;
     background-color: black;
