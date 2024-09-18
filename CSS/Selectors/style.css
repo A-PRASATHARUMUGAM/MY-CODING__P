@@ -1,0 +1,153 @@
+/* 
+                1. Selectors
+
+1. Universal or WildCard Selector   ( * )
+2. Element Selector                 (tag name)
+3. Class Selector                   ( . )
+4. ID Selector                      ( # )
+5. Specific Class Selector          (tag.classname)
+6. Group Selector  
+
+************************************************************
+
+                2. Combinators  
+
+1. Decendent Selector                  (space)
+2. Child Selector                      ( > )
+3. Adjecent Sibling Selector           ( + )
+4. General Sibling Selector            ( ~ )
+
+
+************************************************************
+
+                3. Pseudo-elements
+
+1. ::first-line         Pesudo-elements  
+2. ::first-letter       Pesudo-elements 
+3. Multiple             Pesudo-elements 
+4. ::Before & ::after   Pesudo-elements 
+5. ::marker             Pesudo-elements 
+6. ::selection          Pesudo-elements 
+7. ::placeholder        Pesudo-elements 
+::content
+::backdrop
+::grammar-error
+::target-text
+
+::view-transition
+::view-transition-group
+::view-transition-image-pair
+::view-transition-new
+::view-transition-new
+::view-transition-old
+
+************************************************************
+                4.Pseudo-classes
+
+[attributename]
+[attributename="value"]
+[attributename~="value"]
+[attributename^="value"]
+[attributename*="value"]
+[attributename$="value"]
+[attributename|="value"]
+
+:active
+:any-link
+:blank
+
+:checked
+:corner-present
+:current
+
+:decrement
+:default
+:defined
+:dir
+:disabled
+:double-button
+:empty
+
+:enabled
+:end
+
+:first
+:first-child
+:first-of-type
+:focus
+:focus-visible
+:focus-within
+:fullscreen
+:future
+
+:has
+:horizontal
+:host
+:host()
+:host-context()
+:hover
+
+:in-range
+:increment
+:indeterminate
+:invalid
+:is
+
+:matches()
+
+:lang()
+:last-child
+:last-of-type
+:left
+:link
+:local-link
+
+:no-button
+:not()
+:nth-child()
+:nth-last-child()
+:nth-last-of-type()
+:nth-of-type()
+
+:only-child
+:only-of-type
+:optional
+:out-of-range
+
+:past
+:paused
+:picture-in-picture
+:placeholder-shown
+:playing
+
+:read-only
+:read-write
+:required
+:right
+
+:scope
+:single-button
+:start
+
+:target
+:target-within
+
+:user-invalid
+:user-valid
+
+:valid
+:vertical
+:visited
+
+:where
+:window-inactive
+
+*/
+
+body{
+    background-color:#25242a;
+    color: white;
+}
+h1{
+    text-align: center;
+}
