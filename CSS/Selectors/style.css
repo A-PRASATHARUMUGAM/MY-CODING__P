@@ -192,7 +192,29 @@ h2.para-three{
 
 /* similar to --> element,id */
 .group-para1,.group-para2,.group-para3{
-    color:lightcyan;
+    color:lightgray;
 }
 
 
+                        /* 2.Combinators */
+
+
+/* 1. Decendent Selector (space) */
+div p b{
+    color: green;
+}
+
+/* 2. Child Selector     ( > )*/
+.child-container > p{
+    color: yellow;
+}
+
+/* 3. Adjecent Sibling Selector  ( + ) */
+.child-container + p{
+    color: lightpink;
+}
+
+/* 4. General Sibling Selector   ( ~ ) */
+.child-container ~ h3{
+      color: lightsalmon;
+}
