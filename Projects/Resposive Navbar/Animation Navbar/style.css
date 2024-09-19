@@ -18,6 +18,9 @@
       background-color: black;
     }
   /* Naigation menu */
+  .header-logo{
+    color: white;
+  }
     li{
       list-style-type: none;
     }
@@ -31,18 +34,22 @@
   .header-links a{
     color: white;
   }
+
+  .hamburger-menu{
+    display: none;
+  }
   body{
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-variant: small-caps;
+   font-family: cursive;
+  background-color: #24252a;
   }
   
-  
+
   
   @media all and (max-width:650px){
   
     .navbar-container{
       justify-content: space-between;
-      height:20px;
+     align-items: center;
     }
     .header-logo{
       color:white;
@@ -73,10 +80,13 @@
       transition: color 200ms ease-in-out;
       color:yellow;
     }
-  
+ 
   
     
   /* Hamburger Menu */
+  .hamburger-menu{
+    display: block;
+  }
   .hmenu{
     display:block;
     width:20px;
