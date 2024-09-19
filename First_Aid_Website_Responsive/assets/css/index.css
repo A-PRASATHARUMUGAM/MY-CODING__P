@@ -51,7 +51,8 @@
   /* Naigation menu */
   .header-logo{
     font-family: cursive;
-    font-size: 20px;
+    margin-left: 20px;
+    font-size: 1.25rem;
     color:var(--nav-log);
   }
     li{
@@ -63,13 +64,14 @@
       align-items: center;
       letter-spacing: 1px;
       font-weight: bold;
-      width:600px;
+      width:550px;
     }
   
   .header-links a{
     color: var(--nav-btn);
+    font-size: 0.9375rem;
   }
-
+ 
   .header-links a:hover{
     border: 1px solid white;
     padding: 10px;
@@ -159,50 +161,6 @@
   
   }
 
-  /* old naviagtion  */
-
-/*   
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  left: 0%;
-  right: 0%;
-  background-color:var(--nav-bg);
-  padding: 10px;
-  }
-  .navbar a{ 
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 15px;
-    font-family:cursive;
-    color:var(--nav-btn);
-    margin-left:10px;
-    margin-right: 35px;
-  }
-  .navbar a:hover{
-    border: 1px solid white;
-    padding: 10px;
-    color: var(--nav-btnHovcolor);
-    background-color: var(--nav-btnHovbg);
-    transition: 0.5s; 
-
-    }
-
-   .logo{  
-    font-family: cursive;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color:var(--nav-log);
- }
- 
-   #boxhead{
-    height: 48px;
-  }
-  
-  */
   
 body{
   background-image: url(../images/homebg.jpg);
