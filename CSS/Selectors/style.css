@@ -28,18 +28,19 @@
 4. ::Before & ::after   Pesudo-elements 
 5. ::marker             Pesudo-elements 
 6. ::selection          Pesudo-elements 
-7. ::placeholder        Pesudo-elements 
-::content
-::backdrop
-::grammar-error
-::target-text
+7. ::placeholder        Pesudo-elements
 
-::view-transition
-::view-transition-group
-::view-transition-image-pair
-::view-transition-new
-::view-transition-new
-::view-transition-old
+8 ::content
+9 ::backdrop
+10 ::grammar-error
+11 ::target-text
+
+12 ::view-transition
+13 ::view-transition-group
+14 ::view-transition-image-pair
+15 ::view-transition-new
+16 :view-transition-new
+17 ::view-transition-old
 
 ************************************************************
                 4.Pseudo-classes
@@ -144,7 +145,9 @@
 
 */
 
-                                /* 1. Selectors  */
+/* ------------------------------------------------------------- *\
+                            #1.Selectors 
+\* ------------------------------------------------------------- */
 
 /* 1. Unviersal Or  Wildcard Selector ( * )     */
 *{
@@ -156,8 +159,9 @@
 body{
     background-color:#25242a;
     color: white;
-    line-height:3;
+    line-height:4;
     font-size: 16px;
+    margin-left:40px;
 }
 p{
     font-size:1.5rem;
@@ -195,8 +199,9 @@ h2.para-three{
     color:lightgray;
 }
 
-
-                        /* 2.Combinators */
+/* ------------------------------------------------------------- *\
+                            #2.Combinators 
+\* ------------------------------------------------------------- */
 
 
 /* 1. Decendent Selector (space) */
@@ -217,4 +222,77 @@ div p b{
 /* 4. General Sibling Selector   ( ~ ) */
 .child-container ~ h3{
       color: lightsalmon;
+}
+
+/* ------------------------------------------------------------- *\
+                            #3. Pseduo Element
+\* ------------------------------------------------------------- */
+
+/* 1. ::first-line 
+
+ --block level element only change
+following properties only working 
+        font properties
+        color properties
+        background properties
+        word-spacing
+        letter-spacing
+        vertical align
+        text-transform
+        line-height
+        clear
+*/
+.pseudo-element::first-line{
+    color: lightcoral;
+    text-decoration: underline;
+    
+}
+
+/* 2. ::first-letter
+
+ --block level element only change
+following properties only working 
+        font properties
+        color properties
+        background properties
+        margin properties
+        padding properties
+        border properties
+        vertical align (only if "float" is "none")
+        text-transform
+        line-height
+        float
+        clear
+*/
+.para2::first-letter{
+    color:red;
+    border: 1px solid yellow ;
+
+}
+
+/* 3. Multiple Psudo element */
+.para3::first-line{
+  text-decoration:underline;
+  color: aqua;
+}
+
+.para3::first-letter{
+    font-size: 40px;
+    color: yellow;
+}
+
+/* 4. ::before & ::after */
+
+.para4::before{
+  content:"::before ";
+  color: yellow;
+}
+.para4::after{
+    content: " ::after";
+    color: blueviolet;
+}
+
+.para5 span::before{
+    content: "$";
+    color: red;
 }
