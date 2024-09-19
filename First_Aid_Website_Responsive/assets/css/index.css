@@ -1,13 +1,3 @@
-
-*,
-::before,::after{
-    margin:0;
-    padding:0;    
-    box-sizing: border-box;
-    
-}
-
-
 :root{
 
 /* background color */
@@ -33,6 +23,14 @@
  --btn-color1:#01b5fc;
  --btn-color2:#f8302c;
 
+}
+
+*,
+::before,::after{
+    margin:0;
+    padding:0;    
+    box-sizing: border-box;
+    
 }
 
                                               /* NAVIGATION  */
@@ -84,83 +82,6 @@
    display: none;
  }
   
-  
-
-  @media all and (max-width:768px){
-  
-    .navbar-container{
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header-logo{
-      color:white;
-    }
-    .header-links{
-      display: none;
-      position: absolute;   
-      top:80px;
-      width:calc(100%) ;
-      left:50%;
-      padding: 20px;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius:10px;
-      flex-direction: column;
-      gap:10px;
-      width:50%;
-      transition: all 300ms ease-in-out;
-    }
-    .header-showmenu{
-      display:flex;
-      transition: 0.5s; 
-     }  
-    .header-links a{
-      color:white;
-    }
-    .header-links a:hover{
-      transition: color 200ms ease-in-out;
-      color:yellow;
-    }
-  
-  
-    
-  /* Hamburger Menu */
-  .hamburger-menu{
-    display: block;
-  }
-  .hmenu{
-    display:block;
-    width:20px;
-    height:3px;
-    background-color:white;
-    border-radius:10px;
-    margin-bottom:3px;
-    transition: all 300ms ease-in-out;
-    transform-origin: 2px 2px; 
-    cursor: pointer;
-   }
-   
-
-   /* Animation in Hamburger menu */
-   
-   .Ahmenu :nth-child(1){
-     background-color: white;
-    transform: rotate(45deg);
-   
-   }
-   
-   .Ahmenu :nth-child(2){
-     opacity:0;
-   }
-   
-   .Ahmenu :nth-child(3){
-     background-color: white;
-     transform: rotate(-45deg);
-   
-   }
-  
-  }
-
   
 body{
   background-image: url(../images/homebg.jpg);
@@ -267,5 +188,83 @@ section{
       background-color: var(--btn-color2);
       color: white;
   }
+}
+
+                                  /*****************************\
+                                          #MEDIA 768px
+                                  \*****************************/
+@media all and (max-width:768px){
+  
+  .navbar-container{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo{
+    color:white;
+  }
+  .header-links{
+    display: none;
+    position: absolute;   
+    top:80px;
+    width:calc(100%) ;
+    left:50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    flex-direction: column;
+    gap:10px;
+    width:50%;
+    transition: all 300ms ease-in-out;
+  }
+  .header-showmenu{
+    display:flex;
+    transition: 0.5s; 
+   }  
+  .header-links a{
+    color:white;
+  }
+  .header-links a:hover{
+    transition: color 200ms ease-in-out;
+    color:yellow;
+  }
+
+
+  
+/* Hamburger Menu */
+.hamburger-menu{
+  display: block;
+}
+.hmenu{
+  display:block;
+  width:20px;
+  height:3px;
+  background-color:white;
+  border-radius:10px;
+  margin-bottom:3px;
+  transition: all 300ms ease-in-out;
+  transform-origin: 2px 2px; 
+  cursor: pointer;
+ }
+ 
+
+ /* Animation in Hamburger menu */
+ 
+ .Ahmenu :nth-child(1){
+   background-color: white;
+  transform: rotate(45deg);
+ 
+ }
+ 
+ .Ahmenu :nth-child(2){
+   opacity:0;
+ }
+ 
+ .Ahmenu :nth-child(3){
+   background-color: white;
+   transform: rotate(-45deg);
+ 
+ }
+
 }
 
