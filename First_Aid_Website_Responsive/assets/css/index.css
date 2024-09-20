@@ -214,7 +214,7 @@ section{
     border-radius:10px;
     flex-direction: column;
     gap:10px;
-    width:50%;
+    width:60%;
     transition: all 300ms ease-in-out;
   }
   .header-showmenu{
@@ -225,8 +225,7 @@ section{
     color:white;
   }
   .header-links a:hover{
-    transition: color 200ms ease-in-out;
-    color:yellow;
+     padding: 5px;
   }
 
 
