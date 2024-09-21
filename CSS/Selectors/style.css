@@ -30,10 +30,15 @@
 6. ::selection          Pesudo-elements 
 7. ::placeholder        Pesudo-elements
 
-8 ::content
-9 ::backdrop
+8  ::content
+9  ::backdrop
 10 ::grammar-error
-11 ::target-text
+11 ::spelling-error
+12 ::target-text
+13 ::cue()
+14 ::cue-region()
+15 ::part
+16 ::shadow
 
 12 ::view-transition
 13 ::view-transition-group
@@ -270,7 +275,7 @@ following properties only working
 
 }
 
-/* 3. Multiple Psudo element */
+/* 3. Multiple Pseudo element */
 .para3::first-line{
   text-decoration:underline;
   color: aqua;
@@ -282,9 +287,8 @@ following properties only working
 }
 
 /* 4. ::before & ::after */
-
 .para4::before{
-  content:"::before ";
+  content:"4. ::before ";
   color: yellow;
 }
 .para4::after{
@@ -296,3 +300,51 @@ following properties only working
     content: "$";
     color: red;
 }
+
+/* 5. ::marker  */
+.Unorder-list li::marker{
+    color: red;
+    font-size:20px;
+}
+/* using symble */
+.Order-list li::marker{
+    content: "😊 ";
+    font-weight: bold;
+
+}
+/* using h3 convert to list  */
+.list {
+    display: list-item;
+    counter-increment: mylist;
+}
+.list::marker{
+    content: counter(mylist) ". " ;
+    color: blue;
+}
+
+/* 6. ::selection Pseudo element */
+.para7{
+    line-height:2;
+    width:80vw;
+}
+.para7::selection{
+    background-color:lightblue;
+    color:red;
+}
+
+/* 7. ::placeholder selector */
+.para8{
+    color: yellow;
+}
+
+.para8-container input{
+    color:blue;
+    font-size:15px;
+    padding: 10px;
+}
+.para8-container input::placeholder{
+   color:orange;
+    text-align: center;
+}
+
+
