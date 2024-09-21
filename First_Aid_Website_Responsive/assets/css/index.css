@@ -162,7 +162,8 @@ body{
 
   0%,100%{
      background-color:var(--btn-color2);
-
+  
+   
   }
   60%
   { 
@@ -180,6 +181,7 @@ body{
   { 
       background-color: var(--btn-color2);
       color: white;
+      
   }
 }
 
