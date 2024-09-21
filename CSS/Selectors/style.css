@@ -50,13 +50,13 @@
 ************************************************************
                 4.Pseudo-classes
 
-[attributename]
-[attributename="value"]
-[attributename~="value"]
-[attributename^="value"]
-[attributename*="value"]
-[attributename$="value"]
-[attributename|="value"]
+Attribute selector tag [attributename]
+Attribute selector tag [attributename="value"]
+Attribute selector tag [attributename~="value"]
+Attribute selector tag [attributename^="value"]
+Attribute selector tag [attributename*="value"]
+Attribute selector tag [attributename$="value"]
+Attribute selector tag [attributename|="value"]
 
 :active
 :any-link
@@ -348,3 +348,28 @@ following properties only working
 }
 
 
+/* ------------------------------------------------------------- *\
+                            #3. Pseduo classes
+\* ------------------------------------------------------------- */
+
+
+/* 1. Attribute selector tag [Attribute name] */
+.para9{
+    line-height:2;
+    width:500px; 
+}
+.para-title{
+    color: yellow;
+}
+
+/* select attribute name  */
+a[target]{
+    color: red;
+}
+
+/* 2.Attribute selector tag [Attribute name = "value"] */
+a[target="_parent"]{
+    color:blue;
+}
+
+  
