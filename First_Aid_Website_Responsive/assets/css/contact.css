@@ -96,30 +96,24 @@
 /* section 1  contact form ************************************************************************************** */
 
 
-section{
+.main-container{
    display: flex;
-   justify-content:start;
+   justify-content:center;
    align-items: center;
-   padding-left: 30px;
+   border: 1px solid yellow;
 
 }
 .form-box{
-   display: grid;
-    width: 40vw;
-    height:500px;
-    padding: 20px;
-    border-radius: 20px;
-   
-    
-    /* box-shadow: 17px 25px 10px  rgba(0, 0, 0,0.6); */
-  
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;  
+  width: 50vw;
 }
 
 .form-title{
-    font-family: cursive;
     color: black;
     text-align: center;
-   
 }
 .Email,.Firstname,.Mobileno,.Address{
     margin: 15px;
@@ -130,28 +124,22 @@ section{
     font-size: medium;
     border-radius: 5px;
 }
+
 .State,.City{
   margin: 15px;
   border: none;
   padding: 12px;
-  width: 222px;
   font-size: medium;
   border-radius: 5px;
-
+  width:40%;
 }
-.City{
 
-margin-left: 53px;
-}
 .Whatpbm{
   margin: 15px;
   border: none;
   padding: 12px;
-  width: 519px;
   font-size: medium;
   border-radius: 5px;
-
-
 }
 
 .aboutwhatpbm{
@@ -162,30 +150,25 @@ margin-left: 53px;
   font-size: 15px;
   background-color: white;
   padding: 20px;
-  width: 35vw;
-
 
 }
 
 .btn{
-    font-family: cursive;
     padding: 10px;
     border: none;
-    width: 519px;
     margin-left: 15px;
     background-color:#017aee;
     color: white;
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 50px;
-
-  
 }
 .btn:hover{
      background-color:black ;
      transition: 0.5s;
      color: white;
 }
+
 
                                  /*****************************\
                                           #MEDIA 768px
