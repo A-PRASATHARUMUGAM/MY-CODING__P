@@ -9,41 +9,41 @@
 7.BigInt           */ 
 
 
-console.log("               Primitive Data Types");
+// console.log("               Primitive Data Types");
 
-k=100;
-p=k;
+// k=100;
+// p=k;
 
-console.log("k is ", k);
-console.log("p is ", p)
+// console.log("k is ", k);
+// console.log("p is ", p)
  
-p=300;
+// p=300;
 
-console.log("p is again", p)
-
-
-console.log("               Reference Data Types");
+// console.log("p is again", p)
 
 
-let  Obj1={
-    name:"prasath",
-    age:21
-
-};
-
-Obj2=Obj1; 
-
-console.log("Object 1",Obj1);
-console.log("Object 2",Obj2);
+// console.log("               Reference Data Types");
 
 
-Obj1.name="sabari";
+// let  Obj1={
+//     name:"prasath",
+//     age:21
 
-console.log("Object 1",Obj1);
-console.log("Object 2",Obj2);
+// };
 
-Obj2.age=35;
+// Obj2=Obj1; 
 
-console.log("Object 1",Obj1);
-console.log("Object 2",Obj2);
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
+
+
+// Obj1.name="sabari";
+
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
+
+// Obj2.age=35;
+
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
 
