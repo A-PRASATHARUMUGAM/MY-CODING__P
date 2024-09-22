@@ -3,19 +3,19 @@
 
 1. Universal or WildCard Selector   ( * )
 2. Element Selector                 (tag name)
-3. Class Selector                   ( . )
+3. Class Selector                   ( . ) 
 4. ID Selector                      ( # )
 5. Specific Class Selector          (tag.classname)
-6. Group Selector  
+6. Group Selector                   -- Eg: h1,h2,.container,li,ul
 
 ************************************************************
 
                 2. Combinators  
 
-1. Decendent Selector                  (space)
-2. Child Selector                      ( > )
-3. Adjecent Sibling Selector           ( + )
-4. General Sibling Selector            ( ~ )
+1. Decendent Selector                  (space) -- select all childer
+2. Child Selector                      ( > )   -- select specific childer
+3. Adjecent Sibling Selector           ( + )   -- next one select  
+4. General Sibling Selector            ( ~ )   -- next all select 
 
 
 ************************************************************
@@ -24,11 +24,11 @@
 
 1. ::first-line         Pesudo-elements  
 2. ::first-letter       Pesudo-elements 
-3. Multiple             Pesudo-elements 
-4. ::Before & ::after   Pesudo-elements 
-5. ::marker             Pesudo-elements 
-6. ::selection          Pesudo-elements 
-7. ::placeholder        Pesudo-elements
+3. Multiple             Pesudo-elements   -- one tag to selecting first-line,first-letter
+4. ::Before & ::after   Pesudo-elements   -- start and end select 
+5. ::marker             Pesudo-elements   -- list dot select 
+6. ::selection          Pesudo-elements   -- mark select Eg: google translate
+7. ::placeholder        Pesudo-elements   -- you know
 
 8  ::content
 9  ::backdrop
@@ -50,13 +50,18 @@
 ************************************************************
                 4.Pseudo-classes
 
-Attribute selector tag [attributename]
-Attribute selector tag [attributename="value"]
-Attribute selector tag [attributename~="value"]
-Attribute selector tag [attributename^="value"]
-Attribute selector tag [attributename*="value"]
-Attribute selector tag [attributename$="value"]
-Attribute selector tag [attributename|="value"]
+1. Attribute selector tag [attributename]           select attributename 
+2. Attribute selector tag [attributename="value"]   specific select 
+3. Attribute selector tag [attributename~="value"]  space to select 
+4. Attribute selector tag [attributename^="value"]  staring side select 
+5. Attribute selector tag [attributename*="value"]  all side select 
+6. Attribute selector tag [attributename$="value"]  ending side select 
+7. Attribute selector tag [attributename|="value"]  ending (attributevalue- ) to select  
+
+                input pseudo-classes
+
+8. :enabled & :disabled       -- select enable $ disable " inupt " 
+
 
 :active
 :any-link
@@ -70,11 +75,10 @@ Attribute selector tag [attributename|="value"]
 :default
 :defined
 :dir
-:disabled
+
 :double-button
 :empty
 
-:enabled
 :end
 
 :first
@@ -160,6 +164,7 @@ Attribute selector tag [attributename|="value"]
     padding:0;
 }
 
+
 /* 2. Element Selector */
 body{
     background-color:#25242a;
@@ -182,10 +187,12 @@ h1{
     color: lightblue;
 }
 
+
 /* 4. Id Selector     ( # ) */
 #para-two{
     color: lightcoral;
 }
+
 
 /* 5. Specific Class Selector */
 
@@ -196,6 +203,7 @@ h1{
 h2.para-three{
       color: lawngreen;
 }
+
 
 /*6. Grouping Selector*/
 
@@ -214,20 +222,24 @@ div p b{
     color: green;
 }
 
+
 /* 2. Child Selector     ( > )*/
 .child-container > p{
     color: yellow;
 }
+
 
 /* 3. Adjecent Sibling Selector  ( + ) */
 .child-container + p{
     color: lightpink;
 }
 
+
 /* 4. General Sibling Selector   ( ~ ) */
 .child-container ~ h3{
       color: lightsalmon;
 }
+
 
 /* ------------------------------------------------------------- *\
                             #3. Pseduo Element
@@ -253,6 +265,7 @@ following properties only working
     
 }
 
+
 /* 2. ::first-letter
 
  --block level element only change
@@ -275,6 +288,7 @@ following properties only working
 
 }
 
+
 /* 3. Multiple Pseudo element */
 .para3::first-line{
   text-decoration:underline;
@@ -285,6 +299,7 @@ following properties only working
     font-size: 40px;
     color: yellow;
 }
+
 
 /* 4. ::before & ::after */
 .para4::before{
@@ -300,6 +315,7 @@ following properties only working
     content: "$";
     color: red;
 }
+
 
 /* 5. ::marker  */
 .Unorder-list li::marker{
@@ -322,6 +338,7 @@ following properties only working
     color: blue;
 }
 
+
 /* 6. ::selection Pseudo element */
 .para7{
     line-height:2;
@@ -331,6 +348,7 @@ following properties only working
     background-color:lightblue;
     color:red;
 }
+
 
 /* 7. ::placeholder selector */
 .para8{
@@ -368,6 +386,7 @@ a[target]{
     color: red;
 }
 
+
 /* 2.Attribute selector tag [Attribute name = "value"] */
 a[class="parent"]{
     color:blue;
@@ -377,3 +396,49 @@ input[type="email"]{
     background-color: lightgreen;
     padding: 10px;
 }
+
+
+/* 3. Attribute selector tag [attributename~="value"] */
+
+/* it is exact match  */
+p[class="title"]{
+    color:red ;
+}
+
+/* Using ( ~ ) select all "space" title */
+p[class~="title"]{
+    color: blue;
+}
+
+
+/* 4. Attribute selector tag [attributename^="value"] */
+
+/* Starting side only selecting-value */
+p[class^="starting"]{
+    color:red;
+}
+
+
+/* 5. Attribute selector tag [attributename*="value"]  */
+
+/*all side selecting-value right, left, center   */
+p[class*="hello"]{
+    color: blue;
+}
+
+
+/* 6. Attribute selector tag [attributename$="value"] */
+
+/* Ending side only selecting-value */
+p[class$="ending"]{
+color: red;
+}
+
+/* 7. Attribute selector tag [attributename|="value"]  */
+
+/* ending attributevalue- only selecting */
+p[class|="text"]{
+    color: blue;
+}
+
+
