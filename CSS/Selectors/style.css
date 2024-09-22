@@ -342,6 +342,7 @@ following properties only working
     font-size:15px;
     padding: 10px;
 }
+/* ::placeholder */
 .para8-container input::placeholder{
    color:orange;
     text-align: center;
@@ -368,8 +369,11 @@ a[target]{
 }
 
 /* 2.Attribute selector tag [Attribute name = "value"] */
-a[target="_parent"]{
+a[class="parent"]{
     color:blue;
 }
 
-  
+input[type="email"]{
+    background-color: lightgreen;
+    padding: 10px;
+}
