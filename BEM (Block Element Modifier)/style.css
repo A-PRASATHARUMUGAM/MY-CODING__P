@@ -6,3 +6,13 @@ h1{
 
     text-align:center;
 }
+
+.img-container{
+    text-align: center;
+    
+}
+img{
+    margin:20px;
+    width:70%;
+    border-radius: 20px;
+}
