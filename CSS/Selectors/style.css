@@ -465,6 +465,7 @@ input:disabled{
 
 input[type="radio"]:checked +label{
 color: red;
+font-size:25px;
 }
 
 input[type="radio"]:not(:checked) +label{
