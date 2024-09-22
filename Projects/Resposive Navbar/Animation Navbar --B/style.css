@@ -18,6 +18,11 @@
       background-color: black;
     }
   /* Naigation menu */
+  .header{
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
   .header-logo{
     color: white;
   }
@@ -119,3 +124,23 @@
    }
   
   }
+
+
+
+  /* section  */
+
+
+body{
+  line-height:3; 
+}
+
+.main-container{
+  margin: 10px;
+  border: 1px solid yellow;
+}
+.main-container p{
+  margin-left:40px;
+  color: white;
+  font-size: 20px;
+
+}
