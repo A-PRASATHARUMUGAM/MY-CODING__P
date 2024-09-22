@@ -60,14 +60,15 @@
 
                 input pseudo-classes
 
-8. :enabled & :disabled       -- select enable $ disable " inupt " 
+8. :enabled & :disabled       -- select enable & disable " input " 
 
+9. :checked & :not(:checked)  -- select checked & not(:checked) "radio,input"
 
 :active
 :any-link
 :blank
 
-:checked
+
 :corner-present
 :current
 
@@ -359,11 +360,14 @@ following properties only working
     color:blue;
     font-size:15px;
     padding: 10px;
+    background-color: lightblue;
 }
 /* ::placeholder */
 .para8-container input::placeholder{
-   color:orange;
+   color:white;
     text-align: center;
+    background-color: black;
+  
 }
 
 
@@ -441,4 +445,29 @@ p[class|="text"]{
     color: blue;
 }
 
+
+/* 8. :enabled & :disabled*/
+
+/* select enable $ disable " inupt " */
+.classEnable input:enabled{
+    background-color: red;
+}
+
+input:disabled{
+    background-color: blue;
+}
+
+
+/* 9. :checked & not(:checked) */
+
+
+/* select :checked & not(:checked) " inupt " */
+
+input[type="radio"]:checked +label{
+color: red;
+}
+
+input[type="radio"]:not(:checked) +label{
+color: blue;
+}
 
