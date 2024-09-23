@@ -64,6 +64,21 @@
 
 9. :checked & :not(:checked)  -- select checked & not(:checked) "radio,input"
 
+10. :placeholder-shown & :not(placeholder-shown)  -- select placeholder show & not shown -->not type & type 
+
+12. :focus                    -- select placeholder focus --> on click to focus  
+
+13. :valid & :invalid         -- select  the input email valid & invalid  
+
+14. :required & :optional     -- select required input & optional 
+
+15. :read-only & :read-write  -- select readonly input & read-write 
+
+16. :in-range & :out-of-range -- select input type="number" -> in-range & out-of-range --> using min & max 
+
+17. :default                   -- select default value and only for radio checked, option selected, checkbox checked
+
+
 :active
 :any-link
 :blank
@@ -73,10 +88,8 @@
 :current
 
 :decrement
-:default
 :defined
 :dir
-
 :double-button
 :empty
 
@@ -85,7 +98,6 @@
 :first
 :first-child
 :first-of-type
-:focus
 :focus-visible
 :focus-within
 :fullscreen
@@ -98,10 +110,8 @@
 :host-context()
 :hover
 
-:in-range
 :increment
 :indeterminate
-:invalid
 :is
 
 :matches()
@@ -122,18 +132,12 @@
 
 :only-child
 :only-of-type
-:optional
-:out-of-range
 
 :past
 :paused
 :picture-in-picture
-:placeholder-shown
 :playing
 
-:read-only
-:read-write
-:required
 :right
 
 :scope
@@ -145,8 +149,6 @@
 
 :user-invalid
 :user-valid
-
-:valid
 :vertical
 :visited
 
@@ -396,7 +398,7 @@ a[class="parent"]{
     color:blue;
 }
 
-input[type="email"]{
+input[value="email"]{
     background-color: lightgreen;
     padding: 10px;
 }
@@ -470,5 +472,47 @@ font-size:25px;
 
 input[type="radio"]:not(:checked) +label{
 color: blue;
+}
+
+
+/* 10. :placeholder-shown */
+
+.aboutbox{
+    resize: none;
+    color:green;
+    outline: none;
+}
+.aboutbox:placeholder-shown{
+    color: red;
+    border:2px solid;
+    padding: 10px;
+}
+
+.aboutbox:not(:placeholder-shown){
+    border: 2px solid;
+    color: green;
+    padding: 20px;
+}
+
+
+/* 12. :focus */
+
+.inputfocus:focus{
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+} 
+
+
+/* 13. :valid  & invalid */
+.validation{
+    outline: none;
+    padding: 10px;
+}
+.validation:valid{
+    border: 2px solid green;
+}
+.validation:invalid{
+    border: 2px solid red;
 }
 

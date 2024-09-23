@@ -160,8 +160,8 @@
 <!-- 2.Attribute selector tag [Attribute name = "value"] -->
 <p class="para-title">2.Attribute selector tag [Attribute name = "value"]</p>
 
-<input type="email" placeholder="Enter Email">
-
+<input type="email" value="email" placeholder="Enter Email">
+ 
 
 <!-- 3. Attribute selector tag [attributename~="value"] -->
 <p class="para-title">3. Attribute selector tag [attributename~="value"]</p>
@@ -207,6 +207,7 @@
 <p class="next-text-one">P2</p>
 <p class="next-text">P3</p>
   
+<hr>
                                 <!-- input Pseudo classes -->
                                 <h1>input pseudo-classes</h1>
 
@@ -217,7 +218,8 @@
     <input type="text">  <!-- default enabled -->
     <input type="text" disabled>
 </div>
-   
+ 
+
 <!-- 9. :checked & not(:checked) -->
 <p class="para-title">9. :checked & not(:checked)</p>
 
@@ -226,12 +228,28 @@
 <input type="radio" name="gender" >
 <label for="Female" >Female</label>
 
-   
+
+<!-- 10. :placeholder-shown  -->
+<p class="para-title">10. :placeholder-shown</p>
+
+<textarea class="aboutbox" placeholder="Enter any value"></textarea>
+
+
+<!-- 12 :focus -->
+<p class="para-title">12. :focus</p>
+
+<input type="text" class="inputfocus" placeholder="click to focus">
+
+
+
+<!-- 13. :valid & :invalid -->
+<p class="para-title">12. :valid & :invalid</p>
+
+<input type="email" class="validation" placeholder="Enter email id" >
+
+
+
 </div>
-
-
-
-
 
 
 </body>
