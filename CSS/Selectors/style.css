@@ -58,7 +58,7 @@
 6. Attribute selector tag [attributename$="value"]  ending side select 
 7. Attribute selector tag [attributename|="value"]  ending (attributevalue- ) to select  
 
-                input pseudo-classes
+              ----  input pseudo-classes  ----
 
 8. :enabled & :disabled       -- select enable & disable " input " 
 
@@ -78,8 +78,17 @@
 
 17. :default                   -- select default value and only for radio checked, option selected, checkbox checked
 
+                ----  User Action pseudo-classes  ----
 
-:active
+18. :link     -- select normal link
+    :hover    -- select hover link
+    :visited  -- select visited link    -- !important put link this order wise use
+    :active   -- select active link 
+
+
+
+
+
 :any-link
 :blank
 
@@ -108,7 +117,6 @@
 :host
 :host()
 :host-context()
-:hover
 
 :increment
 :indeterminate
@@ -120,7 +128,6 @@
 :last-child
 :last-of-type
 :left
-:link
 :local-link
 
 :no-button
@@ -150,7 +157,6 @@
 :user-invalid
 :user-valid
 :vertical
-:visited
 
 :where
 :window-inactive
@@ -447,6 +453,10 @@ p[class|="text"]{
     color: blue;
 }
 
+/* ------------------------------------------------------------- *\
+                            Input Pseduo classes
+\* ------------------------------------------------------------- */
+
 
 /* 8. :enabled & :disabled*/
 
@@ -573,5 +583,28 @@ select,input{
     font-size: 20px;
 }
 option[value="opt"]:default{
+    color: red;
+}
+
+/* ------------------------------------------------------------- *\
+                            User Action pseudo-classes
+\* ------------------------------------------------------------- */
+
+/* 18. :link, :hover, :visited, :active */
+
+
+/* :link */
+.checking-link:link{
+    color:lightblue; 
+}
+
+.checking-link:visited{
+    color: springgreen;
+}
+
+.checking-link:hover{
+    color: yellow;
+} 
+.checking-link:active{
     color: red;
 }
