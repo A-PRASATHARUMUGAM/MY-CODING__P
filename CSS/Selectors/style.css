@@ -543,3 +543,35 @@ color: blue;
     background-color: springgreen;
 }
 
+
+/* 16. :in-range & :out-of-range  */
+
+input[type="number"]{
+    padding: 10px;
+    width: 40px;
+    font-size: 20px;
+}
+
+input:in-range{
+    color: green;
+}
+
+input:out-of-range{
+    color: red;
+}
+
+
+/* 17. :default */
+
+.default__inputs > input:default+label{
+    color: green;  
+}
+
+
+select,input{
+    padding: 10px; 
+    font-size: 20px;
+}
+option[value="opt"]:default{
+    color: red;
+}
