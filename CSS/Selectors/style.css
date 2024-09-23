@@ -516,3 +516,30 @@ color: blue;
     border: 2px solid red;
 }
 
+
+/*14. :required & :optional */
+
+.required__input:required{
+    padding: 10px;
+    background-color:blue;
+    color: white;
+}
+.optional__input:optional{
+    padding: 10px;  
+    background-color:red;
+    color: white;
+}
+
+/* 15. :read-only & :read-write  */
+
+.read__only:read-only{
+    background-color: lightskyblue;
+    padding: 10px;
+  
+}
+
+.read__write:read-write{
+    padding: 10px;
+    background-color: springgreen;
+}
+
