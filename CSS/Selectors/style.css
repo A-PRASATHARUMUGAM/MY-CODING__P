@@ -672,6 +672,8 @@ p:target{
     background-color:skyblue;
     color: white;
 } 
+
+/* nth-last-of-type() */
 .structural-para-container2 :nth-last-of-type(1){
     background-color: springgreen;
     color: white;
