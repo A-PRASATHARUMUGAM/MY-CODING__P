@@ -85,7 +85,7 @@
     :visited  -- select visited link    -- !important put link this order wise use
     :active   -- select active link 
 
-
+19. :target   -- select target link to modification 
 
 
 
@@ -151,7 +151,7 @@
 :single-button
 :start
 
-:target
+
 :target-within
 
 :user-invalid
@@ -607,4 +607,10 @@ option[value="opt"]:default{
 } 
 .checking-link:active{
     color: red;
+}
+
+
+/* 19. :target */
+p:target{
+ color: yellow;
 }
