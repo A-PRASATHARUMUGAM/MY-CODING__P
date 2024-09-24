@@ -104,10 +104,19 @@
     :nth-last-of-type()                  -- select " reverse side " to nth-last-of-type() 
                                          -- similar to use all but it is " reverse side select "                                      
                                          
+23. :only-child                      -- select "parent child "--> only one child 
+    :only-of-type                    -- select " parent child (or) without parent  -->only one child"
+
+
+24.:first-of-type & last-of-type -- select first child " parent or without parent "
+    :last-of-type                -- similar select " reverse side "
 
 
 
-                                        
+
+
+                        --- Bending Pseudo classes ---
+
 :any-link
 :blank
 
@@ -123,7 +132,6 @@
 :end
 
 :first
-:first-of-type
 :focus-visible
 :focus-within
 :fullscreen
@@ -142,15 +150,11 @@
 :matches()
 
 :lang()
-:last-of-type
 :left
 :local-link
 
 :no-button
 :not()
-
-:only-child
-:only-of-type
 
 :past
 :paused
@@ -162,7 +166,6 @@
 :scope
 :single-button
 :start
-
 
 :target-within
 
@@ -666,16 +669,50 @@ p:target{
 }
 
 
+
 /* 22. :nth-of-type() & :nth-last-of-type() */
 
 .structural-para-container :nth-of-type(1){
     background-color:skyblue;
     color: white;
+    border: 1px solid white;
 } 
 
 /* nth-last-of-type() */
 .structural-para-container2 :nth-last-of-type(1){
     background-color: springgreen;
     color: white;
+    border: 1px solid white;
 } 
+
+
+
+/* 23. :only-child & :only-of-type */
+ .structural-list-container ol :only-child{
+    color: red;
+ }
+
+/* :only-of-type */
+ .structural-list-container2 ol :only-of-type{
+    color: blue;
+ }  
+
+
+
+ /* 24. :first-of-type $ :last-of-type */
+
+ /* first-child */
+.structural-container3 > p:first-child{
+    color:red;
+}
+
+/* first-of-type */
+.structural-container4  p:first-of-type{
+    color:springgreen;
+}
+
+/*last-of-type  */
+.structural-container5  p:last-of-type{
+    color:hotpink;
+}
 
