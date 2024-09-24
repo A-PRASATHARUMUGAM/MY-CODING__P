@@ -37,46 +37,52 @@
     <!-- section1 **************************************************************** -->
 <section class="main-container">
 
-<form action="contact1.php" title="contact" method="get" class="form-box">
+<form action="contact1.php" title="contact" method="get" class="form-container">
 
 <h2 class="form-title" >Contact Us  </h2>
 
+<!-- firstname -->
 <div>
-
 <label for="firstname"></label>
 <input type="text" name="firstname" class="Firstname" placeholder="First name" required>
 
-<label for="email"></label>
-<input type="email" name="email" class="Email" placeholder="Enter your email" required>
 
+<!-- Email -->
+
+  <label for="email"></label>
+  <input type="email" name="email" class="Email" placeholder="Enter your email" required>  
 </div>
 
-<div>
-
+<!-- mobileno -->
+<div> 
 <label for="mobileno"></label>
 <input type="tel" name="mobileno" class="Mobileno" placeholder="Enter moblie number" required>
 
+<!-- address -->
+
 <label for="address"></label>
 <input type="text" name="address" class="Address" placeholder="Enter address" required>
-
 </div>
 
-<!-- select  -->
+<!-- state  -->
 <div>
-<select name="state" class="State" required >
-  
-          <option value="StateNothing">State</option>
+
+  <select name="state" class="State" required >
+    
+    <option value="StateNothing">State</option>
           <option value="Tamil Nadu">Tamil Nadu</option>
           <option value="Kerala ">Kerala</option>
           <option value="Puducherry">Puducherry</option>
           <option value="Maharashtra">Maharashtra</option>
           <option value="Karnataka">Karnataka</option>
 
-  </select>
+</select> 
 
-<select name="city" class="City"  required>
+<!-- city -->
 
-  <option value="CityNothing">City</option>
+    <select name="city" class="City"  required>
+      
+    <option value="CityNothing">City</option>
   <option value="Villupuram">Villupuram</option>
   <option value="Coimbatore">Coimbatore</option>
   <option value="Madurai">Madurai</option>
@@ -84,10 +90,14 @@
   <option value="Kanniyakumari ">Kanniyakumari </option>
   
 </select>
+
 </div>
 
-                    
-<select name="whatpbm" class="Whatpbm"  required >
+<!-- about -->
+
+<div>
+
+<select name="whatpbm" class="whatpbm"  required >
 
 <option value="Nothing">What kind of problem</option>
 <option value="Acne/Pimples">Acne/Pimples</option>
@@ -103,17 +113,18 @@
 <option value="Hair Transplant">Hair Transplant</option>
 <option value="Root Canal Transplant">Root Canal Treatment</option>
 </select>
-    
- 
-<div>
+</div>
+<!-- About problem -->
+<div >
     <textarea name="aboutwhatpbm" class="aboutwhatpbm" cols="40" rows="5">About for the problem</textarea>
 </div>
 
+<!-- Button -->
 <div class="form-btn" >
     <button class="btn" type="submit" >Confirm</button>
 </div>
 
-          </form>
+</form>
 </section>
 <script src="assets/js/script.js"></script>
 </body>

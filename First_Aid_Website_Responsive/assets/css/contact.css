@@ -90,87 +90,73 @@
   background-position: center;
   background-attachment:fixed;
   font-family: cursive;
-      
+  font-size: 16px;
   }
 
 /* section 1  contact form ************************************************************************************** */
 
-
 .main-container{
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   border: 1px solid yellow;
-
-}
-.form-box{
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: 1px solid black;  
-  width: 50vw;
+  justify-content: start;
+  align-items: center;
+  margin-top:20px;
 }
-
 .form-title{
-    color: black;
-    text-align: center;
-}
-.Email,.Firstname,.Mobileno,.Address{
-    margin: 15px;
-    background-color: white;
-    border: none;
-    padding: 20px;
-    height: 1px;
-    font-size: medium;
-    border-radius: 5px;
+  color: #017aee;
+  text-align: center;
 }
 
-.State,.City{
-  margin: 15px;
-  border: none;
-  padding: 12px;
-  font-size: medium;
-  border-radius: 5px;
-  width:40%;
+.form-container{
+  margin:30px;
+  padding:15px;
+  border-radius:10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  text-align: center;
 }
-
-.Whatpbm{
-  margin: 15px;
-  border: none;
-  padding: 12px;
-  font-size: medium;
-  border-radius: 5px;
-}
-
+.Firstname,
+.Email,
+.Mobileno,
+.Address,
+.State,
+.City,
+.whatpbm,
 .aboutwhatpbm{
-  margin: 15px;
+  margin: 10px 0px;
+  padding:10px;
+  border-radius:6px; 
   border: none;
-  border-radius: 5px;
   resize: none;
-  font-size: 15px;
-  background-color: white;
-  padding: 20px;
+  width: 210px;
+  
+}
 
+.whatpbm,
+.aboutwhatpbm {
+  width:100% ; 
+
+}
+
+.aboutwhatpbm {
+  margin-bottom: 20px;
 }
 
 .btn{
-    padding: 10px;
-    border: none;
-    margin-left: 15px;
-    background-color:#017aee;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 50px;
+  padding: 10px;
+  border: none;
+  background-color:#017aee;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
 }
 .btn:hover{
-     background-color:black ;
-     transition: 0.5s;
-     color: white;
-}
+   background-color:black ;
+   transition: 0.5s;
+   color: white;
+} 
 
 
-                                 /*****************************\
+                                   /*****************************\
                                           #MEDIA 768px
                                   \*****************************/
 @media all and (max-width:768px){
@@ -194,7 +180,7 @@
     border-radius:10px;
     flex-direction: column;
     gap:10px;
-    width:60%;
+    width:80%;
     transition: all 300ms ease-in-out;
   }
   .header-showmenu{
@@ -245,4 +231,23 @@
  
  }
 
+}
+
+@media all and (max-width:768px) {
+
+  .main-container{
+    justify-content:center;  
+
+  
+  }
+}
+
+@media all and (max-width:585px){
+
+  
+  .whatpbm,
+  .aboutwhatpbm {
+    width:210px; 
+  
+  }
 }
