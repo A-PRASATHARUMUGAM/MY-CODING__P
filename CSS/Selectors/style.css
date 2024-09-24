@@ -58,7 +58,7 @@
 6. Attribute selector tag [attributename$="value"]  ending side select 
 7. Attribute selector tag [attributename|="value"]  ending (attributevalue- ) to select  
 
-              ----  input pseudo-classes  ----
+                 <---  input pseudo-classes  --->
 
 8. :enabled & :disabled       -- select enable & disable " input " 
 
@@ -78,7 +78,7 @@
 
 17. :default                   -- select default value and only for radio checked, option selected, checkbox checked
 
-                ----  User Action pseudo-classes  ----
+                    <---  User Action pseudo-classes  --->
 
 18. :link     -- select normal link
     :hover    -- select hover link
@@ -88,10 +88,28 @@
 19. :target   -- select target link to modification 
 
 
+                    <--- Structural pseudo-classes --->
 
+20. :first-child & :last-child   -- select first-child & last-child element 
+
+21. :nth-child() & :nth-last-child() -- select " parent child "--> :nth-child(2) 
+                                     -- select 2n, 3n, 4n, 5n (Or) 2+1, 2*3
+                                     -- select even element & odd element
+    :nth-last-child()                -- select " reverse side " to nth-last-child() 
+                                     --- similar to use all but it is " reverse side select "                                     
+
+22. :nth-of-type() & :nth-last-of-type() --select " parent child (or) without parent "
+                                         -- select 2n, 3n, 4n, 5n (Or) 2+1, 2*3
+                                         -- select even element & odd element
+    :nth-last-of-type()                  -- select " reverse side " to nth-last-of-type() 
+                                         -- similar to use all but it is " reverse side select "                                      
+                                         
+
+
+
+                                        
 :any-link
 :blank
-
 
 :corner-present
 :current
@@ -105,7 +123,6 @@
 :end
 
 :first
-:first-child
 :first-of-type
 :focus-visible
 :focus-within
@@ -125,17 +142,12 @@
 :matches()
 
 :lang()
-:last-child
 :last-of-type
 :left
 :local-link
 
 :no-button
 :not()
-:nth-child()
-:nth-last-child()
-:nth-last-of-type()
-:nth-of-type()
 
 :only-child
 :only-of-type
@@ -614,3 +626,54 @@ option[value="opt"]:default{
 p:target{
  color: yellow;
 }
+
+
+/* ------------------------------------------------------------- *\
+                            Structural pseudo-classes
+\* ------------------------------------------------------------- */
+
+/* 20. :first-child & :last-child  */
+
+
+.structural-unorder-list > :first-child{
+    color: red;
+}
+.structural-unorder-list > :last-child{
+    color: blue;
+}
+
+
+
+/* 21. :nth-child() & :nth-last-child()  */
+
+.structural-order-list >:nth-child(3){
+ color:red;
+}
+
+/* select 2n, 3n, 4n, 5n */
+.structural-order-list2 >:nth-child(2n){
+ color:springgreen;
+}
+
+/*select odd & even  */
+.structural-order-list3 >:nth-child(odd){
+ color:orange;
+}
+
+/* :nth-last-child() */
+.structural-order-list4 >:nth-last-child(3){
+    color: red;
+}
+
+
+/* 22. :nth-of-type() & :nth-last-of-type() */
+
+.structural-para-container :nth-of-type(1){
+    background-color:skyblue;
+    color: white;
+} 
+.structural-para-container2 :nth-last-of-type(1){
+    background-color: springgreen;
+    color: white;
+} 
+
