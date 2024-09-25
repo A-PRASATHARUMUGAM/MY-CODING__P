@@ -140,6 +140,7 @@ border-radius:16px;
 .para-title{
  font-size: 1.5rem;
 color:var(--text-color4);
+text-decoration:underline;
 } 
  .para-points{
   color: var(--text-color3);
@@ -149,7 +150,7 @@ color:var(--text-color4);
   margin-top: 15px;
   font-weight:500; 
   color: black;
-  font-size:1.2rem;
+  font-size:1rem;
    
   }
   
@@ -310,6 +311,7 @@ button:hover{
   }
   .para-title{
     font-size:1.2rem;
+  
   }
 
     /* Navigation menu */
