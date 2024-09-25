@@ -40,13 +40,11 @@
   a,a:visited,a:hover{
     text-decoration:none;
   }
-  /* Navigation Bar */
-  .navbar-container{
-      display: flex;
-      justify-content:space-between;
-      padding:10px;
-      background-color:var(--nav-bg);
-    }
+ .header{
+  position: fixed;
+  left: 0;
+  right:0;
+ }
   /* Naigation menu */
   .header-logo{
     font-family: cursive;
@@ -79,9 +77,17 @@
     background-color: var(--nav-btnHovbg);
 
   }
+   /* Navigation Bar */
+  .navbar-container{
+      display: flex;
+      justify-content:space-between;
+      padding:10px;
+      background-color:var(--nav-bg);
+    }
  .hamburger-menu{
    display: none;
  }
+
   
 
   body{
@@ -94,23 +100,26 @@
   }
  /* section 1*********************************************** */
 
+ .main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
 
-
-.section-title{
-  margin-top:50px;
+.main-title{
   text-align: center;
   font-weight: bold;
   color:#F7F172;
   text-transform: uppercase;
 
-  
  }
    /* remedies paragraph ******************************************** */
 
    .remedies-container1{
-     margin-top:35px;
-     margin-left: 150px;
-     width: 80vw;
+     margin-top:50px;
+     width:80%;
      color: white;
      line-height: 40px;
      text-align: justify;
