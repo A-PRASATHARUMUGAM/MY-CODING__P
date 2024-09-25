@@ -18,7 +18,7 @@
     --text-color1:#ededed;
     --text-color2:#f8302c;
     --text-color3:#163970;
-    --text-color4:rgb(0,0,0,0.5);
+    --text-color4:rgba(0, 0, 0, 0.5);
   
    
   /* button color  */
@@ -41,6 +41,48 @@
     a,a:visited,a:hover{
       text-decoration:none;
     }
+    /* Naigation menu */
+    .header{
+      position: fixed;
+      left: 0;
+      right:0;
+    }
+    .header-logo{
+    font-family: cursive;
+    margin-left: 20px;
+    font-size: 1.25rem;
+    color:var(--nav-log);
+  }
+    li{
+      list-style-type: none;
+    }
+    .header-links{
+      display: flex;
+      justify-content:space-evenly;      
+      align-items: center;
+      letter-spacing: 1px;
+      font-weight: bold;
+      width:550px;
+    }
+  
+  .header-links a{
+    color: var(--nav-btn);
+    font-size: 0.9375rem;
+  }
+  
+  .header-links a:hover{
+    border: 1px solid white;
+    padding: 10px;
+    transition: 0.5s;
+    color: var(--nav-btnHovcolor);
+    background-color: var(--nav-btnHovbg);
+
+  }
+  .hamburger-menu{
+    display: none;
+  }
+      
+    
     /* Navigation Bar */
     .navbar-container{
         display: flex;
@@ -48,43 +90,7 @@
         padding:10px;
         background-color:var(--nav-bg);
       }
-    /* Naigation menu */
-    .header-logo{
-      font-family: cursive;
-      margin-left: 20px;
-      font-size: 1.25rem;
-      color:var(--nav-log);
-    }
-      li{
-        list-style-type: none;
-      }
-      .header-links{
-        display: flex;
-        justify-content:space-evenly;      
-        align-items: center;
-        letter-spacing: 1px;
-        font-weight: bold;
-        width:550px;
-      }
-    
-    .header-links a{
-      color: var(--nav-btn);
-      font-size: 0.9375rem;
-    }
-   
-    .header-links a:hover{
-      border: 1px solid white;
-      padding: 10px;
-      transition: 0.5s;
-      color: var(--nav-btnHovcolor);
-      background-color: var(--nav-btnHovbg);
-  
-    }
-   .hamburger-menu{
-     display: none;
-   }
-    
-  
+ 
   body{
   background-image: url(../images/firstaidbasics-bg.jpg);
   background-repeat: no-repeat;
@@ -97,69 +103,56 @@
   }
 
 /* section 1 ****************************************************************************************************/
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.main-title{
+  font-weight: bold;
+  color:var(--text-color2);
+  text-transform: uppercase;
+  padding: 20px;
+  font-size:2rem;
+}
+.para-container{  
+  margin-top: 50px;
+  color: var(--text-color-b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* top finish */
+
 .parafirst{
 display: flex;
 flex-flow: wrap column;
-text-align: start;
-margin-left: 210px;
-width: 70vw;
-line-height: 40px;
-font-family: cursive;
 text-align:justify;
-
-
+line-height:3;
+padding:25px;
+background-color: rgba(255, 255, 255, 0.500);
+width:90%;
+border-radius:16px;
 
 } 
-.parafirst>p{
- margin-top: 15px;
-font-weight: 500;
-
-}
-.parafirst>h2{
- margin-top: 50px;
-font-size: 1.5rem;
-text-decoration: underline;
+.para-title{
+ font-size: 1.5rem;
 color:var(--text-color4);
-
-}
-.parafirst>h4{
- margin-top: 40px;
- color: var(--text-color3);
-}
-
-#section1{  
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-  color: var(--text-color-b);
- 
-}
-#section1head{
-  font-family: cursive;
-  font-weight: bold;
-  color:var(--text-color2);
-  margin-top: 50px;
-  text-transform: uppercase;
-
-
-}
-#section1para{
-  margin-top: 70px;
-  text-align: justify;
-margin-left: 210px;
-width: 70vw;
-line-height: 40px;
-text-align: justify;
-font-family: cursive;
-
-
-}
-#section1para h2{
-  margin-bottom: 20px;
-  text-decoration:underline;
-  color: var(--text-color4);
-}
-
-
+} 
+ .para-points{
+  color: var(--text-color3);
+ }
+ /* para */
+ p[class^="para"]{ 
+  margin-top: 15px;
+  font-weight:500; 
+  color: black;
+  font-size:1.2rem;
+   
+  }
+  
 /* Table ************************************************************************ */
 
 #boxtable{
@@ -310,11 +303,16 @@ button:hover{
                                             #MEDIA 768px
                                     \*****************************/
   @media all and (max-width:768px){
-    
-    .navbar-container{
-      justify-content: space-between;
-      align-items: center;
-    }
+
+  /* section */
+  .main-title{
+    font-size: 1.5rem;
+  }
+  .para-title{
+    font-size:1.2rem;
+  }
+
+    /* Navigation menu */
     .header-logo{
       color:white;
     }
@@ -343,8 +341,10 @@ button:hover{
     .header-links a:hover{
        padding: 5px;
     }
-  
-  
+    .navbar-container{
+      justify-content: space-between;
+      align-items: center;
+    }
     
   /* Hamburger Menu */
   .hamburger-menu{
@@ -383,3 +383,13 @@ button:hover{
   
   }
   
+                                    /*****************************\
+                                            #MEDIA 425px
+                                    \*****************************/
+
+@media all and (max-width:428px){
+
+  .para-title{
+    text-align: center;
+  }
+}
