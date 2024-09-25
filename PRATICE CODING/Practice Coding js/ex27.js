@@ -1,28 +1,24 @@
-                            // Async and Await
 
-// //async  --> it always return Promise
+                                    // Exception Handling
 
+// try{
+//     const num=prompt("Enter a number");
+//     if(num==''){
+     
+//         throw("cannot be empty");
 
-// const check=new Promise((resolve,reject)=>{
-//     if(true){
-//         setTimeout(resolve, 1000,"success");
-//        }else{
-//           reject("fail")
-//        }
-// });
+//     }else if(isNaN(num)){
 
-// async function asyncfun(){
-//     try{
-//         console.log("Hello")
-//         let res= await check;
-//         console.log(res);
-//         console.log("bye")
+//         throw("Enter number only ");
+        
+//     }else{
+
+//         console.log(Number(num)**2);
 //     }
-// catch(erro){
-//     console.log(erro)
 // }
+// catch(error){   // -->receving throw 
+//    console.log(error)
 // }
-// asyncfun()
-
-// asyncfun().then(()=>console.log("success"))
-
+// finally{
+//     console.log('It is using to finally works')
+// }

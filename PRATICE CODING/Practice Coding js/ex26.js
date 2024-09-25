@@ -1,24 +1,85 @@
+                                // Promise 
+// // Way - 1 
+// const bookingticket =new Promise(data)
 
-                                    // Exception Handling
+// function data(reslove,reject){
 
-// try{
-//     const num=prompt("Enter a number");
-//     if(num==''){
-     
-//         throw("cannot be empty");
-
-//     }else if(isNaN(num)){
-
-//         throw("Enter number only ");
-        
+//     let booking=true;
+//     if(booking){
+//         reslove()
 //     }else{
-
-//         console.log(Number(num)**2);
+//         reject()
 //     }
+    
+// };
+
+
+// bookingticket.then(success)
+// bookingticket.catch(fail)
+
+// function success(){
+//     console.log("success")
 // }
-// catch(error){   // -->receving throw 
-//    console.log(error)
+// function fail(){
+//     console.log("fail")
 // }
-// finally{
-//     console.log('It is using to finally works')
+
+
+// // Way - 2
+
+// function ticketbooking(){
+
+// return new Promise((resolve,reject)=>{
+
+//     let booking=false; 
+
+//     if(booking){
+//         resolve()
+//     }else{
+//         reject()
+//     }
+// });
+ 
 // }
+
+// ticketbooking().then(()=>{
+//     console.log("verfied");
+// })
+// .catch(()=>{
+//     console.log("unverified");
+// });
+
+
+
+
+// // Example -1
+
+
+// function tossCoin(){
+//     return new Promise((resolve,reject)=>{
+//     let rand=Math.floor(Math.random()*2)
+//     // 0-head     1-tail
+//       if(rand==0){
+//           resolve()
+//       }else{
+//         reject()
+
+//       }
+
+//     });
+// }
+// tossCoin()
+// .then(()=>console.log("head"))
+// .catch(()=>console.log("tail"))
+
+
+/*                   --- Promise Method --- > it static method
+
+                    Promise - pending, resolved, rejcted
+
+1.Promise.all([reachA,reachB,reachC])    -- like AND  -> return - false
+2.Promise.allSettled()                   -- all printed  (resolve or reject --> Settled) 
+3.Promise.any()                          -- like or  -> return - false
+3.Promise.race()                         -- first resolve print
+
+*/

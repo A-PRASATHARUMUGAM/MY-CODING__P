@@ -1,46 +1,28 @@
-                        // JSON - JavaScript Object Notation 
+                            // Async and Await
 
-// // 1.create JSON 
+// //async  --> it always return Promise
 
-// // String
-// let json1="sabari";
 
-// // Number
-// let json2=32;
+// const check=new Promise((resolve,reject)=>{
+//     if(true){
+//         setTimeout(resolve, 1000,"success");
+//        }else{
+//           reject("fail")
+//        }
+// });
 
-// // Boolean
-// let json3=true;
-
-// // Array
-// let json4=[1,2,3,4,5];
-
-// // Object         --> include (" ") the key 
-// let json5={
-//     "name":"prasath",
-//     "age":21
+// async function asyncfun(){
+//     try{
+//         console.log("Hello")
+//         let res= await check;
+//         console.log(res);
+//         console.log("bye")
+//     }
+// catch(erro){
+//     console.log(erro)
 // }
+// }
+// asyncfun()
 
-// // 2. spreate string to normal data
-// let json6= ` [
-//     {
-//     "name":"prasath",
-//     "age":35
-//     },
-//     {
-//     "name":"sabari",
-//     "age":21
-//     },
-//     {
-//     "name":"kandhan",
-//     "age":22
-//     } 
-// ]`;
-// console.log(json6);
+// asyncfun().then(()=>console.log("success"))
 
-// //convert string data to normal data 
-// let normalData=JSON.parse(json6);
-// console.log(normalData);
-
-// //convert normal data to string data
-// let stringData=JSON.stringify(normalData);
-// console.log(stringData);

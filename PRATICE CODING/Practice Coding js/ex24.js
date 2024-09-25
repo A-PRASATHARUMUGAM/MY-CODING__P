@@ -1,26 +1,23 @@
-                                    // Digital Clock Project 
-const Hours=document.querySelector(".hours");
-const Minutes=document.querySelector(".minutes");
-const Seconds=document.querySelector(".seconds");
-const AmPm=document.querySelector(".ampm");
+                                // Synchronous and Asynchronous
+                                
+
+// console.log("Hello..."); // f1
+
+// function sync(){  
+
+//     console.log("step 1") // f3 
+//     console.log("step 2") // f4 
+//     console.log("step 3") // f5 
+// }
+
+// sync() // f2
+
+// console.log(" -- using setTimeout --") // f6
+
+// setTimeout(()=>console.log("step 1"),2000) // f7        //--> minimum time 
+// setTimeout(()=>console.log("step 2"),1000) // f8
+// setTimeout(()=>console.log("step 3"),3000) // f9
 
 
 
-function displayTime(){
-    const dataTime=new Date()
-    let hr =dataTime.getHours();
-    let min =dataTime.getMinutes();
-    let sec =dataTime.getSeconds();
-    if(hr>12){
-        hr = hr - 12;
-        AmPm.innerHTML='PM'
-    }
-    Hours.innerHTML = padZero(hr);
-    Minutes.innerHTML = padZero(min);
-    Seconds.innerHTML = padZero(sec);
-}
-
-function padZero(num){
-    return num>10?num:"0"+num; 
-}
-setInterval(displayTime,500);
+// setInterval(()=>console.log('hello kandhan '),5000)// again and again print 

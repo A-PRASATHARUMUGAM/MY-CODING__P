@@ -1,44 +1,49 @@
-                                    //1. get and set Method 
+/* 1.Primitive Data Types       ||      2.Reference Data Types
  
-// /*
-// 1.get --> it is use to get the private variable to access other name  
-// 2.set --> it is use to set the value or condition to store data into private variable  
-// */
+1.Number                                    1. Array
+2.String                                    2. functin 
+3.Boolean                                   3. All boject --math, date
+4.null
+5.undefined
+6.symble
+7.BigInt           */ 
 
 
-// class Temperature{
-//         temp1=24
-//         constructor(temp2){
-//           this._temp=temp2; // private variable declare to (  _variableName )
-//         }
-        
-//         // get and set as same name beacuse get value and set value 
-//         get temp3(){  
-//             return this._temp;
-//         } 
-//         set temp3(temp){
-//           this._temp =temp;
-//         }
-        
-// }
+// console.log("               Primitive Data Types");
 
-// let tempObject=new Temperature(100)
+// k=100;
+// p=k;
 
-//                                 console.log("       -- Before call object  -- ")
-// console.log(tempObject);
-//                                 console.log("")
+// console.log("k is ", k);
+// console.log("p is ", p)
+ 
+// p=300;
+
+// console.log("p is again", p)
 
 
-// tempObject._temp=200; // you can't assign private variabel directly --> using get method
-// console.log("Directly change private variable :",tempObject._temp); // you not access private variabel directly 
-// console.log(tempObject);
-//                                 console.log("")
+// console.log("               Reference Data Types");
 
 
-// tempObject.temp3=300; // set value 
-// console.log("set method to change private variable :",tempObject.temp3);//get value 
-// console.log(tempObject);
+// let  Obj1={
+//     name:"prasath",
+//     age:21
+
+// };
+
+// Obj2=Obj1; 
+
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
 
 
+// Obj1.name="sabari";
 
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
+
+// Obj2.age=35;
+
+// console.log("Object 1",Obj1);
+// console.log("Object 2",Obj2);
 
