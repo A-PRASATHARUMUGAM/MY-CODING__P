@@ -124,7 +124,6 @@
   align-items: center;
 }
 
-/* top finish */
 
 .parafirst{
 display: flex;
@@ -156,30 +155,27 @@ text-decoration:underline;
   
 /* Table ************************************************************************ */
 
-#boxtable{
+.table-container{
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 30px;
-  line-height: 30px;
+  line-height:2;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-
+  font-size:1rem;
+  width:90%;
 }
-table{
-  width: 75vw;
-}
-#tablehead,th,td{
+.table-box,th,td{
   border: 1px solid black;
   border-collapse: collapse;
-  padding: 25px;
+  padding:15px;
 }
+
 td:nth-child(3){
  text-align: justify;
-
 }
 td:nth-child(2){
- font-weight: 520;
-
+ font-weight:520;
 }
 
 th{
@@ -193,11 +189,13 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #ccc;
 }  
+
 .lettertd{
   text-transform: uppercase;
   font-weight: bold;
   font-size: xx-large ;
 }
+
 /* setup image */
 
  #stepbox{
@@ -382,13 +380,22 @@ button:hover{
      transform: rotate(-45deg);
    
    }
-
+/* para */
    .main-title{
     font-size:1.2rem;
    }
+
+  /* table */
+
+  .table-box,th,td{
+    padding:8px;
+    font-size:10px;
+}
+td[class^="letter"]{
   
+   font-size:1.5rem;
   }
-  
+}
                                     /*****************************\
                                             #MEDIA 425px
                                     \*****************************/
@@ -411,7 +418,7 @@ button:hover{
                                     \*****************************/
 
 @media all and (max-width:375px){
-
+  
   .parafirst{
     padding:15px;
   }
