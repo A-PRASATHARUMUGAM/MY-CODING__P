@@ -6,10 +6,10 @@
 
   /* Navigation color  */
   --nav-log:#dac4b7;
-  --nav-bg:rgba(0, 0, 0,0.5);
+  --nav-bg:rgba(0, 0, 0,0.25);
   --nav-btn:white;
   --nav-btnHovbg:rgba(0, 171, 240,0.5);
-  --nav-btnHovcolor:white;
+  --nav-btnHovcolor:white; 
 
 /* text color  */
   --text-color-w:#ffffff;

@@ -6,7 +6,7 @@
   
   /* Navigation color  */
     --nav-btn:white;
-    --nav-bg:rgba(0, 0, 0,0.5);
+    --nav-bg:rgba(0, 0, 0,0.25);
     --nav-log:#daf0ff;
     --nav-btnHovcolor:white;
     --nav-btnHovbg: rgba(138, 195, 234,0.5);
