@@ -382,6 +382,10 @@ button:hover{
      transform: rotate(-45deg);
    
    }
+
+   .main-title{
+    font-size:1.2rem;
+   }
   
   }
   
@@ -390,8 +394,27 @@ button:hover{
                                     \*****************************/
 
 @media all and (max-width:428px){
+  
 
   .para-title{
     text-align: center;
+    font-size:1rem;
   }
+  .para-points{
+    font-size:0.80rem;
+  }
+
 }
+
+                                   /*****************************\
+                                            #MEDIA 375px
+                                    \*****************************/
+
+@media all and (max-width:375px){
+
+  .parafirst{
+    padding:15px;
+  }
+  
+
+} 
