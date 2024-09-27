@@ -138,6 +138,10 @@
   
 }
 
+p[class^="para"]{
+  text-align: justify;
+}
+
 .remedies-img__container{
   margin:20px;
   padding:10px;
