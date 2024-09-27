@@ -8,7 +8,7 @@ const AmPm=document.querySelector(".ampm");
 
 function displayTime(){
     const dataTime=new Date()
-    let hr =dataTime.getHours();
+    let hr =dataTime.getHours(); 
     let min =dataTime.getMinutes();
     let sec =dataTime.getSeconds();
     if(hr>12){
