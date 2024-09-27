@@ -102,28 +102,31 @@ body{
   align-items: center; 
   width: 100%;
   height:90vh;
+
 }
 
 .para-container{
+  text-align: center;
+  padding:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 
-  padding:20px;
-  background-color: #01b5fc7c;
-  border-radius:8px ;
-  max-width:90vw;
-  min-width:500px;
 }
 .para-title{
   text-align: center;
   color: var(--text-color-w);
   font-weight:bold;
-  font-size:3.5rem;
+  font-size:5vw;
   margin-bottom:30px;
 
 }
 .para{
-  font-size: 1.5rem;
+  font-size:1.5vw;
   color: var(--text-color-b);
   line-height:2;
+
 }
 .button-container{
   margin-top:180px;
