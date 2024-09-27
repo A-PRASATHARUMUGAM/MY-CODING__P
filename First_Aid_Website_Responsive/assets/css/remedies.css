@@ -165,11 +165,12 @@ align-self:flex-start;
 /* list */
 
 .para-list{
-  line-height: 40px;
+  line-height:3;
   margin-left:50px;
   align-self: flex-start;
   color: white;
- 
+  word-spacing:3px;
+
 }
 
 .remedies-list__container{
@@ -354,11 +355,13 @@ align-self:flex-start;
   }  
   .para-points{
     font-size:0.90rem;
+    
   }
 
   /* list */
- 
+
  .para-list, .remedies-list__container > .para-list >li{
     margin-left:40px;
+    
   }
 }
