@@ -1,11 +1,11 @@
 
-/*
-1.put type module in the import and export files.
-2.put only one export default in one file!
+// /*
+// 1.put type module in the import and export files.
+// 2.put only one export default in one file!
 
-*/
+// */
 
-        // type - 1
+//         // type - 1
 
 // class mynewclass1{
 //     name="prasath"
@@ -24,7 +24,7 @@
 // export {myfun1,myfun2}
 
 
-                // type - 2 
+//                 // type - 2 
 
 // export default class mynewclass2{
 //     name="prasath"
