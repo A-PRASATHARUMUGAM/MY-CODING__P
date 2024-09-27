@@ -389,7 +389,10 @@ td[class^="letter"]{
 
 @media all and (max-width:428px){
   
-
+  /* Navigation */
+  .header-links{
+    width:80%;
+  }
   .para-title{
     text-align: center;
     font-size:1rem;

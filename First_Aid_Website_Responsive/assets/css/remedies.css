@@ -140,6 +140,7 @@
 
 p[class^="para"]{
   text-align: justify;
+  text-indent:30px;
 }
 
 .remedies-img__container{
@@ -160,18 +161,30 @@ color:var(--text-yellow);
 font-size:1.3rem;
 align-self:flex-start;
 }
+
 /* list */
+
 .para-list{
   line-height: 40px;
-  margin-left: 50px;
+  margin-left:50px;
   align-self: flex-start;
   color: white;
+ 
 }
 
 .remedies-list__container{
-  border:1px solid yellow;
-
+ display: grid;
+ gap:0px 50px;
+ grid-template: repeat(2,1fr)/repeat(2,1fr);
+ width:90%;
 }
+.remedies-list__container .para-list {
+ margin:0;
+}
+.remedies-list__container > .para-list > li{
+  margin-left:50px ;
+}
+
 
 /* footer */
 .footer-container{   
@@ -224,6 +237,11 @@ align-self:flex-start;
   padding-inline:10px ; 
   
 }
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
                                     /*****************************\
                                           #MEDIA 768px
                                   \*****************************/
@@ -299,26 +317,20 @@ align-self:flex-start;
  
  }
 
-}
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-
-
-                                    /*****************************\
-                                            #MEDIA 768px
-                                    \*****************************/
-@media all and (max-width:768px){
+/* section   */
   .remedies-title{
     font-size:1.3rem;
   }
   .para-points{
     font-size:1.1rem;
   }
+  /* list  */
+  .remedies-list__container{
+    grid-template: repeat(2,1fr)/repeat(1,1fr);
+   
+   }
 }
+
 
 @media all and (max-width:550px) {
   .remedies-title{
@@ -331,11 +343,22 @@ align-self:flex-start;
 
 @media all and (max-width:425px){
 
+  /* Navigation */
+  .header-links{
+    width:80%;
+  }
+
   .remedies-title{
     font-size:0.90rem;
     line-height:2;
   }  
   .para-points{
     font-size:0.90rem;
+  }
+
+  /* list */
+ 
+ .para-list, .remedies-list__container > .para-list >li{
+    margin-left:40px;
   }
 }
