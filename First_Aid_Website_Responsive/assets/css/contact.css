@@ -240,10 +240,7 @@
  
  }
 
-}
-
-@media all and (max-width:768px) {
-
+/* section  */
   .main-container{
     justify-content:center;  
   
@@ -252,6 +249,10 @@
 
 @media all and (max-width:517px){
 
+    .header-links{
+      width: 80%;
+    }
+  
   .whatpbm,
   .aboutwhatpbm {
     width:210px; 

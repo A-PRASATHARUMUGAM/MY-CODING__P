@@ -262,3 +262,9 @@ body{
 
 }
 
+@media all and (max-width:425px){
+  .header-links{
+    width: 80%;
+  }
+  
+}
