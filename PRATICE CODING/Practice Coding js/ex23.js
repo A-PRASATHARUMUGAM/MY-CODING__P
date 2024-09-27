@@ -1,26 +1,42 @@
 
-// export default class Book{
-//     constructor(data){
-//         this.name=data;
-//         this.author=data;
-//         this.age=data;
-//     }
-//      book1(){
-//         console.log("book1",this.age)
-//      }
+/*
+1.put type module in the import and export files.
+2.put only one export default in one file!
+
+*/
+
+        // type - 1
+
+// class mynewclass1{
+//     name="prasath"
+//     age=21;
 // }
 
-// let reader1=new Book()
-// reader1.name="sabari"
-// reader1.author="prasath"
-// reader1.age=24;
+// function myfun1(){
+//     console.log("hello kandhan ");
+
+// }
+// let myfun2 = function(){
+//     console.log("hello prasath")
+// } 
+
+// export default mynewclass1
+// export {myfun1,myfun2}
 
 
-// export function data(){
-//     console.log("hello data function ")
+                // type - 2 
+
+// export default class mynewclass2{
+//     name="prasath"
+//     age=21;
+// }
+
+// export function myfun3(){
+//     console.log("hello sabari ");
+
+// }
+// export let myfun4 = function(){
+//     console.log("hello sandhiya")
 // }
 
 
-
-// import books from './ex20.js';
-// import {data } from './ex20.js';
