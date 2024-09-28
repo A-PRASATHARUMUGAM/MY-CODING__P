@@ -17,7 +17,12 @@
     --text-color-b:#000000;
     --text-color1:#ededed;
     --text-color2:#f75551;
-  
+
+
+  /* font-family */
+
+  --font-family-primary:cursive;
+  --font-family-secondary:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
   /* button color  */
    --btn-color1:#00abf0;
@@ -107,7 +112,9 @@
   align-items: center;
 }
 .form-container{
+  display: flex;
   margin-top:50px;  
+  width: 100%;
 }
 .form-title{
   color: #017aee;
@@ -115,12 +122,11 @@
 }
 
 .form-box{
-  margin:30px;
+  margin:40px 100px; 
   padding:15px;
   border-radius:10px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.200);
   text-align: center;
-
 }
 .Firstname,
 .Email,
@@ -130,18 +136,18 @@
 .City,
 .whatpbm,
 .aboutwhatpbm{
-  margin: 10px 0px;
+  margin: 14px 10px;
   padding:10px;
   border-radius:6px; 
   border: none;
   resize: none;
-  width: 210px;
-  
+  width: 240px;
+  font-family: var(--font-family-secondary);
 }
 
 .whatpbm,
 .aboutwhatpbm {
-  width:100% ; 
+  width:95%; 
 
 }
 
@@ -156,7 +162,8 @@
   color: white;
   font-weight: bold;
   font-size: 14px;
-  border-radius: 6px;
+  border-radius:6px;
+  font-family: var(--font-family-primary); 
 }
 .btn:hover{
    background-color:black ;
@@ -241,21 +248,42 @@
  }
 
 /* section  */
-  .main-container{
-    justify-content:center;  
+  .form-container{
+     justify-content: center;
+     align-items: center;
   
   }
+.form-box{
+  margin:50px;
 }
 
+  .Firstname,
+.Email,
+.Mobileno,
+.Address,
+.State,
+.City,
+.whatpbm,
+.aboutwhatpbm{
+  font-family: var(--font-family-primary);
+}
+}
+
+@media all and (max-width:671px){
+  .whatpbm,
+  .aboutwhatpbm{
+    width:240px; 
+  
+  } 
+
+}
 @media all and (max-width:517px){
 
     .header-links{
       width: 80%;
     }
+
+   
   
-  .whatpbm,
-  .aboutwhatpbm {
-    width:210px; 
   
-  }
 }

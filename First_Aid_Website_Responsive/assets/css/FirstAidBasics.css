@@ -22,6 +22,7 @@
   /* font-family */
    --font-family-primary:cursive;
    --font-family-secondary:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
   /* button color  */
    --btn-color1:#00abf0;
    --btn-color2:#f75551;
@@ -377,6 +378,7 @@ video{
   .table-box,th,td{
     padding:8px;
     font-size:10px;
+    font-family: var(--font-family-primary);
 }
 td[class^="letter"]{
   
