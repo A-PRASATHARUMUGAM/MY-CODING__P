@@ -25,7 +25,7 @@
 // }
 
 
-// // Way - 2
+// // Way - 2  -- it is preffered 
 
 // function ticketbooking(){
 
@@ -75,7 +75,7 @@
 
 /*                   --- Promise Method --- > it static method
 
-                    Promise - pending, resolved, rejcted
+                    Promise -> pending, resolved, rejcted
 
 1.Promise.all([reachA,reachB,reachC])    -- like AND  -> return - false
 2.Promise.allSettled()                   -- all printed  (resolve or reject --> Settled) 
