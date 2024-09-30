@@ -70,26 +70,6 @@ body{
 }
 /* ex7      <!-- Looping in javascript  -->   */
 
-/* ex8     Check the city status PROJECT   */
-
-.ex8{
-    margin: 50px;
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   text-align: center;
-}
-.ex8-box--container{
-  border:1px solid black;
-  padding:30px;
-}
-.ex8-box--container button{
-  padding:6px;
-}
-.ex8-box--container select{
-  padding:6px;
-  margin: 10px;
-}
 /* count the words project 15 */
 .contwordsbox{
 
@@ -99,27 +79,4 @@ body{
 }
 
 
-/* calculator   project 16  */
-
-
-.calbox{
-  border:1px solid black;
-  padding: 10px;
-  text-align: center;  
-  background-color:#25242a;
-  color:gainsboro;
-
-}
-.calbox ,input ,button{ 
-  padding: 10px;
-  margin:20px 10px;
-  font-weight: bold;
-}
-hr{
-  height:10px;
-  width:100%;
-  background:linear-gradient(to right,black,white);
-  border:none;
-
-}
 

@@ -1,3 +1,28 @@
 body{
     background-color:#24252a;
 }
+
+
+/* calculator   project 16  */
+
+
+.calbox{
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;  
+    background-color:#25242a;
+    color:gainsboro;
+  
+  }
+  .calbox ,input ,button{ 
+    padding: 10px;
+    margin:20px 10px;
+    font-weight: bold;
+  }
+  hr{
+    height:10px;
+    width:100%;
+    background:linear-gradient(to right,black,white);
+    border:none;
+  
+  }

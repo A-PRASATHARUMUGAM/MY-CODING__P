@@ -1,3 +1,25 @@
 body{
-  background:linear-gradient(20deg ,#24252a,white);
+  background:linear-gradient( to right, #24252a,white);
+}
+
+
+/* ex8     Check the city status PROJECT   */
+
+.ex8{
+    margin: 50px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   text-align: center;
+}
+.ex8-box--container{
+  border:1px solid black;
+  padding:30px;
+}
+.ex8-box--container button{
+  padding:6px;
+}
+.ex8-box--container select{
+  padding:6px;
+  margin: 10px;
 }
