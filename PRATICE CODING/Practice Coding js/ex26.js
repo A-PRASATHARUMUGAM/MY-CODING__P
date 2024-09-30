@@ -31,7 +31,7 @@
 
 // return new Promise((resolve,reject)=>{
 
-//     let booking=false; 
+//     let booking=true; 
 
 //     if(booking){
 //         resolve()
@@ -42,8 +42,12 @@
  
 // }
 
+// // create more " then " using to check condition 
 // ticketbooking().then(()=>{
-//     console.log("verfied");
+//     console.log("verified");
+// })
+// .then(()=>{
+//     console.log("again verified")
 // })
 // .catch(()=>{
 //     console.log("unverified");
@@ -64,12 +68,11 @@
 //       }else{
 //         reject()
 
-//       }
+//       }  
 
 //     });
 // }
-// tossCoin()
-// .then(()=>console.log("head"))
+// tossCoin().then(()=>console.log("head"))
 // .catch(()=>console.log("tail"))
 
 
@@ -79,7 +82,57 @@
 
 1.Promise.all([reachA,reachB,reachC])    -- like AND  -> return - false
 2.Promise.allSettled()                   -- all printed  (resolve or reject --> Settled) 
-3.Promise.any()                          -- like or  -> return - false
-3.Promise.race()                         -- first resolve print
+3.Promise.any()                          -- like OR  -> return - true 
+4.Promise.race()                         -- first resolve print
 
 */
+
+// let reachA=new Promise((resolve,reject)=>{
+//      reached=true
+//      if(reached){
+//         setTimeout(resolve,3000,"kandhan reached");
+
+//      }else{
+//         reject("kandhan not reached")
+//      }
+     
+// })
+
+// let reachB=new Promise((resolve,reject)=>{
+//      reached=false
+//      if(reached){
+//         setTimeout(resolve,1000,"sabari reached");
+
+//      }else{
+//         reject("sabari not reached")
+//      }
+     
+// })
+
+// let reachC=new Promise((resolve,reject)=>{
+//      reached=false
+//      if(reached){
+//         setTimeout(resolve,1000,"prasath reached");
+
+//      }else{
+//         reject("prasath not reached")
+//      }
+     
+// })
+
+
+// Promise.race([reachA,reachB,reachC])
+
+// .then((message)=>{
+//     console.log(message)
+// })
+// .catch((message)=>{
+//     console.log(message);
+// })
+
+
+// 3. Promise.race() 
+// TTT= first true return
+// FFF= first false  return 
+// TTF= first false return 
+
