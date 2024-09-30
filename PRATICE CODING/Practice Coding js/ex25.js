@@ -1,5 +1,5 @@
 
-                    // type - 1
+//                     // type - 1
 
 // import mynewclass,{myfun1,myfun2} from "./ex23.js";
 

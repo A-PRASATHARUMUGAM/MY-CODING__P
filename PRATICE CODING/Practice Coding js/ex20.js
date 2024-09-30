@@ -39,7 +39,7 @@
 
 // //class : it is template of properties and methos 
 // //        - Base class ,Parent class, super class
-// not use ( = ) to create class / not using inside (,) / static variable access to className.methodName
+// not use ( = ) to create class / not using inside (,) / static variable and method can  access to className.methodName
 
 //                                 console.log("             ---- Class  ----");
 

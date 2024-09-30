@@ -1,7 +1,8 @@
 
 // /*
-// 1.put type module in the import and export files.
-// 2.put only one export default in one file!
+// 1.put type module in the import file only 
+// 2.don't link to export file into another file 
+// 3.put only one export default in one file!
 
 // */
 
