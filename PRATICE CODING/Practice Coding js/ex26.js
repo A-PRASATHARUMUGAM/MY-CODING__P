@@ -1,5 +1,5 @@
                                 // Promise 
-// // Way - 1 
+// // Type - 1 
 // const bookingticket =new Promise(data)
 
 // function data(reslove,reject){
@@ -25,16 +25,16 @@
 // }
 
 
-// // Way - 2  -- it is preffered 
+// // Type - 2      --> it is prefered 
 
 // function ticketbooking(){
 
 // return new Promise((resolve,reject)=>{
 
-//     let booking=true; 
+//     let booking=true;  
 
 //     if(booking){
-//         resolve()
+//         resolve(100)
 //     }else{
 //         reject()
 //     }
@@ -42,10 +42,10 @@
  
 // }
 
-// // create more " then " using to check condition 
-// ticketbooking().then(()=>{
-//     console.log("verified");
+// ticketbooking().then((amt)=>{
+//     console.log("verified",amt);
 // })
+// // create more " then " using to check condition  
 // .then(()=>{
 //     console.log("again verified")
 // })
@@ -56,7 +56,7 @@
 
 
 
-// // Example -1
+// Example -1
 
 
 // function tossCoin(){
@@ -78,50 +78,72 @@
 
 /*                   --- Promise Method --- > it static method
 
-                    Promise -> pending, resolved, rejcted
+                    Promise-state -> pending, resolved, rejcted
 
-1.Promise.all([reachA,reachB,reachC])    -- like AND  -> return - false
+1.Promise.all([reachA,reachB,reachC])    -- like AND  
+    -- TTT= it timing to return  all T
+    -- TTF= it not timing return first F
+    -- FFF= it not timing return first F
+    -- FFT= it not timing return first F
+
 2.Promise.allSettled()                   -- all printed  (resolve or reject --> Settled) 
-3.Promise.any()                          -- like OR  -> return - true 
-4.Promise.race()                         -- first resolve print
+Output :
+        (3) [{…}, {…}, {…}]
+    0: {status: 'rejected', reason: 'kandhan not reached 1'}
+    1: {status: 'fulfilled', value: 'sabari reached 2'}
+    2: {status: 'fulfilled', value: 'prasath reached 3'}
+    length:3
+
+
+3.Promise.any()                          -- like OR  
+    -- TTT= it timing to return  first T
+    -- TTF= it timing return first T
+    -- FFF= no return all Promise were rejected 
+    -- FFT= it timing return first T
+
+4.Promise.race()                          -- like AND 
+    -- TTT= it timing to return  first only T 
+    -- TFF= it not timing return first F 
+    -- FFF= it not timing return first F 
+    -- FTT= it not timing return first F 
 
 */
 
 // let reachA=new Promise((resolve,reject)=>{
-//      reached=true
-//      if(reached){
-//         setTimeout(resolve,3000,"kandhan reached");
+//      reached=false;
+//      if(reached){ 
+//         setTimeout(resolve,1000,"kandhan reached 1");
 
 //      }else{
-//         reject("kandhan not reached")
+//         reject("kandhan not reached 1")
 //      }
      
 // })
 
 // let reachB=new Promise((resolve,reject)=>{
-//      reached=false
+//      reached=true;
 //      if(reached){
-//         setTimeout(resolve,1000,"sabari reached");
+//         setTimeout(resolve,2000,"sabari reached 2");
 
 //      }else{
-//         reject("sabari not reached")
+//         reject("sabari not reached 2")
 //      }
      
 // })
 
 // let reachC=new Promise((resolve,reject)=>{
-//      reached=false
+//      reached=true;
 //      if(reached){
-//         setTimeout(resolve,1000,"prasath reached");
+//         setTimeout(resolve,3000,"prasath reached 3");
 
 //      }else{
-//         reject("prasath not reached")
+//         reject("prasath not reached 3")
 //      }
      
-// })
+// }) 
 
 
-// Promise.race([reachA,reachB,reachC])
+// Promise.allSettled([reachA,reachB,reachC])
 
 // .then((message)=>{
 //     console.log(message)
@@ -131,8 +153,4 @@
 // })
 
 
-// 3. Promise.race() 
-// TTT= first true return
-// FFF= first false  return 
-// TTF= first false return 
 
