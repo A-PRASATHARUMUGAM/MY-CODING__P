@@ -1,0 +1,13 @@
+body{
+    background-color: #24252a;
+    color: white;
+}
+/* count the words project 15 */
+.contwordsbox{
+
+    border:1px solid black;
+    padding: 10px;
+    text-align: center;  
+  }
+  
+  
