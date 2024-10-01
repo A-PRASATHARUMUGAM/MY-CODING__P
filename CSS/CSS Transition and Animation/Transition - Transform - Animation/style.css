@@ -1,20 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #24252a;
-    color:#3cceef;
+    color: white;
     font-size: 16px;
 }
-h1{
+
+h1 {
     color: red;
     text-align: center;
 }
+h2{
+    margin:15px;
+    color: yellow;
+}
+div[class*=box]{
+    margin:40px 10px; 
+}
+p {
+    margin-left: 30px;
+    font-size: 1.5rem; 
+    line-height: 2;
+}
 
-p{
-margin-left: 30px;
- font-size:1.5rem; 
- line-height:2;
+/* 
+                                             CSS Transition
+
+1. transition
+
+2. transition-property         
+        -- all --> default 
+        -- border 
+        -- background-color
+            
+3. transition-duration         
+        -- 0.5s
+        -- 1s
+        -- 2s
+
+4. transition-timing-function  
+        -- ease          - slow-start fast slowly-end --> default
+        -- ease-in       - slow fast 
+        -- ease-in-out   - slow fast slow 
+        -- ease-out      - fast slow 
+        -- liner         - Normal  
+        -- cubic-bezier  - Custom your speed
+        
+5. transition-delay
+
+*/
+
+                            /* 3. transition-duration */
+.transition-container{
+   margin-top: 40px;
+   padding:10px;
+  border:1px solid springgreen;
+  height: 100vh;
+}
+
+.trans-box-1{
+    border:1px solid white;
+    width: 150px;
+    height:150px;
+    background-color: #3cceff; 
+    
+}
+/* transition-duration */
+.trans-box-1:hover{
+    background-color: springgreen;
+    transition-duration:2s;
+    width:500px;
+}
+                            /*2.transition-property */
+.trans-box-2{
+    border:1px solid white;
+    width: 150px;
+    height:150px;
+    background-color: #3cceff; 
+    
+    
+}
+/*transition-property */
+.trans-box-2:hover{
+    background-color:hotpink;
+    /* transition-property: all; ---> default  */
+    transition-property: background-color;
+    transition-duration:2s;
+    width:500px; 
+
+
 }
