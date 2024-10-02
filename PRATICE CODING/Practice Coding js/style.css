@@ -70,4 +70,13 @@ body{
 }
 /* ex7      <!-- Looping in javascript  -->   */
 
+/* fetch API  ex30 */
 
+.fetch-container{
+  border:1px solid white;
+
+}
+.fetch-container >img{
+  width: 500px;
+  height: 500px;
+}

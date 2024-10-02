@@ -36,18 +36,9 @@
 // }
 // // 2.  JSON Data seperate array of object 
 // let json= ` [
-//     {
-//     "name":"prasath",
-//     "age":35
-//     },
-//     {
-//     "name":"sabari",
-//     "age":21
-//     },
-//     {
-//     "name":"kandhan",
-//     "age":22
-//     } 
+//     {"name":"prasath","age":35},
+//     {"name":"sabari","age":21},
+//     {"name":"kandhan","age":22} 
 // ]`;
 // console.log(json);
 
@@ -57,4 +48,4 @@
 
 // //JSON.stringify() array of object  to string    
 // let jsonsrignify=JSON.stringify(jsonparse);
-// console.log(jsonsrignify);
+// console.log(jsonsrignify)
