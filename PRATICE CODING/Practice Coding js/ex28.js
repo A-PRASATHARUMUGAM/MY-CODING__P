@@ -1,21 +1,23 @@
                             // Async and Await
 
-// //async  --> it always return Promise
+//async  --> it always return Promise
 
 
-// const check=new Promise((resolve,reject)=>{
+// function API(){
+// return newpromise=new Promise((resolve,reject)=>{
 //     if(true){
-//         setTimeout(resolve, 1000,"success");
+//         setTimeout(resolve, 3000,"success");
 //        }else{
 //           reject("fail")
 //        }
 // });
-
+// }
 // async function asyncfun(){
 //     try{
 //         console.log("Hello")
-//         let res= await check;
-//         console.log(res);
+//         let result= await API();
+//         console.log(result);
+
 //         console.log("bye")
 //     }
 // catch(erro){
@@ -24,5 +26,4 @@
 // }
 // asyncfun()
 
-// asyncfun().then(()=>console.log("success"))
 
