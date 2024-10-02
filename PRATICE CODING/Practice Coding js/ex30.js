@@ -1,9 +1,11 @@
                         // API Application Programming Interface 
 
 
+//fetch 1
+
 // fetch('https://dog.ceo/api/breeds/image/random')
 // .then((res)=>
-//     res.json()
+//     console.log(res.json())
 // )
 // .then((msg)=>{
 //       console.log(msg);
@@ -17,6 +19,15 @@
 // })
 
 
+// //fetch 2
 
-     
+// fetch('https://cat-fact.herokuapp.com/facts')
+
+// .then(res=>res.json())
+//  .then(msg=>{
+//     console.log(msg[0].text)
+//  })
+// .catch((err)=>{
+//      console.log(err)
+// })
 
