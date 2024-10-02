@@ -10,7 +10,7 @@
 //        }else{
 //           reject("fail")
 //        }
-// });
+// }); 
 // }
 // async function asyncfun(){
 //     try{
