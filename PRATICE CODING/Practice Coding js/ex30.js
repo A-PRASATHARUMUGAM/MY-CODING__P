@@ -1,14 +1,12 @@
                         // API Application Programming Interface 
 
 
-//fetch 1
+// // fetch 1
 
 // fetch('https://dog.ceo/api/breeds/image/random')
-// .then((res)=>
-//     console.log(res.json())
-// )
+// .then((res)=>res.json())
 // .then((msg)=>{
-//       console.log(msg);
+//       console.log(msg); 
     
 //        let img=document.createElement("img");
 //        img.src=msg.message;
@@ -31,3 +29,23 @@
 //      console.log(err)
 // })
 
+
+
+// // fetch 3
+
+// fetch('https://jsonplaceholder.typicode.com/todos',{
+// method:'POST',
+// headers:{'content-type':'application/json'},
+// body:JSON.stringify({
+//     userId:22,
+//     id:456,
+//     title:'test',
+//     competed:true
+
+// })
+
+// })
+// .then((res)=>res.json())
+// .then((msg)=>{
+//     console.log(msg);
+// })
