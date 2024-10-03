@@ -16,24 +16,6 @@ body{
   align-items: center;
 }
 
-/* ex1             celsius to fahrenheit converter project-1 */
-.ex1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightcoral;
-  padding:40px;
-  text-align: center;
- 
-}
-#fahresult{
-    margin-top:10px;
-    padding:2px;
-    background-color: lightblue;
-    height:30px;
-    text-align: center;
-    font-size:1.5rem;
-}
 /* ex2             Mulitipe condition and condition chains project-2 */
 
 .ex2{
