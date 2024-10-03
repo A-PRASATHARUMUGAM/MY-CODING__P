@@ -47,5 +47,5 @@
 // console.log(jsonparse);
 
 // //JSON.stringify() array of object  to string    
-// let jsonsrignify=JSON.stringify(jsonparse);
-// console.log(jsonsrignify)
+// let jsonstrignify=JSON.stringify(jsonparse);
+// console.log(jsonstrignify)
