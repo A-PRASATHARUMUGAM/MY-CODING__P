@@ -18,26 +18,70 @@
 ----------------------------------------------------------------------------------
 */ 
                             /*******************************\
-                               Document Object Model (DOM)
+                                (DOM) Document Object Model
                             \*******************************/
 
 
-/*                      
+/*
 
-    1. Window properties
-        - Window size & positon             
-        - Document & location
-        - Browser information 
-        - Timing & Performance 
-        - Stroage
-        - Other Properties
 
-    2. Console properties
-                            
+                    -- (BOM) - Browser Object Model  --          
+--------------------                    
+1. Window properties
+--------------------
+    - Window size & positon 
+                -- 1.window.innerWidth
+                -- 2.window.innerHeight
+                -- 3.window.outerWidth
+                -- 4.window.outerHeight
+                -- 5.window.screenX
+                -- 6.window.screenY
+                -- 7.window.screenLeft
+                -- 8.window.screenTop
+    - Document & location
+                -- 9.window.document
+                -- 10.window.location
+                -- 11.window.history
+                -- 12.window.navigator
+    - Browser information 
+                -- 13 window.navigator
+                -- 14 window.screen
+                -- 15 window.locationbar
+                -- 16 window.menubar
+                -- 17 window.personalbar
+                -- 18 window.scrollbars
+                -- 19 window.statusbar
+                -- 20 window.toolbar
+    - Timing & Performance 
+                -- 21 window.performance
+    - Stroage
+                -- 22 window.localStorage
+                -- 23 window.sessionStorage
+    - Other Properties
+                -- 24 window.name
+                -- 25 window.status
+                -- 26 window.frames
+                -- 27 window.length
+                -- 28 window.opener
+                -- 29 window.parent
+                -- 30 window.top
+                -- 31 window.self
+                -- 32 window.closed
+                -- 33 window.fullscreen
+                -- 34 window.devicePixelRatio
+                -- 35 window.crypto
+                -- 36 window.origin
+
+---------------------
+2. Console properties
+---------------------
+    
+
+                    -- (DOM) - Document Object Model --
     3. Document Properties
-        - Getting Element              
-        - Getting child Element              
-        - Getting parent Element  
+        - Seleting Element              
+        - Seleting child Element              
+        - Seleting parent Element  
         - Create Element             
         - Remove Element  
         - Get Attribute of Element        
@@ -75,10 +119,6 @@
 - 2. window.innerWidth                  --> display your window innerWidth 
 - 3. window.location                    --> it display the loaction 
 - 4. window.history                     --> it display the window history
-
-
-
-
 
 
                          -- window methods --  
