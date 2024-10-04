@@ -2,18 +2,31 @@
 
 /*
 
+----------------------------------------------------------------------------------
 1. HTML DOM -- it is a standard object model and programming interface for HTML 
             -- how to get, change, add, and delete HTML elements 
 
 2. DOM Specification -- by  W3C world wide web considum 
+3. JS Specification  -- by  ES6 Eochma Script 
 
-------------------------------------------------------------------------
-                        
-                        1.window properties  
+----------------------------------------------------------------------------------
+*/ 
+/*                      --- Document Object Model (DOM) ---
 
-                                
+    1.window properties
+    2.console properties
 
-                        -- window object --  
+
+*/ 
+
+
+                            /**************************\
+                                 #1.window properties
+                            \**************************/
+ 
+ /*
+
+                        -- window properties --  
 
 - 1. window.innerHeight                 --> display your window innerHeight  
 - 2. window.innerWidth                  --> display your window innerWidth 
@@ -25,11 +38,13 @@
 
 
 
-                        -- window methods --  
+                         -- window methods --  
 
 - 1. window.open("https://google.com")  --> pop to open the link like add block using 
 - 2. window.close()                     --> close your run window
 - 3. window.alert()                     --> alert the pop up menu 
+- 4. window.prompt()                    --> display the pop up prompt
+- 5. window.print()                     --> it is print the window 
 
 
 
@@ -37,12 +52,25 @@
 - 1. window.length
 - 2. window.find() 
 - 3. window.moveTo(x,y)
-- 4. 
+- 4. window.moveBy()
+- 5. window.resizeBy()
+- 6. window.resizeTo()
 
+*/ 
+
+    
+                             /**************************\
+                                #2.console properties
+                             \**************************/
+/*
+
+    1.
 
 */ 
 
 
+
+console.log(console)
 
 //                             //1. Document Properties  (Getting Element)
 // //getElementById();
