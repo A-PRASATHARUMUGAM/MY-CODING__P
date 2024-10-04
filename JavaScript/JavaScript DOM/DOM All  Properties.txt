@@ -1,0 +1,106 @@
+                          // Document Object Model (DOM)
+
+----------------------------------------------------------------------------------
+1. HTML DOM -- it is a standard object model and programming interface for HTML 
+            -- how to get, change, add, and delete HTML elements 
+
+2. DOM Specification -- by  W3C world wide web considum 
+
+3. JS Specification  -- by  ES6 Ecma Script 
+
+4. 
+  - <head>, <h1>, <img>       = Attribute, Element, Tag
+  - src, tilte, width, height = Propeties
+  - onclick, all action event = methods
+    
+----------------------------------------------------------------------------------
+
+    
+                            /*******************************\
+                                (DOM) Document Object Model
+                            \*******************************/
+
+
+/*
+
+
+                        -- (BOM) - Browser Object Model  --          
+--------------------                    
+1. Window properties
+--------------------
+    - 1.Window size & positon 
+                -- 1.window.innerWidth
+                -- 2.window.innerHeight
+                -- 3.window.outerWidth
+                -- 4.window.outerHeight
+                -- 5.window.screenX
+                -- 6.window.screenY
+                -- 7.window.screenLeft
+                -- 8.window.screenTop
+    - 2.Document & location
+                -- 9.window.document
+                -- 10.window.location
+                -- 11.window.history
+                -- 12.window.navigator
+    - 3.Browser information 
+                -- 13 window.navigator
+                -- 14 window.screen
+                -- 15 window.locationbar
+                -- 16 window.menubar
+                -- 17 window.personalbar
+                -- 18 window.scrollbars
+                -- 19 window.statusbar
+                -- 20 window.toolbar
+    - 4.Timing & Performance 
+                -- 21 window.performance
+    - 5.Stroage
+                -- 22 window.localStorage
+                -- 23 window.sessionStorage
+    - 6.Other Properties
+                -- 24 window.name
+                -- 25 window.status
+                -- 26 window.frames
+                -- 27 window.length
+                -- 28 window.opener
+                -- 29 window.parent
+                -- 30 window.top
+                -- 31 window.self
+                -- 32 window.closed
+                -- 33 window.fullscreen
+                -- 34 window.devicePixelRatio
+                -- 35 window.crypto
+                -- 36 window.origin
+
+---------------------
+2. Console properties
+---------------------
+    
+
+                    -- (DOM) - Document Object Model --
+    3. Document Properties
+        - Seleting Element              
+        - Seleting child Element              
+        - Seleting parent Element  
+        - Create Element             
+        - Remove Element  
+        - Get Attribute of Element        
+        - Create or Update Attribute   
+        - EventHandling and Mouse Events
+
+    4. Element Properties
+        - innerHTML 
+        - outerHTML 
+        - innerText 
+        - textContent 
+        - className 
+        - classList 
+        - id 
+
+
+    5. Form properties
+    6. Event properties
+    7. Style and Layout properties
+    8.
+
+
+*/ 
