@@ -30,7 +30,7 @@ p {
 /* 
                                              CSS Transition
 
-1. transition
+1. transition: transition-property transition-duriation transition-delay transition-timing-function ;
 
 2. transition-property         
         -- all --> default 
@@ -54,43 +54,124 @@ p {
 
 */
 
-                            /* 3. transition-duration */
-.transition-container{
-   margin-top: 40px;
-   padding:10px;
-  border:1px solid springgreen;
-  height: 100vh;
-}
+#transition-container{
+    margin-top: 40px;
+    padding:10px;
+   border:1px solid springgreen;
+ }
 
-.trans-box-1{
+ [class^=trans]{
     border:1px solid white;
     width: 150px;
     height:150px;
     background-color: #3cceff; 
-    
-}
-/* transition-duration */
-.trans-box-1:hover{
-    background-color: springgreen;
-    transition-duration:2s;
-    width:500px;
-}
-                            /*2.transition-property */
-.trans-box-2{
-    border:1px solid white;
-    width: 150px;
-    height:150px;
-    background-color: #3cceff; 
-    
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items:center ; 
+    text-align:center; 
+ }
+
+
+                                /*2.transition-property */
+
 /*transition-property */
-.trans-box-2:hover{
+.trans-box-1:hover{
     background-color:hotpink;
+    width:500px; 
+    transition-duration:2s;
+
     /* transition-property: all; ---> default  */
     transition-property: background-color;
+
+}
+                                 /* 3. transition-duration */
+
+/* transition-duration */
+.trans-box-2:hover{
+    background-color: springgreen;
+    width:500px;
+
     transition-duration:2s;
-    width:500px; 
+}
+                           
+                         /* 4. transition-timing-function  */
+
+/*ease */
+.trans-box-3:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function: ease;
 
 
+}
+/* ease-in */
+.trans-box-4:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function: ease-in;
+
+}
+/* ease-in-out */
+.trans-box-5:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function: ease-in-out;
+    
+}
+/* ease-out */
+.trans-box-6:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function: ease-out;
+    
+}
+/* linear */
+.trans-box-7:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function:linear;
+    
+}
+/* cubic-bezier --> custom transition  */
+.trans-box-8:hover  {
+    background-color: lightgreen;
+    width:500px;
+    transition-duration:2s;
+
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+                    /* 5. transition-delay */
+
+.trans-box-9:hover {
+    background-color: lightsalmon;
+    width:500px;
+    transition-duration:2s;
+
+    /* transition-delay */
+    transition-delay:3s;
+}   
+
+
+                        /* 1. transition  */
+
+/* 1. transition = transition-property + transition-duriation + transition-delay + transition-timing-function  */
+
+.trans-box-10:hover {
+    transition:all 3s 1s ease;
+
+    background-color: lightsalmon;
+    width:500px;
+    
 }
