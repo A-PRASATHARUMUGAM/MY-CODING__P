@@ -8,7 +8,7 @@
 
 2. DOM Specification -- by  W3C world wide web considum 
 
-3. JS Specification  -- by  ES6 Eochma Script 
+3. JS Specification  -- by  ES6 Ecma Script 
 
 4. 
   - <head>, <h1>, <img>       = Attribute, Element, Tag
@@ -25,7 +25,7 @@
 /*                      
 
     1. Window properties
-        - Window size & positon 
+        - Window size & positon             
         - Document & location
         - Browser information 
         - Timing & Performance 
@@ -108,7 +108,22 @@
                              \**************************/
 /*
 
-    1.
+    - 1. console.log()
+    - 2. console.table()
+    - 3. console.error()
+    - 4. console.warn()
+    - 5. console.clear()
+    - 6. console.time()
+    - 7. console.timeEnd()
+    - 8. console.info()
+    - 9. console.assert()
+    - 10. console.count()
+    - 11. console.trace()
+                -- grouping method --
+    - 12. console.group()
+    - 13. console.groupEnd()
+    - 14. console.groupCollapsed()
+
 
 */ 
 
