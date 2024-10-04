@@ -1,5 +1,49 @@
                             // Document Object Model (DOM)
 
+/*
+
+1. HTML DOM -- it is a standard object model and programming interface for HTML 
+            -- how to get, change, add, and delete HTML elements 
+
+2. DOM Specification -- by  W3C world wide web considum 
+
+------------------------------------------------------------------------
+                        
+                        1.window properties  
+
+                                
+
+                        -- window object --  
+
+- 1. window.innerHeight                 --> display your window innerHeight  
+- 2. window.innerWidth                  --> display your window innerWidth 
+- 3. window.location                    --> it display the loaction 
+- 4. window.history                     --> it display the window history
+
+
+
+
+
+
+                        -- window methods --  
+
+- 1. window.open("https://google.com")  --> pop to open the link like add block using 
+- 2. window.close()                     --> close your run window
+- 3. window.alert()                     --> alert the pop up menu 
+
+
+
+                          -- Bendings --
+- 1. window.length
+- 2. window.find() 
+- 3. window.moveTo(x,y)
+- 4. 
+
+
+*/ 
+
+
+
 //                             //1. Document Properties  (Getting Element)
 // //getElementById();
 // let element1=document.getElementById("para-id");
