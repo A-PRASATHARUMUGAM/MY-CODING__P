@@ -7,14 +7,57 @@
             -- how to get, change, add, and delete HTML elements 
 
 2. DOM Specification -- by  W3C world wide web considum 
+
 3. JS Specification  -- by  ES6 Eochma Script 
 
+4. 
+  - <head>, <h1>, <img>       = Attribute, Element, Tag
+  - src, tilte, width, height = Propeties
+  - onclick, all action event = methods
+    
 ----------------------------------------------------------------------------------
 */ 
-/*                      --- Document Object Model (DOM) ---
+                            /*******************************\
+                               Document Object Model (DOM)
+                            \*******************************/
 
-    1.window properties
-    2.console properties
+
+/*                      
+
+    1. Window properties
+        - Window size & positon 
+        - Document & location
+        - Browser information 
+        - Timing & Performance 
+        - Stroage
+        - Other Properties
+
+    2. Console properties
+                            
+    3. Document Properties
+        - Getting Element              
+        - Getting child Element              
+        - Getting parent Element  
+        - Create Element             
+        - Remove Element  
+        - Get Attribute of Element        
+        - Create or Update Attribute   
+        - EventHandling and Mouse Events
+
+    4. Element Properties
+        - innerHTML 
+        - outerHTML 
+        - innerText 
+        - textContent 
+        - className 
+        - classList 
+        - id 
+
+
+    5. Form properties
+    6. Event properties
+    7. Style and Layout properties
+    8.
 
 
 */ 
@@ -48,13 +91,14 @@
 
 
 
-                          -- Bendings --
+                            -- Bendings --
 - 1. window.length
 - 2. window.find() 
 - 3. window.moveTo(x,y)
 - 4. window.moveBy()
 - 5. window.resizeBy()
 - 6. window.resizeTo()
+- 7. window.confirm()
 
 */ 
 
@@ -72,7 +116,9 @@
 
 console.log(console)
 
-//                             //1. Document Properties  (Getting Element)
+//                             //1. Document Properties  
+
+                            // 1. (Getting Element)
 // //getElementById();
 // let element1=document.getElementById("para-id");
 // console.log(element1);  
@@ -113,7 +159,7 @@ console.log(console)
 // console.log(element1);
 
 
-//                                         // 2.Getting Child Element  
+//                                // 2.Getting Child Element  
 
 // parentElement=document.getElementById("parentElement");
 // childElement=parentElement.children;
@@ -122,7 +168,7 @@ console.log(console)
 //     console.log(element);
 // } 
 
-//                                         // 3. Getting Parent element
+//                              // 3. Getting Parent element
 // childElement=document.querySelector("#parentElement > p")
 // parentElement=childElement.parentElement;
 // console.log(parentElement);
@@ -181,16 +227,7 @@ console.log(console)
 //      console.log("keyup happend",event.key);
 //  })
 
-                                    // 9. window properties
 
-/* 
-1.window.title
-2.window.find()
-
-
-
-
-*/
                                 //2. Element Properties
 
 // const element=document.getElementById("dom-message");
