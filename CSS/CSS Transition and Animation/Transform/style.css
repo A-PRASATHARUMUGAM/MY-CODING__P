@@ -32,9 +32,10 @@ div[class*=box]{
 1. transform
         - none    -->default
 
-    1.  - matrix()      - Bending
-        - matrix3d()    - Bending
-
+    1.  - matrix(a, b, c, d, tx, ty)
+        - matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+        - matrix3d()   - Bending
+ 
     2.  - rotate('angle')
         - rotate3d()    - Bending
         - rotateX()
@@ -69,17 +70,18 @@ div[class*=box]{
 
                                  /*1. matrix(); */
 .trans-box-1:hover{
-    /* Bending */
-    transform: matrix(10deg);
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    transform: matrix(1, 2, -1, 1, 80, 80);
 }
 
 
                                  /*2. rotate(); */
 .trans-box-2:hover{
+    transition:all 3s;
     transform: rotate(30deg);
     transform: rotateX(30deg);
     transform: rotateY(30deg);
-    transform: rotateZ(-30deg);
+    transform: rotateZ(360deg);
 
     /* Bending */
     /* transform: rotate3d(-30deg); */
@@ -90,14 +92,22 @@ div[class*=box]{
 
                                  /*3. perspective(); */
 .trans-box-3:hover{
-       /* Bending */
-    transform: perspective(10deg); 
-
+    /* Bending */
+    transform: perspective(100px) rotate(10deg); 
+    transform: perspective(100px) scale(2); 
+    transform: perspective(200px) translate(150px); 
+    transform: perspective(200px) skew(150deg); 
+     /* combine */
+     transform: perspective(100px) rotate(360deg) scale(2) ; 
+     transform: perspective(100px) rotate(360deg)  skew(10deg) ; 
+     transform: perspective(100px) rotate(360deg)  translate(100px) ; 
+     transition:all 3s linear;
 }
 
 
                                  /*4. scale(); */
 .trans-box-4:hover{
+    transition:all 3s;
     transform:scale(2); 
     transform:scaleX(2); 
     transform:scaleY(2); 
@@ -109,7 +119,10 @@ div[class*=box]{
 
                                      /*4. skew(); */
 .trans-box-5:hover{
-  background-color: red;
+    transition:all 3s;
+  transform: skew(15deg);
+  transform: skewX(15deg);
+  transform: skewY(15deg);
     
 }
 
@@ -118,6 +131,7 @@ div[class*=box]{
 
                                 /*6. translate(); */
 .trans-box-6:hover{
+    transition:all 3s;
     transform: translateX(100px);
     transform: translateY(200px );
  /* translateX + translateY  = translate()   */
