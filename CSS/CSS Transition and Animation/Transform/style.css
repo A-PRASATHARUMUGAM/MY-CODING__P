@@ -62,8 +62,8 @@ div[class*=box]{
 
         
 
-2. transform-style
-3. transform-origin
+2. transform-origin --> it is change the pin to rotate,skew,scale
+3. transform-style
 4. transform-box
 
 */
@@ -143,3 +143,14 @@ div[class*=box]{
 
 
 
+
+
+                        /* 2.transform-origin:; */
+
+.trans-box-7:hover{
+    transform-origin:center center; /* default */
+    transform-origin: top center ;
+    transform: rotate(360deg);
+    transition: all 2s ease;
+}
+     
