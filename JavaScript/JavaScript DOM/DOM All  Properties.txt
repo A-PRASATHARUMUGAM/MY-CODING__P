@@ -74,6 +74,11 @@
 ---------------------
 2. Console properties
 ---------------------
+         -- 1.console.log()     --> print the any in console
+         -- 2.console.dir()     --> print the Properties
+         -- 3.console.warn()    --> print the warn message in console
+         -- 4.console.alert()    --> alert the message in console
+         
 
 
     
