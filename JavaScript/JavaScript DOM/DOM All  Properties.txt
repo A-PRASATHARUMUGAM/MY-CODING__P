@@ -74,13 +74,17 @@
 ---------------------
 2. Console properties
 ---------------------
-    
 
-                    -- (DOM) - Document Object Model --
-    3. Document Properties
-        - Seleting Element              
-        - Seleting child Element              
-        - Seleting parent Element  
+
+    
+                                            -- (DOM) - Document Object Model --
+----------------------                                   
+3. Document Properties
+----------------------
+        
+        - Getting Element              
+        - Getting child Element              
+        - Getting parent Element  
         - Create Element             
         - Remove Element  
         - Get Attribute of Element        

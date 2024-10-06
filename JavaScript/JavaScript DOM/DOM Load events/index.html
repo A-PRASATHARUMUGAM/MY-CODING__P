@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Load Events</title>
+    <script > 
+        //DOMContentLoaded --> Html pase only check  
+        document.addEventListener('DOMContentLoaded',()=>{ 
+            const img=document.querySelector("img");
+           console.log("Image head script height",img.offsetHeight)
+           
+       
+       });
+        //load  --> It is load all Images,css etc.
+       window.addEventListener('load',()=>{
+           const img=document.querySelector("img");
+           console.log("Image head script load  height",img.offsetHeight)
+           
+         })  
+                            // or
+       /*  window.load =function(){
+            const img=document.querySelector("img");
+            console.log("Image head script load  height",img.offsetHeight)
+           } */
+
+
+        //onunload  --> not know sure
+        window.document.addEventListener('onunload',()=>{
+            alert("your about to be onunlaod");
+
+        })
+
+        //onbeforeunload --> not know sure
+        window.document.addEventListener('onbeforeunload',()=>{
+            alert("your about to be onbeforeunlaod");
+
+        })
+     </script>
+</head>
+<body>
+    
+
+    <figure>
+<!-- add to image address to see the difference -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx02jjr5IQqJJDAhwvCXijwxogpJsOeJo_lw&s" alt="">
+   
+   
+        <p></p>
+       </figure>
+</body>
+</html>

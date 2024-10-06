@@ -40,12 +40,12 @@
 - 3. window.alert()                     --> alert the pop up menu 
 - 4. window.prompt()                    --> display the pop up prompt
 - 5. window.print()                     --> it is print the window 
+- 6. window.find()                      --> it is find the value  Eg: Ctrl-F 
 
 
 
                             -- Bendings --
 - 1. window.length
-- 2. window.find() 
 - 3. window.moveTo(x,y)
 - 4. window.moveBy()
 - 5. window.resizeBy()
@@ -53,39 +53,13 @@
 - 7. window.confirm()
 
 */ 
+                          
 
-    
-                             /**************************\
-                                #2.console properties
-                             \**************************/
-/*
+                                /**************************\
+                                  #3.Document Properties
+                                \**************************/   
 
-    - 1. console.log()
-    - 2. console.table()
-    - 3. console.error()
-    - 4. console.warn()
-    - 5. console.clear()
-    - 6. console.time()
-    - 7. console.timeEnd()
-    - 8. console.info()
-    - 9. console.assert()
-    - 10. console.count()
-    - 11. console.trace()
-                -- grouping method --
-    - 12. console.group()
-    - 13. console.groupEnd()
-    - 14. console.groupCollapsed()
-
-
-*/ 
-
-
-
-console.log(console)
-
-//                             //1. Document Properties  
-
-                            // 1. (Getting Element)
+//                       // 1. Getting Element
 // //getElementById();
 // let element1=document.getElementById("para-id");
 // console.log(element1);  
@@ -229,10 +203,3 @@ console.log(console)
 // element.id="dom-msgid"; 
 // console.log(element.id)
 
- 
-
- 
-
-
- 
- 
