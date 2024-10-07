@@ -203,3 +203,17 @@
 // element.id="dom-msgid"; 
 // console.log(element.id)
 
+
+
+
+
+//      --- This way to accesing the element --- 
+// console.log(document.body.constructor.name)
+
+// console.log(document.body instanceof HTMLBodyElement) // 5
+// console.log(document.body instanceof HTMLElement)     // 4
+// console.log(document.body instanceof Element)         // 3
+// console.log(document.body instanceof Node)            // 2
+// console.log(document.body instanceof EventTarget)     // 1
+
+// console.log(document.body.nodeType)
