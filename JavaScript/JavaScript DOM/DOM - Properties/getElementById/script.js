@@ -1,3 +1,6 @@
+
+
+                        // getElementById - Selector 
 const foodContainer =document.getElementById("input-food-container");
 const inputFood=document.getElementById("input-food");
 const inputFoodButton=document.getElementById("input-food-button")
