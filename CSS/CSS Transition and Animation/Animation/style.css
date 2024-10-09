@@ -6,3 +6,98 @@ h1{
     text-align:center;
     color:red;
 }
+h2{
+    color:yellow;
+}
+
+[class*="box"]{
+    background-color: lavender;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    
+}
+
+/*                          Animation 
+
+1.  animation: ;     
+
+    animation-duration: ;
+            - 3s
+    animation-name: ;
+            -  anyname
+    animation-timing-function: ;
+            - ease
+            - ease-in
+            - ease-in-out
+            - ease-out
+    animation-delay: ;
+            - 3s 
+    animation-fill-mode: ;
+            - forwards
+            - backwards
+            - both
+
+    animation-iteration-count: ;
+            - 4
+            - infinite
+    animation-direction: ;
+
+    animation-play-state: ;
+    animation-composition: ;
+    animation-range: ;
+    animation-range-end: ;
+    animation-range-start: ;
+    animation-timeline: ;
+
+2. @keyframes identifier {
+        --> total = 10s
+    0%{
+        -> Give the smoothness      
+    }
+    20% {
+        -> 2s
+    }   
+    30%{
+        -> 3s
+    }
+
+    50%{
+        -> 5s
+    }   
+
+}
+
+
+
+
+*/
+.anim-box-1{
+    position:relative;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-fill-mode:both;
+    animation-timing-function: linear;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+  
+ 
+}
+
+@keyframes circle{
+    50%{
+        background-color: cornflowerblue;
+        /* width:50px;
+        height:50px; */
+        transition: all 1s ease;
+        transform: translateX(250px);
+    }
+    100%{
+        background-color: mediumvioletred;
+        /* width: 200px;
+        height:200px;
+         */
+
+    }
+
+}
