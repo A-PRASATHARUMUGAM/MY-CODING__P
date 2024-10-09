@@ -106,8 +106,8 @@
 
 //                                // 2.Getting Child Element  
 
-// parentElement=document.getElementById("parentElement");
-// childElement=parentElement.children;
+// parentElement=document.getElementById("parentEleent");
+// childElement=parenmtElement.children;
 // for(i=0;i<childElement.length;i++){
 //     element=childElement[i];
 //     console.log(element);
@@ -123,9 +123,11 @@
 // para.textContent="create Element to js"
 // document.getElementById("parentElement").appendChild(para); //add the Element 
 
+                                //5.Create the textNode
+// let para=document.createTextNode('hello world')
+
 
 //                                 //5. Remove the Element 
-
 // 1.remove();
 // let RemoveElement=document.getElementById("RemoveElement");
 // RemoveElement.addEventListener('click',(event)=>{
@@ -134,6 +136,7 @@
    
 // });
 // 2.removeChild();
+
 
 //                                     //6. Get Attribute of Element
 // parentElement=document.getElementById("parentElement");
@@ -199,7 +202,7 @@
 //  element.textContent=".textContent";
 // console.log(element.textContent);
 
-// //className -5  it is used to add the new class in to the element and using to css 
+// //className -5  it is used to add the new class in to the element  
 // element.className='dom-msgclass'; 
 // console.log(element.className);
  
