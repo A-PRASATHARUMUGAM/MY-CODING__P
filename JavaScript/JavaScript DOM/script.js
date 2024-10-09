@@ -68,11 +68,11 @@
 // element1=document.getElementsByClassName("para-class");
 // console.log(element1);
 
-// //getElementByName();
+// //getElementsByName();
 // element1=document.getElementsByName("para-name");
 // console.log(element1);
 
-// //getElementByTagName();
+// //getElementsByTagName();
 // element1=document.getElementsByTagName("p");
 // console.log(element1);
 
