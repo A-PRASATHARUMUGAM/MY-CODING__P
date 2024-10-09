@@ -113,12 +113,14 @@
 // childElement=document.querySelector("#parentElement > p")
 // parentElement=childElement.parentElement;
 // console.log(parentElement);
-//                                         //4.Create the Element
+
+//                              //4.Create the Element
 // let para=document.createElement("p") //create the element 
 // para.textContent="create Element to js"
 // document.getElementById("parentElement").appendChild(para); //add the Element 
 
-//                                         //5. Remove the Element 
+
+//                                 //5. Remove the Element 
 
 // 1.remove();
 // let RemoveElement=document.getElementById("RemoveElement");
@@ -141,6 +143,7 @@
 // //Modify
 // parentElement=document.querySelector(".parentElement");
 // setAttribute=parentElement.setAttribute('class','modify attribute');
+
 
 //                                     //8. EventHandling and Mouse Events
 // //using  'click' event             
@@ -168,8 +171,10 @@
 //      console.log("keyup happend",event.key);
 //  })
 
+                                /**************************\
+                                  #2.Element Properties
+                                \**************************/   
 
-                                //2. Element Properties
 
 // const element=document.getElementById("dom-message");
 // console.log(element.innerText); 
@@ -202,7 +207,14 @@
 // //id -7  it is used to add the new id in to the element and print the id
 // element.id="dom-msgid"; 
 // console.log(element.id)
-
+                          
+                                /**************************\
+                                      #5.Style using
+                                \**************************/   
+                              
+// let ColorText=document.getElementsByTagName("h1");
+// // style the Element 
+// console.log(ColorText[0].style.color="red");
 
 
 //      --- This way to accesing the element --- 
