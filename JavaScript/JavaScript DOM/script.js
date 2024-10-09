@@ -214,6 +214,16 @@
 // //id -7  it is used to add the new id in to the element and print the id
 // element.id="dom-msgid"; 
 // console.log(element.id)
+
+// //append  - 8      - it is add last child in your element
+// const main=document.getElementById("main-container");
+// const Append=document.createElement("h2");
+// Append.textContent="Hello world"
+// main.append(Append)  // - last add child
+
+// //prepend - 9    - it add fist child in your element
+// main.prepend(Append)  //-first add child
+
                           
                                 /**************************\
                                       #5.Style using
