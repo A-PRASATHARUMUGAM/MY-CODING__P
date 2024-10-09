@@ -8,7 +8,6 @@ function myfunction(){
 }
   return (
     <header>
-        <h1>Content</h1>
     <p>Good {myfunction()}</p>
 
     </header>
