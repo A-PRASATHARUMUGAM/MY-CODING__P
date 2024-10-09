@@ -190,7 +190,7 @@
 //  element.textContent=".textContent";
 // console.log(element.textContent);
 
-// //className -5  it is used to add the new class in to the element and print the class
+// //className -5  it is used to add the new class in to the element and using to css 
 // element.className='dom-msgclass'; 
 // console.log(element.className);
  
