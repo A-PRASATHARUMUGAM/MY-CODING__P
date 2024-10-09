@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Header } from './Header';
+import { Content } from './Content';
 function App() {
 
-function myfunction(){
-      let data =["kandhan","sabari",'world'];
-      let  random=Math.floor(Math.random()*3);
-  return data[random]
-}
   return (
     <div className="App">
 
-      <header className="App-header">
-
-
-        <p>hello {myfunction()}</p>
-
-      </header>
- 
-
+  <Header/>
+  <Content />
 
     </div>
   );
