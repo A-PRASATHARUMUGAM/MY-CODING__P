@@ -80,9 +80,11 @@
 // //tagname to select
 // element1=document.querySelector("p");  
 // console.log(element1);
+
 // //id to select
 // element1=document.querySelector("#para-id"); 
 // console.log(element1); 
+
 // //class to select
 // element1=document.querySelector(".para-class"); 
 // console.log(element1);
@@ -92,9 +94,11 @@
 // //tagname to select
 // element1=document.querySelectorAll("p");  
 // console.log(element1);
+
 // //id to select
 // element1=document.querySelectorAll("#para-id"); 
 // console.log(element1); 
+
 // //class to select
 // element1=document.querySelectorAll(".para-class"); 
 // console.log(element1);
