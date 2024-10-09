@@ -13,6 +13,7 @@ h2{
 
 div[class*=box]{
     margin:40px 10px; 
+    font-weight: bold;
 }
 
 
@@ -37,34 +38,40 @@ div[class*=box]{
         - matrix3d()   - Bending
  
     2.  - rotate('angle')
-        - rotate3d()    - Bending
         - rotateX()
         - rotateY()
         - rotateZ()
+        - rotate3d()   <- rotate(X, Y, Z)
+                       <- rotate(1, 1, 0,40deg)
+                       1=apply
+                       0=not apply
 
-    3.  - perspective() - Bending
+
+    3.  - perspective()
 
     4.  - scale()
-        - scale3d()     - Bending
+        - scale3d()     <- all (X, Y, Z)
         - scaleX()
         - scaleY()
-        - scaleZ()      - Bending
+        - scaleZ()      
 
     5.  - skew()
         - skewX()
         - skewY()
 
-    6.  - translate()    <= translateX + translateY 
-        - translate3d()    - Bending
+    6.  - translate(H,V)    <= translateX + translateY 
+        - translate3d()   <- all (X, Y, Z)
         - translateX()
         - translateY()
         - translateZ()    
 
         
 
-2. transform-origin --> it is change the pin to rotate,skew,scale
-3. transform-style
-4. transform-box
+2. transform-origin:H V; --> it is change the pin to rotate,skew,scale
+3. transform-style:;
+4. transform-box:;
+6. perspective:; 50px -->fast3d  200px -->slow3d
+5. perspective-origin:;
 
 */
 
@@ -78,15 +85,18 @@ div[class*=box]{
                                  /*2. rotate(); */
 .trans-box-2:hover{
     transition:all 3s;
-    transform: rotate(30deg);
+    transform: rotate(360deg);
     transform: rotateX(30deg);
     transform: rotateY(30deg);
     transform: rotateZ(360deg);
+}
 
-    /* Bending */
-    /* transform: rotate3d(-30deg); */
-
-
+/* rotate3d(); */
+.trans-box-22:hover{
+    /* rotate(1, 1, 0,40deg) */
+   color: hotpink;
+   transition: all 3s ease;
+   transform: perspective(200px) rotate3d(1,1,0,45deg);
 }
 
 
@@ -99,8 +109,9 @@ div[class*=box]{
      /* combine */
      transform: perspective(100px) rotate(360deg) scale(2) ; 
      transform: perspective(100px) rotate(360deg)  skew(10deg) ; 
-     transform: perspective(100px) rotate(360deg)  translate(100px) ; 
-     transition:all 3s linear;
+     transform: perspective(50px) scaleZ(1.5) translateZ(300px); 
+     transform: perspective(10px)  rotateZ(360deg)  scale(3) ; 
+     transition:all 1s linear;
 }
 
 
@@ -110,10 +121,14 @@ div[class*=box]{
     transform:scale(2); 
     transform:scaleX(2); 
     transform:scaleY(2); 
-
-    /* Bending */
     /* transform:scaleZ(2);  */
     
+}
+/* scale3d() */
+.trans-box-44:hover{
+    background-color:hotpink;
+    transition:all 3s ease;
+    transform:perspective(10px) scale3d(2,3,5);
 }
 
                                      /*4. skew(); */
@@ -133,14 +148,38 @@ div[class*=box]{
     transition:all 3s;
     transform: translateX(100px);
     transform: translateY(200px );
- /* translateX + translateY  = translate()   */
-    transform: translate(100px ,100px );
+    /* translate(X,Y) */
+    transform: translate(100px ,100px);
 
-    /* Bending */
-    /* transform: translate3d(100px); */
+}
+
+/* translateZ() */ 
+.trans-box-66{
+    /* menaition the parent */
+    perspective:50px;
+    perspective-origin:top left;
+}
+.trans-box-66 > div{
+    background-color: hotpink;
+    width:50%;
+    height:100px;
+}
+.trans-box-66 > div:hover{
+    transition:all 3s linear;
+    transform: translateZ(20px);
+    background-color: yellow;
 }
 
 
+/* translate3d(); */
+.trans-box-666>div{
+    padding:30px;
+    background-color: springgreen;
+}
+.trans-box-666>div:hover{
+    transition:all 3s ease;
+    transform: perspective(200px) translate3d(10px,20px,30px);
+}
 
 
 
@@ -148,8 +187,10 @@ div[class*=box]{
                         /* 2.transform-origin:; */
 
 .trans-box-7:hover{
+    /* transform-origin:horizonatal vetical */
     transform-origin:center center; /* default */
     transform-origin: top center ;
+    transform-origin: 50px 10px;
     transform: rotate(360deg);
     transition: all 2s ease;
 }
