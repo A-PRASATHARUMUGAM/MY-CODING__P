@@ -56,7 +56,7 @@
 */
 
 
-
+                                //1.Create DOM Elements 
 // createElement
 let textNode1=document.createTextNode("hello world ");
 let h2=document.createElement('h2');
@@ -79,8 +79,25 @@ main.prepend(para1);
 // text=document.textContent="hello"; --> you can store multiple time in the text
 
 
-// createAttribute
-let attribut1=document.createAttribute("width","20px")
-console.log(attribut1)
+
+                            //2. add class and remove                             
+// className
+para1.className="prasath";
+
+//classList.add()
+para1.classList.add("kandhan")
+
+//classList.toggle()
+para1.addEventListener('click',()=>{
+    para1.classList.toggle("checkclass"); //-- recursively add and remove classname
+})
+
+// remove()
+para1.addEventListener('click',()=>{
+    para1.remove()    //-- click the para1
+})
+
+
+
 
 
