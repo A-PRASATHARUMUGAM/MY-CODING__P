@@ -98,6 +98,30 @@ para1.addEventListener('click',()=>{
 })
 
 
+                                //3. how to get / set Text via DOM
+            // get text
+// innerText
+console.log(main.innerText)   //-avoid space to print text 
 
 
+// innerHTML
+console.log(main.innerHTML)  //-print element+text
 
+// textContent
+console.log(main.textContent) //-actual print link <para>
+
+             //set text
+//innerText
+let para2=document.querySelector(".para2");
+para2.innerText="<strong>Every day is a chance to be the best </strong>";
+console.log(para2.innerText)// or createTextNode 
+  
+//innerHTML
+para2.innerHTML="<strong>Every day is a chance to be the best</strong>";
+console.log(para2.innerHTML)  // or  createElement 
+
+
+//textContent
+para2.textContent="<strong>Every day is a chance to be the best </strong>";
+console.log(para2.textContent)// or createTextNode   
+            
