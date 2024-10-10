@@ -5,9 +5,9 @@
     1. createAttribute ()       - use
     2. createAttributeNS()
     3. createCDATASection()
-    4. createComment()          - use
-    5. createDocumentFragment()
-    6. createElement()          - use
+    4. createComment()           - use
+    5. createDocumentFragment()  - use
+    6. createElement()           - use
     7. createElementNS()
     8. createEvent()
     9. createExpression()
@@ -100,28 +100,54 @@ para1.addEventListener('click',()=>{
 
                                 //3. how to get / set Text via DOM
             // get text
-// innerText
-console.log(main.innerText)   //-avoid space to print text 
+// // innerText
+// console.log(main.innerText)   //-avoid space to print text 
 
 
-// innerHTML
-console.log(main.innerHTML)  //-print element+text
+// // innerHTML
+// console.log(main.innerHTML)  //-print element+text
 
-// textContent
-console.log(main.textContent) //-actual print link <para>
+// // textContent
+// console.log(main.textContent) //-actual print link <para>
 
-             //set text
-//innerText
-let para2=document.querySelector(".para2");
-para2.innerText="<strong>Every day is a chance to be the best </strong>";
-console.log(para2.innerText)// or createTextNode 
+//                      //set text
+// //innerText
+// let para2=document.querySelector(".para2");
+// para2.innerText="<strong>Every day is a chance to be the best </strong>";
+// console.log(para2.innerText)// or createTextNode 
   
-//innerHTML
-para2.innerHTML="<strong>Every day is a chance to be the best</strong>";
-console.log(para2.innerHTML)  // or  createElement 
+// //innerHTML
+// para2.innerHTML="<strong>Every day is a chance to be the best</strong>";
+// console.log(para2.innerHTML)  // or  createElement 
 
 
-//textContent
-para2.textContent="<strong>Every day is a chance to be the best </strong>";
-console.log(para2.textContent)// or createTextNode   
-            
+// //textContent
+// para2.textContent="<strong>Every day is a chance to be the best </strong>";
+// console.log(para2.textContent)// or createTextNode   
+
+
+
+                        // 4. createDocumentFragment()  
+
+let fragmentContainer=document.querySelector(".fragment-container");
+console.time("normal way ")
+for(let i=0;i<=10;i++){
+    
+    let para4=document.createElement("p")
+    para4.innerText=`fragment ${i}`
+    fragmentContainer.append(para4)
+}
+console.timeEnd("normal way ")
+
+
+// fragment way
+let framgment=document.createDocumentFragment()
+console.time("DocumentFragment way ")
+for(let i=0;i<=10;i++){
+    
+    let para4=document.createElement("p")
+    para4.innerText=`fragment ${i}`
+    framgment.append(para4)
+}
+fragmentContainer.append(framgment)
+console.timeEnd("DocumentFragment way ")
