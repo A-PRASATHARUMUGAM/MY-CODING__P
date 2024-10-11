@@ -170,6 +170,27 @@ newelement2.innerText="para-prepend";
 newelement2.style.color="yellow";
 container2.prepend(newelement2);
 
+// before
+let newelement3=document.createElement("p")
+newelement3.innerText="para-before";
+newelement3.style.color="lightblue"
+container2.before(newelement3)
+
+//after
+let newelement4=document.createElement("p")
+newelement4.innerText="para-aftter"
+newelement4.style.color="hotpink";
+container2.after(newelement4);
+
+// give the parent element
+console.log(container2.parentElement)
+
+// give th parent element
+console.log(container2.parentNode)
+
+//insertAdjacentHTML()
+container2.insertAdjacentHTML("afterbegin","hllo")
+container2.insertAdjacentHTML("afterend","hllo")
 
 
 
