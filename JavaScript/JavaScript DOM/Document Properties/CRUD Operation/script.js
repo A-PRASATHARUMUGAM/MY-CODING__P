@@ -131,7 +131,7 @@ para1.addEventListener('click',()=>{
 
 let fragmentContainer=document.querySelector(".fragment-container");
 console.time("normal way ")
-for(let i=0;i<=10;i++){
+for(let i=0;i<=2;i++){
     
     let para4=document.createElement("p")
     para4.innerText=`fragment ${i}`
@@ -143,7 +143,7 @@ console.timeEnd("normal way ")
 // fragment way
 let framgment=document.createDocumentFragment()
 console.time("DocumentFragment way ")
-for(let i=0;i<=10;i++){
+for(let i=0;i<=2;i++){
     
     let para4=document.createElement("p")
     para4.innerText=`fragment ${i}`
@@ -151,3 +151,24 @@ for(let i=0;i<=10;i++){
 }
 fragmentContainer.append(framgment)
 console.timeEnd("DocumentFragment way ")
+
+
+
+                    // 4. inserting DOM Element 
+
+//append
+let container2=document.querySelector(".container2");
+let para1=document.createElement("p");
+para.innerText="para-append";
+container2.append(para);
+
+
+//prepend
+let para2=document.createElement("p");
+para2.innerText="para-prepend";
+container2.prepend(para2);
+
+
+
+
+
