@@ -158,15 +158,18 @@ console.timeEnd("DocumentFragment way ")
 
 //append
 let container2=document.querySelector(".container2");
-let para1=document.createElement("p");
-para.innerText="para-append";
-container2.append(para);
+let newelement=document.createElement("p");
+newelement.innerText="para-append";
+newelement.style.color="red";
+container2.append(newelement);
 
 
 //prepend
-let para2=document.createElement("p");
-para2.innerText="para-prepend";
-container2.prepend(para2);
+let newelement2=document.createElement("p");
+newelement2.innerText="para-prepend";
+newelement2.style.color="yellow";
+container2.prepend(newelement2);
+
 
 
 
