@@ -16,7 +16,7 @@
     21. createProcessingInstruction()
     13. createNodeIterator()
     14. createRange()
-    15. createTextNode()          - use
+    15. createTextNode()          - use     - alternative to innerText 
     16. createTreeWalker()
 
 
@@ -45,11 +45,29 @@
 19. removeAttributeNode()
 21. removeChild()
 22. removeEventListener()
-23. replaceChild()
-24. replaceChildren()
-25. replaceWith()
+
+23. replaceChild()          -use   - old way to replace
+24. replaceChildren()       -use   - it multiple children to replace 
+25. replaceWith()           -use   - new way it one child replace
+
 26. requestFullscreen()
 27. requestPointerLock()
+
+
+28. insertAdjacentElement() -use    beforebegin, beforeend, afterbegin, afterend
+29. insertAdjacentHTML()    -use    
+30. insertAdjacentText()    -use
+31. insertBefore()          -use
+
+
+//1. Create DOM Elements 
+//2. add class and remove 
+//3. how to get / set Text via DOM                    
+//4. createDocumentFragment() 
+//5. inserting DOM Element 
+//6. inserting DOM Strign Template
+//7. Replacing DOM Element
+
 
 
 
@@ -155,7 +173,7 @@ console.timeEnd("DocumentFragment way ")
 
 
 
-                        // 4. inserting DOM Element 
+                        // 5. inserting DOM Element 
 
 //append
 let container2=document.querySelector(".container2");
@@ -183,27 +201,29 @@ newelement4.style.color="hotpink";
 container2.after(newelement4); 
 
 // old way to use before()
-console.log(container2.parentElement.insertBefore(newelement3,fragmentContainer));
+container2.parentElement.insertBefore(newelement3,fragmentContainer);
 
 // old way to use after()
-console.log(container2.parentNode.insertBefore(newelement4,fragmentContainer.nextSibling))
+container2.parentNode.insertBefore(newelement4,fragmentContainer.nextSibling);
 
 
-                        // 5.inserting DOM Strign Template
+                        // 6.inserting DOM Strign Template
 /* how will be insert 
 
     -- > beforebegin
+    -- > before()
 <container>
     -- > afterbegin
 
-    -- > append
+    -- > append()
     <p1>
     <p2>
     <p3>
-    -- > prepend
+    -- > prepend()
     
     -- > beforeend
    <container>
+    -- > after()
     -- > afterend
   
   */
@@ -221,7 +241,27 @@ container2.insertAdjacentHTML("beforebegin","beforebegin");
 container2.insertAdjacentHTML("beforeend","beforeend");
 
 
+                        //7. Replacing DOM Element
+ 
+//1. replaceWith()  -- > new way  -  preferred
+let container3=document.querySelector(".container3");
+let container3para=document.querySelector(".container3 :first-child")
+// createElement
+let newpara1=document.createElement("p");
+newpara1.textContent="kandhan"
+newpara1.className="#hello world";
+newpara1.style.backgroundColor="red"; 
+newpara1.style.color="black";
+// replaceWith()
+container3para.replaceWith(newpara1)
 
+//2. replaceChild()   --> old way
+newpara1.style.backgroundColor="springgreen"; 
+// container3para.parentNode.replaceChild(newpara1,container3para); --some problem
+
+
+//3. replaceChildren() 
+// container3.replaceChildren(newpara1)
 
 
 
