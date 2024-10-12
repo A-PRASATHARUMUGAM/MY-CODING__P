@@ -68,6 +68,7 @@
 //6. inserting DOM Strign Template
 //7. Replacing DOM Elements
 //8. Cloning DOM Elements
+//9. Removing DOM Elements
 
 
 
@@ -279,3 +280,18 @@ console.log("cloneNode()",cloneNode);
 // cloneNode(true)  // -it clone include childrens nodes
 const cloneNodeTrue=container4.cloneNode(true)
 console.log("cloneNode(true)",cloneNodeTrue);
+
+
+                        //9. Removing DOM Elements
+
+// remove mulitiple elements
+let paraContainer5=document.querySelector(".para-container5 ")
+let removeBtn=document.querySelectorAll(".fa-xmark")
+
+removeBtn.forEach(element => {
+   
+    element.addEventListener("click",()=>{
+        element.parentNode.remove() 
+    })
+    
+});

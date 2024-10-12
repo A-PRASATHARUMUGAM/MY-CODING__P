@@ -20,3 +20,12 @@ h1{
     margin-top:50px;
     padding: 10px;
 }
+
+.para-container5{
+    border: 1px solid white;
+    padding-inline:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
