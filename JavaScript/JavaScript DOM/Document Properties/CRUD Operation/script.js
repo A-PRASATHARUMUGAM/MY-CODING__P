@@ -269,24 +269,25 @@ newpara1.style.backgroundColor="springgreen";
 
                         //8. Cloning DOM Elements
 
-const container4=document.querySelector(".container4");
-console.log("normal",container4);
+// const container4=document.querySelector(".container4");
+// console.log("normal",container4);
 
-// cloneNode()   - default false - it clone only current node 
-const cloneNode=container4.cloneNode() 
-console.log("cloneNode()",cloneNode);
+// // cloneNode()   - default false - it clone only current node 
+// const cloneNode=container4.cloneNode() 
+// console.log("cloneNode()",cloneNode);
 
 
-// cloneNode(true)  // -it clone include childrens nodes
-const cloneNodeTrue=container4.cloneNode(true)
-console.log("cloneNode(true)",cloneNodeTrue);
+// // cloneNode(true)  // -it clone include childrens nodes
+// const cloneNodeTrue=container4.cloneNode(true)
+// console.log("cloneNode(true)",cloneNodeTrue);
 
 
                         //9. Removing DOM Elements
 
 // remove mulitiple elements
 let paraContainer5=document.querySelector(".para-container5 ")
-let removeBtn=document.querySelectorAll(".fa-xmark")
+let removeBtn=document.querySelectorAll(".fa-xmark");
+let addbutton=document.querySelector(".addbtn");
 
 removeBtn.forEach(element => {
    
