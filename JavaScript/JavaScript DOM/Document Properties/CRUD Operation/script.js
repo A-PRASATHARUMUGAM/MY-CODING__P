@@ -99,7 +99,7 @@ para1.addEventListener('click',()=>{
 
 
                                 //3. how to get / set Text via DOM
-            // get text
+                        // get text
 // // innerText
 // console.log(main.innerText)   //-avoid space to print text 
 
@@ -163,7 +163,6 @@ newelement.innerText="para-append";
 newelement.style.color="red";
 container2.append(newelement);
 
-
 //prepend
 let newelement2=document.createElement("p");
 newelement2.innerText="para-prepend";
@@ -178,19 +177,30 @@ container2.before(newelement3)
 
 //after
 let newelement4=document.createElement("p")
-newelement4.innerText="para-aftter"
+newelement4.innerText="para-after"
 newelement4.style.color="hotpink";
-container2.after(newelement4);
+container2.after(newelement4); 
 
-// give the parent element
-console.log(container2.parentElement)
+// old way to use before()
+console.log(container2.parentElement.insertBefore(newelement3,fragmentContainer));
 
-// give th parent element
-console.log(container2.parentNode)
+// old way to use after()
+console.log(container2.parentNode.insertBefore(newelement4,fragmentContainer.nextSibling))
 
-//insertAdjacentHTML()
-container2.insertAdjacentHTML("afterbegin","hllo")
-container2.insertAdjacentHTML("afterend","hllo")
+
+                        // 5.inserting DOM Strign Template
+                        
+//insertAdjacentHTML() - afterbegin ->after container2 begin
+container2.insertAdjacentHTML("afterbegin","<h4>afterbegin</h4>");
+
+//insertAdjacentText() - afterend   ->after container2 end
+container2.insertAdjacentText("afterend","afterend");
+
+//insertAdjacentText() - beforebegin   ->before container2 begin
+container2.insertAdjacentHTML("beforebegin","beforebegin");
+
+//insertAdjacentText() - beforeend   ->before container2 end
+container2.insertAdjacentHTML("beforeend","beforeend");
 
 
 
