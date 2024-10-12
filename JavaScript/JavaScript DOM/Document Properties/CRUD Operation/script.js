@@ -66,7 +66,8 @@
 //4. createDocumentFragment() 
 //5. inserting DOM Element 
 //6. inserting DOM Strign Template
-//7. Replacing DOM Element
+//7. Replacing DOM Elements
+//8. Cloning DOM Elements
 
 
 
@@ -265,3 +266,16 @@ newpara1.style.backgroundColor="springgreen";
 
 
 
+                        //8. Cloning DOM Elements
+
+const container4=document.querySelector(".container4");
+console.log("normal",container4);
+
+// cloneNode()   - default false - it clone only current node 
+const cloneNode=container4.cloneNode() 
+console.log("cloneNode()",cloneNode);
+
+
+// cloneNode(true)  // -it clone include childrens nodes
+const cloneNodeTrue=container4.cloneNode(true)
+console.log("cloneNode(true)",cloneNodeTrue);
