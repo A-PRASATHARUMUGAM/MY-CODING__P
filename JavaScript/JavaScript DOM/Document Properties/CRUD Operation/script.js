@@ -76,223 +76,238 @@
 */
 
 
-                                //1.Create DOM Elements 
-// createElement
-let textNode1=document.createTextNode("hello world ");
-let h2=document.createElement('h2');
-h2.append(textNode1);  // --> only one time store the textNode
-let main=document.querySelector(".main-container");
-main.append(h2)
-main.prepend(h2)
+//                                 //1.Create DOM Elements 
+// // createElement
+// let textNode1=document.createTextNode("hello world ");
+// let h2=document.createElement('h2');
+// h2.append(textNode1);  // --> only one time store the textNode
+// let main=document.querySelector(".main-container");
+// main.append(h2)
+// main.prepend(h2)
  
-// createComment
-let comment=document.createComment("DOM via comment");
-main.append(comment);
+// // createComment
+// let comment=document.createComment("DOM via comment");
+// main.append(comment);
 
-// createTextNode
-let textNode2=document.createTextNode("Every day is a chance to be the best");
-let para1=document.createElement('p');
-para1.append(textNode2);    // --> only one time store in the textNode
-main.prepend(para1);
+// // createTextNode
+// let textNode2=document.createTextNode("Every day is a chance to be the best");
+// let para1=document.createElement('p');
+// para1.append(textNode2);    // --> only one time store in the textNode
+// main.prepend(para1);
 
-                        // !important
-// text=document.textContent="hello"; --> you can store multiple time in the text
-
-
-
-                            //2. add class and remove                             
-// className
-para1.className="prasath";
-
-//classList.add()
-para1.classList.add("kandhan")
-
-//classList.toggle()
-para1.addEventListener('click',()=>{
-    para1.classList.toggle("checkclass"); //-- recursively add and remove classname
-})
-
-// remove()
-para1.addEventListener('click',()=>{
-    para1.remove()    //-- click the para1
-})
+//                         // !important
+// // text=document.textContent="hello"; --> you can store multiple time in the text
 
 
-                    //3. how to get / set Text via DOM
 
-                        // get text
-// // innerText
-// console.log(main.innerText)   //-avoid space to print text 
+//                             //2. add class and remove                             
+// // className
+// para1.className="prasath";
+
+// //classList.add()
+// para1.classList.add("kandhan")
+
+// //classList.toggle()
+// para1.addEventListener('click',()=>{
+//     para1.classList.toggle("checkclass"); //-- recursively add and remove classname
+// })
+
+// // remove()
+// para1.addEventListener('click',()=>{
+//     para1.remove()    //-- click the para1
+// })
 
 
-// // innerHTML
-// console.log(main.innerHTML)  //-print element+text
+//                     //3. how to get / set Text via DOM
 
-// // textContent
-// console.log(main.textContent) //-actual print link <para>
+//                         // get text
+// // // innerText
+// // console.log(main.innerText)   //-avoid space to print text 
 
-//                       //set text
-// //innerText
-// let para2=document.querySelector(".para2");
-// para2.innerText="<strong>Every day is a chance to be the best </strong>";
-// console.log(para2.innerText)// or createTextNode 
+
+// // // innerHTML
+// // console.log(main.innerHTML)  //-print element+text
+
+// // // textContent
+// // console.log(main.textContent) //-actual print link <para>
+
+// //                       //set text
+// // //innerText
+// // let para2=document.querySelector(".para2");
+// // para2.innerText="<strong>Every day is a chance to be the best </strong>";
+// // console.log(para2.innerText)// or createTextNode 
   
-// //innerHTML
-// para2.innerHTML="<strong>Every day is a chance to be the best</strong>";
-// console.log(para2.innerHTML)  // or  createElement 
+// // //innerHTML
+// // para2.innerHTML="<strong>Every day is a chance to be the best</strong>";
+// // console.log(para2.innerHTML)  // or  createElement 
 
 
-// //textContent
-// para2.textContent="<strong>Every day is a chance to be the best </strong>";
-// console.log(para2.textContent)// or createTextNode   
+// // //textContent
+// // para2.textContent="<strong>Every day is a chance to be the best </strong>";
+// // console.log(para2.textContent)// or createTextNode   
 
 
 
-                        // 4. createDocumentFragment()  
+//                         // 4. createDocumentFragment()  
 
-let fragmentContainer=document.querySelector(".fragment-container");
-console.time("normal way ")
-for(let i=0;i<=2;i++){
+// let fragmentContainer=document.querySelector(".fragment-container");
+// console.time("normal way ")
+// for(let i=0;i<=2;i++){
     
-    let para4=document.createElement("p")
-    para4.innerText=`fragment ${i}`
-    fragmentContainer.append(para4)
-}
-console.timeEnd("normal way ")
+//     let para4=document.createElement("p")
+//     para4.innerText=`fragment ${i}`
+//     fragmentContainer.append(para4)
+// }
+// console.timeEnd("normal way ")
 
 
-// fragment way
-let framgment=document.createDocumentFragment()
-console.time("DocumentFragment way ")
-for(let i=0;i<=2;i++){
+// // fragment way
+// let framgment=document.createDocumentFragment()
+// console.time("DocumentFragment way ")
+// for(let i=0;i<=2;i++){
     
-    let para4=document.createElement("p")
-    para4.innerText=`fragment ${i}`
-    framgment.append(para4)
-}
-fragmentContainer.append(framgment)
-console.timeEnd("DocumentFragment way ")
+//     let para4=document.createElement("p")
+//     para4.innerText=`fragment ${i}`
+//     framgment.append(para4)
+// }
+// fragmentContainer.append(framgment)
+// console.timeEnd("DocumentFragment way ")
 
 
 
-                        // 5. inserting DOM Element 
+//                         // 5. inserting DOM Element 
 
-//append
-let container2=document.querySelector(".container2");
-let newelement=document.createElement("p");
-newelement.innerText="para-append";
-newelement.style.color="red";
-container2.append(newelement);
+// //append
+// let container2=document.querySelector(".container2");
+// let newelement=document.createElement("p");
+// newelement.innerText="para-append";
+// newelement.style.color="red";
+// container2.append(newelement);
 
-//prepend
-let newelement2=document.createElement("p");
-newelement2.innerText="para-prepend";
-newelement2.style.color="yellow";
-container2.prepend(newelement2);
+// //prepend
+// let newelement2=document.createElement("p");
+// newelement2.innerText="para-prepend";
+// newelement2.style.color="yellow";
+// container2.prepend(newelement2);
 
-// before
-let newelement3=document.createElement("p")
-newelement3.innerText="para-before";
-newelement3.style.color="lightblue"
-container2.before(newelement3)
+// // before
+// let newelement3=document.createElement("p")
+// newelement3.innerText="para-before";
+// newelement3.style.color="lightblue"
+// container2.before(newelement3)
 
-//after
-let newelement4=document.createElement("p")
-newelement4.innerText="para-after"
-newelement4.style.color="hotpink";
-container2.after(newelement4); 
+// //after
+// let newelement4=document.createElement("p")
+// newelement4.innerText="para-after"
+// newelement4.style.color="hotpink";
+// container2.after(newelement4); 
 
-// old way to use before()
-container2.parentElement.insertBefore(newelement3,fragmentContainer);
+// // old way to use before()
+// container2.parentElement.insertBefore(newelement3,fragmentContainer);
 
-// old way to use after()
-container2.parentNode.insertBefore(newelement4,fragmentContainer.nextSibling);
+// // old way to use after()
+// container2.parentNode.insertBefore(newelement4,fragmentContainer.nextSibling);
 
 
-                        // 6.inserting DOM Strign Template
-/* how will be insert 
+//                         // 6.inserting DOM Strign Template
+// /* how will be insert 
 
-    -- > beforebegin
-    -- > before()
-<container>
-    -- > afterbegin
+//     -- > beforebegin
+//     -- > before()
+// <container>
+//     -- > afterbegin
 
-    -- > append()
-    <p1>
-    <p2>
-    <p3>
-    -- > prepend()
+//     -- > append()
+//     <p1>
+//     <p2>
+//     <p3>
+//     -- > prepend()
     
-    -- > beforeend
-   <container>
-    -- > after()
-    -- > afterend
+//     -- > beforeend
+//    <container>
+//     -- > after()
+//     -- > afterend
   
-  */
+//   */
 
-//insertAdjacentHTML() - afterbegin ->after container2 begin
-container2.insertAdjacentHTML("afterbegin","<h4>afterbegin</h4>");
+// //insertAdjacentHTML() - afterbegin ->after container2 begin
+// container2.insertAdjacentHTML("afterbegin","<h4>afterbegin</h4>");
 
-//insertAdjacentText() - afterend   ->after container2 end
-container2.insertAdjacentText("afterend","afterend");
+// //insertAdjacentText() - afterend   ->after container2 end
+// container2.insertAdjacentText("afterend","afterend");
 
-//insertAdjacentText() - beforebegin   ->before container2 begin
-container2.insertAdjacentHTML("beforebegin","beforebegin");
+// //insertAdjacentText() - beforebegin   ->before container2 begin
+// container2.insertAdjacentHTML("beforebegin","beforebegin");
 
-//insertAdjacentText() - beforeend   ->before container2 end
-container2.insertAdjacentHTML("beforeend","beforeend");
+// //insertAdjacentText() - beforeend   ->before container2 end
+// container2.insertAdjacentHTML("beforeend","beforeend");
 
 
-                        //7. Replacing DOM Element
+//                         //7. Replacing DOM Element
  
-//1. replaceWith()  -- > new way  -  preferred
-let container3=document.querySelector(".container3");
-let container3para=document.querySelector(".container3 :first-child")
-// createElement
-let newpara1=document.createElement("p");
-newpara1.textContent="kandhan"
-newpara1.className="#hello world";
-newpara1.style.backgroundColor="red"; 
-newpara1.style.color="black";
-// replaceWith()
-container3para.replaceWith(newpara1)
+// //1. replaceWith()  -- > new way  -  preferred
+// let container3=document.querySelector(".container3");
+// let container3para=document.querySelector(".container3 :first-child")
+// // createElement
+// let newpara1=document.createElement("p");
+// newpara1.textContent="kandhan"
+// newpara1.className="#hello world";
+// newpara1.style.backgroundColor="red"; 
+// newpara1.style.color="black";
+// // replaceWith()
+// container3para.replaceWith(newpara1)
 
-//2. replaceChild()   --> old way
-newpara1.style.backgroundColor="springgreen"; 
-// container3para.parentNode.replaceChild(newpara1,container3para); --some problem
-
-
-//3. replaceChildren() 
-// container3.replaceChildren(newpara1)
+// //2. replaceChild()   --> old way
+// newpara1.style.backgroundColor="springgreen"; 
+// // container3para.parentNode.replaceChild(newpara1,container3para); --some problem
 
 
-
-                        //8. Cloning DOM Elements
-
-// const container4=document.querySelector(".container4");
-// console.log("normal",container4);
-
-// // cloneNode()   - default false - it clone only current node 
-// const cloneNode=container4.cloneNode() 
-// console.log("cloneNode()",cloneNode);
+// //3. replaceChildren() 
+// // container3.replaceChildren(newpara1)
 
 
-// // cloneNode(true)  // -it clone include childrens nodes
-// const cloneNodeTrue=container4.cloneNode(true)
-// console.log("cloneNode(true)",cloneNodeTrue);
+
+//                         //8. Cloning DOM Elements
+
+// // const container4=document.querySelector(".container4");
+// // console.log("normal",container4);
+
+// // // cloneNode()   - default false - it clone only current node 
+// // const cloneNode=container4.cloneNode() 
+// // console.log("cloneNode()",cloneNode);
 
 
-                        //9. Removing DOM Elements
+// // // cloneNode(true)  // -it clone include childrens nodes
+// // const cloneNodeTrue=container4.cloneNode(true)
+// // console.log("cloneNode(true)",cloneNodeTrue);
 
-// remove mulitiple elements
-let paraContainer5=document.querySelector(".para-container5 ")
-let removeBtn=document.querySelectorAll(".fa-xmark");
-let addbutton=document.querySelector(".addbtn");
 
-removeBtn.forEach(element => {
+//                         //9. Removing DOM Elements
+
+// // remove mulitiple elements
+// let paraContainer5=document.querySelector(".para-container5 ")
+// let removeBtn=document.querySelectorAll(".fa-xmark");
+// let addbutton=document.querySelector(".addbtn");
+
+// removeBtn.forEach(element => {
    
-    element.addEventListener("click",()=>{
-        element.parentNode.remove() 
-    })
+//     element.addEventListener("click",()=>{
+//         element.parentNode.remove() 
+//     })
     
-});
+// });
+
+//                         //10. Finding child in DOM 
+
+// console.log(paraContainer5.firstChild);
+// console.log(paraContainer5.firstElementChild);
+// console.log(paraContainer5.lastChild);
+// console.log(paraContainer5.lastElementChild);
+// console.log(paraContainer5.children);
+// console.log(paraContainer5.childNodes);
+// console.log(paraContainer5.childElementCount);
+
+
+
+
+
