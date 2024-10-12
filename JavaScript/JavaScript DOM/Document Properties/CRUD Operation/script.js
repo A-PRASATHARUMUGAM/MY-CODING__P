@@ -98,7 +98,8 @@ para1.addEventListener('click',()=>{
 })
 
 
-                                //3. how to get / set Text via DOM
+                    //3. how to get / set Text via DOM
+
                         // get text
 // // innerText
 // console.log(main.innerText)   //-avoid space to print text 
@@ -110,7 +111,7 @@ para1.addEventListener('click',()=>{
 // // textContent
 // console.log(main.textContent) //-actual print link <para>
 
-//                      //set text
+//                       //set text
 // //innerText
 // let para2=document.querySelector(".para2");
 // para2.innerText="<strong>Every day is a chance to be the best </strong>";
@@ -154,7 +155,7 @@ console.timeEnd("DocumentFragment way ")
 
 
 
-                    // 4. inserting DOM Element 
+                        // 4. inserting DOM Element 
 
 //append
 let container2=document.querySelector(".container2");
@@ -189,7 +190,24 @@ console.log(container2.parentNode.insertBefore(newelement4,fragmentContainer.nex
 
 
                         // 5.inserting DOM Strign Template
-                        
+/* how will be insert 
+
+    -- > beforebegin
+<container>
+    -- > afterbegin
+
+    -- > append
+    <p1>
+    <p2>
+    <p3>
+    -- > prepend
+    
+    -- > beforeend
+   <container>
+    -- > afterend
+  
+  */
+
 //insertAdjacentHTML() - afterbegin ->after container2 begin
 container2.insertAdjacentHTML("afterbegin","<h4>afterbegin</h4>");
 
@@ -201,6 +219,7 @@ container2.insertAdjacentHTML("beforebegin","beforebegin");
 
 //insertAdjacentText() - beforeend   ->before container2 end
 container2.insertAdjacentHTML("beforeend","beforeend");
+
 
 
 
