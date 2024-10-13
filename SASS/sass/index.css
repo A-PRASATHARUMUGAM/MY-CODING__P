@@ -1,0 +1,300 @@
+.btn-primary {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgb(54, 205, 255);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-success {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgb(48, 255, 48);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-danger {
+  border: none;
+  padding: 8px 20px;
+  background-color: rgba(255, 0, 0, 0.754);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/*        rem into px                   rem to px              px to rem 
+        0.75rem = 12px              0.75 * 16 = 12px        12px / 16 = 0.75
+           1rem = 16px                 1 * 16 = 16px        16px / 16 = 1         
+         1.5rem = 24px               1.5 * 16 = 24px        24px / 16 = 1.5
+           2rem = 32px                 2 * 16 = 32px        32px / 16 = 2 
+           3rem = 48px                 3 * 16 = 48px        48px / 16 = 3 
+
+      */
+/**                                 Math Functions
+--> if you want to use the math function put in root --> @use "sass:math" 
+**/
+/** more math command include the sass check to sass official page **/
+.text-primary {
+  color: blue;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+
+.text-secondary {
+  color: green;
+}
+
+.bg-secondary {
+  background-color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary-light1 {
+  color: #3333ff;
+}
+
+.bg-primary-dark1 {
+  background-color: #0000e0;
+}
+
+.text-primary-light2 {
+  color: #6666ff;
+}
+
+.bg-primary-dark2 {
+  background-color: #0000c2;
+}
+
+.text-primary-light3 {
+  color: #9999ff;
+}
+
+.bg-primary-dark3 {
+  background-color: #0000a3;
+}
+
+.text-secondary-light1 {
+  color: #00b300;
+}
+
+.bg-secondary-dark1 {
+  background-color: #006100;
+}
+
+.text-secondary-light2 {
+  color: #00e600;
+}
+
+.bg-secondary-dark2 {
+  background-color: #004300;
+}
+
+.text-secondary-light3 {
+  color: #1aff1a;
+}
+
+.bg-secondary-dark3 {
+  background-color: #002400;
+}
+
+.text-danger-light1 {
+  color: #ff3333;
+}
+
+.bg-danger-dark1 {
+  background-color: #e00000;
+}
+
+.text-danger-light2 {
+  color: #ff6666;
+}
+
+.bg-danger-dark2 {
+  background-color: #c20000;
+}
+
+.text-danger-light3 {
+  color: #ff9999;
+}
+
+.bg-danger-dark3 {
+  background-color: #a30000;
+}
+
+/*
+                Comparison operator 
+Equal to ==
+not Equal to !=
+Greater than  >
+Lesser than  <
+Greater than equal >=
+Lesser than equal  <=
+
+                Logical operator
+and  
+or 
+not   
+
+*/
+.box-if {
+  background-color: black;
+  color: yellowgreen;
+  width: 200px;
+  color: yellow;
+  color: red;
+  color: orange;
+  color: orange;
+  width: 200px;
+  background-color: black;
+  color: white;
+}
+
+.para:hover {
+  border: 1px solid yellow;
+}
+.para p:nth-child(2) {
+  color: red;
+}
+
+.box1 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.box2 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background: radial-gradient(rgb(2, 2, 176) 10px, white 20px);
+  position: relative;
+}
+
+.box3 {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background-color: green;
+}
+
+.box4 {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(yellow, blue);
+}
+
+.function-p {
+  font-size: 32px;
+}
+
+.function-p2 {
+  font-size: 2rem;
+}
+
+.extends-para {
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #edf1f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #24252a;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20vh;
+}
+
+nav {
+  background-color: gray;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-size: 1rem;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 24px;
+  color: blue;
+}
+
+h4 {
+  font-size: 32px;
+  color: green;
+}
+
+h5 {
+  font-size: 48px;
+  color: red;
+}
+
+p {
+  padding: 10px;
+}
+
+hr {
+  height: 10px;
+  background: linear-gradient(to right, white, #24252a);
+  border: none;
+}
+
+.headings {
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
