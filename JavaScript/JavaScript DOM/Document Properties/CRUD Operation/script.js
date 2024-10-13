@@ -70,7 +70,8 @@
 //8. Cloning DOM Elements
 //9. Removing DOM Elements
 //10. Finding child in DOM
-//11. Finding parent in DOM
+//11. Finding parent Element in DOM
+//12. Finding sibling Element in DOM
 
 
 
@@ -317,8 +318,12 @@ removeBtn.forEach(element => {
 // console.log(paraContainer5.closest(".container5"));
 
 
+                        //12. Finding sibling Element in DOM
 
+// let siblingContainer=document.querySelector(".sibling-container");
+// console.log(siblingContainer)
+// console.log(siblingContainer.nextSibling);
+// console.log(siblingContainer.nextElementSibling);
+// console.log(siblingContainer.previousSibling);
+// console.log(siblingContainer.previousElementSibling);
 
-
-
-                  
