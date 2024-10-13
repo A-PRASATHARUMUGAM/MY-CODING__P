@@ -79,6 +79,8 @@ hasPointerCapture
 //12. Finding sibling Element in DOM
 //13. HTML propertie vs Element propeties
 //14. Setting and Getting HTML Attribute 
+//15. Setting and Getting inline style  
+
 
 
 */
@@ -368,3 +370,22 @@ removeBtn.forEach(element => {
 // //removeAttribute
 // input2.removeAttribute("place")
 // console.log(input2.dataset) //custom attribute name like "data-place "  call input.dataset
+
+
+                        //14. Setting and Getting HTML Attribute
+// // 1.setAttribute
+// let styleContainerButton=document.querySelector(".style-container6 >button")
+// styleContainerButton.setAttribute("style","padding:6px 10px; border:none; color:white; background-color:royalblue;");
+
+// // 2.Direct Prpoerty access
+// styleContainerButton.style.fontWeight="bold";
+// styleContainerButton.style.fontFamily="cursive";
+
+// // 3.cssText  -->it is override all style 
+//     //  += to append the style 
+//    console.log( styleContainerButton.style.cssText+="font-size:20px;");
+   
+// // 4.ClassList  --> prefferred
+// styleContainerButton.classList="style-container-button";
+
+

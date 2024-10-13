@@ -44,3 +44,12 @@ h1{
     border-radius:3px;
     font-family:cursive;
 }
+
+
+/* 15. Setting and Getting inline style  */
+
+/* 4. using className style  */
+.style-container-button{
+    border-radius: 6px;
+    width:150px;
+}
