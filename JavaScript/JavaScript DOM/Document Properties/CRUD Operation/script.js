@@ -22,14 +22,14 @@
 
 
     
-1. setAttribute()
+1. setAttribute()           -use ("value","23")
 2. setAttributeNS()
 3. setAttributeNode()
 4. setAttributeNodeNS()
 5. setHTMLUnsafe()
 6. setPointerCapture()
 
-7. getAnimations()
+7. getAnimations()       -use ("place") 
 8. getAttribute()
 9. getAttributeNS()
 10. getAttributeNames()
@@ -38,26 +38,31 @@
 13. getBoundingClientRect()
 14. getClientRects()
 
+    hasAttribute            -use("place ") true or false -check the attribute
+    hasAttributeNS
+    hasAttributes
+    hasChildNodes
+
+hasPointerCapture
 15. releasePointerCapture()
-16. remove()
-17. removeAttribute()
+16. remove()                -use
+17. removeAttribute()       -use
 18. removeAttributeNS()
 19. removeAttributeNode()
-21. removeChild()
-22. removeEventListener()
+20. removeEventListener()
 
-23. replaceChild()          -use   - old way to replace
-24. replaceChildren()       -use   - it multiple children to replace 
-25. replaceWith()           -use   - new way it one child replace
+21. replaceChild()          -use   - old way to replace
+22. replaceChildren()       -use   - it multiple children to replace 
+23. replaceWith()           -use   - new way it one child replace
 
-26. requestFullscreen()
-27. requestPointerLock()
+24. requestFullscreen()
+25. requestPointerLock()
 
 
-28. insertAdjacentElement() -use    beforebegin, beforeend, afterbegin, afterend
-29. insertAdjacentHTML()    -use    
-30. insertAdjacentText()    -use
-31. insertBefore()          -use
+26. insertAdjacentElement() -use    beforebegin, beforeend, afterbegin, afterend
+27. insertAdjacentHTML()    -use    
+28. insertAdjacentText()    -use
+29. insertBefore()          -use
 
 
 //1. Create DOM Elements 
@@ -73,11 +78,12 @@
 //11. Finding parent Element in DOM
 //12. Finding sibling Element in DOM
 //13. HTML propertie vs Element propeties
-
-
+//14. Setting and Getting HTML Attribute 
 
 
 */
+
+
 
 
 //                                 //1.Create DOM Elements 
@@ -332,9 +338,33 @@ removeBtn.forEach(element => {
 
                     //13. HTML propertie vs Element propeties
 
-const inputName=document.querySelector(".input-name-container > input");
-console.log(inputName.value);  //-- it is called Element Propeties
-// setAttribute
-inputName.setAttribute("value","22");
-const intValue=parseInt(inputName.value);
-console.log(intValue);
+// const inputName=document.querySelector(".input-name-container > input");
+// console.log(inputName.value);  //-- it is called Element Propeties
+// // setAttribute
+// inputName.setAttribute("value","22");
+// const intValue=parseInt(inputName.value);
+// console.log(intValue);
+
+                    // 14. Setting and Getting HTML Attribute 
+
+// let input2=document.querySelector(".input-container2 > input")
+// console.log(input2.attributes); 
+// console.log(input2.attributes[1].value); 
+// console.log(input2.attributes.value.value); 
+// console.log(input2.attributes["value"].value);
+
+// console.log("-- set and get Attribute --")
+
+// //setAttribute
+// input2.setAttribute("value","22");
+
+// //getAttribute
+// console.log(input2.getAttribute("value"));
+
+// //hasAttribute
+// console.log(input2.hasAttribute("value"));
+// console.log(input2.hasAttribute("heello"));
+
+// //removeAttribute
+// input2.removeAttribute("place")
+// console.log(input2.dataset) //custom attribute name like "data-place "  call input.dataset
