@@ -1,10 +1,43 @@
 body {
   background-color: #24252a;
+  line-height: 2;
 }
 
 h1 {
   text-align: center;
-  color: yellow;
+  color: hotpink;
   padding: 20px;
   font-family: cursive;
+}
+
+/* 
+1. How to install sass
+2. Variable in sass 
+3. Partical and @import 
+4. Nested Rules
+5. Math Function
+
+*/
+.para-1 {
+  color: red;
+  font-size: 16px;
+}
+
+.para-2 {
+  color: green;
+  font-size: 24px;
+}
+
+.para-3 {
+  color: yellow;
+  font-size: 32px;
+}
+
+.para-container {
+  border: 1px solid white;
+  padding: 10px;
+}
+.para-container .para-4 {
+  color: springgreen;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
