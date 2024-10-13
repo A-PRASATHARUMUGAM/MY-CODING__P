@@ -69,6 +69,8 @@
 //7. Replacing DOM Elements
 //8. Cloning DOM Elements
 //9. Removing DOM Elements
+//10. Finding child in DOM
+//11. Finding parent in DOM
 
 
 
@@ -284,18 +286,18 @@
 
 //                         //9. Removing DOM Elements
 
-// // remove mulitiple elements
-// let paraContainer5=document.querySelector(".para-container5 ")
-// let removeBtn=document.querySelectorAll(".fa-xmark");
-// let addbutton=document.querySelector(".addbtn");
+// remove mulitiple elements
+let paraContainer5=document.querySelector(".para-container5 ")
+let removeBtn=document.querySelectorAll(".fa-xmark");
+let addbutton=document.querySelector(".addbtn");
 
-// removeBtn.forEach(element => {
+removeBtn.forEach(element => {
    
-//     element.addEventListener("click",()=>{
-//         element.parentNode.remove() 
-//     })
+    element.addEventListener("click",()=>{
+        element.parentNode.remove() 
+    })
     
-// });
+});
 
 //                         //10. Finding child in DOM 
 
@@ -308,6 +310,15 @@
 // console.log(paraContainer5.childElementCount);
 
 
+                            //11. Finding parent in DOM
+
+// console.log(paraContainer5.parentNode);
+// console.log(paraContainer5.parentElement);
+// console.log(paraContainer5.closest(".container5"));
 
 
 
+
+
+
+                  
