@@ -19,6 +19,7 @@ h1{
 [class^="container"]{
     margin-top:50px;
     padding: 10px;
+    
 }
 
 .para-container5{
@@ -28,4 +29,18 @@ h1{
     justify-content: space-between;
     align-items:center;
 
+}
+
+/* 13 */
+.input-name-container{
+    border: 1px solid springgreen;
+    margin:10px;
+    padding: 20px;
+}
+.input-name-container input{
+    padding: 10px 20px;
+    outline: none;
+    border:none;
+    border-radius:3px;
+    font-family:cursive;
 }

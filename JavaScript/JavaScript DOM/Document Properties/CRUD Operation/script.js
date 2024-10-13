@@ -72,6 +72,7 @@
 //10. Finding child in DOM
 //11. Finding parent Element in DOM
 //12. Finding sibling Element in DOM
+//13. HTML propertie vs Element propeties
 
 
 
@@ -322,8 +323,18 @@ removeBtn.forEach(element => {
 
 // let siblingContainer=document.querySelector(".sibling-container");
 // console.log(siblingContainer)
+        // Any Node
 // console.log(siblingContainer.nextSibling);
-// console.log(siblingContainer.nextElementSibling);
 // console.log(siblingContainer.previousSibling);
+        //Any Element 
+// console.log(siblingContainer.nextElementSibling);
 // console.log(siblingContainer.previousElementSibling);
 
+                    //13. HTML propertie vs Element propeties
+
+const inputName=document.querySelector(".input-name-container > input");
+console.log(inputName.value);  //-- it is called Element Propeties
+// setAttribute
+inputName.setAttribute("value","22");
+const intValue=parseInt(inputName.value);
+console.log(intValue);
