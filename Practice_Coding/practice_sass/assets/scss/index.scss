@@ -6,7 +6,7 @@ body{
     background-color:#24252a;
     line-height: 2;
 }   
-
+  
 
 h1{
     text-align:center;
@@ -23,6 +23,7 @@ h1{
 6. Maps in sass
 
 
+
 */
                     // 2. variables in sass
 
@@ -36,10 +37,11 @@ h1{
     font-size: $font-size-md;
 }
 .para-3{
-    color: $danger-color;
+    color: map-get($colors,"danger");  
     font-size: $font-size-lg;
 
 }
+
 
 
                         // 3. Nested Rules 
@@ -55,5 +57,18 @@ h1{
 
                         //4.Math Function  
 
-@debug math.random(); 
+@debug "hello world ";
+@debug math.random();
+@debug math.ceil(3.3);
+@debug math.floor(3);
+@debug math.random(3);
+@debug math.min(3,2);
+@debug math.max(2,3);
+@debug math.sqrt(11);
+@debug math.abs(11);
+@debug math.compatible(10px,20px);
+@debug math.percentage(0.9);
+@debug math.is-unitless(10);
+@debug math.unit(10px); 
+@debug math.div(2,1); //division to calculate 
                     // 6. inhertiance 

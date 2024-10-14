@@ -1,0 +1,16 @@
+$colors:(
+ "primary":lightblue,
+ "secondary":springgreen,
+ "danger":red,
+ "warning":yellow
+);
+
+@debug map-get($colors,"primary");
+@debug map-has-key($colors,"info");
+@debug map-remove($colors,"danger");
+@debug map-merge($colors,("info":blue));
+// 5. it is using to check the key and values
+@debug map-values($colors); 
+@debug map-keys($colors); 
+  
+ 
