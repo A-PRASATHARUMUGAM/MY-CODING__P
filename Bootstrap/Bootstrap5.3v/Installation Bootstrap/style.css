@@ -19,6 +19,7 @@ h2{
 }
 
 
+/* Responsive row and columns  */
 [class^="row"]{
     border: 1px solid lightgreen;
     padding: 10px;
@@ -27,9 +28,18 @@ h2{
     border: 2px solid lightpink;
 }
 
+/* padding */
 [class^="p"]{
     border: 1px solid white;
 }
+
+/* margin  */
 [class^="m"]{
     border: 1px solid yellow;
+}
+
+/*Flex box Layout  */
+.flex-box-layout-container{
+    border: 1px solid white;
+    height:20vw;
 }
