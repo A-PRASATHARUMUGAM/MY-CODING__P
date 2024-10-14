@@ -1,5 +1,9 @@
-
-1. "start": "sass ./sass/index.scss ./css/style.css --watch"
-
-2. "start": "sass ./sass/index.scss ./css/style.css && sass ./sass/index.scss ./css/style.min.css --style=compressed --no-source-map --watch"
+1.node package manager install
+2.go to teminal npm init -y
+3.change the project name into package.json sass-app
+4.npm i sass -D install developer dependancy
+5.go to package.json file script:{}
+6."start": "sass ./sass/index.scss ./css/style.css --watch"
+7.compress scss
+8. "start": "sass ./sass/index.scss ./css/style.css && sass ./sass/index.scss ./css/style.min.css --style=compressed --no-source-map --watch"
 
