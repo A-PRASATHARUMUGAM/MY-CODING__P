@@ -1,0 +1,14 @@
+1.container
+  container-fluid
+
+2.Typography 
+    Eg:
+    <p class="h1" >h1 para</p>
+
+        - h1
+        - h2
+        - h3
+        - h4
+        - h5
+        - h6
+3.  text color

@@ -7,10 +7,13 @@ body{
     background-color: #24252a;
     color: white;
     line-height:3;
-    font-family: cursive;
     padding:10px;
 }
 h1{
     text-align: center;
     color:hotpink;
+} 
+h2{
+    text-align: start;
+    color:yellow;
 }
