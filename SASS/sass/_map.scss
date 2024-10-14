@@ -6,43 +6,43 @@ $colors:(
 "danger":red, 
 );
 
-// //1. map get      --It is use to call the map variable
-// @debug map-get($colors ,"primary");
-// @debug map-get($colors ,"success");
-// @debug map-get($colors ,"danger");
+//1. map get      --It is use to call the map variable
+@debug map-get($colors ,"primary");
+@debug map-get($colors ,"success");
+@debug map-get($colors ,"danger");
 
-// //2. map has key  --It is use to check the key in the map 
-// @debug map-has-key($colors , "primary" );
-// @debug map-has-key($colors , "secondary" );         
-
-
-// // 3. map-remove   --It is use to remove the values
-// @debug map-remove($colors,danger); 
+//2. map has key  --It is use to check the key in the map 
+@debug map-has-key($colors , "primary" );
+@debug map-has-key($colors , "secondary" );         
 
 
-// //4. map-merge    --It is use to add the values
-// @debug map-merge(
-//     $colors , 
-//     (
-//         "secondary":lightblue,
-//     )
-//     );
+// 3. map-remove   --It is use to remove the values
+@debug map-remove($colors,danger); 
 
 
-
-
-// // 5. it is using to check the key and values
-// @debug map-values($colors); 
-// @debug map-keys($colors); 
+//4. map-merge    --It is use to add the values
+@debug map-merge(
+    $colors , 
+    (
+        "secondary":lightblue,
+    )
+    );
 
 
 
 
-// // Assigen the map to variable 
+// 5. it is using to check the key and values
+@debug map-values($colors); 
+@debug map-keys($colors); 
 
-// h3{
-//     color:map-get($colors ,"primary");
-// }
+
+
+
+// Assigen the map to variable 
+
+h3{
+    color:map-get($colors ,"primary");
+}
 
 
 

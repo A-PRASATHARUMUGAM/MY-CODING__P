@@ -1,5 +1,6 @@
 @use "sass:math";
 @import "variable"; //2. partical and Import
+@import "maps"; //6. maps in sass
          
 body{
     background-color:#24252a;
@@ -19,6 +20,8 @@ h1{
 3. Partical and @import 
 4. Nested Rules
 5. Math Function
+6. Maps in sass
+
 
 */
                     // 2. variables in sass
@@ -33,7 +36,7 @@ h1{
     font-size: $font-size-md;
 }
 .para-3{
-    color: yellow;
+    color: $danger-color;
     font-size: $font-size-lg;
 
 }
@@ -53,3 +56,4 @@ h1{
                         //4.Math Function  
 
 @debug math.random(); 
+                    // 6. inhertiance 

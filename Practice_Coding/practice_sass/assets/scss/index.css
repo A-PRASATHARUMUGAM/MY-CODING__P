@@ -16,10 +16,12 @@ h1 {
 3. Partical and @import 
 4. Nested Rules
 5. Math Function
+6. Maps in sass
+
 
 */
 .para-1 {
-  color: red;
+  color: lightblue;
   font-size: 16px;
 }
 
@@ -29,7 +31,7 @@ h1 {
 }
 
 .para-3 {
-  color: yellow;
+  color: red;
   font-size: 32px;
 }
 
@@ -40,4 +42,4 @@ h1 {
 .para-container .para-4 {
   color: springgreen;
   font-size: 24px;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=index.css.map */
