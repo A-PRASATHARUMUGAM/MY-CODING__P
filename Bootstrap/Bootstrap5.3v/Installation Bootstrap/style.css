@@ -17,3 +17,11 @@ h2{
     text-align: start;
     color:yellow;
 }
+
+.row{
+    border: 1px solid lightgreen;
+    padding: 10px;
+}
+.col{
+    border: 2px solid lightpink;
+}
