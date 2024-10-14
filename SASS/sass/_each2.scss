@@ -1,0 +1,26 @@
+$allcolors:(
+  "p":lightblue,
+  "s":springgreen,
+  "d":red,
+  "w":yellow  
+);  
+
+ 
+@each $key,$val in $allcolors{
+
+    .text-#{$key}{
+        color:$val;
+    } 
+
+    
+// Light
+@for $i from 1 through 3{
+    .text-#{$key}-light-#{$i}{
+
+        color:lighten($val, $i*10);
+    } 
+
+}
+
+
+}

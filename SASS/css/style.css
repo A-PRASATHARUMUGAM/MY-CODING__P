@@ -40,6 +40,10 @@
 --> if you want to use the math function put in root --> @use "sass:math" 
 **/
 /** more math command include the sass check to sass official page **/
+h3 {
+  color: blue;
+}
+
 .text-primary {
   color: blue;
 }
