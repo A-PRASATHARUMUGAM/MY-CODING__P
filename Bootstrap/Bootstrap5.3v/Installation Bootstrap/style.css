@@ -18,11 +18,12 @@ h2{
     color:yellow;
 }
 
-.row{
+
+[class^="row"]{
     border: 1px solid lightgreen;
     padding: 10px;
 }
-.col{
+[class^="col"]{
     border: 2px solid lightpink;
 }
 
