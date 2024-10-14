@@ -19,3 +19,13 @@
   font-size:px-to-rem(32);  
 }   
   
+
+                             //converting pixels to rem again 
+@function rem-to-px($rem){
+  @return ($rem * 16)+px;
+}
+
+.function-p3{
+  font-size: rem-to-px(2.5);
+}
+
