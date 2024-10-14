@@ -30,6 +30,10 @@ body{
     align-items: center;
     padding:10px;
 }
+.navbarAnimation{
+    background:linear-gradient(to right,lightblue,hotpink);
+    transition: all 3s ease-in-out;
+}
 .header-links{
     display:flex;
     justify-content: space-evenly;
@@ -72,13 +76,14 @@ body{
         top: 100px;
         left: 50%;
         transform: translateX(-50%);
-      
         width:60vw;
     }
     .hshowmenu{
-        display: inline-flex;
+        display: inline-flex; 
+       
 
-    }
+    } 
+ 
 
     .Ahmenu :nth-child(1){
         transform: rotate(45deg);
