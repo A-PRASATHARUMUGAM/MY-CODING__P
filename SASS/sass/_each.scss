@@ -111,5 +111,20 @@ width:$width;
      background-color: black;
      color:white;
 }   
+}
 
+
+$bg:black; 
+$text:black;
+
+.function-p3{
+    background-color: $bg;
+    color: $text;
+
+    @if($bg==$text){
+        color:springgreen;
+    }@else{
+        background-color: black;
+    }
+    
 }

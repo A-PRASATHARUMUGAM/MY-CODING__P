@@ -171,14 +171,20 @@ not
   background-color: black;
   color: white;
 }
-                                    /* Using Pseudo-Selector */
+
+.function-p3 {
+  background-color: black;
+  color: black;
+  color: springgreen;
+}
+
 .para:hover {
   border: 1px solid yellow;
 }
 .para p:nth-child(2) {
   color: red;
 }
-                                  /* Using @mixin and @include  */
+
 .box1 {
   display: inline-block;
   border: 1px solid white;
@@ -220,7 +226,7 @@ not
   height: 50px;
   background: radial-gradient(yellow, blue);
 }
-                              /* Using Functions */
+
 .function-p {
   font-size: 32px;
 }
@@ -232,7 +238,7 @@ not
 .function-p3 {
   font-size: 40px;
 }
-                                   /* Using extends */
+
 .extends-para {
   padding: 10px;
   border: 1px solid white;
