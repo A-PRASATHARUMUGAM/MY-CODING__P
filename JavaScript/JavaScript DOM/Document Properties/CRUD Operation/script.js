@@ -29,8 +29,8 @@
 5. setHTMLUnsafe()
 6. setPointerCapture()
 
-7. getAnimations()       -use ("place") 
-8. getAttribute()
+8. getAttribute()            -use ("place") 
+7. getAnimations()      
 9. getAttributeNS()
 10. getAttributeNames()
 11. getAttributeNode()
@@ -372,7 +372,7 @@ removeBtn.forEach(element => {
 // console.log(input2.dataset) //custom attribute name like "data-place "  call input.dataset
 
 
-                        //14. Setting and Getting HTML Attribute
+                        //15.  Setting and Getting inline style  
 // // 1.setAttribute
 // let styleContainerButton=document.querySelector(".style-container6 >button")
 // styleContainerButton.setAttribute("style","padding:6px 10px; border:none; color:white; background-color:royalblue;");
@@ -389,3 +389,38 @@ removeBtn.forEach(element => {
 // styleContainerButton.classList="style-container-button";
 
 
+//                             // 16.  Setting and Getting  class styles  
+
+// let styleContainer=document.querySelector(".style-container7");
+// // className    -it is override the previous class name
+//                  //  += to append the style 
+// styleContainer.className+=" newclass1";
+
+// //classList 
+// styleContainer.classList.add("newclass2");              //-add class name 
+// console.log(styleContainer.classList.replace("newclass1","3class")); //-replace class name
+// console.log(styleContainer.classList.contains("3class")); //-check the class name
+// console.log(styleContainer.classList.remove("3class")); //-check the class name
+// console.log(styleContainer.classList.toggle("3class")); //-you know this
+
+// console.log(styleContainer.className) 
+
+
+
+//                    // Button text change mini project 
+// let styleContainer7Button=document.querySelector(".style-container7 > button");
+// styleContainer7Button.addEventListener("click",()=>{
+
+//     styleContainer7Button.classList.toggle("showmenu");
+
+//     if(styleContainer7Button.classList.contains("showmenu")){
+//         styleContainer7Button.innerText="Reset"
+//         styleContainer7Button.style.backgroundColor="red";
+        
+        
+//     }else{
+//           styleContainer7Button.innerText="Submit"
+//            styleContainer7Button.style.backgroundColor="green"
+//     }
+   
+// })
