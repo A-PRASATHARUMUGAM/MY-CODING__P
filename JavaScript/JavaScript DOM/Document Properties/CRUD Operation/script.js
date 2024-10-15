@@ -80,9 +80,10 @@ hasPointerCapture
 //13. HTML propertie vs Element propeties
 //14. Setting and Getting HTML Attribute 
 //15. Setting and Getting inline style
-//16.  Setting and Getting  class styles 
+//16. Setting and Getting  class styles 
 //17. Adding Event Listeners Event Object  
-//18.  Event Bubbling and Capturing 
+//18. Event Bubbling and Capturing 
+//19. Preventing Browser Default action 
 
 
 
@@ -478,8 +479,11 @@ mouseup
         -- other --
 {capture:true} -default false
 {once:true} -default false
+{passive:true}
 event.setPropagation()
 event.setImadiatePropagation()
+event.preventDefault()
+return false
 
 */
 
@@ -543,7 +547,14 @@ eventContainer.addEventListener("click",handler);
 // }
 
 
-
+//                             // 19. Preventing Browser Default Action 
+// // preventDefault()
+// const preventButton=document.querySelector(".prevent-container10 > a");
+// const checkbox=document.querySelector("input[type='checkbox']");
+// console.log(checkbox)
+// preventButton.addEventListener("click",(event)=>{
+//     event.preventDefault()
+// })
 
 
 
