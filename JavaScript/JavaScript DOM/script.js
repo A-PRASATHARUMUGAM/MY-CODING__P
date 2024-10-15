@@ -11,8 +11,8 @@
 3. JS Specification  -- by  ES6 Ecma Script 
 
 4. 
-  - <head>, <h1>, <img>       = Attribute, Element, Tag
-  - src, tilte, width, height = Propeties
+  - <head>, <h1>, <img>       = Element, Tag
+  - src, tilte, width, height = Attribute, Propeties
   - onclick, all action event = methods
     
 ----------------------------------------------------------------------------------
