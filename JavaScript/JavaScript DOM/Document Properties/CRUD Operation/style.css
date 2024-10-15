@@ -53,3 +53,21 @@ h1{
     border-radius: 6px;
     width:150px;
 }
+
+
+/* 20.  Event Delegation  Dynamic Events   */
+
+
+.event-delegation-container11 table,tr,th,td{
+    padding: 10px;
+    border: 1px solid white;
+    border-collapse:collapse;  
+    font-family: cursive;
+}
+
+.selectedtr{
+    background-color: hotpink;
+    color: white;
+    font-family: cursive;
+}
+

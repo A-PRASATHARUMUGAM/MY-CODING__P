@@ -84,6 +84,7 @@ hasPointerCapture
 //17. Adding Event Listeners Event Object  
 //18. Event Bubbling and Capturing 
 //19. Preventing Browser Default action 
+//20  Event Delegation  Dynamic Events 
 
 
 
@@ -377,7 +378,7 @@ removeBtn.forEach(element => {
 // console.log(input2.dataset) //custom attribute name like "data-place "  call input.dataset
 
 
-                        //15.  Setting and Getting inline style  
+//                         // 15.  Setting and Getting inline style  
 // // 1.setAttribute
 // let styleContainerButton=document.querySelector(".style-container6 >button")
 // styleContainerButton.setAttribute("style","padding:6px 10px; border:none; color:white; background-color:royalblue;");
@@ -480,8 +481,8 @@ mouseup
 {capture:true} -default false
 {once:true} -default false
 {passive:true}
-event.setPropagation()
-event.setImadiatePropagation()
+event.stopPropagation()
+event.stopImadiatePropagation()
 event.preventDefault()
 return false
 
@@ -557,9 +558,48 @@ eventContainer.addEventListener("click",handler);
 // })
 
 
+                        // 20  Event Delegation  Dynamic Events  
+
+// const tableEl=document.querySelectorAll(".event-delegation-container11 form li ");
+// // Way - 1  Getting group of data
+// for(ele of tableEl){
+//     console.log(ele.innerText)
+// }
+
+// // Way - 2  Getting group of data
+// tableEl.forEach((ele)=>{
+//     console.log(ele);
+//     ele.addEventListener("click",()=>{
+//         console.log(ele.remove())
+//     })
+// })
 
 
+// // Event Delegation 
+//  tableEl=document.querySelector(".event-delegation-container11 table");
+// let selectedTr;
+// console.log(selectedTr)
+// tableEl.addEventListener("click",(event)=>{
 
+//     if(event.target.tagName.toLowerCase()==="th"){
+//         return;
+//     }
+    
+//      closestTr=event.target.closest("tr");
+
+//      closestTr.classList.add("selectedtr");
+     
+//      if(selectedTr != undefined){
+       
+//      selectedTr.classList.remove("selectedtr");
+//         }
+//        else{
+//            selectedTr = closestTr; 
+
+//        }
+
+ 
+// })
 
 
 
