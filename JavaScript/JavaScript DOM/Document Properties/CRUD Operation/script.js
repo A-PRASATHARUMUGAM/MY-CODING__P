@@ -49,7 +49,7 @@ hasPointerCapture
 17. removeAttribute()       -use
 18. removeAttributeNS()
 19. removeAttributeNode()
-20. removeEventListener()
+20. removeEventListener()   -use
 
 21. replaceChild()          -use   - old way to replace
 22. replaceChildren()       -use   - it multiple children to replace 
@@ -79,7 +79,10 @@ hasPointerCapture
 //12. Finding sibling Element in DOM
 //13. HTML propertie vs Element propeties
 //14. Setting and Getting HTML Attribute 
-//15. Setting and Getting inline style  
+//15. Setting and Getting inline style
+//16.  Setting and Getting  class styles 
+//17. Adding Event Listeners Event Object  
+
 
 
 
@@ -424,3 +427,80 @@ removeBtn.forEach(element => {
 //     }
    
 // })
+
+
+
+                        //17. Adding Event Listeners Event Object  
+
+/*
+DOMContentLoaded    -use
+         A                   
+cancel          
+canplay
+canplaythrough
+change
+click               -use
+close
+compositionend
+compositionstart
+compositionupdate
+contextlost
+contextmenu         -use  -it anyplace to click
+contextrestored
+copy
+cuechange
+        B
+dblclick             -use
+drag
+dragend
+dragenter
+dragleave
+dragover
+dragstart
+drop
+durationchange
+        E
+emptied
+ended
+error
+        M
+mousedown
+mouseenter       -use
+mouseleave       -use
+mousemove        -use
+mouseout         -use
+mouseover        -use
+mouseup          
+
+
+*/
+
+let eventContainer=document.querySelector(".event-container8 > button");
+let handler= ()=>{
+    console.log("hello world ");
+// removeEventListener
+    eventContainer.removeEventListener("click",handler);
+}
+// addEventListener
+eventContainer.addEventListener("click",handler);
+// eventContainer.addEventListener("click",handler,{once:true}); // once default -false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
