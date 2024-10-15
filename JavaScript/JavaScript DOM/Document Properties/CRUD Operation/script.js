@@ -86,6 +86,7 @@ hasPointerCapture
 //19. Preventing Browser Default action 
 //20. Event Delegation  Dynamic Events 
 //21. Mouse Events
+//22. Keyboard Event
 
 
 
@@ -481,6 +482,10 @@ mousemove        -use
 mouseout         -use
 mouseover        -use
 mouseup          -use 
+        K
+keydown
+keypress
+keyup
 
 
 
@@ -621,6 +626,12 @@ mouseout         -use    change mouse element that is mouseout
 mouseover        -use    hover you know 
 mouseup          -use    unclick
 
+which = 1 -Left click 
+which = 2 -Middle click 
+which = 3 -Right click 
+which = 4 -Invalid key click 
+which = 5 -Invalid key click 
+
 */
 
 // // mousedown
@@ -641,11 +652,37 @@ mouseup          -use    unclick
 // })
 
 
+                             // 22. Keyboard Event
 
+/* 
+        K
+keydown
+keypress -depegrated -feature remove
+keyup
 
+*/
 
+// // keydown
+// const keyDown=document.querySelector(".keyboard-event-input");
+// keyDown.addEventListener("keydown",()=>{
+//  console.log("keyDown");
+// })
+// // keyup
+// const keyUp=document.querySelector(".keyboard-event-input");
+// keyUp.addEventListener("keyup",(event)=>{
+//  console.log("keyUp",event);
+// })
 
+                             // Key Enter to add ! important
+// const keyEnter=document.querySelector(".keyboard-event-input");
+// keyEnter.addEventListener("keyup",(event)=>{
+//     if(event.key==="Enter"){
 
-
-
-
+//         console.log("KeyEnter",keyEnter.value);
+//     }
+//     //undo operation 
+//     else if(event.key.ctrlKey=true ==="keyZ"){
+//         keyEnter.value=""; 
+//     } 
+    
+// })
