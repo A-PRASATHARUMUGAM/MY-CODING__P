@@ -82,6 +82,7 @@ hasPointerCapture
 //15. Setting and Getting inline style
 //16.  Setting and Getting  class styles 
 //17. Adding Event Listeners Event Object  
+//18.  Event Bubbling and Capturing 
 
 
 
@@ -473,6 +474,13 @@ mouseover        -use
 mouseup          
 
 
+
+        -- other --
+{capture:true} -default false
+{once:true} -default false
+event.setPropagation()
+event.setImadiatePropagation()
+
 */
 
 let eventContainer=document.querySelector(".event-container8 > button");
@@ -486,7 +494,53 @@ eventContainer.addEventListener("click",handler);
 // eventContainer.addEventListener("click",handler,{once:true}); // once default -false
 
 
+//                             // 18.  Event Bubbling and Capturing 
 
+
+// let formEl=document.querySelector(".event-container9 > form");
+// let divEl=document.querySelector(".event-container9  div");
+// let pEl=document.querySelector(".event-container9  p");
+
+//                                 //Catch capturing and Bubbling 
+// formEl.addEventListener("click",(event)=>{
+    
+//     alert("form")
+
+// //  catch capturing
+//    },{capture:true})
+// divEl.addEventListener("click",(event)=>{
+
+//     alert("div")
+//     // event.stopPropagation() // until div only stopPropagation 
+//     // event.stopImmediatePropagation() //  div stopImmediatePropagation
+
+// })
+// pEl.addEventListener("click",()=>{
+//     alert("p")
+// })
+
+// // same div another event
+// divEl.addEventListener("click",(event)=>{
+
+//     alert("this another div")
+
+// })
+
+                            // Best Example
+// for(let ele of document.querySelectorAll("form,form *")){
+
+//     ele.addEventListener("click",()=>{
+//         console.log("capturing phase:",ele.tagName);
+        
+//     },true);
+
+//     ele.addEventListener("click",()=>{
+//         console.log("Bubbling phase:",ele.tagName);
+
+        
+//     });
+
+// }
 
 
 
