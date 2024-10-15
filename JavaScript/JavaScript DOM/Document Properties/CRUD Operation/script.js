@@ -84,7 +84,8 @@ hasPointerCapture
 //17. Adding Event Listeners Event Object  
 //18. Event Bubbling and Capturing 
 //19. Preventing Browser Default action 
-//20  Event Delegation  Dynamic Events 
+//20. Event Delegation  Dynamic Events 
+//21. Mouse Events
 
 
 
@@ -436,6 +437,12 @@ removeBtn.forEach(element => {
                         //17. Adding Event Listeners Event Object  
 
 /*
+
+1. Keyboard Events
+2. Mouse Events
+3. Pointer Events
+4. Forms Events
+
 DOMContentLoaded    -use
          A                   
 cancel          
@@ -450,8 +457,8 @@ compositionupdate
 contextlost
 contextmenu         -use  -it anyplace to click
 contextrestored
-copy
-cuechange
+copy                -use - can't copy the text - event.preventDefault
+cuechange 
         B
 dblclick             -use
 drag
@@ -467,13 +474,13 @@ emptied
 ended
 error
         M
-mousedown
+mousedown        -use
 mouseenter       -use
 mouseleave       -use
 mousemove        -use
 mouseout         -use
 mouseover        -use
-mouseup          
+mouseup          -use 
 
 
 
@@ -488,15 +495,15 @@ return false
 
 */
 
-let eventContainer=document.querySelector(".event-container8 > button");
-let handler= ()=>{
-    console.log("hello world ");
-// removeEventListener
-    eventContainer.removeEventListener("click",handler);
-}
-// addEventListener
-eventContainer.addEventListener("click",handler);
-// eventContainer.addEventListener("click",handler,{once:true}); // once default -false
+// let eventContainer=document.querySelector(".event-container8 > button");
+// let handler= ()=>{
+//     console.log("hello world ");
+// // removeEventListener
+//     eventContainer.removeEventListener("click",handler);
+// }
+// // addEventListener
+// eventContainer.addEventListener("click",handler);
+// // eventContainer.addEventListener("click",handler,{once:true}); // once default -false
 
 
 //                             // 18.  Event Bubbling and Capturing 
@@ -600,6 +607,39 @@ eventContainer.addEventListener("click",handler);
 
  
 // })
+
+
+                                //21. Mouse Events  
+
+/* 
+        M
+mousedown        -use    click
+mouseenter       -use    entering
+mouseleave       -use    leaving 
+mousemove        -use    moving 
+mouseout         -use    change mouse element that is mouseout
+mouseover        -use    hover you know 
+mouseup          -use    unclick
+
+*/
+
+// // mousedown
+// const mouseDown=document.querySelector(".mouse-event-container12");
+// mouseDown.addEventListener("mousedown",()=>{
+//     console.log("mousedown")
+// })
+// //mouseup
+// const mouseUp=document.querySelector(".mouse-event-container12");
+// mouseUp.addEventListener("mouseup",()=>{
+//     console.log("mouseup")
+// })
+// //copy
+// const copyText=document.querySelector(".mouse-event-container12 > h3");
+// mouseDown.addEventListener("copy",(event)=>{
+//     event.preventDefault()
+//     console.log("copy prohibited");
+// })
+
 
 
 
