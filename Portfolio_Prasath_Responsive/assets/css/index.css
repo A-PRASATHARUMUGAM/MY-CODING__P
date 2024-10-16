@@ -20,7 +20,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 font-size: 10px;
 line-height: 1.6;
 }
-
+              /* Navigation Bar */
 .navbar-container{
   position:fixed;
   left:0;
@@ -81,7 +81,6 @@ line-height: 1.6;
                               /* section  1*/ 
 
 section{
-  border:1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
