@@ -1,0 +1,164 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../image/Aboutmebg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  font-size: 10px;
+  line-height: 1.6;
+
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(0, 172, 240, 0.80), rgba(255, 0, 0, 0.80));
+
+}
+
+.navbar a {
+  margin-left: 2em;
+  font-size: 2em;
+  color: #ededed;
+  border-radius: 2px;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #00abf0;
+  color: white;
+  transition: 0.5s;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-inline: 50px;
+  margin-bottom: 0px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.box-head {
+  height: 7.2em;
+}
+
+/* section 1********************************************* */
+
+
+
+.main-container {
+  margin-top:10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+
+  background: linear-gradient(to left, rgb(0, 172, 240, 0.99), rgba(0, 0, 0, 0.5));
+  color: white;
+  padding: 3em;
+  border-radius: 8px;
+  width: 85vw;
+
+}
+
+.about-heading {
+  font-size: 4em;
+  color: #03b8ff;
+}
+
+hr {
+  width: 100%;
+
+}
+
+.about-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.details-box h6 {
+  color: #03b8ff;
+  word-spacing: 3px;
+  font-size: 2.2em;
+  font-weight: 500;
+  margin: 10px;
+}
+
+strong {
+  color: white;
+  margin-left: 10px;
+}
+
+strong a {
+  color: white;
+}
+
+/* button ***************************** */
+
+.button-primary {
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(0, 172, 240), rgba(0, 172, 240, 0.25));
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+
+}
+
+.button-primary:hover {
+  background: linear-gradient(to right, rgb(0, 172, 240), rgba(255, 0, 0, 0.600));
+  border: 2px solid white;
+  transition: 0.5s;
+}
+
+.icon-link__container {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  left: 1px;
+  bottom: 1px;
+  width: 130px;
+  border-radius: 50%;
+
+}
+
+img {
+  width: 30px;
+}
+
+#icon3 {
+  background-color: white;
+  border-radius: 60%;
+  border: 1px solid white;
+}

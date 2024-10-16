@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0%;
+
+}
+body{
+background-image: url(../image/servicebg.jpg);
+background-repeat: no-repeat;
+background-size:cover ;
+background-position: center;
+background-attachment: fixed;
+    
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  padding: 25px;
+  
+  }
+
+.navbar a{
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color:#ededed;
+  margin-left:20px ;
+  border-radius: 10px;
+  padding: 10px;
+}
+  .navbar a:hover{
+    background-color: #00abf0;
+    color: #ededed;
+    transition: 0.5s; 
+    }
+    .logo{  
+      margin-top:0px ;
+      margin-inline: 50px;
+      margin-bottom:0px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 25px;
+      color:#ededed;
+   }
+                                   /* section */
+
+  section h2{
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+  }   
+hr{
+ position: relative;
+ margin-top: 10px;
+ left: 45%;
+  width: 10%;
+}
+
+
+                              /* article */
+  #servicebox{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+   font-family: monospace;
+   font-weight: bolder;
+   font-size: large;
+   color: white;
+   }
+.service1{
+  background-color:rgb(85, 70, 192,0.6);
+   border-radius:20px;
+   box-shadow: 30px 30px rgb(0, 0, 0,0.6);
+   text-align: center;
+   padding: 40px;
+   width: 40vh;
+   height: 30vh;
+}
+.service2{
+  background-color: rgb(9, 203, 255,0.6);
+  border-radius:20px;
+  box-shadow: 30px 30px rgb(0, 0, 0,0.6);
+  text-align: center;
+ padding: 40px;
+ width: 40vh;
+ height: 30vh;
+}
+.service3{
+
+  background-color: rgb(255, 74, 104,0.8);
+  border-radius:20px;
+  box-shadow: 30px 30px rgb(0, 0, 0,0.6);
+  text-align: center;
+ padding: 40px;
+ width: 40vh;
+ height: 30vh;
+}
+
+/* section */
+#servicehead{
+ color: white;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+hr{
+  background-color:#00abf0 ;
+border: none;
+  height: 3px;
+  border-radius:10px;
+}
+#icon1{
+  width: 15vh;
+  margin-bottom:10px;
+
+}
+
+#icon2{
+  width: 14vh;
+  margin-bottom:10px;
+}
+#icon3{
+  width: 11vh;
+  margin-bottom:10px; 
+}
+div h3{
+  color: black;
+  font-weight:bolder;
+  margin-bottom: 10px;
+
+}
+#icon4 {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+   width: 40px;
+     }
+  
+  
+     #icon5{
+      position: absolute;
+  bottom: 10px;
+  left: 17vh;
+   width: 40px;
+     }
+     #icon6{
+      position: absolute;
+      bottom: 10px;
+      left: 27vh;
+       width: 40px;
+     }
+     body{
+      background-color: black;
+     }
+  
