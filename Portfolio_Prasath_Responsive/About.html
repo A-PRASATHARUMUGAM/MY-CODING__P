@@ -8,19 +8,26 @@
 
 </head>
 <body>
-
-  <header class="header">
-   <a href="index.html"><p class="logo" >Portfolio</p></a> 
-    <nav class="navbar">   
-     <a href="index.html">Home</a>
-     <a href="project.html">Projects</a>
-     <a href="About.html">About me</a>
+<!-- Header  -->
+  <header class="header-container">
+    <nav class="navbar-container">
+        <div >
+          <a href="index.html" class="header-logo">Portfolio</a> 
+        </div>
+         <ul class="header-links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="project.html">Projects</a></li>
+           <li><a href="About.html">About me</a></li>
+         </ul>
+       <div class="hamburger-menu">
+        <span class="hmenu"></span>
+        <span class="hmenu"></span>
+        <span class="hmenu"></span>
+    </div>
     </nav>
+  
   </header>
-  <div class="box-head">
-
-  </div>
-<!-- section 1******************************* -->
+        <!-- section 1 -->
 <section class="main-container">
 
 
@@ -32,16 +39,19 @@
       I am a Front-end Developer and a graduate in the Computer Science.
       I create webistes that are fast, easy to use, and built with best practies.
       </p>
-       <span class="details-box">
+       <div class="details-box">
       <h6>Name:<strong >Prasath Arumugam</strong></h6>
       <h6>Father's Name:<strong >M Arumugam</strong></h6>
       <h6>Location:<strong>Villupuram</strong></h6>
       <h6>Email:<strong><a href="mailto:prasatharumugam040@gmail.com">prasatharumugam040@gmail.com</a></strong></h6></a>
       <h6>Phone:<strong>9894629002</strong></h6>
-      <a href="./assets/resume/PRASATH A Resume.pdf" target="_blank"><button type="button" class="button-primary" title="resume">Resume</button></a>
+       </div>
+       
+      <div class="button-container">
+        <a href="./assets/resume/PRASATH A Resume.pdf" target="_blank"><button type="button" class="button-primary" title="resume">Resume</button></a>
       <a href="./assets/resume/PRASATH certificates.pdf" target="_blank"><button type="button" class="button-primary" title="resume">View Certificates</button></a>
-    </span>
       
+      </div>
       
       </div>
 
@@ -54,5 +64,7 @@
 </div>
 
 </section>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
