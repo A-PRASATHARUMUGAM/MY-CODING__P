@@ -29,7 +29,6 @@ line-height: 1.6;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid white;
 }
 .header-logo{
   font-size: 1.5rem; 
@@ -86,9 +85,6 @@ section{
   align-items: center;
   height: 100vh;
 }
-.main-container{
-
-}
 .name-container{
   /* border:1px solid white; */
 }
@@ -123,8 +119,7 @@ section{
   margin-left:50px;
 }
 .button-primary:hover,.button-secondary:hover{
-  /* background:linear-gradient(to right,rgba(255, 255, 255, 0.372),rgba(0, 172, 240, 0.05)); */
-  background-color:violet;
+    background-color:violet;
     color: white;
     transition:all  300ms ease;
 
@@ -152,10 +147,23 @@ img{
 
 
                               /* Media Query   */
+@media all and (max-width:930px){
+  .name{
+    font-size:3.5rem;
+  }
+  .name-description{
+    font-size:2.2rem;
+  }
+  button[class^="button"]{
+    font-size: 1rem ;
+  }
+}
 
 @media all and (max-width:768px) {
 
-
+.navbar-container{
+  background:linear-gradient(to right,rgba(0, 172, 240, 0.3),rgba(238, 130, 238, 0.8));
+}
 /* Navigation Bar */
 .header-links{
   display: none;
@@ -165,13 +173,14 @@ img{
   top: 100px;
   left: 50%;
   transform: translate(-50%);
-  width:50vw;
+  width:60vw;
   border-radius:8px;
-  background:linear-gradient(0deg,rgba(0, 0, 0,0.900),rgba(0, 172, 240, 0.937)); 
-}
+  background:linear-gradient(90deg,rgba(238, 130, 238, 0.8),rgba(0, 172, 240, 0.3));
+
+} 
 .header-links a:hover{
   background-color: white;
-  color:#00abf0; 
+  color:violet; 
   transition: all 300ms ease-in-out; 
 }
 
@@ -200,7 +209,76 @@ rotate:-45deg;
 }
 
 /* Section 1 */
+.name{
+  font-size:3.2rem;
+}
 
+.name-description{
+  font-size:2rem;
+  width:90vw;
+
+}
+button[class^="button"]{
+  font-size: 1rem ;
+}
 
 }
 
+@media all and (max-width:650px) {
+
+  /* Section 1 */
+.name{
+  font-size:3.1rem;
+}
+
+.name-description{
+  font-size:1.8rem;
+
+}
+button[class^="button"]{
+  font-size: 1rem ;
+}
+
+}
+@media all and (max-width:550px) {
+
+  /* Section 1 */
+.name{
+  font-size:3rem;
+}
+
+.name-description{
+  font-size:1.5rem;
+
+}
+button[class^="button"]{
+  font-size: 1rem ;
+}
+
+}
+@media all and (max-width:420px) {
+
+  /* Section 1 */
+.name{
+  font-size:2.5rem;
+  margin: 20px 0px;
+}
+
+.name-description{
+  font-size:1.2rem;
+  margin: 20px 0px;
+  line-height:2.3;
+
+}
+.button-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+button[class^="button"]{
+  font-size: 0.9rem ;
+  margin: 0px;
+  padding: 10px 25px;
+}
+
+}
