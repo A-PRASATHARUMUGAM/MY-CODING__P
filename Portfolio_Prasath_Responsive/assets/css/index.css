@@ -17,7 +17,7 @@ background-repeat: no-repeat;
 background-size:cover ;
 background-position: center;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 10px;
+font-size:16px;
 line-height: 1.6;
 }
               /* Navigation Bar */
@@ -29,7 +29,7 @@ line-height: 1.6;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* background:linear-gradient(to right,rgb(0, 172, 240,0.80),rgba(255, 0, 0, 0.80));       */
+  border: 1px solid white;
 }
 .header-logo{
   font-size: 1.5rem; 
@@ -87,47 +87,46 @@ section{
   height: 100vh;
 }
 .main-container{
-  margin-top:30px;
+
+}
+.name-container{
+  /* border:1px solid white; */
 }
 .name{
   color: #00abf0;
   font-weight:bold;
-  font-size:7em;
-  
+  font-size:4.5rem;
 }
 .name-description{
   text-align: justify;
-  font-size:4.2em;
+  font-size:3rem;
   width:80vw;
   color: white;
 
 }
 .button-container{
-  margin-top:5em;
-  margin-bottom:5em;
+  margin-top:2rem;
 }
 
 
 .button-primary,.button-secondary{
-  padding:14px;
-  width:8em;
+  font-size:1.2rem;
+  font-weight:bold;
+  padding:10px 35px;
   border: none;
-  font-size:1.8em;
-  font-weight: bold;
-  background:linear-gradient(to right,rgb(3, 184, 255),rgba(0, 172, 240, 0.05));
-  border:2px solid white;
-  color: white;
   border-radius:4px;
-  
-  
+  color: white;
+  background:linear-gradient(to right,rgb(3, 184, 255),rgba(0, 172, 240, 0.05));
+
 }
 .button-secondary{
-  margin-left:3em;
+  margin-left:50px;
 }
 .button-primary:hover,.button-secondary:hover{
-  background:linear-gradient(to right,rgb(0, 172, 240),rgba(255, 0, 0, 0.600)) ;  
-    border:2px solid white;
-    transition: 0.5s;
+  /* background:linear-gradient(to right,rgba(255, 255, 255, 0.372),rgba(0, 172, 240, 0.05)); */
+  background-color:violet;
+    color: white;
+    transition:all  300ms ease;
 
 }
 
@@ -138,7 +137,7 @@ section{
   left:1px;
   bottom:1px;
   width:130px;
-  border-radius: 50%;
+  border-radius:50%;
  
 }
 img{
@@ -157,7 +156,7 @@ img{
 @media all and (max-width:768px) {
 
 
-
+/* Navigation Bar */
 .header-links{
   display: none;
   flex-direction: column;
@@ -200,5 +199,8 @@ img{
 rotate:-45deg;
 }
 
+/* Section 1 */
+
 
 }
+
