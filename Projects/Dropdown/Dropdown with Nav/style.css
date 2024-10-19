@@ -1,0 +1,57 @@
+body{
+    background-color:#24252a;
+font-family:cursive ;
+    font-variant:small-caps;
+}
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+}
+.header-links{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+    width: 350px;
+}
+.header-links a{
+    color: white;
+    text-transform:capitalize;
+    position: relative;
+}
+
+.header-logo{
+ margin-left:30px;
+ color: yellow;
+}
+
+.dropdown{
+    position: absolute;
+    top:75%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    list-style: none;
+    padding:10px;
+}
+.dropdown  a{
+    color: black;
+   
+}
