@@ -1,8 +1,105 @@
-body{
-    background-color:#24252a;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-h1{
-    text-align:center;
-    color:white;
-    
+a{
+    text-decoration:none;
+}
+
+body{
+background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 50%);
+font-family:cursive;
+height: 100vh;
+}
+/* Navigation Bar */
+.navbar-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+
+}
+.navbar-container a{
+    color: white;
+
+}
+.header-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:13px;
+    width:450px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: lighter;
+    list-style-type: none;   
+    background-color:rgba(0, 0, 0, 0.301);
+}
+.header-links li:hover {
+    color: orange;
+    transition: all 0.5s ease;
+    list-style-type: disc;
+}
+
+.header-logo{
+    margin-left:15px ;
+}
+
+.hmenu{
+    display:block;
+    width:20px;
+    height:2px;
+    margin-top:5px;
+    border-radius:10px;
+    background-color: white;
+    transition: all 300ms ease-in-out;
+}
+
+@media all and (max-width:769px) {
+
+  .hmenu{
+    display: block;
+    margin-right:5px;
+    transform-origin:left  center;
+  }
+.Ahmenu :nth-child(1){
+    rotate: 45deg;
+}
+ 
+.Ahmenu :nth-child(2){
+    opacity: 0;
+
+}
+ 
+.Ahmenu :nth-child(3){
+  rotate:-45deg;
+}
+
+ 
+.header-links{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position:absolute;
+    top:-150px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60vw;
+    list-style-type: none;
+    border-radius: 0;
+   transition: all 0.5s ease;
+}
+.header-links-active{
+    /* display: flex; */
+    top: 100px;
+}
+
 }
