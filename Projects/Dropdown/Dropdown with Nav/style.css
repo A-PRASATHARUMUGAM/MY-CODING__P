@@ -58,6 +58,6 @@ a{
     color: black;
     margin: 10px;  
 }
-.active{
+.dropdown.active{
     display: flex;
 }
