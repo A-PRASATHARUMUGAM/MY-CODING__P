@@ -44,14 +44,20 @@ a{
 .dropdown{
     position: absolute;
     top:75%;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: white;
     border: 1px solid white;
     list-style: none;
     padding:10px;
+    border-radius:8px;
+    box-shadow: 1px 1px 10px white ;
+    transition: all 0.5s ease;
 }
 .dropdown  a{
     color: black;
-   
+    margin: 10px;  
+}
+.active{
+    display: flex;
 }
