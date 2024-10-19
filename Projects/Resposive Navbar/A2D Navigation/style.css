@@ -84,19 +84,21 @@ height: 100vh;
 
  
 .header-links{
-    display: none;
+    display: flex;
     flex-direction: column;
     gap:10px;
     position:absolute;
-    top: 100px;
+    top:-150px;
     left: 50%;
     transform: translate(-50%);
     width: 60vw;
     list-style-type: none;
     border-radius: 0;
+   transition: all 0.5s ease;
 }
-.showmenu{
-    display: flex;
+.header-links-active{
+    /* display: flex; */
+    top: 100px;
 }
 
 }
