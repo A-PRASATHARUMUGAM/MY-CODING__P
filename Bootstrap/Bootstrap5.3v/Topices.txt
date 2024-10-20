@@ -24,3 +24,72 @@
         - text-danger
         - text-secondary
         - text-white
+4.form 
+        - form-group   -using container
+        - form-control -using input tag
+        -
+5. column for large Devices
+        - col-lg-6
+        - col-md-3
+        - col-sm-2
+
+6.Fixed and Sticky Header 
+        -fixed-top
+        -fixed-bottom
+        -fixed-left
+        -fixed-right
+        -sticky-top
+        -sticky-bottom
+        -sticky-left
+        -sticky-right
+
+7.Hight and Width classes
+        - h-100
+        - w-100
+
+8.Structure to Creating
+    1.Navbar
+        - navbar
+        - navbar-dark
+        - navbar-brand - navbar inside text
+        - navbar-nav
+                <li>- nav-item   <a> - nav-links active
+        - nav-expand  -it is list direction row
+        - nav-expand-lg,md,sm 
+
+            #2. Navbar Toggler
+                   -navbar-toggler
+                         <button>- navbar-toggler-icon
+                   - collapse
+                         - navbar-collapse
+                   - data-bs-toggler="collapse"  
+                   - data-bs-target="#navbar"  
+
+      2.Breadcrumb   -navigation path
+        <ol>- breadcrumb
+                  -breadcrumb-item
+                  -breadcrumb-item active
+            
+      3.Buttons  - triggering actions
+          - btn 
+          - btn-primary
+          - btn-outline-primary
+          - btn-lg
+
+      4.Cards  - used to displaying content in structure format
+          - card
+          - card-header
+          - card-body
+
+      5.List Group - displaying list 
+          - list-group
+                - list-group-item
+                - list-group-item active
+          - list-group-flush
+
+      6.Badges
+          -
+
+
+
+      
