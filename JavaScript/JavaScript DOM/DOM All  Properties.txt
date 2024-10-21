@@ -4,7 +4,7 @@
 1. HTML DOM -- it is a standard object model and programming interface for HTML 
             -- how to get, change, add, and delete HTML elements 
 
-2. DOM Specification -- by  W3C world wide web considum 
+2. DOM Specification -- by  W3C world wide web considum W
 
 3. JS Specification  -- by  ES6 Ecma Script 
 
