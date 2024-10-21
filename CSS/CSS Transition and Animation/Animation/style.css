@@ -20,7 +20,8 @@ h2{
 
 /*                          Animation 
 
-1.  animation: ;     
+1.  animation: 3s ease 1s name;     
+    animation: 3s ease 1s infinity direction fill-mode play-state  name;     
 
     animation-duration: ;
             - 3s
