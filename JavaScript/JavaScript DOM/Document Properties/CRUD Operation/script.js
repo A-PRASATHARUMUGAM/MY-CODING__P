@@ -341,10 +341,10 @@ removeBtn.forEach(element => {
 
 // let siblingContainer=document.querySelector(".sibling-container");
 // console.log(siblingContainer)
-        // Any Node
+//         // Any Node
 // console.log(siblingContainer.nextSibling);
 // console.log(siblingContainer.previousSibling);
-        //Any Element 
+//         // Any Element 
 // console.log(siblingContainer.nextElementSibling);
 // console.log(siblingContainer.previousElementSibling);
 
