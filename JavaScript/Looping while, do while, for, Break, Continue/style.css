@@ -3,5 +3,9 @@ body{
     
 }
 h1{
-    color: springgreen;
+    color:red;
+    text-align: center;
+}
+h2{
+    color:mediumspringgreen;
 }
