@@ -1,7 +1,7 @@
 body{
     font-family: cursive;
     background:linear-gradient(120deg,springgreen,lightblue );
-    height:90vh;
+    background-attachment: fixed;
 }
 
 .main-title{
@@ -17,25 +17,27 @@ body{
     text-align: center  ;
 }
 .form-main-container{
-    padding: 25px;
+    padding: 35px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.55);
  }
 
  form > div{
-    padding: 10px;
+    margin-top:5px;
     text-align: justify;
 
  }
  input{
-    margin-top:6px ;
+    margin-top:5px;
     padding:12px;
     max-width: 50vw;
     min-width: 250px;
     border:none;
     border-radius: 8px;
  }
-
+input:focus{
+    outline: 0;
+}
 
  .form-btn-container{
     text-align: center ;
@@ -44,12 +46,12 @@ body{
  .form-btn{
     padding:12px;
     border:none;
-    font-weight:bold;
+    font-weight:bold;   
     border-radius: 8px;
     background-color: springgreen;
     color: white;
     font-size:16px ;
-
+    cursor:pointer;
  }
 
  .form-btn:hover{
@@ -57,4 +59,10 @@ body{
     color: white;
     font-size:16px ;
    transition:0.5s ease ;
+   
+ }
+
+ .error{
+    color: red;
+    padding:5px;
  }
