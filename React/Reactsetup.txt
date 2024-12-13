@@ -6,8 +6,8 @@
                         - component
 
 // 1. Install node.js - Recommended for most users LTS
-// 2. Install React Developer Tools Extension in Chrome Browser and add the emmet 
-// 3. Install React Extension in Vscode  
+// 2. Install React Developer Tools Extension in Chrome Browser 
+// 3. Install React Extension in Vscode and add the emmet javascript - javascriptreact
 // 4. Install Node.js  
 // 5. go to terminal check the node -v 
 // 6. type this command --> npx create-react-app  yourfilename 
