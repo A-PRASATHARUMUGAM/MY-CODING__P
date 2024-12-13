@@ -6,7 +6,7 @@
                         - component
 
 // 1. Install node.js - Recommended for most users LTS
-// 2. Install React Developer Tools Extension in Chrome Browser
+// 2. Install React Developer Tools Extension in Chrome Browser and add the emmet 
 // 3. Install React Extension in Vscode  
 // 4. Install Node.js  
 // 5. go to terminal check the node -v 
