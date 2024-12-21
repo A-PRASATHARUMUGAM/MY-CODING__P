@@ -1,25 +1,24 @@
 import React from 'react'
-
+import "./Footer.css" 
 const Footer = () => {
  const name="prasath";
-
+//  inline style
+const styledata={backgroundColor:'lightpink',fontSize:"20px"}
  function myfunction(){
-
+ 
     const name= ["prasath", "sabari", "kandhan"]; 
          let rand=Math.floor(Math.random()*3);    
-         return name[rand]       
+         return name[rand];         
  
-          
-     
  } 
 
-  return (
+  return ( 
     
     <div className="Footer">
-             
-    <p>{name}</p> 
-    <p>hello {myfunction()}</p> 
-
+   {/* inline style   */}
+    <p style={styledata} >{name}</p> 
+    <p className="para3">hello {myfunction()}</p> 
+ 
     </div>
   
 
