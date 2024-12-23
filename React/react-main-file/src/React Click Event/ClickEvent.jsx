@@ -2,8 +2,9 @@ import React from 'react'
 import './Click.css'
 const Click = ()=>{
 
-  const handleclick =()=>{
+  const handleclick =(event)=>{
       console.log("Say hello");
+      console.log(event.target);
   }
     return ( 
         <div>
@@ -11,9 +12,9 @@ const Click = ()=>{
           <h1>Click Event </h1>
 
 
-          <button onClick={()=>handleclick()} > 
+          <button onClick={(event)=>handleclick(event)} > 
         {/* Important because one time click event crt working  */}
-          Say hello in console</button>
+          Say hello in console </button>
 
         </div>
 
