@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css" 
 const Footer = () => {
- const name="prasath";
+ const name="Footer";
 //  inline style
 const styledata={backgroundColor:'lightpink',fontSize:"20px"}
  function myfunction(){
